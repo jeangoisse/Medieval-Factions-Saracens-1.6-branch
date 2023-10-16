@@ -2,7 +2,7 @@
 <Defs>
 
     <ThingDef ParentName="BaseMeleeWeapon_Blunt_Quality">
-        <defName>[Saracens]MeleeWeapon_Polemace</defName>
+        <defName>SFE_MeleeWeapon_Polemace</defName>
         <label>polemace</label>
         <description>A refined club, engineered for efficient swinging and deadly impacts.</description>
         <possessionCount>1</possessionCount>
@@ -74,7 +74,7 @@
     </ThingDef>
 
     <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
-        <defName>[Saracens]MeleeWeapon_Qatal</defName>
+        <defName>SFE_MeleeWeapon_Qatal</defName>
         <label>qatal</label>
         <description>A short sword of ancient design. Good for stabbing or slashing. It's light and nimble, which sometimes lets it beat bigger, heavier weapons.</description>
         <possessionCount>1</possessionCount>
