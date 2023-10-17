@@ -9,6 +9,8 @@
             <texPath>WeaponMelee/Maces/Polemace</texPath>
             <maskPath>WeaponMelee/Maces/Polemace_m</maskPath>
             <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+            <color>(94, 96, 103)</color>
         </graphicData>
         <uiIconScale>1.2</uiIconScale>
         <techLevel>Medieval</techLevel>
@@ -78,6 +80,8 @@
             <texPath>WeaponMelee/Swords/Qatal</texPath>
             <maskPath>WeaponMelee/Swords/Qatal_m</maskPath>
             <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+            <color>(94, 96, 103)</color>
         </graphicData>
         <uiIconScale>1.2</uiIconScale>
         <techLevel>Medieval</techLevel>
@@ -143,8 +147,10 @@
         <possessionCount>1</possessionCount>
         <graphicData>
             <texPath>WeaponMelee/Swords/Saif</texPath>
-            <maskPath>WeaponMelee/Maces/Saif_m</maskPath>
+            <maskPath>WeaponMelee/Swords/Saif_m</maskPath>
             <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+            <color>(94, 96, 103)</color>
         </graphicData>
         <uiIconScale>1.2</uiIconScale>
         <techLevel>Medieval</techLevel>
@@ -203,6 +209,8 @@
             <texPath>WeaponMelee/Swords/Scimitar</texPath>
             <maskPath>WeaponMelee/Swords/Scimitar_m</maskPath>
             <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+            <color>(94, 96, 103)</color>
         </graphicData>
         <uiIconScale>1.2</uiIconScale>
         <techLevel>Medieval</techLevel>
@@ -261,6 +269,8 @@
             <texPath>WeaponMelee/Swords/Shamshir</texPath>
             <maskPath>WeaponMelee/Swords/Shamshir_m</maskPath>
             <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+            <color>(94, 96, 103)</color>
         </graphicData>
         <uiIconScale>1.2</uiIconScale>
         <techLevel>Medieval</techLevel>
@@ -319,6 +329,8 @@
             <texPath>WeaponMelee/Swords/TwoHanded_Saif</texPath>
             <maskPath>WeaponMelee/Swords/TwoHanded_Saif_m</maskPath>
             <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+            <color>(94, 96, 103)</color>
         </graphicData>
         <uiIconScale>1.2</uiIconScale>
         <techLevel>Medieval</techLevel>
@@ -377,6 +389,8 @@
             <texPath>WeaponMelee/Swords/TwoHanded_Scimitar</texPath>
             <maskPath>WeaponMelee/Swords/TwoHanded_Scimitar_m</maskPath>
             <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+            <color>(94, 96, 103)</color>
         </graphicData>
         <uiIconScale>1.2</uiIconScale>
         <techLevel>Medieval</techLevel>
