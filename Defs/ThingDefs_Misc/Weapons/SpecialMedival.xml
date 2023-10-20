@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ThingDef Name="BaseVersatile" ParentName="BaseWeapon" Abstract="true">
+        <thingCategories>
+            <li>WeaponsRanged</li>
+            <li>WeaponsMelee</li>
+        </thingCategories>
+        <weaponClasses>
+            <li>Ranged</li>
+            <li>Melee</li>
+        </weaponClasses>
+    </ThingDef>
+
+    <ThingDef ParentName="BaseVersatile">
+        <defName>SFE_VersatileWeapon_FireLance</defName>
+        <label>fire lance</label>
+        <description>A short sword of ancient design. Good for stabbing or slashing. It's light and nimble, which sometimes lets it beat bigger, heavier weapons.</description>
+        <possessionCount>1</possessionCount>
+        <graphicData>
+            <texPath>WeaponMelee/Spears/Fire_Lance</texPath>
+            <maskPath>>WeaponMelee/Spears/Fire_Lance_m</maskPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <uiIconScale>1.2</uiIconScale>
+        <techLevel>Medieval</techLevel>
+        <costStuffCount>50</costStuffCount>
+        <weaponTags>
+            <li>MedievalMeleeDecent</li>
+        </weaponTags>
+        <statBases>
+            <MaxHitPoints>100</MaxHitPoints>
+            <WorkToMake>205</WorkToMake>
+            <Mass>2.5</Mass>
+            <Beauty>-3</Beauty>
+            <Flammability>0.5</Flammability>
+            <DeteriorationRate>2</DeteriorationRate>
+            <SellPriceFactor>0.2</SellPriceFactor>
+        </statBases>
+        <equippedAngleOffset>-65</equippedAngleOffset>
+        <stuffCategories>
+            <li>Metallic</li>
+        </stuffCategories>
+        <tools>
+            <li>
+                <label>shaft</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <armorPenetration>0.2</armorPenetration>
+                <power>13</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+            <li>
+                <label>shaft</label>
+                <capacities>
+                    <li>Poke</li>
+                </capacities>
+                <armorPenetration>0.2</armorPenetration>
+                <power>13</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+            <li>
+                <label>point</label>
+                <capacities>
+                    <li>Stab</li>
+                </capacities>
+                <armorPenetration>0.25</armorPenetration>
+                <power>25</power>
+                <cooldownTime>2.1</cooldownTime>
+            </li>
+        </tools>
+        <verbs>
+            <li>
+                <verbClass>Saracens.Verb_FireLance</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <warmupTime>3</warmupTime>
+                <range>7</range>
+                <burstShotCount>1</burstShotCount>
+                <onlyManualCast>true</onlyManualCast>
+                <targetParams>
+                  <canTargetLocations>true</canTargetLocations>
+                </targetParams>
+              </li>
+        </verbs>
+        <comps>
+            <li Class="CompProperties_Reloadable">
+                <maxCharges>1</maxCharges>
+                <destroyOnEmpty>false</destroyOnEmpty>
+                <hotKey>Misc4</hotKey>
+                <chargeNoun>charge</chargeNoun>
+                <displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+                <ammoDef>Chemfuel</ammoDef>
+                <ammoCountToRefill>5</ammoCountToRefill>
+            </li>
+        </comps>
+        <recipeMaker>
+            <researchPrerequisite>Smithing</researchPrerequisite>
+            <skillRequirements>
+                <Crafting>3</Crafting>
+            </skillRequirements>
+            <displayPriority>410</displayPriority>
+        </recipeMaker>
+    </ThingDef>
+</Defs>
