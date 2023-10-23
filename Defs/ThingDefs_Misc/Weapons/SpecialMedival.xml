@@ -14,7 +14,7 @@
     <ThingDef ParentName="BaseVersatile">
         <defName>SFE_VersatileWeapon_FireLance</defName>
         <label>fire lance</label>
-        <description>A short sword of ancient design. Good for stabbing or slashing. It's light and nimble, which sometimes lets it beat bigger, heavier weapons.</description>
+        <description>The Fire Lance combines the deadly efficiency of a spear, with the potential of gunpowder. A deadly weapon up close, and just as deadly nearby with its streams of fire.</description>
         <possessionCount>1</possessionCount>
         <graphicData>
             <texPath>WeaponMelee/Spears/Fire_Lance</texPath>

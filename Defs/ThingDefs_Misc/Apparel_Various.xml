@@ -3,7 +3,7 @@
     <ThingDef ParentName="ApparelMakeableBase">
         <defName>SFE_Apparel_NomadRobe</defName>
         <label>nomad robe</label>
-        <description>A simple T-shirt.</description>
+        <description>The Nomad's two-layer robe provides full body coverage and protection from the sun, as well as some types of cutting and blunt damage.</description>
         <graphicData>
             <texPath>Apparel/Armor/LightArmor/NomadRobe/Nomad_Robe</texPath>
             <graphicClass>Graphic_Single</graphicClass>

@@ -74,7 +74,7 @@
     <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
         <defName>SFE_MeleeWeapon_Qatal</defName>
         <label>qatal</label>
-        <description>A short sword of ancient design. Good for stabbing or slashing. It's light and nimble, which sometimes lets it beat bigger, heavier weapons.</description>
+        <description>A curved dagger of the southern desert lands. A easily concealable weapon that can provide quick and deadly cuts. Nomads and other southerners often hide them in the folds of robes or their sashes.</description>
         <possessionCount>1</possessionCount>
         <graphicData>
             <texPath>WeaponMelee/Swords/Qatal</texPath>
@@ -143,7 +143,7 @@
     <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
         <defName>SFE_MeleeWeapon_Saif</defName>
         <label>saif</label>
-        <description>A short sword of ancient design. Good for stabbing or slashing. It's light and nimble, which sometimes lets it beat bigger, heavier weapons.</description>
+        <description>A short one handed sword, a heavily cut focused blade which excels at it. Cheap, but effective. A step above the Qatal, ready to relief any northerners of their heads from their necks.</description>
         <possessionCount>1</possessionCount>
         <graphicData>
             <texPath>WeaponMelee/Swords/Saif</texPath>
@@ -203,7 +203,7 @@
     <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
         <defName>SFE_MeleeWeapon_Scimitar</defName>
         <label>scimitar</label>
-        <description>A short sword of ancient design. Good for stabbing or slashing. It's light and nimble, which sometimes lets it beat bigger, heavier weapons.</description>
+        <description>A longer one handed blade. No longer a cheap weapon, it rivals any northerner's arming sword. Delivers devastating cuts on foot or on horseback.</description>
         <possessionCount>1</possessionCount>
         <graphicData>
             <texPath>WeaponMelee/Swords/Scimitar</texPath>
@@ -263,7 +263,7 @@
     <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
         <defName>SFE_MeleeWeapon_Shamshir</defName>
         <label>shamshir</label>
-        <description>A short sword of ancient design. Good for stabbing or slashing. It's light and nimble, which sometimes lets it beat bigger, heavier weapons.</description>
+        <description>The shamshir is a noble's weapon. A one handed sword which, like the other blades of the south, is heavily favoring the cut. This weapon is gilded and made of fine materials.</description>
         <possessionCount>1</possessionCount>
         <graphicData>
             <texPath>WeaponMelee/Swords/Shamshir</texPath>
@@ -323,7 +323,7 @@
     <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
         <defName>SFE_MeleeWeapon_TwoHandedSaif</defName>
         <label>two-handed saif</label>
-        <description>A short sword of ancient design. Good for stabbing or slashing. It's light and nimble, which sometimes lets it beat bigger, heavier weapons.</description>
+        <description>A noble's evolution on the inexpensive one handed saif. Trading the use of a shield for a two handed weapon, this is a weapon that favors speed and agility to put in many quick and agile slashes and cuts.</description>
         <possessionCount>1</possessionCount>
         <graphicData>
             <texPath>WeaponMelee/Swords/TwoHanded_Saif</texPath>
@@ -383,7 +383,7 @@
     <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
         <defName>SFE_MeleeWeapon_TwoHandedScimitar</defName>
         <label>two-handed scimitar</label>
-        <description>A short sword of ancient design. Good for stabbing or slashing. It's light and nimble, which sometimes lets it beat bigger, heavier weapons.</description>
+        <description>A noble's evolution on the scimitar. This takes the agile and deadly one handed blade to make a much heavier, and devastating chopping and slashing weapon. Often wielded by the best of the Southern armies, this weapon can tear apart armor and flesh as easily as a knife to butter.</description>
         <possessionCount>1</possessionCount>
         <graphicData>
             <texPath>WeaponMelee/Swords/TwoHanded_Scimitar</texPath>
