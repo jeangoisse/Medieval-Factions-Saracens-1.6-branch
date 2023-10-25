@@ -9,9 +9,10 @@
             <graphicClass>Graphic_Single</graphicClass>
             <maskPath>Apparel/Headgear/NomadHeadWarp/Nomad_Head_Wrap_m</maskPath>
             <shaderType>CutoutComplex</shaderType>
-            <color>(94, 96, 103)</color>
+		<color>(94, 96, 103)</color>
+             
         </graphicData>
-        <uiIconScale>1.25</uiIconScale>
+		<uiIconScale>1.25</uiIconScale>
         <costStuffCount>50</costStuffCount>
         <stuffCategories>
             <li>Fabric</li>
@@ -65,70 +66,71 @@
             </options>
         </colorGenerator>
     </ThingDef>
-    <ThingDef ParentName="HatMakeableBase">
-        <defName>SFE_Apparel_LeatherHeadWrap</defName>
-        <label>leather head wrap</label>
-        <description>A rough leather headwrap is usually worn by poor nomads who own cattle. Cheap and not very strong, but it allows you to survive some types of not the best weapons.</description>
-        <graphicData>
-            <texPath>Apparel/Headgear/LeatherHeadWrap/Leather_Head_Wrap</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
-        </graphicData>
-        <uiIconScale>1.25</uiIconScale>
-        <costStuffCount>35</costStuffCount>
-        <stuffCategories>
-            <li>Fabric</li>
-        </stuffCategories>
-        <statBases>
-            <MaxHitPoints>100</MaxHitPoints>
-            <WorkToMake>80</WorkToMake>
-            <Mass>0.5</Mass>
-            <Flammability>0.5</Flammability>
-            <StuffEffectMultiplierArmor>0.35</StuffEffectMultiplierArmor>
-            <StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
-            <StuffEffectMultiplierInsulation_Heat>0.25</StuffEffectMultiplierInsulation_Heat>
-            <EquipDelay>2</EquipDelay>
-        </statBases>
-        <generateCommonality>0.5</generateCommonality>
-        <apparel>
-            <countsAsClothingForNudity>true</countsAsClothingForNudity>
-            <developmentalStageFilter>Child, Adult</developmentalStageFilter>
-            <bodyPartGroups>
-                <li>UpperHead</li>
-            </bodyPartGroups>
-            <wornGraphicPath>Apparel/Headgear/NomadHeadWarp/Nomad_Head_Wrap</wornGraphicPath>
-            <layers>
-                <li>Overhead</li>
-            </layers>
-            <tags>
-                <li>MedievalMilitary</li>
-            </tags>
-            <defaultOutfitTags>
-                <li>Worker</li>
-            </defaultOutfitTags>
-        </apparel>
-        <colorGenerator Class="ColorGenerator_Options">
-            <options>
-                <li>
-                    <weight>10</weight>
-                    <only>(0.33,0.33,0.33,1)</only>
-                </li>
-                <li>
-                    <weight>10</weight>
-                    <only>(0.65,0.65,0.65,1)</only>
-                </li>
-                <li>
-                    <weight>6</weight>
-                    <min>(0.3,0.3,0.3,1)</min>
-                    <max>(0.5,0.5,0.5,1)</max>
-                </li>
-                <li>
-                    <weight>10</weight>
-                    <only>(0.9,0.9,0.9,1)</only>
-                </li>
-            </options>
-        </colorGenerator>
-    </ThingDef>
-    <ThingDef ParentName="HatMakeableBase">
+<ThingDef ParentName="HatMakeableBase">
+<defName>SFE_Apparel_LeatherHeadWrap</defName>
+<label>leather head wrap</label>
+<description>A rough leather headwrap is usually worn by poor nomads who own cattle. Cheap and not very strong, but it allows you to survive some types of not the best weapons.</description>
+<graphicData>
+    <texPath>Apparel/Headgear/LeatherHeadWrap/Leather_Head_Wrap</texPath>
+    <graphicClass>Graphic_Single</graphicClass>
+</graphicData>
+<uiIconScale>1.25</uiIconScale>
+<costStuffCount>35</costStuffCount>
+<stuffCategories>
+    <li>Fabric</li>
+</stuffCategories>
+<statBases>
+    <MaxHitPoints>100</MaxHitPoints>
+    <WorkToMake>80</WorkToMake>
+    <Mass>0.5</Mass>
+    <Flammability>0.5</Flammability>
+    <StuffEffectMultiplierArmor>0.35</StuffEffectMultiplierArmor>
+    <StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
+    <StuffEffectMultiplierInsulation_Heat>0.25</StuffEffectMultiplierInsulation_Heat>
+    <EquipDelay>2</EquipDelay>
+</statBases>
+<generateCommonality>0.5</generateCommonality>
+<apparel>
+    <countsAsClothingForNudity>true</countsAsClothingForNudity>
+    <developmentalStageFilter>Child, Adult</developmentalStageFilter>
+    <bodyPartGroups>
+	<li>UpperHead</li>
+    </bodyPartGroups>
+    <wornGraphicPath>Apparel/Headgear/NomadHeadWarp/Nomad_Head_Wrap</wornGraphicPath>
+    <useWornGraphicMask>true</useWornGraphicMask>
+    <layers>
+	<li>Overhead</li>
+    </layers>
+    <tags>
+	<li>MedievalMilitary</li>
+    </tags>
+    <defaultOutfitTags>
+	<li>Worker</li>
+    </defaultOutfitTags>
+</apparel>
+<colorGenerator Class="ColorGenerator_Options">
+    <options>
+	<li>
+	    <weight>10</weight>
+	    <only>(0.33,0.33,0.33,1)</only>
+	</li>
+	<li>
+	    <weight>10</weight>
+	    <only>(0.65,0.65,0.65,1)</only>
+	</li>
+	<li>
+	    <weight>6</weight>
+	    <min>(0.3,0.3,0.3,1)</min>
+	    <max>(0.5,0.5,0.5,1)</max>
+	</li>
+	<li>
+	    <weight>10</weight>
+	    <only>(0.9,0.9,0.9,1)</only>
+	</li>
+    </options>
+</colorGenerator>
+</ThingDef>
+<ThingDef ParentName="HatMakeableBase">
         <defName>SFE_Apparel_GunnersHat</defName>
         <label>gunner hat</label>
         <description>Elite armband of the southern arrows. It does not provide much protection, but it allows the enemy to understand from afar that a storm is coming.</description>
@@ -137,9 +139,10 @@
             <graphicClass>Graphic_Single</graphicClass>
             <maskPath>Apparel/Headgear/GunnersHat/Gunners_Hat_m</maskPath>
             <shaderType>CutoutComplex</shaderType>
-            <color>(94, 96, 103)</color>
+		<color>(94, 96, 103)</color>
+             
         </graphicData>
-        <uiIconScale>1.25</uiIconScale>
+       <uiIconScale>1.25</uiIconScale>
         <costStuffCount>30</costStuffCount>
         <stuffCategories>
             <li>Fabric</li>
@@ -165,6 +168,7 @@
                 <li>UpperHead</li>
             </bodyPartGroups>
             <wornGraphicPath>Apparel/Headgear/GunnersHat/Gunners_Hat</wornGraphicPath>
+	    <useWornGraphicMask>true</useWornGraphicMask>
             <layers>
                 <li>Overhead</li>
             </layers>
@@ -197,7 +201,7 @@
             </options>
         </colorGenerator>
     </ThingDef>
-    <ThingDef ParentName="HatMakeableBase">
+    <ThingDef ParentName="ArmorHelmetMakeableBase">
         <defName>SFE_Apparel_NomadLightHelmet</defName>
         <label>nomad light helmet</label>
         <description>Under this headwrap there is a helmet that protects most of the head not only from physical damage, but also from climatic damage.</description>
@@ -206,7 +210,8 @@
             <graphicClass>Graphic_Single</graphicClass>
             <maskPath>Apparel/Headgear/NomadLightHelmet/Nomad_Light_Helmet_m</maskPath>
             <shaderType>CutoutComplex</shaderType>
-            <color>(94, 96, 103)</color>
+		<color>(94, 96, 103)</color>
+             
         </graphicData>
         <uiIconScale>1.25</uiIconScale>
         <costStuffCount>40</costStuffCount>
@@ -233,6 +238,7 @@
                 <li>UpperHead</li>
             </bodyPartGroups>
             <wornGraphicPath>Apparel/Headgear/NomadLightHelmet/Nomad_Light_Helmet</wornGraphicPath>
+	    <useWornGraphicMask>true</useWornGraphicMask>
             <layers>
                 <li>Overhead</li>
             </layers>
@@ -265,7 +271,7 @@
             </options>
         </colorGenerator>
     </ThingDef>
-    <ThingDef ParentName="HatMakeableBase">
+    <ThingDef ParentName="ArmorHelmetMakeableBase">
         <defName>SFE_Apparel_WrappedSouthernHelmet</defName>
         <label>wrapped southern helmet</label>
         <description>Covered with a thin layer of gold, this helmet not only shows the status of a person, but also gives him sufficient protection.</description>
@@ -274,7 +280,8 @@
             <graphicClass>Graphic_Single</graphicClass>
             <maskPath>Apparel/Headgear/WrappedSouthernHelmet/Wrapped_Southern_Helmet_m</maskPath>
             <shaderType>CutoutComplex</shaderType>
-            <color>(94, 96, 103)</color>
+		<color>(94, 96, 103)</color>
+             
         </graphicData>
         <uiIconScale>1.25</uiIconScale>
         <costStuffCount>50</costStuffCount>
@@ -298,7 +305,8 @@
             <bodyPartGroups>
                 <li>UpperHead</li>
             </bodyPartGroups>
-            <wornGraphicPath>Apparel/Headgear/NomadHeadWarp/Nomad_Head_Wrap</wornGraphicPath>
+            <wornGraphicPath>Apparel/Headgear/WrappedSouthernHelmet/Wrapped_Southern_Helmet</wornGraphicPath>
+	    <useWornGraphicMask>true</useWornGraphicMask>
             <layers>
                 <li>Overhead</li>
             </layers>
@@ -331,7 +339,7 @@
             </options>
         </colorGenerator>
     </ThingDef>
-    <ThingDef ParentName="HatMakeableBase">
+    <ThingDef ParentName="ArmorHelmetMakeableBase">
         <defName>SFE_Apparel_SpikedSkullCapWithMail</defName>
         <label>spiked skull cap with mail</label>
         <description>The headwrap, made in dark tones, with a metal disguise, hides the identity of the owner, while providing high protection of the head.</description>
@@ -340,7 +348,8 @@
             <graphicClass>Graphic_Single</graphicClass>
             <maskPath>Apparel/Headgear/SpikedSkullCapwithMail/Spiked_Skull_Cap_with_Mail_m</maskPath>
             <shaderType>CutoutComplex</shaderType>
-            <color>(94, 96, 103)</color>
+		<color>(94, 96, 103)</color>
+             
         </graphicData>
         <uiIconScale>1.25</uiIconScale>
         <costStuffCount>50</costStuffCount>
@@ -368,6 +377,7 @@
                 <li>UpperHead</li>
             </bodyPartGroups>
             <wornGraphicPath>Apparel/Headgear/SpikedSkullCapwithMail/Spiked_Skull_Cap_with_Mail</wornGraphicPath>
+	    <useWornGraphicMask>true</useWornGraphicMask>
             <layers>
                 <li>Overhead</li>
             </layers>
@@ -400,7 +410,7 @@
             </options>
         </colorGenerator>
     </ThingDef>
-    <ThingDef ParentName="HatMakeableBase">
+    <ThingDef ParentName="ArmorHelmetMakeableBase">
         <defName>SFE_Apparel_ReinforcedNomadHelmet</defName>
         <label>reinforced nomad helmet</label>
         <description>Nomads who have been wandering through lifeless deserts for a long time in search of means of living have acquired this extremely good helmet with a nanosuit and a bandage that can be used at any time to protect against heat or cold.</description>
@@ -409,7 +419,8 @@
             <graphicClass>Graphic_Single</graphicClass>
             <maskPath>Apparel/Headgear/NomadReinforcedHelmet/Nomad_Reinforced_Helmet_m</maskPath>
             <shaderType>CutoutComplex</shaderType>
-            <color>(94, 96, 103)</color>
+		<color>(94, 96, 103)</color>
+             
         </graphicData>
         <uiIconScale>1.25</uiIconScale>
         <costStuffCount>65</costStuffCount>
@@ -437,6 +448,7 @@
                 <li>FullHead</li>
             </bodyPartGroups>
             <wornGraphicPath>Apparel/Headgear/NomadReinforcedHelmet/Nomad_Reinforced_Helmet</wornGraphicPath>
+	    <useWornGraphicMask>true</useWornGraphicMask>
             <layers>
                 <li>Overhead</li>
             </layers>
@@ -469,7 +481,7 @@
             </options>
         </colorGenerator>
     </ThingDef>
-    <ThingDef ParentName="HatMakeableBase">
+    <ThingDef ParentName="ArmorHelmetMakeableBase">
         <defName>SFE_Apparel_AssasinFaceMask</defName>
         <label>assasin face mask</label>
         <description>The headwrap, made in dark tones, with a metal disguise, hides the identity of the owner, while providing high protection of the head.</description>
@@ -478,7 +490,8 @@
             <graphicClass>Graphic_Single</graphicClass>
             <maskPath>Apparel/Headgear/AssasinsFaceMask/Assassins_Face_Mask_m</maskPath>
             <shaderType>CutoutComplex</shaderType>
-            <color>(94, 96, 103)</color>
+		<color>(94, 96, 103)</color>
+             
         </graphicData>
         <uiIconScale>1.25</uiIconScale>
         <costStuffCount>55</costStuffCount>
@@ -506,6 +519,7 @@
                 <li>FullHead</li>
             </bodyPartGroups>
             <wornGraphicPath>Apparel/Headgear/AssasinsFaceMask/Assassins_Face_Mask</wornGraphicPath>
+	    <useWornGraphicMask>true</useWornGraphicMask>
             <layers>
                 <li>Overhead</li>
             </layers>
@@ -538,7 +552,7 @@
             </options>
         </colorGenerator>
     </ThingDef>
-    <ThingDef ParentName="HatMakeableBase">
+    <ThingDef ParentName="ArmorHelmetMakeableBase">
         <defName>SFE_Apparel_HeavyLamellarHelmet</defName>
         <label>heavy lamellar helmet</label>
         <description>The heavy helmet of the southern army is not so popular because of its high cost and complexity in manufacturing. At the same time, it is worth the money, according to its carriers.</description>
@@ -547,7 +561,8 @@
             <graphicClass>Graphic_Single</graphicClass>
             <maskPath>Apparel/Headgear/HeavyLamellarHelmet/Heavy_Lamellar_Helmet_m</maskPath>
             <shaderType>CutoutComplex</shaderType>
-            <color>(94, 96, 103)</color>
+		<color>(94, 96, 103)</color>
+             
         </graphicData>
         <uiIconScale>1.25</uiIconScale>
         <costStuffCount>80</costStuffCount>
@@ -575,6 +590,7 @@
                 <li>FullHead</li>
             </bodyPartGroups>
             <wornGraphicPath>Apparel/Headgear/HeavyLamellarHelmet/Heavy_Lamellar_Helmet</wornGraphicPath>
+	    <useWornGraphicMask>true</useWornGraphicMask>
             <layers>
                 <li>Overhead</li>
             </layers>
@@ -597,7 +613,7 @@
                 </li>
                 <li>
                     <weight>6</weight>
-                    <min>(0.3,0.3,0.3,1)</min>
+	    	    <min>(0.3,0.3,0.3,1)</min>
                     <max>(0.5,0.5,0.5,1)</max>
                 </li>
                 <li>
@@ -607,7 +623,7 @@
             </options>
         </colorGenerator>
     </ThingDef>
-    <ThingDef ParentName="HatMakeableBase">
+    <ThingDef ParentName="ArmorHelmetMakeableBase">
         <defName>SFE_Apparel_SoutherHelmetWithCoif</defName>
         <label>southern helmet with coif</label>
         <description>Decorated with gold and lined with leather, the helmet provides excellent protection not only for the head, but also for the neck.</description>
@@ -616,7 +632,8 @@
             <graphicClass>Graphic_Single</graphicClass>
             <maskPath>Apparel/Headgear/SouthernHelmetWithCoif/Southern_Helmet_with_Coif_m</maskPath>
             <shaderType>CutoutComplex</shaderType>
-            <color>(94, 96, 103)</color>
+		<color>(94, 96, 103)</color>
+             
         </graphicData>
         <uiIconScale>1.25</uiIconScale>
         <costStuffCount>75</costStuffCount>
@@ -644,6 +661,7 @@
                 <li>FullHead</li>
             </bodyPartGroups>
             <wornGraphicPath>Apparel/Headgear/SouthernHelmetWithCoif/Southern_Helmet_with_Coif</wornGraphicPath>
+	    <useWornGraphicMask>true</useWornGraphicMask>
             <layers>
                 <li>Overhead</li>
             </layers>
@@ -676,16 +694,17 @@
             </options>
         </colorGenerator>
     </ThingDef>
-    <ThingDef ParentName="HatMakeableBase">
+    <ThingDef ParentName="ArmorHelmetMakeableBase">
         <defName>SFE_Apparel_TurbanHelm</defName>
         <label>turban helm</label>
         <description>A full helmet resembling the turban of sultans and other high-ranking personalities. The patterns on the helmet and the gold-plated coating indicate the strong status of the owner.</description>
         <graphicData>
             <texPath>Apparel/Headgear/TurbanHelmet/Turban_Helmet</texPath>
             <graphicClass>Graphic_Single</graphicClass>
-            <maskPath>Apparel/Headgear/TurbanHelmet/Turban_Helmet_m</maskPath>
+	    <maskPath>Apparel/Headgear/TurbanHelmet/Turban_Helmet_m</maskPath>
             <shaderType>CutoutComplex</shaderType>
-            <color>(94, 96, 103)</color>
+		<color>(94, 96, 103)</color>
+             
         </graphicData>
         <uiIconScale>1.25</uiIconScale>
         <costStuffCount>85</costStuffCount>
@@ -713,6 +732,7 @@
                 <li>FullHead</li>
             </bodyPartGroups>
             <wornGraphicPath>Apparel/Headgear/TurbanHelmet/Turban_Helmet</wornGraphicPath>
+	    <useWornGraphicMask>true</useWornGraphicMask>
             <layers>
                 <li>Overhead</li>
             </layers>
@@ -723,26 +743,5 @@
                 <li>Worker</li>
             </defaultOutfitTags>
         </apparel>
-        <colorGenerator Class="ColorGenerator_Options">
-            <options>
-                <li>
-                    <weight>10</weight>
-                    <only>(0.33,0.33,0.33,1)</only>
-                </li>
-                <li>
-                    <weight>10</weight>
-                    <only>(0.65,0.65,0.65,1)</only>
-                </li>
-                <li>
-                    <weight>6</weight>
-                    <min>(0.3,0.3,0.3,1)</min>
-                    <max>(0.5,0.5,0.5,1)</max>
-                </li>
-                <li>
-                    <weight>10</weight>
-                    <only>(0.9,0.9,0.9,1)</only>
-                </li>
-            </options>
-        </colorGenerator>
     </ThingDef>
 </Defs>
