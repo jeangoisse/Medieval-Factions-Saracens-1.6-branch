@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
-    <packageId>Donut.Saracens</packageId>
+    <packageId>donut.saracens</packageId>
     <name>Saracens</name>
+    <modVersion>0.1</modVersion>
+    <loadAfter>
+  <li>brrainz.harmony</li>
+</loadAfter>
     <authors>
         <li>Donut</li>
-        <li>Lecht</li>
+	<li>Lecht</li>
+	<li>Sword-Addict</li>
     </authors>
     <description>This is the description of this mod.</description>
     <supportedVersions>
