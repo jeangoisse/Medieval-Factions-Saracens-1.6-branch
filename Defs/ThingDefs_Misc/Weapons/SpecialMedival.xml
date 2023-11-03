@@ -111,7 +111,7 @@
         <defaultProjectile>SFE_Bullet_Flamelance</defaultProjectile>
         <warmupTime>1.5</warmupTime>
         <range>7</range>
-        <forcedMissRadius>2</forcedMissRadius>
+        <forcedMissRadius>1</forcedMissRadius>
         <burstShotCount>7</burstShotCount>
         <ticksBetweenBurstShots>3</ticksBetweenBurstShots>
         <soundCast>SFE_Shot_Flamelance</soundCast>
