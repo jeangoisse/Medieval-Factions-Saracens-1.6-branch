@@ -1,40 +1,50 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-  <ThingDef Name="SpecialWeaponMedieval" Abstract="True" ParentName="BaseWeapon">
-    <techLevel>Medieval</techLevel>
-    <weaponTags>
-      <li>Medieval</li>
-    </weaponTags>
-    <tradeTags>
-      <li>WeaponRanged</li>
-    </tradeTags>
-    <weaponClasses>
-      <li>Ranged</li>
-      <li>Melee</li>
-    </weaponClasses>
-    <thingCategories>
-      <li>WeaponsRanged</li>
-    </thingCategories>
-    <burnableByRecipe>true</burnableByRecipe>
-    <comps>
-      <li>
-        <compClass>CompQuality</compClass>
-      </li>
-    </comps>
-    <relicChance>1</relicChance>
-    <recipeMaker>
-      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
-      <workSkill>Crafting</workSkill>
-      <recipeUsers>
-        <li>ElectricSmithy</li>
-        <li>FueledSmithy</li>
-      </recipeUsers>
-      <effectWorking>Smelt</effectWorking>
-      <soundWorking>Recipe_MakeBow</soundWorking>
-      <unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
-    </recipeMaker>
+  <DamageDef>
+    <defName>VWE_HauntingFlame</defName>
+    <workerClass>NoCamShakeExplosions.DamageWorker_FlameNoCamShake</workerClass>
+    <label>flame</label>
+    <hasForcefulImpact>false</hasForcefulImpact>
+    <makesBlood>false</makesBlood>
+    <canInterruptJobs>false</canInterruptJobs>
+    <externalViolence>true</externalViolence>
+    <deathMessage>{0} has burned to death.</deathMessage>
+    <hediff>Burn</hediff>
+    <armorCategory>Heat</armorCategory>
+    <minDamageToFragment>15</minDamageToFragment>
+    <defaultDamage>10</defaultDamage>
+    <defaultArmorPenetration>0</defaultArmorPenetration>
+    <explosionHeatEnergyPerCell>15</explosionHeatEnergyPerCell>
+    <explosionCellFleck>BlastFlame</explosionCellFleck>
+    <explosionColorCenter>(1, 0.7, 0.7)</explosionColorCenter>
+    <explosionColorEdge>(1, 1, 0.7)</explosionColorEdge>
+    <soundExplosion>Explosion_Flame</soundExplosion>
+    <combatLogRules>Damage_Flame</combatLogRules>
+    <canUseDeflectMetalEffect>false</canUseDeflectMetalEffect>
+  </DamageDef>
+  <ThingDef ParentName="BaseBullet">
+    <defName>VWE_Bullet_Flamethrower</defName>
+    <label>flamethrower fuel</label>
+    <graphicData>
+      <texPath>Projectile/FireLance</texPath>
+      <graphicClass>Graphic_Flicker</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+    </graphicData>
+    <thingClass>ExplosiveTrailsEffect.Projectile_FlameThrower</thingClass>
+
+    <projectile>
+      <speed>30</speed>
+      <arcHeightFactor>1.5</arcHeightFactor>
+      <shadowSize>1</shadowSize>
+      <damageDef>VWE_HauntingFlame</damageDef>
+      <explosionRadius>0.9</explosionRadius>
+      <preExplosionSpawnThingDef>Filth_Fuel</preExplosionSpawnThingDef>
+      <preExplosionSpawnChance>0.5</preExplosionSpawnChance>
+      <ai_IsIncendiary>true</ai_IsIncendiary>
+      <explosionChanceToStartFire>1.0</explosionChanceToStartFire>
+    </projectile>
   </ThingDef>
-  <ThingDef ParentName="SpecialWeaponMedieval">
+  <ThingDef ParentName="DankPyon_Base_Sharp_NormalSize">
     <defName>SFE_VersatileWeapon_FireLance</defName>
     <label>fire lance</label>
     <description>The Fire Lance combines the deadly efficiency of a spear, with the potential of gunpowder. A deadly weapon up close, and just as deadly nearby with its streams of fire.</description>
@@ -61,7 +71,6 @@
       <DeteriorationRate>2</DeteriorationRate>
       <SellPriceFactor>0.2</SellPriceFactor>
     </statBases>
-    <equippedAngleOffset>-65</equippedAngleOffset>
     <stuffCategories>
       <li>Metallic</li>
     </stuffCategories>
@@ -97,13 +106,16 @@
     <verbs>
       <li>
         <verbClass>Verb_Shoot</verbClass>
-        <defaultProjectile>Bullet_IncendiaryLauncher</defaultProjectile>
         <hasStandardCommand>true</hasStandardCommand>
-        <warmupTime>1</warmupTime>
-        <forcedMissRadius>3</forcedMissRadius>
-        <range>4</range>
-        <burstShotCount>3</burstShotCount>
-        <onlyManualCast>true</onlyManualCast>
+        <defaultProjectile>VWE_Bullet_Flamethrower</defaultProjectile>
+        <warmupTime>1.5</warmupTime>
+        <range>12.9</range>
+        <forcedMissRadius>2.9</forcedMissRadius>
+        <burstShotCount>20</burstShotCount>
+        <ticksBetweenBurstShots>3</ticksBetweenBurstShots>
+        <soundCast>VWE_Shot_Flamethrower</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>14</muzzleFlashScale>
         <targetParams>
           <canTargetLocations>true</canTargetLocations>
         </targetParams>
@@ -111,14 +123,19 @@
     </verbs>
     <comps>
       <li Class="CompProperties_Reloadable">
-        <maxCharges>3</maxCharges>
+        <maxCharges>20</maxCharges>
         <ammoDef>Chemfuel</ammoDef>
-        <ammoCountPerCharge>6</ammoCountPerCharge>
+        <ammoCountToRefill>20</ammoCountToRefill>
         <baseReloadTicks>40</baseReloadTicks>
         <soundReload>Standard_Reload</soundReload>
         <hotKey>Misc4</hotKey>
         <chargeNoun>charge</chargeNoun>
       </li>
     </comps>
+    <modExtensions>
+      <li Class="VFECore.ThingDefExtension">
+        <usableWithShields>true</usableWithShields>
+      </li>
+    </modExtensions>
   </ThingDef>
 </Defs>
