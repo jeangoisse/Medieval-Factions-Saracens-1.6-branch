@@ -3,13 +3,14 @@
     <packageId>donut.saracens</packageId>
     <name>Saracens</name>
     <modVersion>0.1</modVersion>
-    <loadAfter>
-  <li>brrainz.harmony</li>
-</loadAfter>
+    <forceLoadAfter>
+        <li>brrainz.harmony</li>
+        <li>DankPyon.Medieval.Overhaul</li>
+    </forceLoadAfter>
     <authors>
         <li>Donut</li>
-	<li>Lecht</li>
-	<li>Sword-Addict</li>
+        <li>Lecht</li>
+        <li>Sword-Addict</li>
     </authors>
     <description>This is the description of this mod.</description>
     <supportedVersions>

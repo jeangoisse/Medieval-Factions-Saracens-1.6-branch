@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-    <ThingDef ParentName="BaseMeleeWeapon_Blunt_Quality">
+    <ThingDef ParentName="DankPyon_Base_Blunt_Oversize">
         <defName>SFE_MeleeWeapon_Polemace</defName>
         <label>polemace</label>
         <description>A refined club, engineered for efficient swinging and deadly impacts.</description>
@@ -11,6 +11,7 @@
             <graphicClass>Graphic_Single</graphicClass>
             <shaderType>CutoutComplex</shaderType>
             <color>(94, 96, 103)</color>
+            <drawSize>(1.5,1.5)</drawSize>
         </graphicData>
         <uiIconScale>1.2</uiIconScale>
         <techLevel>Medieval</techLevel>
@@ -24,7 +25,6 @@
             <DeteriorationRate>2</DeteriorationRate>
             <SellPriceFactor>0.2</SellPriceFactor>
         </statBases>
-        <equippedAngleOffset>-65</equippedAngleOffset>
         <stuffCategories>
             <li>Metallic</li>
         </stuffCategories>
@@ -320,7 +320,7 @@
             <displayPriority>410</displayPriority>
         </recipeMaker>
     </ThingDef>
-    <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+    <ThingDef ParentName="DankPyon_Base_SharpSword_Oversize">
         <defName>SFE_MeleeWeapon_TwoHandedSaif</defName>
         <label>two-handed saif</label>
         <description>A noble's evolution on the inexpensive one handed saif. Trading the use of a shield for a two handed weapon, this is a weapon that favors speed and agility to put in many quick and agile slashes and cuts.</description>
@@ -331,6 +331,7 @@
             <graphicClass>Graphic_Single</graphicClass>
             <shaderType>CutoutComplex</shaderType>
             <color>(94, 96, 103)</color>
+            <drawSize>(1.25,1.25)</drawSize>
         </graphicData>
         <uiIconScale>1.2</uiIconScale>
         <techLevel>Medieval</techLevel>
@@ -348,7 +349,6 @@
             <SellPriceFactor>0.2</SellPriceFactor>
         </statBases>
         <relicChance>2</relicChance>
-        <equippedAngleOffset>-65</equippedAngleOffset>
         <stuffCategories>
             <li>Metallic</li>
         </stuffCategories>
@@ -380,7 +380,7 @@
             <displayPriority>410</displayPriority>
         </recipeMaker>
     </ThingDef>
-    <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+    <ThingDef ParentName="DankPyon_Base_SharpSword_Oversize">
         <defName>SFE_MeleeWeapon_TwoHandedScimitar</defName>
         <label>two-handed scimitar</label>
         <description>A noble's evolution on the scimitar. This takes the agile and deadly one handed blade to make a much heavier, and devastating chopping and slashing weapon. Often wielded by the best of the Southern armies, this weapon can tear apart armor and flesh as easily as a knife to butter.</description>
@@ -391,6 +391,7 @@
             <graphicClass>Graphic_Single</graphicClass>
             <shaderType>CutoutComplex</shaderType>
             <color>(94, 96, 103)</color>
+            <drawSize>(1.25,1.25)</drawSize>
         </graphicData>
         <uiIconScale>1.2</uiIconScale>
         <techLevel>Medieval</techLevel>
@@ -408,7 +409,6 @@
             <SellPriceFactor>0.2</SellPriceFactor>
         </statBases>
         <relicChance>2</relicChance>
-        <equippedAngleOffset>-65</equippedAngleOffset>
         <stuffCategories>
             <li>Metallic</li>
         </stuffCategories>

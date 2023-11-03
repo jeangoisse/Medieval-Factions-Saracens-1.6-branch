@@ -125,7 +125,7 @@
     <comps>
       <li Class="CompProperties_Reloadable">
         <maxCharges>7</maxCharges>
-        <ammoDef>Chemfuel</ammoDef>
+        <ammoDef>DankPyon_Gunpowder</ammoDef>
         <ammoCountToRefill>20</ammoCountToRefill>
         <baseReloadTicks>40</baseReloadTicks>
         <soundReload>Standard_Reload</soundReload>
