@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
   <DamageDef>
-    <defName>VWE_HauntingFlame</defName>
+    <defName>SFE_HauntingFlame</defName>
     <workerClass>NoCamShakeExplosions.DamageWorker_FlameNoCamShake</workerClass>
     <label>flame</label>
     <hasForcefulImpact>false</hasForcefulImpact>
@@ -12,7 +12,7 @@
     <hediff>Burn</hediff>
     <armorCategory>Heat</armorCategory>
     <minDamageToFragment>15</minDamageToFragment>
-    <defaultDamage>10</defaultDamage>
+    <defaultDamage>14</defaultDamage>
     <defaultArmorPenetration>0</defaultArmorPenetration>
     <explosionHeatEnergyPerCell>15</explosionHeatEnergyPerCell>
     <explosionCellFleck>BlastFlame</explosionCellFleck>
@@ -22,28 +22,29 @@
     <combatLogRules>Damage_Flame</combatLogRules>
     <canUseDeflectMetalEffect>false</canUseDeflectMetalEffect>
   </DamageDef>
+  
   <ThingDef ParentName="BaseBullet">
-    <defName>VWE_Bullet_Flamethrower</defName>
-    <label>flamethrower fuel</label>
+    <defName>SFE_Bullet_Flamelance</defName>
+    <label>flamelance fuel</label>
     <graphicData>
       <texPath>Projectile/FireLance</texPath>
       <graphicClass>Graphic_Flicker</graphicClass>
       <shaderType>TransparentPostLight</shaderType>
     </graphicData>
     <thingClass>ExplosiveTrailsEffect.Projectile_FlameThrower</thingClass>
-
     <projectile>
-      <speed>30</speed>
-      <arcHeightFactor>1.5</arcHeightFactor>
+      <speed>64</speed>
+      <arcHeightFactor>1.2</arcHeightFactor>
       <shadowSize>1</shadowSize>
-      <damageDef>VWE_HauntingFlame</damageDef>
+      <damageDef>SFE_HauntingFlame</damageDef>
       <explosionRadius>0.9</explosionRadius>
       <preExplosionSpawnThingDef>Filth_Fuel</preExplosionSpawnThingDef>
       <preExplosionSpawnChance>0.5</preExplosionSpawnChance>
       <ai_IsIncendiary>true</ai_IsIncendiary>
-      <explosionChanceToStartFire>1.0</explosionChanceToStartFire>
+      <explosionChanceToStartFire>0.8</explosionChanceToStartFire>
     </projectile>
   </ThingDef>
+  
   <ThingDef ParentName="DankPyon_Base_Sharp_NormalSize">
     <defName>SFE_VersatileWeapon_FireLance</defName>
     <label>fire lance</label>
@@ -107,13 +108,13 @@
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>VWE_Bullet_Flamethrower</defaultProjectile>
+        <defaultProjectile>SFE_Bullet_Flamelance</defaultProjectile>
         <warmupTime>1.5</warmupTime>
-        <range>12.9</range>
-        <forcedMissRadius>2.9</forcedMissRadius>
-        <burstShotCount>20</burstShotCount>
+        <range>7</range>
+        <forcedMissRadius>2</forcedMissRadius>
+        <burstShotCount>7</burstShotCount>
         <ticksBetweenBurstShots>3</ticksBetweenBurstShots>
-        <soundCast>VWE_Shot_Flamethrower</soundCast>
+        <soundCast>SFE_Shot_Flamelance</soundCast>
         <soundCastTail>GunTail_Medium</soundCastTail>
         <muzzleFlashScale>14</muzzleFlashScale>
         <targetParams>
@@ -123,7 +124,7 @@
     </verbs>
     <comps>
       <li Class="CompProperties_Reloadable">
-        <maxCharges>20</maxCharges>
+        <maxCharges>7</maxCharges>
         <ammoDef>Chemfuel</ammoDef>
         <ammoCountToRefill>20</ammoCountToRefill>
         <baseReloadTicks>40</baseReloadTicks>
