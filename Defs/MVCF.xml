@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<Defs>
+    <MVCF.ModDef>
+        <defName>Saracens</defName>
+        <label>Medieval Overhaul - Saracens</label>
+        <ActivateFeatures>
+            <li>Reloading</li>
+            <li>IntegratedToggle</li>
+        </ActivateFeatures>
+    </MVCF.ModDef>
+</Defs>

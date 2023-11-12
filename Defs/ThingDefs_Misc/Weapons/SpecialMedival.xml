@@ -4,28 +4,27 @@
     <defName>SFE_HauntingFlame</defName>
     <workerClass>NoCamShakeExplosions.DamageWorker_FlameNoCamShake</workerClass>
     <label>flame</label>
-    <hasForcefulImpact>false</hasForcefulImpact>
+    <hasForcefulImpact>true</hasForcefulImpact>
     <makesBlood>false</makesBlood>
-    <canInterruptJobs>false</canInterruptJobs>
+    <canInterruptJobs>true</canInterruptJobs>
     <externalViolence>true</externalViolence>
     <deathMessage>{0} has burned to death.</deathMessage>
     <hediff>Burn</hediff>
     <armorCategory>Heat</armorCategory>
-    <minDamageToFragment>15</minDamageToFragment>
-    <defaultDamage>14</defaultDamage>
+    <minDamageToFragment>22</minDamageToFragment>
+    <defaultDamage>8</defaultDamage>
     <defaultArmorPenetration>0</defaultArmorPenetration>
-    <explosionHeatEnergyPerCell>15</explosionHeatEnergyPerCell>
+    <explosionHeatEnergyPerCell>7</explosionHeatEnergyPerCell>
     <explosionCellFleck>BlastFlame</explosionCellFleck>
-    <explosionColorCenter>(1, 0.7, 0.7)</explosionColorCenter>
-    <explosionColorEdge>(1, 1, 0.7)</explosionColorEdge>
+    <explosionColorCenter>(1, 0.5, 0.5)</explosionColorCenter>
+    <explosionColorEdge>(1, 0.7, 0.4)</explosionColorEdge>
     <soundExplosion>Explosion_Flame</soundExplosion>
     <combatLogRules>Damage_Flame</combatLogRules>
     <canUseDeflectMetalEffect>false</canUseDeflectMetalEffect>
   </DamageDef>
-  
   <ThingDef ParentName="BaseBullet">
     <defName>SFE_Bullet_Flamelance</defName>
-    <label>flamelance fuel</label>
+    <label>flamelance gunpowder</label>
     <graphicData>
       <texPath>Projectile/FireLance</texPath>
       <graphicClass>Graphic_Flicker</graphicClass>
@@ -38,13 +37,10 @@
       <shadowSize>1</shadowSize>
       <damageDef>SFE_HauntingFlame</damageDef>
       <explosionRadius>0.9</explosionRadius>
-      <preExplosionSpawnThingDef>Filth_Fuel</preExplosionSpawnThingDef>
-      <preExplosionSpawnChance>0.5</preExplosionSpawnChance>
       <ai_IsIncendiary>true</ai_IsIncendiary>
-      <explosionChanceToStartFire>0.8</explosionChanceToStartFire>
+      <explosionChanceToStartFire>0.4</explosionChanceToStartFire>
     </projectile>
   </ThingDef>
-  
   <ThingDef ParentName="DankPyon_Base_Sharp_NormalSize">
     <defName>SFE_VersatileWeapon_FireLance</defName>
     <label>fire lance</label>
@@ -106,11 +102,12 @@
     </tools>
     <verbs>
       <li>
+        <label>fire charge</label>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>SFE_Bullet_Flamelance</defaultProjectile>
         <warmupTime>1.5</warmupTime>
-        <range>7</range>
+        <range>6</range>
         <forcedMissRadius>1</forcedMissRadius>
         <burstShotCount>7</burstShotCount>
         <ticksBetweenBurstShots>3</ticksBetweenBurstShots>
@@ -123,14 +120,29 @@
       </li>
     </verbs>
     <comps>
-      <li Class="CompProperties_Reloadable">
-        <maxCharges>7</maxCharges>
-        <ammoDef>DankPyon_Gunpowder</ammoDef>
-        <ammoCountToRefill>20</ammoCountToRefill>
-        <baseReloadTicks>40</baseReloadTicks>
-        <soundReload>Standard_Reload</soundReload>
-        <hotKey>Misc4</hotKey>
-        <chargeNoun>charge</chargeNoun>
+      <li Class="MVCF.Comps.CompProperties_VerbProps">
+        <compClass>MVCF.Comps.Comp_VerbProps</compClass>
+        <ConsiderMelee>true</ConsiderMelee>
+        <verbProps>
+          <li>
+            <label>fire charge</label>
+            <canBeToggled>true</canBeToggled>
+            <comps>
+              <li Class="MVCF.Reloading.Comps.VerbCompProperties_Reloadable">
+                <compClass>MVCF.Reloading.Comps.VerbComp_Reloadable</compClass>
+                <AmmoFilter>
+                  <thingDefs>
+                    <li>DankPyon_Gunpowder</li>
+                  </thingDefs>
+                </AmmoFilter>
+                <ItemsPerShot>1</ItemsPerShot>
+                <MaxShots>7</MaxShots>
+                <ReloadSound>Standard_Reload</ReloadSound>
+                <ReloadTimePerShot>1</ReloadTimePerShot>
+              </li>
+            </comps>
+          </li>
+        </verbProps>
       </li>
     </comps>
     <modExtensions>
