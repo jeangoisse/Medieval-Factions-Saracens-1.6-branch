@@ -50,7 +50,6 @@
             </defaultOutfitTags>
             <canBeDesiredForIdeo>true</canBeDesiredForIdeo>
         </apparel>
-        <colorGenerator Class="ColorGenerator_StandardApparel" />
         <tradeTags>
             <li>BasicClothing</li>
         </tradeTags>
@@ -91,7 +90,7 @@
                 <li>Shoulders</li>
                 <li>Legs</li>
             </bodyPartGroups>
-            <wornGraphicPath>Apparel/Armor/LightArmor/NomadRobe/Nomad_Robe</wornGraphicPath>
+            <wornGraphicPath>Apparel/Armor/LightArmor/PaddedVest/Padded_Vest</wornGraphicPath>
             <layers>
                 <li>OnSkin</li>
                 <li>Middle</li>
@@ -105,7 +104,6 @@
             </defaultOutfitTags>
             <canBeDesiredForIdeo>true</canBeDesiredForIdeo>
         </apparel>
-        <colorGenerator Class="ColorGenerator_StandardApparel" />
         <tradeTags>
             <li>BasicClothing</li>
         </tradeTags>
@@ -145,7 +143,7 @@
                 <li>Shoulders</li>
                 <li>Legs</li>
             </bodyPartGroups>
-            <wornGraphicPath>Apparel/Armor/LightArmor/NomadRobe/Nomad_Robe</wornGraphicPath>
+            <wornGraphicPath>Apparel/Armor/LightArmor/LeatherNomadRobe/Leather_Nomad_Robe</wornGraphicPath>
             <layers>
                 <li>OnSkin</li>
                 <li>Middle</li>
@@ -159,7 +157,54 @@
             </defaultOutfitTags>
             <canBeDesiredForIdeo>true</canBeDesiredForIdeo>
         </apparel>
-        <colorGenerator Class="ColorGenerator_StandardApparel" />
+        <tradeTags>
+            <li>BasicClothing</li>
+        </tradeTags>
+    </ThingDef>
+     <ThingDef ParentName="ApparelMakeableBase">
+        <defName>SFE_Apparel_Linothorax</defName>
+        <label>linothorax</label>
+        <description>The linothorax, worn over any clothing, provides a high degree of protection against any type of damage, despite the fact that it is made of fabric. At the same time, it protects only vital organs.</description>
+        <graphicData>
+            <texPath>Apparel/Armor/LightArmor/Linothorax/Linothorax</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <maskPath>Apparel/Armor/LightArmor/Linothorax/Linothorax_m</maskPath>
+            <shaderType>CutoutComplex</shaderType>
+            <color>(94, 96, 103)</color>
+        </graphicData>
+        <costStuffCount>140</costStuffCount>
+        <stuffCategories>
+            <li>Leathery</li>
+        </stuffCategories>
+        <thingCategories>
+            <li>ApparelMisc</li>
+        </thingCategories>
+        <statBases>
+            <Flammability>1</Flammability>
+            <MaxHitPoints>220</MaxHitPoints>
+            <WorkToMake>340</WorkToMake>
+            <Mass>7</Mass>
+            <StuffEffectMultiplierArmor>0.55</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Heat>0.2</StuffEffectMultiplierInsulation_Heat>
+            <EquipDelay>12</EquipDelay>
+        </statBases>
+        <apparel>
+            <bodyPartGroups>
+                <li>Torso</li>
+                <li>Shoulders</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Apparel/Armor/LightArmor/Linothorax/Linothorax</wornGraphicPath>
+            <layers>
+                <li>Shell</li>
+            </layers>
+            <tags>
+                <li>IndustrialBasic</li>
+            </tags>
+            <defaultOutfitTags>
+                <li>Soldier</li>
+            </defaultOutfitTags>
+            <canBeDesiredForIdeo>true</canBeDesiredForIdeo>
+        </apparel>
         <tradeTags>
             <li>BasicClothing</li>
         </tradeTags>
