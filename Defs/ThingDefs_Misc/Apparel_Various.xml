@@ -66,7 +66,7 @@
             <shaderType>CutoutComplex</shaderType>
             <color>(94, 96, 103)</color>
         </graphicData>
-        <costStuffCount>80</costStuffCount>
+        <costStuffCount>105</costStuffCount>
         <stuffCategories>
             <li>Fabric</li>
             <li>Leathery</li>
@@ -83,6 +83,60 @@
             <StuffEffectMultiplierInsulation_Cold>0.2</StuffEffectMultiplierInsulation_Cold>
             <StuffEffectMultiplierInsulation_Heat>0.3</StuffEffectMultiplierInsulation_Heat>
             <EquipDelay>5</EquipDelay>
+        </statBases>
+        <apparel>
+            <bodyPartGroups>
+                <li>Arms</li>
+                <li>Torso</li>
+                <li>Shoulders</li>
+                <li>Legs</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Apparel/Armor/LightArmor/NomadRobe/Nomad_Robe</wornGraphicPath>
+            <layers>
+                <li>OnSkin</li>
+                <li>Middle</li>
+            </layers>
+            <tags>
+                <li>IndustrialBasic</li>
+            </tags>
+            <defaultOutfitTags>
+                <li>Worker</li>
+                <li>Soldier</li>
+            </defaultOutfitTags>
+            <canBeDesiredForIdeo>true</canBeDesiredForIdeo>
+        </apparel>
+        <colorGenerator Class="ColorGenerator_StandardApparel" />
+        <tradeTags>
+            <li>BasicClothing</li>
+        </tradeTags>
+    </ThingDef>
+    <ThingDef ParentName="ApparelMakeableBase">
+        <defName>SFE_Apparel_LeatherNomadRobe</defName>
+        <label>leather nomad robe</label>
+        <description>This rough robe made of pieces of leather does not require high craft skills, as well as manufacturing time. Light fabric clothing is put on under it so that this leather armor does not rub the body.</description>
+        <graphicData>
+            <texPath>Apparel/Armor/LightArmor/LeatherNomadRobe/Leather_Nomad_Robe</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <maskPath>Apparel/Armor/LightArmor/LeatherNomadRobe/Leather_Nomad_Robe_m</maskPath>
+            <shaderType>CutoutComplex</shaderType>
+            <color>(94, 96, 103)</color>
+        </graphicData>
+        <costStuffCount>85</costStuffCount>
+        <stuffCategories>
+            <li>Leathery</li>
+        </stuffCategories>
+        <thingCategories>
+            <li>ApparelMisc</li>
+        </thingCategories>
+        <statBases>
+            <Flammability>0.6</Flammability>
+            <MaxHitPoints>160</MaxHitPoints>
+            <WorkToMake>150</WorkToMake>
+            <Mass>5.7</Mass>
+            <StuffEffectMultiplierArmor>0.42</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>0.8</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0.35</StuffEffectMultiplierInsulation_Heat>
+            <EquipDelay>8</EquipDelay>
         </statBases>
         <apparel>
             <bodyPartGroups>
