@@ -33,11 +33,68 @@
             <bodyPartGroups>
                 <li>Torso</li>
                 <li>Shoulders</li>
+                <li>Arms</li>
                 <li>Legs</li>
             </bodyPartGroups>
             <wornGraphicPath>Apparel/Armor/LightArmor/NomadRobe/Nomad_Robe</wornGraphicPath>
             <layers>
                 <li>OnSkin</li>
+                <li>Middle</li>
+            </layers>
+            <tags>
+                <li>IndustrialBasic</li>
+            </tags>
+            <defaultOutfitTags>
+                <li>Worker</li>
+                <li>Soldier</li>
+            </defaultOutfitTags>
+            <canBeDesiredForIdeo>true</canBeDesiredForIdeo>
+        </apparel>
+        <colorGenerator Class="ColorGenerator_StandardApparel" />
+        <tradeTags>
+            <li>BasicClothing</li>
+        </tradeTags>
+    </ThingDef>
+    <ThingDef ParentName="ApparelMakeableBase">
+        <defName>SFE_Apparel_PaddedVest</defName>
+        <label>padded vest</label>
+        <description>Padded vest, worn over light clothing. The most common solution in the south for basic self-defense.</description>
+        <graphicData>
+            <texPath>Apparel/Armor/LightArmor/PaddedVest/Padded_Vest</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <maskPath>Apparel/Armor/LightArmor/PaddedVest/Padded_Vest_m</maskPath>
+            <shaderType>CutoutComplex</shaderType>
+            <color>(94, 96, 103)</color>
+        </graphicData>
+        <costStuffCount>80</costStuffCount>
+        <stuffCategories>
+            <li>Fabric</li>
+            <li>Leathery</li>
+        </stuffCategories>
+        <thingCategories>
+            <li>ApparelMisc</li>
+        </thingCategories>
+        <statBases>
+            <Flammability>1</Flammability>
+            <MaxHitPoints>170</MaxHitPoints>
+            <WorkToMake>215</WorkToMake>
+            <Mass>4</Mass>
+            <StuffEffectMultiplierArmor>0.25</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>0.2</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0.3</StuffEffectMultiplierInsulation_Heat>
+            <EquipDelay>5</EquipDelay>
+        </statBases>
+        <apparel>
+            <bodyPartGroups>
+                <li>Arms</li>
+                <li>Torso</li>
+                <li>Shoulders</li>
+                <li>Legs</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Apparel/Armor/LightArmor/NomadRobe/Nomad_Robe</wornGraphicPath>
+            <layers>
+                <li>OnSkin</li>
+                <li>Middle</li>
             </layers>
             <tags>
                 <li>IndustrialBasic</li>
