@@ -161,7 +161,7 @@
             <li>BasicClothing</li>
         </tradeTags>
     </ThingDef>
-     <ThingDef ParentName="ApparelMakeableBase">
+    <ThingDef ParentName="ApparelMakeableBase">
         <defName>SFE_Apparel_Linothorax</defName>
         <label>linothorax</label>
         <description>The linothorax, worn over any clothing, provides a high degree of protection against any type of damage, despite the fact that it is made of fabric. At the same time, it protects only vital organs.</description>
@@ -194,6 +194,60 @@
                 <li>Shoulders</li>
             </bodyPartGroups>
             <wornGraphicPath>Apparel/Armor/LightArmor/Linothorax/Linothorax</wornGraphicPath>
+            <layers>
+                <li>Shell</li>
+            </layers>
+            <tags>
+                <li>IndustrialBasic</li>
+            </tags>
+            <defaultOutfitTags>
+                <li>Soldier</li>
+            </defaultOutfitTags>
+            <canBeDesiredForIdeo>true</canBeDesiredForIdeo>
+        </apparel>
+        <tradeTags>
+            <li>BasicClothing</li>
+        </tradeTags>
+    </ThingDef>
+    <ThingDef ParentName="ApparelMakeableBase">
+        <defName>SFE_Apparel_StitchedNomadArmor</defName>
+        <label>stiched nomad armor</label>
+        <description>This armor is made of two-layer pieces of leather and bonded together. Such armor allows warriors to put on some other light armor on the body.</description>
+        <graphicData>
+            <texPath>Apparel/Armor/LightArmor/StitchedNomadArmor/Stitched_Nomad_Armor</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <maskPath>Apparel/Armor/LightArmor/StitchedNomadArmor/Stitched_Nomad_Armor_m</maskPath>
+            <shaderType>CutoutComplex</shaderType>
+            <color>(94, 96, 103)</color>
+        </graphicData>
+        <costStuffCount>175</costStuffCount>
+        <stuffCategories>
+            <li>Leathery</li>
+        </stuffCategories>
+        <thingCategories>
+            <li>ApparelMisc</li>
+        </thingCategories>
+        <statBases>
+            <Flammability>0.6</Flammability>
+            <MaxHitPoints>220</MaxHitPoints>
+            <WorkToMake>415</WorkToMake>
+            <Mass>9</Mass>
+            <StuffEffectMultiplierArmor>0.65</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Heat>0.6</StuffEffectMultiplierInsulation_Heat>
+            <StuffEffectMultiplierInsulation_Cold>1.6</StuffEffectMultiplierInsulation_Cold>
+            <EquipDelay>20</EquipDelay>
+        </statBases>
+        <equippedStatOffsets>
+            <MoveSpeed>-0.3</MoveSpeed>
+        </equippedStatOffsets>
+        <apparel>
+            <bodyPartGroups>
+                <li>Arms</li>
+                <li>Legs</li>
+                <li>Torso</li>
+                <li>Shoulders</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Apparel/Armor/LightArmor/StitchedNomadArmor/Stitched_Nomad_Armor</wornGraphicPath>
             <layers>
                 <li>Shell</li>
             </layers>
