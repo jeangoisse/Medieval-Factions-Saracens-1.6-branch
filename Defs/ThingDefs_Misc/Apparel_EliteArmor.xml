@@ -111,4 +111,61 @@
             <li>BasicClothing</li>
         </tradeTags>
     </ThingDef>
+    <ThingDef ParentName="ApparelMakeableBase">
+        <defName>SFE_Apparel_WardenHauberk</defName>
+        <label>warden hauberk</label>
+        <description>It is said that former assassins become guardians of ancient ruins, which is why they wear high-class armor that allows them to be in it at any time, despite the bad weather. The owners of this armor will fight to the last drop of blood to preserve the ancient secrets.</description>
+        <graphicData>
+            <texPath>Apparel/Armor/EliteArmor/WardenHauberk/Wardens_Hauberk</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <maskPath>Apparel/Armor/EliteArmor/WardenHauberk/Wardens_Hauberk_m</maskPath>
+            <shaderType>CutoutComplex</shaderType>
+            <color>(94, 96, 103)</color>
+        </graphicData>
+        <costStuffCount>155</costStuffCount>
+        <equippedStatOffsets>
+            <Insulation_Cold>7</Insulation_Cold>
+            <Insulation_Heat>12</Insulation_Heat>
+            <MoveSpeed>0.8</MoveSpeed>
+            <MeleeDodgeChance>0.8</MeleeDodgeChance>
+        </equippedStatOffsets>
+        <stuffCategories>
+            <li>Metallic</li>
+        </stuffCategories>
+        <thingCategories>
+            <li>ApparelMisc</li>
+        </thingCategories>
+        <statBases>
+            <Flammability>0</Flammability>
+            <MaxHitPoints>340</MaxHitPoints>
+            <WorkToMake>765</WorkToMake>
+            <Mass>17</Mass>
+            <StuffEffectMultiplierArmor>0.85</StuffEffectMultiplierArmor>
+            <EquipDelay>16</EquipDelay>
+        </statBases>
+        <apparel>
+            <bodyPartGroups>
+                <li>Arms</li>
+                <li>Shoulders</li>
+                <li>Torso</li>
+                <li>Legs</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Apparel/Armor/EliteArmor/WardenHauberk/Wardens_Hauberk</wornGraphicPath>
+            <useWornGraphicMask>true</useWornGraphicMask>
+            <layers>
+                <li>Middle</li>
+                <li>Shell</li>
+            </layers>
+            <tags>
+                <li>IndustrialBasic</li>
+            </tags>
+            <defaultOutfitTags>
+                <li>Soldier</li>
+            </defaultOutfitTags>
+            <canBeDesiredForIdeo>true</canBeDesiredForIdeo>
+        </apparel>
+        <tradeTags>
+            <li>BasicClothing</li>
+        </tradeTags>
+    </ThingDef>
 </Defs>
