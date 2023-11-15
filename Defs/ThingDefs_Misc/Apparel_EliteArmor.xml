@@ -28,7 +28,6 @@
             <WorkToMake>525</WorkToMake>
             <Mass>14</Mass>
             <StuffEffectMultiplierArmor>0.7</StuffEffectMultiplierArmor>
-            <StuffEffectMultiplierInsulation_Cold>1</StuffEffectMultiplierInsulation_Cold>
             <EquipDelay>14</EquipDelay>
         </statBases>
         <apparel>
@@ -39,6 +38,61 @@
                 <li>Legs</li>
             </bodyPartGroups>
             <wornGraphicPath>Apparel/Armor/EliteArmor/OfficerHauberk/Officer_Hauberk</wornGraphicPath>
+            <layers>
+                <li>Middle</li>
+                <li>Shell</li>
+             </layers>
+            <tags>
+                <li>IndustrialBasic</li>
+            </tags>
+            <defaultOutfitTags>
+                <li>Soldier</li>
+            </defaultOutfitTags>
+            <canBeDesiredForIdeo>true</canBeDesiredForIdeo>
+        </apparel>
+        <tradeTags>
+            <li>BasicClothing</li>
+        </tradeTags>
+    </ThingDef>
+        <ThingDef ParentName="ApparelMakeableBase">
+        <defName>SFE_Apparel_GeneralHauberk</defName>
+        <label>general hauberk</label>
+        <description>Despite the fact that most of the armor is covered with a cloak decorated with gold and expensive fabric, this armor is second only to plate mail. The lower ranks are encouraged when the generals are on the battlefield, which can turn the outcome of the battle.</description>
+        <graphicData>
+            <texPath>Apparel/Armor/EliteArmor/GeneralHauberk/General_Hauberk</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <maskPath>Apparel/Armor/EliteArmor/GeneralHauberk/General_Hauberk_m</maskPath>
+            <shaderType>CutoutComplex</shaderType>
+            <color>(94, 96, 103)</color>
+        </graphicData>
+        <costStuffCount>160</costStuffCount>
+        <equippedStatOffsets>
+            <Insulation_Cold>4</Insulation_Cold>
+            <MoveSpeed>-1</MoveSpeed>
+            <SocialImpact>0.25</SocialImpact>
+        </equippedStatOffsets>
+        <stuffCategories>
+            <li>Metallic</li>
+        </stuffCategories>
+        <thingCategories>
+            <li>ApparelMisc</li>
+        </thingCategories>
+        <statBases>
+            <Flammability>0</Flammability>
+            <MaxHitPoints>320</MaxHitPoints>
+            <WorkToMake>680</WorkToMake>
+            <Mass>17</Mass>
+            <StuffEffectMultiplierArmor>0.8</StuffEffectMultiplierArmor>
+            <EquipDelay>14</EquipDelay>
+        </statBases>
+        <apparel>
+            <bodyPartGroups>
+                <li>Arms</li>
+                <li>Shoulders</li>
+                <li>Torso</li>
+                <li>Legs</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Apparel/Armor/EliteArmor/GeneralHauberk/General_Hauberk</wornGraphicPath>
             <layers>
                 <li>Middle</li>
                 <li>Shell</li>
