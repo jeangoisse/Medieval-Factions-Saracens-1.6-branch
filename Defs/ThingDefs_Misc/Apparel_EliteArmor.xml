@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ThingDef ParentName="ApparelMakeableBase">
+        <defName>SFE_Apparel_OfficerHauberk</defName>
+        <label>officer hauberk</label>
+        <description>A long chain mail armor, reinforced with plates and shoulder pads, and also decorated with gold. Officers additionally decorate it with scarves on their belts.</description>
+        <graphicData>
+            <texPath>Apparel/Armor/EliteArmor/OfficerHauberk/Officer_Hauberk</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <maskPath>Apparel/Armor/EliteArmor/OfficerHauberk/Officer_Hauberk_m</maskPath>
+            <shaderType>CutoutComplex</shaderType>
+            <color>(94, 96, 103)</color>
+        </graphicData>
+        <costStuffCount>140</costStuffCount>
+        <equippedStatOffsets>
+            <MoveSpeed>-0.5</MoveSpeed>
+            <SocialImpact>0.1</SocialImpact>
+        </equippedStatOffsets>
+        <stuffCategories>
+            <li>Metallic</li>
+        </stuffCategories>
+        <thingCategories>
+            <li>ApparelMisc</li>
+        </thingCategories>
+        <statBases>
+            <Flammability>0</Flammability>
+            <MaxHitPoints>280</MaxHitPoints>
+            <WorkToMake>525</WorkToMake>
+            <Mass>14</Mass>
+            <StuffEffectMultiplierArmor>0.7</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>1</StuffEffectMultiplierInsulation_Cold>
+            <EquipDelay>14</EquipDelay>
+        </statBases>
+        <apparel>
+            <bodyPartGroups>
+                <li>Arms</li>
+                <li>Shoulders</li>
+                <li>Torso</li>
+                <li>Legs</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Apparel/Armor/EliteArmor/OfficerHauberk/Officer_Hauberk</wornGraphicPath>
+            <layers>
+                <li>Middle</li>
+                <li>Shell</li>
+             </layers>
+            <tags>
+                <li>IndustrialBasic</li>
+            </tags>
+            <defaultOutfitTags>
+                <li>Soldier</li>
+            </defaultOutfitTags>
+            <canBeDesiredForIdeo>true</canBeDesiredForIdeo>
+        </apparel>
+        <tradeTags>
+            <li>BasicClothing</li>
+        </tradeTags>
+    </ThingDef>
+</Defs>
