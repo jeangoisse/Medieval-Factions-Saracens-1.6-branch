@@ -38,10 +38,11 @@
                 <li>Legs</li>
             </bodyPartGroups>
             <wornGraphicPath>Apparel/Armor/EliteArmor/OfficerHauberk/Officer_Hauberk</wornGraphicPath>
+            <useWornGraphicMask>true</useWornGraphicMask>
             <layers>
                 <li>Middle</li>
                 <li>Shell</li>
-             </layers>
+            </layers>
             <tags>
                 <li>IndustrialBasic</li>
             </tags>
@@ -54,7 +55,7 @@
             <li>BasicClothing</li>
         </tradeTags>
     </ThingDef>
-        <ThingDef ParentName="ApparelMakeableBase">
+    <ThingDef ParentName="ApparelMakeableBase">
         <defName>SFE_Apparel_GeneralHauberk</defName>
         <label>general hauberk</label>
         <description>Despite the fact that most of the armor is covered with a cloak decorated with gold and expensive fabric, this armor is second only to plate mail. The lower ranks are encouraged when the generals are on the battlefield, which can turn the outcome of the battle.</description>
@@ -93,10 +94,11 @@
                 <li>Legs</li>
             </bodyPartGroups>
             <wornGraphicPath>Apparel/Armor/EliteArmor/GeneralHauberk/General_Hauberk</wornGraphicPath>
+            <useWornGraphicMask>true</useWornGraphicMask>
             <layers>
                 <li>Middle</li>
                 <li>Shell</li>
-             </layers>
+            </layers>
             <tags>
                 <li>IndustrialBasic</li>
             </tags>

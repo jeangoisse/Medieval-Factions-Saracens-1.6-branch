@@ -32,9 +32,10 @@
                 <li>Torso</li>
             </bodyPartGroups>
             <wornGraphicPath>Apparel/Armor/HeavyArmor/LamellarVest/Lamellar_Vest</wornGraphicPath>
+            <useWornGraphicMask>true</useWornGraphicMask>
             <layers>
                 <li>Shell</li>
-             </layers>
+            </layers>
             <tags>
                 <li>IndustrialBasic</li>
             </tags>
@@ -82,10 +83,11 @@
                 <li>Legs</li>
             </bodyPartGroups>
             <wornGraphicPath>Apparel/Armor/HeavyArmor/LamellarHauberk/Lamellar_Hauberk</wornGraphicPath>
+            <useWornGraphicMask>true</useWornGraphicMask>
             <layers>
                 <li>Middle</li>
                 <li>Shell</li>
-             </layers>
+            </layers>
             <tags>
                 <li>IndustrialBasic</li>
             </tags>

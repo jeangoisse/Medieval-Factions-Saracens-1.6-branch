@@ -38,6 +38,7 @@
                 <li>Arms</li>
             </bodyPartGroups>
             <wornGraphicPath>Apparel/Armor/ChainMailArmor/SouthernMailShirt/Southern_Mail_Shirt</wornGraphicPath>
+            <useWornGraphicMask>true</useWornGraphicMask>
             <layers>
                 <li>OnSkin</li>
                 <li>Middle</li>
@@ -94,6 +95,7 @@
                 <li>Legs</li>
             </bodyPartGroups>
             <wornGraphicPath>Apparel/Armor/ChainMailArmor/AssasinsRobe/Assassins_Robe</wornGraphicPath>
+            <useWornGraphicMask>true</useWornGraphicMask>
             <layers>
                 <li>Shell</li>
                 <li>OnSkin</li>

@@ -37,6 +37,7 @@
                 <li>Legs</li>
             </bodyPartGroups>
             <wornGraphicPath>Apparel/Armor/LightArmor/NomadRobe/Nomad_Robe</wornGraphicPath>
+            <useWornGraphicMask>true</useWornGraphicMask>
             <layers>
                 <li>OnSkin</li>
                 <li>Middle</li>
@@ -91,6 +92,7 @@
                 <li>Legs</li>
             </bodyPartGroups>
             <wornGraphicPath>Apparel/Armor/LightArmor/PaddedVest/Padded_Vest</wornGraphicPath>
+            <useWornGraphicMask>true</useWornGraphicMask>
             <layers>
                 <li>OnSkin</li>
                 <li>Middle</li>
@@ -144,6 +146,7 @@
                 <li>Legs</li>
             </bodyPartGroups>
             <wornGraphicPath>Apparel/Armor/LightArmor/LeatherNomadRobe/Leather_Nomad_Robe</wornGraphicPath>
+            <useWornGraphicMask>true</useWornGraphicMask>
             <layers>
                 <li>OnSkin</li>
                 <li>Middle</li>
@@ -194,6 +197,7 @@
                 <li>Shoulders</li>
             </bodyPartGroups>
             <wornGraphicPath>Apparel/Armor/LightArmor/Linothorax/Linothorax</wornGraphicPath>
+            <useWornGraphicMask>true</useWornGraphicMask>
             <layers>
                 <li>Shell</li>
             </layers>
@@ -248,6 +252,7 @@
                 <li>Shoulders</li>
             </bodyPartGroups>
             <wornGraphicPath>Apparel/Armor/LightArmor/StitchedNomadArmor/Stitched_Nomad_Armor</wornGraphicPath>
+            <useWornGraphicMask>true</useWornGraphicMask>
             <layers>
                 <li>Shell</li>
             </layers>
