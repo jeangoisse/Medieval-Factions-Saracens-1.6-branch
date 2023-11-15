@@ -55,4 +55,61 @@
             <li>BasicClothing</li>
         </tradeTags>
     </ThingDef>
+    <ThingDef ParentName="ApparelMakeableBase">
+        <defName>SFE_Apparel_AssasinRobe</defName>
+        <label>assasin robe</label>
+        <description>Dense chain mail, worn under a thick robe, worn over it, allows wearers not to use other armor. It is equally good at any time of the day, but it is best suited for night operations in the rear.</description>
+        <graphicData>
+            <texPath>Apparel/Armor/ChainMailArmor/AssasinsRobe/Assassins_Robe</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <maskPath>Apparel/Armor/ChainMailArmor/AssasinsRobe/Assassins_Robe_m</maskPath>
+            <shaderType>CutoutComplex</shaderType>
+            <color>(93, 96, 103)</color>
+        </graphicData>
+        <costStuffCount>119</costStuffCount>
+        <equippedStatOffsets>
+            <MeleeDodgeChance>1</MeleeDodgeChance>
+        </equippedStatOffsets>
+        <stuffCategories>
+            <li>Metallic</li>
+        </stuffCategories>
+        <thingCategories>
+            <li>ApparelMisc</li>
+        </thingCategories>
+        <statBases>
+            <Flammability>-1.65</Flammability>
+            <MaxHitPoints>259</MaxHitPoints>
+            <WorkToMake>646</WorkToMake>
+            <Mass>11</Mass>
+            <StuffEffectMultiplierArmor>-1.65</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>0</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>-1.8</StuffEffectMultiplierInsulation_Heat>
+            <EquipDelay>11</EquipDelay>
+        </statBases>
+        <apparel>
+            <bodyPartGroups>
+                <li>Torso</li>
+                <li>Shoulders</li>
+                <li>Arms</li>
+                <li>Legs</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Apparel/Armor/ChainMailArmor/AssasinsRobe/Assassins_Robe</wornGraphicPath>
+            <layers>
+                <li>Shell</li>
+                <li>OnSkin</li>
+                <li>Middle</li>
+            </layers>
+            <tags>
+                <li>IndustrialBasic</li>
+            </tags>
+            <defaultOutfitTags>
+                <li>Worker</li>
+                <li>Soldier</li>
+            </defaultOutfitTags>
+            <canBeDesiredForIdeo>true</canBeDesiredForIdeo>
+        </apparel>
+        <tradeTags>
+            <li>BasicClothing</li>
+        </tradeTags>
+    </ThingDef>
 </Defs>
