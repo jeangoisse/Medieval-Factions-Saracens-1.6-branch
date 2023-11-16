@@ -815,4 +815,56 @@
             <useWornGraphicMask>true</useWornGraphicMask>
         </apparel>
     </ThingDef>
+    <ThingDef ParentName="ArmorHelmetMakeableBase">
+        <defName>SFE_Apparel_WardenHelm</defName>
+        <label>warden helm</label>
+        <description>The former assassins cover the helmet with gold and strengthen it, achieving not only external beauty, but also perfect protection of the head and face.</description>
+        <graphicData>
+            <texPath>Apparel/Headgear/Elite/WardenFullHelm/Wardens_Full_Helm</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <maskPath>Apparel/Headgear/Elite/WardenFullHelm/Wardens_Full_Helm_m</maskPath>
+            <shaderType>CutoutComplex</shaderType>
+            <color>(94, 96, 103)</color>
+        </graphicData>
+        <uiIconScale>1.25</uiIconScale>
+        <costStuffCount>95</costStuffCount>
+        <stuffCategories>
+            <li>Metallic</li>
+        </stuffCategories>
+        <statBases>
+            <MaxHitPoints>320</MaxHitPoints>
+            <WorkToMake>520</WorkToMake>
+            <Mass>5</Mass>
+            <Flammability>0.5</Flammability>
+            <StuffEffectMultiplierArmor>1.1</StuffEffectMultiplierArmor>
+            <Insulation_Cold>3</Insulation_Cold>
+            <Insulation_Heat>6</Insulation_Heat>
+            <EquipDelay>15</EquipDelay>
+        </statBases>
+        <equippedStatOffsets>
+            <ShootingAccuracyPawn>-3</ShootingAccuracyPawn>
+            <MeleeDodgeChance>0.3</MeleeDodgeChance>
+            <PainShockThreshold>0.75</PainShockThreshold>
+            <MeleeHitChance>-1.5</MeleeHitChance>
+        </equippedStatOffsets>
+        <generateCommonality>0.5</generateCommonality>
+        <apparel>
+            <countsAsClothingForNudity>true</countsAsClothingForNudity>
+            <developmentalStageFilter>Child, Adult</developmentalStageFilter>
+            <bodyPartGroups>
+                <li>FullHead</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Apparel/Headgear/Elite/WardenFullHelm/Wardens_Full_Helm</wornGraphicPath>
+            <useWornGraphicMask>true</useWornGraphicMask>
+            <layers>
+                <li>Overhead</li>
+            </layers>
+            <tags>
+                <li>MedievalMilitary</li>
+            </tags>
+            <defaultOutfitTags>
+                <li>Worker</li>
+            </defaultOutfitTags>
+        </apparel>
+    </ThingDef>
 </Defs>
