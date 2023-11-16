@@ -867,4 +867,48 @@
             </defaultOutfitTags>
         </apparel>
     </ThingDef>
+        <ThingDef ParentName="ArmorHelmetMakeableBase">
+        <defName>SFE_Apparel_GladiatorHelm</defName>
+        <label>gladiator helm</label>
+        <graphicData>
+            <texPath>Apparel/Headgear/GladiatorHelmet/Gladiator_Helmet</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <uiIconScale>1.25</uiIconScale>
+        <costStuffCount>160</costStuffCount>
+        <stuffCategories>
+            <li>Metallic</li>
+        </stuffCategories>
+        <statBases>
+            <MaxHitPoints>350</MaxHitPoints>
+            <WorkToMake>300</WorkToMake>
+            <Mass>5</Mass>
+            <Flammability>0</Flammability>
+            <StuffEffectMultiplierArmor>1.05</StuffEffectMultiplierArmor>
+            <EquipDelay>7</EquipDelay>
+        </statBases>
+        <equippedStatOffsets>
+            <ShootingAccuracyPawn>-3</ShootingAccuracyPawn>
+            <PainShockThreshold>0.1</PainShockThreshold>
+            <MeleeHitChance>-1.5</MeleeHitChance>
+        </equippedStatOffsets>
+        <generateCommonality>0.5</generateCommonality>
+        <apparel>
+            <countsAsClothingForNudity>true</countsAsClothingForNudity>
+            <developmentalStageFilter>Child, Adult</developmentalStageFilter>
+            <bodyPartGroups>
+                <li>FullHead</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Apparel/Headgear/GladiatorHelmet/Gladiator_Helmet</wornGraphicPath>
+            <layers>
+                <li>Overhead</li>
+            </layers>
+            <tags>
+                <li>MedievalMilitary</li>
+            </tags>
+            <defaultOutfitTags>
+                <li>Worker</li>
+            </defaultOutfitTags>
+        </apparel>
+    </ThingDef>
 </Defs>
