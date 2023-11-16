@@ -491,7 +491,6 @@
             <maskPath>Apparel/Headgear/AssasinsFaceMask/Assassins_Face_Mask_m</maskPath>
             <shaderType>CutoutComplex</shaderType>
             <color>(94, 96, 103)</color>
-
         </graphicData>
         <uiIconScale>1.25</uiIconScale>
         <costStuffCount>55</costStuffCount>
