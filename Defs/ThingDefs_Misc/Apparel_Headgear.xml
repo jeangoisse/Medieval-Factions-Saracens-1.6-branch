@@ -742,7 +742,7 @@
             </defaultOutfitTags>
         </apparel>
     </ThingDef>
-        <ThingDef ParentName="TurbanHelm">
+    <ThingDef ParentName="TurbanHelm">
         <defName>SFE_Apparel_GildedTurbanHelm</defName>
         <label>gilded turban helm</label>
         <description>A full helmet resembling the turban of sultans and other high-ranking personalities. The patterns on the helmet and the gold-plated coating indicate the strong status of the owner. This specimen is covered with gold on the crown.</description>
@@ -753,12 +753,36 @@
             <shaderType>CutoutComplex</shaderType>
             <color>(94, 96, 103)</color>
         </graphicData>
-        <uiIconScale>1.25</uiIconScale>
         <equippedStatOffsets>
             <SocialImpact>0.25</SocialImpact>
         </equippedStatOffsets>
         <apparel>
             <wornGraphicPath>Apparel/Headgear/GildedTurbanHelmet/Gilded_Turban_Helmet</wornGraphicPath>
+            <useWornGraphicMask>true</useWornGraphicMask>
+        </apparel>
+    </ThingDef>
+    <ThingDef ParentName="TurbanHelm">
+        <defName>SFE_Apparel_GeneralTurbanHelm</defName>
+        <label>gilded turban helm</label>
+        <description>The ornate and incomparably protective helmet of the general emphasizes his power. Raises morale and willpower.</description>
+        <graphicData>
+            <texPath>Apparel/Headgear/Elite/GeneralHelm/General_Helm</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <maskPath>Apparel/Headgear/Elite/GeneralHelm/General_Helm_m</maskPath>
+            <shaderType>CutoutComplex</shaderType>
+            <color>(94, 96, 103)</color>
+        </graphicData>
+        <equippedStatOffsets>
+            <SocialImpact>0.3</SocialImpact>
+            <NegotiationAbility>0.5</NegotiationAbility>
+            <PainShockThreshold>-0.5</PainShockThreshold>
+            <MentalBreakThreshold>-0.1</MentalBreakThreshold>
+            <ConversionPower>3.5</ConversionPower>
+            <MeleeHitChance>-1.5</MeleeHitChance>
+            <ShootingAccuracyPawn>-3</ShootingAccuracyPawn>
+        </equippedStatOffsets>
+        <apparel>
+            <wornGraphicPath>Apparel/Headgear/Elite/GeneralHelm/General_Helm</wornGraphicPath>
             <useWornGraphicMask>true</useWornGraphicMask>
         </apparel>
     </ThingDef>
