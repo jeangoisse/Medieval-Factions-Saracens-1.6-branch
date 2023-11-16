@@ -551,7 +551,7 @@
             </options>
         </colorGenerator>
     </ThingDef>
-    <ThingDef ParentName="ArmorHelmetMakeableBase">
+    <ThingDef Name="HeavyLamellarHelmet" ParentName="ArmorHelmetMakeableBase">
         <defName>SFE_Apparel_HeavyLamellarHelmet</defName>
         <label>heavy lamellar helmet</label>
         <description>The heavy helmet of the southern army is not so popular because of its high cost and complexity in manufacturing. At the same time, it is worth the money, according to its carriers.</description>
@@ -574,10 +574,10 @@
             <Mass>3.5</Mass>
             <Flammability>0</Flammability>
             <StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierArmor>0.75</StuffEffectMultiplierArmor>
             <EquipDelay>10</EquipDelay>
         </statBases>
         <equippedStatOffsets>
-            <SocialImpact>10</SocialImpact>
             <MeleeHitChance>                -1            </MeleeHitChance>
             <ShootingAccuracyPawn>-2</ShootingAccuracyPawn>
         </equippedStatOffsets>
@@ -621,6 +621,35 @@
                 </li>
             </options>
         </colorGenerator>
+    </ThingDef>
+    <ThingDef ParentName="HeavyLamellarHelmet">
+        <defName>SFE_Apparel_OfficerHelmet</defName>
+        <label>officer helmet</label>
+        <description>An officer's helmet with a strand of animal hair and a headband on the helmet gives additional status and protection from the weather.</description>
+        <graphicData>
+            <texPath>Apparel/Headgear/Elite/OfficerHelmet/Officer_Helmet</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <maskPath>Apparel/Headgear/Elite/OfficerHelmet/Officer_Helmet_m</maskPath>
+            <shaderType>CutoutComplex</shaderType>
+            <color>(94, 96, 103)</color>
+        </graphicData>
+        <statBases>
+            <MaxHitPoints>225</MaxHitPoints>
+            <WorkToMake>350</WorkToMake>
+            <Mass>4.2</Mass>
+            <Flammability>0.2</Flammability>
+            <StuffEffectMultiplierArmor>1.05</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>0.4</StuffEffectMultiplierInsulation_Cold>
+            <Insulation_Heat>5</Insulation_Heat>
+        </statBases>
+        <equippedStatOffsets>
+            <SocialImpact>0.1</SocialImpact>
+        </equippedStatOffsets>
+        <generateCommonality>0.5</generateCommonality>
+        <apparel>
+            <wornGraphicPath>Apparel/Headgear/Elite/OfficerHelmet/Officer_Helmet</wornGraphicPath>
+            <useWornGraphicMask>true</useWornGraphicMask>
+        </apparel>
     </ThingDef>
     <ThingDef ParentName="ArmorHelmetMakeableBase">
         <defName>SFE_Apparel_SoutherHelmetWithCoif</defName>
