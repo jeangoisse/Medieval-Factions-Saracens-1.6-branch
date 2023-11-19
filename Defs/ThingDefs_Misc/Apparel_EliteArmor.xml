@@ -1,6 +1,31 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-    <ThingDef ParentName="ApparelMakeableBase">
+    <ThingDef ParentName="ArmorSmithableBase" Name="Saracens_EliteArmorBase" Abstract="true">
+        <recipeMaker>
+            <recipeUsers>
+                <li>ElectricSmithy</li>
+                <li>FueledSmithy</li>
+                <li>DankPyon_Anvil</li>
+            </recipeUsers>
+            <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+            <researchPrerequisites>
+                <li>PlateArmor</li>
+                <li>DankPyon_AdornedArmor</li>
+            </researchPrerequisites>
+        </recipeMaker>
+        <stuffCategories>
+            <li>Metallic</li>
+        </stuffCategories>
+        <thingCategories>
+            <li>Apparel</li>
+        </thingCategories>
+        <apparel>
+            <defaultOutfitTags>
+                <li>Soldier</li>
+            </defaultOutfitTags>
+        </apparel>
+    </ThingDef>
+    <ThingDef ParentName="Saracens_EliteArmorBase">
         <defName>SFE_Apparel_OfficerHauberk</defName>
         <label>officer hauberk</label>
         <description>A long chain mail armor, reinforced with plates and shoulder pads, and also decorated with gold. Officers additionally decorate it with scarves on their belts.</description>
@@ -16,12 +41,11 @@
             <MoveSpeed>-0.5</MoveSpeed>
             <SocialImpact>0.1</SocialImpact>
         </equippedStatOffsets>
-        <stuffCategories>
-            <li>Metallic</li>
-        </stuffCategories>
-        <thingCategories>
-            <li>ApparelMisc</li>
-        </thingCategories>
+        <recipeMaker>
+            <skillRequirements>
+                <Crafting>8</Crafting>
+            </skillRequirements>
+        </recipeMaker>
         <statBases>
             <Flammability>0</Flammability>
             <MaxHitPoints>280</MaxHitPoints>
@@ -46,16 +70,13 @@
             <tags>
                 <li>IndustrialBasic</li>
             </tags>
-            <defaultOutfitTags>
-                <li>Soldier</li>
-            </defaultOutfitTags>
             <canBeDesiredForIdeo>true</canBeDesiredForIdeo>
         </apparel>
         <tradeTags>
             <li>BasicClothing</li>
         </tradeTags>
     </ThingDef>
-    <ThingDef ParentName="ApparelMakeableBase">
+    <ThingDef ParentName="Saracens_EliteArmorBase">
         <defName>SFE_Apparel_GeneralHauberk</defName>
         <label>general hauberk</label>
         <description>Despite the fact that most of the armor is covered with a cloak decorated with gold and expensive fabric, this armor is second only to plate mail. The lower ranks are encouraged when the generals are on the battlefield, which can turn the outcome of the battle.</description>
@@ -72,12 +93,11 @@
             <MoveSpeed>-1</MoveSpeed>
             <SocialImpact>0.25</SocialImpact>
         </equippedStatOffsets>
-        <stuffCategories>
-            <li>Metallic</li>
-        </stuffCategories>
-        <thingCategories>
-            <li>ApparelMisc</li>
-        </thingCategories>
+        <recipeMaker>
+            <skillRequirements>
+                <Crafting>12</Crafting>
+            </skillRequirements>
+        </recipeMaker>
         <statBases>
             <Flammability>0</Flammability>
             <MaxHitPoints>320</MaxHitPoints>
@@ -102,16 +122,13 @@
             <tags>
                 <li>IndustrialBasic</li>
             </tags>
-            <defaultOutfitTags>
-                <li>Soldier</li>
-            </defaultOutfitTags>
             <canBeDesiredForIdeo>true</canBeDesiredForIdeo>
         </apparel>
         <tradeTags>
             <li>BasicClothing</li>
         </tradeTags>
     </ThingDef>
-    <ThingDef ParentName="ApparelMakeableBase">
+    <ThingDef ParentName="Saracens_EliteArmorBase">
         <defName>SFE_Apparel_WardenHauberk</defName>
         <label>warden hauberk</label>
         <description>It is said that former assassins become guardians of ancient ruins, which is why they wear high-class armor that allows them to be in it at any time, despite the bad weather. The owners of this armor will fight to the last drop of blood to preserve the ancient secrets.</description>
@@ -129,12 +146,11 @@
             <MoveSpeed>0.8</MoveSpeed>
             <MeleeDodgeChance>0.8</MeleeDodgeChance>
         </equippedStatOffsets>
-        <stuffCategories>
-            <li>Metallic</li>
-        </stuffCategories>
-        <thingCategories>
-            <li>ApparelMisc</li>
-        </thingCategories>
+        <recipeMaker>
+            <skillRequirements>
+                <Crafting>12</Crafting>
+            </skillRequirements>
+        </recipeMaker>
         <statBases>
             <Flammability>0</Flammability>
             <MaxHitPoints>340</MaxHitPoints>
@@ -159,9 +175,6 @@
             <tags>
                 <li>IndustrialBasic</li>
             </tags>
-            <defaultOutfitTags>
-                <li>Soldier</li>
-            </defaultOutfitTags>
             <canBeDesiredForIdeo>true</canBeDesiredForIdeo>
         </apparel>
         <tradeTags>
