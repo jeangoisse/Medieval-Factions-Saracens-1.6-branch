@@ -33,6 +33,9 @@
             <shaderType>CutoutComplex</shaderType>
             <color>(94, 96, 103)</color>
         </graphicData>
+        <costList>
+            <Cloth>40</Cloth>
+        </costList>
         <costStuffCount>80</costStuffCount>
         <equippedStatOffsets>
             <MoveSpeed>-0.4</MoveSpeed>
@@ -80,7 +83,10 @@
             <shaderType>CutoutComplex</shaderType>
             <color>(93, 96, 103)</color>
         </graphicData>
-        <costStuffCount>119</costStuffCount>
+        <costList>
+            <Cloth>95</Cloth>
+        </costList>
+        <costStuffCount>120</costStuffCount>
         <equippedStatOffsets>
             <MeleeDodgeChance>1</MeleeDodgeChance>
         </equippedStatOffsets>

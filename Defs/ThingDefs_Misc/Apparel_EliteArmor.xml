@@ -36,6 +36,10 @@
             <shaderType>CutoutComplex</shaderType>
             <color>(94, 96, 103)</color>
         </graphicData>
+        <costList>
+            <Gold>10</Gold>
+            <Cloth>20</Cloth>
+        </costList>
         <costStuffCount>140</costStuffCount>
         <equippedStatOffsets>
             <MoveSpeed>-0.5</MoveSpeed>
@@ -87,6 +91,10 @@
             <shaderType>CutoutComplex</shaderType>
             <color>(94, 96, 103)</color>
         </graphicData>
+        <costList>
+            <Gold>15</Gold>
+            <Cloth>80</Cloth>
+        </costList>
         <costStuffCount>160</costStuffCount>
         <equippedStatOffsets>
             <Insulation_Cold>4</Insulation_Cold>
@@ -139,6 +147,10 @@
             <shaderType>CutoutComplex</shaderType>
             <color>(94, 96, 103)</color>
         </graphicData>
+        <costList>
+            <Gold>12</Gold>
+            <Cloth>55</Cloth>
+        </costList>
         <costStuffCount>155</costStuffCount>
         <equippedStatOffsets>
             <Insulation_Cold>7</Insulation_Cold>

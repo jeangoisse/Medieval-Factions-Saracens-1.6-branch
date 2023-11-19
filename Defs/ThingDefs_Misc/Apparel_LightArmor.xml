@@ -38,6 +38,11 @@
             <color>(94, 96, 103)</color>
         </graphicData>
         <costStuffCount>80</costStuffCount>
+        <recipeMaker>
+            <skillRequirements>
+                <Crafting>2</Crafting>
+            </skillRequirements>
+        </recipeMaker>
         <statBases>
             <Flammability>1.5</Flammability>
             <MaxHitPoints>130</MaxHitPoints>
@@ -75,6 +80,11 @@
             <color>(94, 96, 103)</color>
         </graphicData>
         <costStuffCount>105</costStuffCount>
+        <recipeMaker>
+            <skillRequirements>
+                <Crafting>4</Crafting>
+            </skillRequirements>
+        </recipeMaker>
         <statBases>
             <Flammability>1</Flammability>
             <MaxHitPoints>170</MaxHitPoints>
@@ -112,6 +122,11 @@
         <stuffCategories Inherit="false">
             <li>Leathery</li>
         </stuffCategories>
+        <recipeMaker>
+            <skillRequirements>
+                <Crafting>3</Crafting>
+            </skillRequirements>
+        </recipeMaker>
         <statBases>
             <Flammability>0.6</Flammability>
             <MaxHitPoints>160</MaxHitPoints>
@@ -166,6 +181,11 @@
             <color>(94, 96, 103)</color>
         </graphicData>
         <costStuffCount>140</costStuffCount>
+        <recipeMaker>
+            <skillRequirements>
+                <Crafting>5</Crafting>
+            </skillRequirements>
+        </recipeMaker>
         <statBases>
             <Flammability>1</Flammability>
             <MaxHitPoints>220</MaxHitPoints>
@@ -199,6 +219,11 @@
             <color>(94, 96, 103)</color>
         </graphicData>
         <costStuffCount>175</costStuffCount>
+        <recipeMaker>
+            <skillRequirements>
+                <Crafting>6</Crafting>
+            </skillRequirements>
+        </recipeMaker>
         <statBases>
             <Flammability>0.6</Flammability>
             <MaxHitPoints>220</MaxHitPoints>
