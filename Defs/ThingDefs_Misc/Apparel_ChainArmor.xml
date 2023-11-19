@@ -1,6 +1,29 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-    <ThingDef ParentName="ApparelMakeableBase">
+    <ThingDef ParentName="ArmorSmithableBase" Name="Saracens_ChainMailBase" Abstract="true">
+        <recipeMaker>
+            <recipeUsers>
+                <li>ElectricSmithy</li>
+                <li>FueledSmithy</li>
+                <li>DankPyon_Anvil</li>
+            </recipeUsers>
+            <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+            <researchPrerequisite>DankPyon_ChainArmor</researchPrerequisite>
+        </recipeMaker>
+        <stuffCategories>
+            <li>Metallic</li>
+        </stuffCategories>
+        <thingCategories>
+            <li>Apparel</li>
+        </thingCategories>
+        <apparel>
+            <defaultOutfitTags>
+                <li>Worker</li>
+                <li>Soldier</li>
+            </defaultOutfitTags>
+        </apparel>
+    </ThingDef>
+    <ThingDef ParentName="Saracens_ChainMailBase">
         <defName>SFE_Apparel_SouthernMailShirt</defName>
         <label>southern mail shirt</label>
         <description>Light chain mail, with a decorated cape on top, provides a good level of protection, while remaining fashionable.</description>
@@ -15,12 +38,11 @@
         <equippedStatOffsets>
             <MoveSpeed>-0.4</MoveSpeed>
         </equippedStatOffsets>
-        <stuffCategories>
-            <li>Metallic</li>
-        </stuffCategories>
-        <thingCategories>
-            <li>ApparelMisc</li>
-        </thingCategories>
+        <recipeMaker>
+            <skillRequirements>
+                <Crafting>6</Crafting>
+            </skillRequirements>
+        </recipeMaker>
         <statBases>
             <Flammability>1</Flammability>
             <MaxHitPoints>130</MaxHitPoints>
@@ -46,17 +68,9 @@
             <tags>
                 <li>IndustrialBasic</li>
             </tags>
-            <defaultOutfitTags>
-                <li>Worker</li>
-                <li>Soldier</li>
-            </defaultOutfitTags>
-            <canBeDesiredForIdeo>true</canBeDesiredForIdeo>
         </apparel>
-        <tradeTags>
-            <li>BasicClothing</li>
-        </tradeTags>
     </ThingDef>
-    <ThingDef ParentName="ApparelMakeableBase">
+    <ThingDef ParentName="Saracens_ChainMailBase">
         <defName>SFE_Apparel_AssasinRobe</defName>
         <label>assasin robe</label>
         <description>Dense chain mail, worn under a thick robe, worn over it, allows wearers not to use other armor. It is equally good at any time of the day, but it is best suited for night operations in the rear.</description>
@@ -71,21 +85,20 @@
         <equippedStatOffsets>
             <MeleeDodgeChance>1</MeleeDodgeChance>
         </equippedStatOffsets>
-        <stuffCategories>
-            <li>Metallic</li>
-        </stuffCategories>
-        <thingCategories>
-            <li>ApparelMisc</li>
-        </thingCategories>
+        <recipeMaker>
+            <skillRequirements>
+                <Crafting>7</Crafting>
+            </skillRequirements>
+        </recipeMaker>
         <statBases>
-            <Flammability>-1.65</Flammability>
-            <MaxHitPoints>259</MaxHitPoints>
-            <WorkToMake>646</WorkToMake>
-            <Mass>11</Mass>
-            <StuffEffectMultiplierArmor>-1.65</StuffEffectMultiplierArmor>
-            <StuffEffectMultiplierInsulation_Cold>0</StuffEffectMultiplierInsulation_Cold>
-            <StuffEffectMultiplierInsulation_Heat>-1.8</StuffEffectMultiplierInsulation_Heat>
-            <EquipDelay>11</EquipDelay>
+            <Flammability>0.65</Flammability>
+            <MaxHitPoints>260</MaxHitPoints>
+            <WorkToMake>647</WorkToMake>
+            <Mass>12</Mass>
+            <StuffEffectMultiplierArmor>0.65</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>1</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0.8</StuffEffectMultiplierInsulation_Heat>
+            <EquipDelay>25</EquipDelay>
         </statBases>
         <apparel>
             <bodyPartGroups>
@@ -101,17 +114,6 @@
                 <li>OnSkin</li>
                 <li>Middle</li>
             </layers>
-            <tags>
-                <li>IndustrialBasic</li>
-            </tags>
-            <defaultOutfitTags>
-                <li>Worker</li>
-                <li>Soldier</li>
-            </defaultOutfitTags>
-            <canBeDesiredForIdeo>true</canBeDesiredForIdeo>
         </apparel>
-        <tradeTags>
-            <li>BasicClothing</li>
-        </tradeTags>
     </ThingDef>
 </Defs>
