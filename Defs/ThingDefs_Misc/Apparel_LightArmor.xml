@@ -151,6 +151,7 @@
             <defaultOutfitTags Inherit="false">
                 <li>Soldier</li>
             </defaultOutfitTags>
+            <canBeDesiredForIdeo>false</canBeDesiredForIdeo>
         </apparel>
     </ThingDef>
     <ThingDef ParentName="Saracens_LightArmorBase">
@@ -221,48 +222,6 @@
             <wornGraphicPath>Apparel/Armor/LightArmor/StitchedNomadArmor/Stitched_Nomad_Armor</wornGraphicPath>
             <useWornGraphicMask>true</useWornGraphicMask>
             <layers>
-                <li>Shell</li>
-            </layers>
-        </apparel>
-    </ThingDef>
-    <ThingDef ParentName="Saracens_LightArmorBase">
-        <defName>SFE_Apparel_GladiatorArmor</defName>
-        <label>gladiator armor</label>
-        <description>This armor is made of two-layer pieces of leather and bonded together. Such armor allows warriors to put on some other light armor on the body.</description>
-        <graphicData>
-            <texPath>Apparel/Armor/LightArmor/GladiatorArmor/Gladiator_Armor</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
-            <maskPath>Apparel/Armor/LightArmor/GladiatorArmor/Gladiator_Armor_m</maskPath>
-            <shaderType>CutoutComplex</shaderType>
-            <color>(94, 96, 103)</color>
-        </graphicData>
-        <costStuffCount>40</costStuffCount>
-        <stuffCategories>
-            <li>Metallic</li>
-        </stuffCategories>
-        <statBases>
-            <Flammability>0.75</Flammability>
-            <MaxHitPoints>160</MaxHitPoints>
-            <WorkToMake>250</WorkToMake>
-            <Mass>5</Mass>
-            <StuffEffectMultiplierArmor>0.18</StuffEffectMultiplierArmor>
-            <EquipDelay>5</EquipDelay>
-        </statBases>
-        <equippedStatOffsets>
-            <MoveSpeed>-1.5</MoveSpeed>
-            <MeleeDodgeChance>2</MeleeDodgeChance>
-        </equippedStatOffsets>
-        <apparel>
-            <bodyPartGroups>
-                <li>Arms</li>
-                <li>Legs</li>
-                <li>Torso</li>
-                <li>Shoulders</li>
-            </bodyPartGroups>
-            <wornGraphicPath>Apparel/Armor/LightArmor/GladiatorArmor/Gladiator_Armor</wornGraphicPath>
-            <useWornGraphicMask>true</useWornGraphicMask>
-            <layers>
-                <li>Middle</li>
                 <li>Shell</li>
             </layers>
         </apparel>

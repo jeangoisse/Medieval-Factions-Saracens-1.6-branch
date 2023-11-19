@@ -1,6 +1,28 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-    <ThingDef ParentName="ApparelMakeableBase">
+    <ThingDef ParentName="ArmorSmithableBase" Name="Saracens_HeavyArmorBase" Abstract="true">
+        <recipeMaker>
+            <recipeUsers>
+                <li>ElectricSmithy</li>
+                <li>FueledSmithy</li>
+                <li>DankPyon_Anvil</li>
+            </recipeUsers>
+            <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+            <researchPrerequisite>PlateArmor</researchPrerequisite>
+        </recipeMaker>
+        <stuffCategories>
+            <li>Metallic</li>
+        </stuffCategories>
+        <thingCategories>
+            <li>Apparel</li>
+        </thingCategories>
+        <apparel>
+            <defaultOutfitTags>
+                <li>Soldier</li>
+            </defaultOutfitTags>
+        </apparel>
+    </ThingDef>
+    <ThingDef ParentName="Saracens_HeavyArmorBase">
         <defName>SFE_Apparel_LamellarVest</defName>
         <label>lamellar vest</label>
         <description>In the "Golden" army, a lamellar vest is the most popular solution, due to its cheapness, as well as protection and repair. Large plates wrap around the body, holding on to the shoulders, and also provide the main body protection.</description>
@@ -12,12 +34,11 @@
         <equippedStatOffsets>
             <MoveSpeed>-0.4</MoveSpeed>
         </equippedStatOffsets>
-        <stuffCategories>
-            <li>Metallic</li>
-        </stuffCategories>
-        <thingCategories>
-            <li>ApparelMisc</li>
-        </thingCategories>
+        <recipeMaker>
+            <skillRequirements>
+                <Crafting>7</Crafting>
+            </skillRequirements>
+        </recipeMaker>
         <statBases>
             <Flammability>0</Flammability>
             <MaxHitPoints>280</MaxHitPoints>
@@ -38,16 +59,13 @@
             <tags>
                 <li>IndustrialBasic</li>
             </tags>
-            <defaultOutfitTags>
-                <li>Soldier</li>
-            </defaultOutfitTags>
             <canBeDesiredForIdeo>true</canBeDesiredForIdeo>
         </apparel>
         <tradeTags>
             <li>BasicClothing</li>
         </tradeTags>
     </ThingDef>
-    <ThingDef ParentName="ApparelMakeableBase">
+    <ThingDef ParentName="Saracens_HeavyArmorBase">
         <defName>SFE_Apparel_LamellarHauberk</defName>
         <label>lamellar hauberk</label>
         <description>The heavy armor of exceptional desert warriors is made of many plates sewn onto a leather base. Extremely heavy, but provides the same protection as plate armor in the middle lane.</description>
@@ -60,12 +78,11 @@
             <Insulation_Cold>3</Insulation_Cold>
             <MoveSpeed>-1.8</MoveSpeed>
         </equippedStatOffsets>
-        <stuffCategories>
-            <li>Metallic</li>
-        </stuffCategories>
-        <thingCategories>
-            <li>ApparelMisc</li>
-        </thingCategories>
+        <recipeMaker>
+            <skillRequirements>
+                <Crafting>11</Crafting>
+            </skillRequirements>
+        </recipeMaker>
         <statBases>
             <Flammability>0.25</Flammability>
             <MaxHitPoints>335</MaxHitPoints>
@@ -89,13 +106,49 @@
             <tags>
                 <li>IndustrialBasic</li>
             </tags>
-            <defaultOutfitTags>
-                <li>Soldier</li>
-            </defaultOutfitTags>
             <canBeDesiredForIdeo>true</canBeDesiredForIdeo>
         </apparel>
         <tradeTags>
             <li>BasicClothing</li>
         </tradeTags>
+    </ThingDef>
+    <ThingDef ParentName="Saracens_HeavyArmorBase">
+        <defName>SFE_Apparel_GladiatorArmor</defName>
+        <label>gladiator armor</label>
+        <description>This armor is made of two-layer pieces of leather and bonded together. Such armor allows warriors to put on some other light armor on the body.</description>
+        <graphicData>
+            <texPath>Apparel/Armor/LightArmor/GladiatorArmor/Gladiator_Armor</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <maskPath>Apparel/Armor/LightArmor/GladiatorArmor/Gladiator_Armor_m</maskPath>
+            <shaderType>CutoutComplex</shaderType>
+            <color>(94, 96, 103)</color>
+        </graphicData>
+        <costStuffCount>40</costStuffCount>
+        <statBases>
+            <Flammability>0.75</Flammability>
+            <MaxHitPoints>160</MaxHitPoints>
+            <WorkToMake>250</WorkToMake>
+            <Mass>5</Mass>
+            <StuffEffectMultiplierArmor>0.18</StuffEffectMultiplierArmor>
+            <EquipDelay>5</EquipDelay>
+        </statBases>
+        <equippedStatOffsets>
+            <MoveSpeed>-1.5</MoveSpeed>
+            <MeleeDodgeChance>2</MeleeDodgeChance>
+        </equippedStatOffsets>
+        <apparel>
+            <bodyPartGroups>
+                <li>Arms</li>
+                <li>Legs</li>
+                <li>Torso</li>
+                <li>Shoulders</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Apparel/Armor/LightArmor/GladiatorArmor/Gladiator_Armor</wornGraphicPath>
+            <useWornGraphicMask>true</useWornGraphicMask>
+            <layers>
+                <li>Middle</li>
+                <li>Shell</li>
+            </layers>
+        </apparel>
     </ThingDef>
 </Defs>

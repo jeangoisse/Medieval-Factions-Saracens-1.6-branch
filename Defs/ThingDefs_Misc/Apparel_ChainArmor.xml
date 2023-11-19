@@ -18,7 +18,6 @@
         </thingCategories>
         <apparel>
             <defaultOutfitTags>
-                <li>Worker</li>
                 <li>Soldier</li>
             </defaultOutfitTags>
         </apparel>
