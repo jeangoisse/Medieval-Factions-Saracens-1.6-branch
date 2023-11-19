@@ -1,6 +1,32 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-    <ThingDef ParentName="ApparelMakeableBase">
+    <ThingDef ParentName="ApparelMakeableBase" Name="Saracens_ClothesBase" Abstract="true">
+        <recipeMaker>
+            <researchPrerequisite>DankPyon_Tailoring</researchPrerequisite>
+            <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+            <recipeUsers>
+                <li>DankPyon_TailorsBench</li>
+            </recipeUsers>
+        </recipeMaker>
+        <stuffCategories>
+            <li>Fabric</li>
+            <li>Leathery</li>
+        </stuffCategories>
+        <thingCategories>
+            <li>Apparel</li>
+        </thingCategories>
+        <apparel>
+            <tags>
+                <li>MedievalBasic</li>
+            </tags>
+            <defaultOutfitTags>
+                <li>Worker</li>
+                <li>Soldier</li>
+            </defaultOutfitTags>
+            <canBeDesiredForIdeo>true</canBeDesiredForIdeo>
+        </apparel>
+    </ThingDef>
+    <ThingDef ParentName="Saracens_ClothesBase">
         <defName>SFE_Apparel_NomadRobe</defName>
         <label>nomad robe</label>
         <description>The Nomad's two-layer robe provides full body coverage and protection from the sun, as well as some types of cutting and blunt damage.</description>
@@ -12,13 +38,6 @@
             <color>(94, 96, 103)</color>
         </graphicData>
         <costStuffCount>80</costStuffCount>
-        <stuffCategories>
-            <li>Fabric</li>
-            <li>Leathery</li>
-        </stuffCategories>
-        <thingCategories>
-            <li>ApparelMisc</li>
-        </thingCategories>
         <statBases>
             <Flammability>1.5</Flammability>
             <MaxHitPoints>130</MaxHitPoints>
@@ -42,20 +61,9 @@
                 <li>OnSkin</li>
                 <li>Middle</li>
             </layers>
-            <tags>
-                <li>IndustrialBasic</li>
-            </tags>
-            <defaultOutfitTags>
-                <li>Worker</li>
-                <li>Soldier</li>
-            </defaultOutfitTags>
-            <canBeDesiredForIdeo>true</canBeDesiredForIdeo>
         </apparel>
-        <tradeTags>
-            <li>BasicClothing</li>
-        </tradeTags>
     </ThingDef>
-    <ThingDef ParentName="ApparelMakeableBase">
+    <ThingDef ParentName="Saracens_ClothesBase">
         <defName>SFE_Apparel_PaddedVest</defName>
         <label>padded vest</label>
         <description>Padded vest, worn over light clothing. The most common solution in the south for basic self-defense.</description>
@@ -67,13 +75,6 @@
             <color>(94, 96, 103)</color>
         </graphicData>
         <costStuffCount>105</costStuffCount>
-        <stuffCategories>
-            <li>Fabric</li>
-            <li>Leathery</li>
-        </stuffCategories>
-        <thingCategories>
-            <li>ApparelMisc</li>
-        </thingCategories>
         <statBases>
             <Flammability>1</Flammability>
             <MaxHitPoints>170</MaxHitPoints>
@@ -97,37 +98,20 @@
                 <li>OnSkin</li>
                 <li>Middle</li>
             </layers>
-            <tags>
-                <li>IndustrialBasic</li>
-            </tags>
-            <defaultOutfitTags>
-                <li>Worker</li>
-                <li>Soldier</li>
-            </defaultOutfitTags>
-            <canBeDesiredForIdeo>true</canBeDesiredForIdeo>
         </apparel>
-        <tradeTags>
-            <li>BasicClothing</li>
-        </tradeTags>
     </ThingDef>
-    <ThingDef ParentName="ApparelMakeableBase">
+    <ThingDef ParentName="Saracens_ClothesBase">
         <defName>SFE_Apparel_LeatherNomadRobe</defName>
         <label>leather nomad robe</label>
         <description>This rough robe made of pieces of leather does not require high craft skills, as well as manufacturing time. Light fabric clothing is put on under it so that this leather armor does not rub the body.</description>
         <graphicData>
             <texPath>Apparel/Armor/LightArmor/LeatherNomadRobe/Leather_Nomad_Robe</texPath>
             <graphicClass>Graphic_Single</graphicClass>
-            <maskPath>Apparel/Armor/LightArmor/LeatherNomadRobe/Leather_Nomad_Robe_m</maskPath>
-            <shaderType>CutoutComplex</shaderType>
-            <color>(94, 96, 103)</color>
         </graphicData>
         <costStuffCount>85</costStuffCount>
-        <stuffCategories>
+        <stuffCategories Inherit="false">
             <li>Leathery</li>
         </stuffCategories>
-        <thingCategories>
-            <li>ApparelMisc</li>
-        </thingCategories>
         <statBases>
             <Flammability>0.6</Flammability>
             <MaxHitPoints>160</MaxHitPoints>
@@ -151,20 +135,25 @@
                 <li>OnSkin</li>
                 <li>Middle</li>
             </layers>
-            <tags>
-                <li>IndustrialBasic</li>
+        </apparel>
+    </ThingDef>
+    <ThingDef ParentName="Saracens_ClothesBase" Name="Saracens_LightArmorBase" Abstract="true">
+        <recipeMaker>
+            <researchPrerequisite>DankPyon_ProtectiveClothing</researchPrerequisite>
+        </recipeMaker>
+        <stuffCategories Inherit="false">
+            <li>Leathery</li>
+        </stuffCategories>
+        <apparel>
+            <tags Inherit="false">
+                <li>MedievalMilitaryBasic</li>
             </tags>
-            <defaultOutfitTags>
-                <li>Worker</li>
+            <defaultOutfitTags Inherit="false">
                 <li>Soldier</li>
             </defaultOutfitTags>
-            <canBeDesiredForIdeo>true</canBeDesiredForIdeo>
         </apparel>
-        <tradeTags>
-            <li>BasicClothing</li>
-        </tradeTags>
     </ThingDef>
-    <ThingDef ParentName="ApparelMakeableBase">
+    <ThingDef ParentName="Saracens_LightArmorBase">
         <defName>SFE_Apparel_Linothorax</defName>
         <label>linothorax</label>
         <description>The linothorax, worn over any clothing, provides a high degree of protection against any type of damage, despite the fact that it is made of fabric. At the same time, it protects only vital organs.</description>
@@ -176,12 +165,6 @@
             <color>(94, 96, 103)</color>
         </graphicData>
         <costStuffCount>140</costStuffCount>
-        <stuffCategories>
-            <li>Leathery</li>
-        </stuffCategories>
-        <thingCategories>
-            <li>ApparelMisc</li>
-        </thingCategories>
         <statBases>
             <Flammability>1</Flammability>
             <MaxHitPoints>220</MaxHitPoints>
@@ -201,19 +184,9 @@
             <layers>
                 <li>Shell</li>
             </layers>
-            <tags>
-                <li>IndustrialBasic</li>
-            </tags>
-            <defaultOutfitTags>
-                <li>Soldier</li>
-            </defaultOutfitTags>
-            <canBeDesiredForIdeo>true</canBeDesiredForIdeo>
         </apparel>
-        <tradeTags>
-            <li>BasicClothing</li>
-        </tradeTags>
     </ThingDef>
-    <ThingDef ParentName="ApparelMakeableBase">
+    <ThingDef ParentName="Saracens_LightArmorBase">
         <defName>SFE_Apparel_StitchedNomadArmor</defName>
         <label>stiched nomad armor</label>
         <description>This armor is made of two-layer pieces of leather and bonded together. Such armor allows warriors to put on some other light armor on the body.</description>
@@ -225,12 +198,6 @@
             <color>(94, 96, 103)</color>
         </graphicData>
         <costStuffCount>175</costStuffCount>
-        <stuffCategories>
-            <li>Leathery</li>
-        </stuffCategories>
-        <thingCategories>
-            <li>ApparelMisc</li>
-        </thingCategories>
         <statBases>
             <Flammability>0.6</Flammability>
             <MaxHitPoints>220</MaxHitPoints>
@@ -256,19 +223,9 @@
             <layers>
                 <li>Shell</li>
             </layers>
-            <tags>
-                <li>IndustrialBasic</li>
-            </tags>
-            <defaultOutfitTags>
-                <li>Soldier</li>
-            </defaultOutfitTags>
-            <canBeDesiredForIdeo>true</canBeDesiredForIdeo>
         </apparel>
-        <tradeTags>
-            <li>BasicClothing</li>
-        </tradeTags>
     </ThingDef>
-        <ThingDef ParentName="ApparelMakeableBase">
+    <ThingDef ParentName="Saracens_LightArmorBase">
         <defName>SFE_Apparel_GladiatorArmor</defName>
         <label>gladiator armor</label>
         <description>This armor is made of two-layer pieces of leather and bonded together. Such armor allows warriors to put on some other light armor on the body.</description>
@@ -283,9 +240,6 @@
         <stuffCategories>
             <li>Metallic</li>
         </stuffCategories>
-        <thingCategories>
-            <li>ApparelMisc</li>
-        </thingCategories>
         <statBases>
             <Flammability>0.75</Flammability>
             <MaxHitPoints>160</MaxHitPoints>
@@ -311,16 +265,6 @@
                 <li>Middle</li>
                 <li>Shell</li>
             </layers>
-            <tags>
-                <li>IndustrialBasic</li>
-            </tags>
-            <defaultOutfitTags>
-                <li>Soldier</li>
-            </defaultOutfitTags>
-            <canBeDesiredForIdeo>true</canBeDesiredForIdeo>
         </apparel>
-        <tradeTags>
-            <li>BasicClothing</li>
-        </tradeTags>
     </ThingDef>
 </Defs>
