@@ -1,6 +1,32 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-    <ThingDef ParentName="HatMakeableBase">
+    <ThingDef ParentName="HatMakeableBase" Name="Saracens_HatBase" Abstract="true">
+        <recipeMaker>
+            <researchPrerequisite>DankPyon_Tailoring</researchPrerequisite>
+            <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+            <recipeUsers>
+                <li>DankPyon_TailorsBench</li>
+            </recipeUsers>
+        </recipeMaker>
+        <stuffCategories>
+            <li>Fabric</li>
+            <li>Leathery</li>
+        </stuffCategories>
+        <thingCategories>
+            <li>Apparel</li>
+        </thingCategories>
+        <apparel>
+            <countsAsClothingForNudity>true</countsAsClothingForNudity>
+            <tags>
+                <li>MedievalBasic</li>
+            </tags>
+            <defaultOutfitTags>
+                <li>Worker</li>
+            </defaultOutfitTags>
+            <canBeDesiredForIdeo>true</canBeDesiredForIdeo>
+        </apparel>
+    </ThingDef>
+    <ThingDef ParentName="Saracens_HatBase">
         <defName>SFE_Apparel_NomadHeadWrap</defName>
         <label>nomad head wrap</label>
         <description>A headwrap helps to survive the heat, as well as the coolness of the night.</description>
@@ -10,13 +36,9 @@
             <maskPath>Apparel/Headgear/NomadHeadWarp/Nomad_Head_Wrap_m</maskPath>
             <shaderType>CutoutComplex</shaderType>
             <color>(94, 96, 103)</color>
-
         </graphicData>
         <uiIconScale>1.25</uiIconScale>
         <costStuffCount>50</costStuffCount>
-        <stuffCategories>
-            <li>Fabric</li>
-        </stuffCategories>
         <statBases>
             <MaxHitPoints>80</MaxHitPoints>
             <WorkToMake>60</WorkToMake>
@@ -26,9 +48,7 @@
             <StuffEffectMultiplierInsulation_Heat>0.4</StuffEffectMultiplierInsulation_Heat>
             <EquipDelay>2</EquipDelay>
         </statBases>
-        <generateCommonality>0.5</generateCommonality>
         <apparel>
-            <countsAsClothingForNudity>true</countsAsClothingForNudity>
             <developmentalStageFilter>Child, Adult</developmentalStageFilter>
             <bodyPartGroups>
                 <li>UpperHead</li>
@@ -37,36 +57,9 @@
             <layers>
                 <li>Overhead</li>
             </layers>
-            <tags>
-                <li>MedievalMilitary</li>
-            </tags>
-            <defaultOutfitTags>
-                <li>Worker</li>
-            </defaultOutfitTags>
         </apparel>
-        <colorGenerator Class="ColorGenerator_Options">
-            <options>
-                <li>
-                    <weight>10</weight>
-                    <only>(0.33,0.33,0.33,1)</only>
-                </li>
-                <li>
-                    <weight>10</weight>
-                    <only>(0.65,0.65,0.65,1)</only>
-                </li>
-                <li>
-                    <weight>6</weight>
-                    <min>(0.3,0.3,0.3,1)</min>
-                    <max>(0.5,0.5,0.5,1)</max>
-                </li>
-                <li>
-                    <weight>10</weight>
-                    <only>(0.9,0.9,0.9,1)</only>
-                </li>
-            </options>
-        </colorGenerator>
     </ThingDef>
-    <ThingDef ParentName="HatMakeableBase">
+    <ThingDef ParentName="Saracens_HatBase">
         <defName>SFE_Apparel_LeatherHeadWrap</defName>
         <label>leather head wrap</label>
         <description>A rough leather headwrap is usually worn by poor nomads who own cattle. Cheap and not very strong, but it allows you to survive some types of not the best weapons.</description>
@@ -76,9 +69,6 @@
         </graphicData>
         <uiIconScale>1.25</uiIconScale>
         <costStuffCount>35</costStuffCount>
-        <stuffCategories>
-            <li>Fabric</li>
-        </stuffCategories>
         <statBases>
             <MaxHitPoints>100</MaxHitPoints>
             <WorkToMake>80</WorkToMake>
@@ -89,9 +79,7 @@
             <StuffEffectMultiplierInsulation_Heat>0.25</StuffEffectMultiplierInsulation_Heat>
             <EquipDelay>2</EquipDelay>
         </statBases>
-        <generateCommonality>0.5</generateCommonality>
         <apparel>
-            <countsAsClothingForNudity>true</countsAsClothingForNudity>
             <developmentalStageFilter>Child, Adult</developmentalStageFilter>
             <bodyPartGroups>
                 <li>UpperHead</li>
@@ -101,36 +89,9 @@
             <layers>
                 <li>Overhead</li>
             </layers>
-            <tags>
-                <li>MedievalMilitary</li>
-            </tags>
-            <defaultOutfitTags>
-                <li>Worker</li>
-            </defaultOutfitTags>
         </apparel>
-        <colorGenerator Class="ColorGenerator_Options">
-            <options>
-                <li>
-                    <weight>10</weight>
-                    <only>(0.33,0.33,0.33,1)</only>
-                </li>
-                <li>
-                    <weight>10</weight>
-                    <only>(0.65,0.65,0.65,1)</only>
-                </li>
-                <li>
-                    <weight>6</weight>
-                    <min>(0.3,0.3,0.3,1)</min>
-                    <max>(0.5,0.5,0.5,1)</max>
-                </li>
-                <li>
-                    <weight>10</weight>
-                    <only>(0.9,0.9,0.9,1)</only>
-                </li>
-            </options>
-        </colorGenerator>
     </ThingDef>
-    <ThingDef ParentName="HatMakeableBase">
+    <ThingDef ParentName="Saracens_HatBase">
         <defName>SFE_Apparel_GunnersHat</defName>
         <label>gunner hat</label>
         <description>Elite armband of the southern arrows. It does not provide much protection, but it allows the enemy to understand from afar that a storm is coming.</description>
@@ -140,13 +101,9 @@
             <maskPath>Apparel/Headgear/GunnersHat/Gunners_Hat_m</maskPath>
             <shaderType>CutoutComplex</shaderType>
             <color>(94, 96, 103)</color>
-
         </graphicData>
         <uiIconScale>1.25</uiIconScale>
         <costStuffCount>30</costStuffCount>
-        <stuffCategories>
-            <li>Fabric</li>
-        </stuffCategories>
         <statBases>
             <MaxHitPoints>80</MaxHitPoints>
             <WorkToMake>110</WorkToMake>
@@ -158,11 +115,9 @@
             <EquipDelay>2</EquipDelay>
         </statBases>
         <equippedStatOffsets>
-            <ShootingAccuracyPawn>5</ShootingAccuracyPawn>
+            <ShootingAccuracyPawn>0.5</ShootingAccuracyPawn>
         </equippedStatOffsets>
-        <generateCommonality>0.5</generateCommonality>
         <apparel>
-            <countsAsClothingForNudity>true</countsAsClothingForNudity>
             <developmentalStageFilter>Child, Adult</developmentalStageFilter>
             <bodyPartGroups>
                 <li>UpperHead</li>
@@ -172,36 +127,34 @@
             <layers>
                 <li>Overhead</li>
             </layers>
+        </apparel>
+    </ThingDef>
+    <ThingDef ParentName="ArmorHelmetMakeableBase" Name="Saracens_HelmetBase" Abstract="true">
+        <recipeMaker>
+            <recipeUsers>
+                <li>ElectricSmithy</li>
+                <li>FueledSmithy</li>
+                <li>DankPyon_Anvil</li>
+            </recipeUsers>
+            <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+        </recipeMaker>
+        <stuffCategories>
+            <li>Metallic</li>
+        </stuffCategories>
+        <thingCategories>
+            <li>Apparel</li>
+        </thingCategories>
+        <apparel>
+            <countsAsClothingForNudity>true</countsAsClothingForNudity>
             <tags>
                 <li>MedievalMilitary</li>
             </tags>
             <defaultOutfitTags>
-                <li>Worker</li>
+                <li>Soldier</li>
             </defaultOutfitTags>
         </apparel>
-        <colorGenerator Class="ColorGenerator_Options">
-            <options>
-                <li>
-                    <weight>10</weight>
-                    <only>(0.33,0.33,0.33,1)</only>
-                </li>
-                <li>
-                    <weight>10</weight>
-                    <only>(0.65,0.65,0.65,1)</only>
-                </li>
-                <li>
-                    <weight>6</weight>
-                    <min>(0.3,0.3,0.3,1)</min>
-                    <max>(0.5,0.5,0.5,1)</max>
-                </li>
-                <li>
-                    <weight>10</weight>
-                    <only>(0.9,0.9,0.9,1)</only>
-                </li>
-            </options>
-        </colorGenerator>
     </ThingDef>
-    <ThingDef ParentName="ArmorHelmetMakeableBase">
+    <ThingDef ParentName="Saracens_HelmetBase">
         <defName>SFE_Apparel_NomadLightHelmet</defName>
         <label>nomad light helmet</label>
         <description>Under this headwrap there is a helmet that protects most of the head not only from physical damage, but also from climatic damage.</description>
@@ -211,13 +164,12 @@
             <maskPath>Apparel/Headgear/NomadLightHelmet/Nomad_Light_Helmet_m</maskPath>
             <shaderType>CutoutComplex</shaderType>
             <color>(94, 96, 103)</color>
-
         </graphicData>
         <uiIconScale>1.25</uiIconScale>
         <costStuffCount>40</costStuffCount>
-        <stuffCategories>
-            <li>Metallic</li>
-        </stuffCategories>
+        <recipeMaker>
+            <researchPrerequisite>DankPyon_ProtectiveClothing</researchPrerequisite>
+        </recipeMaker>
         <statBases>
             <MaxHitPoints>120</MaxHitPoints>
             <WorkToMake>110</WorkToMake>
@@ -230,9 +182,7 @@
             <StuffEffectMultiplierInsulation_Heat>2.5</StuffEffectMultiplierInsulation_Heat>
             <EquipDelay>4</EquipDelay>
         </statBases>
-        <generateCommonality>0.5</generateCommonality>
         <apparel>
-            <countsAsClothingForNudity>true</countsAsClothingForNudity>
             <developmentalStageFilter>Child, Adult</developmentalStageFilter>
             <bodyPartGroups>
                 <li>UpperHead</li>
@@ -242,36 +192,9 @@
             <layers>
                 <li>Overhead</li>
             </layers>
-            <tags>
-                <li>MedievalMilitary</li>
-            </tags>
-            <defaultOutfitTags>
-                <li>Worker</li>
-            </defaultOutfitTags>
         </apparel>
-        <colorGenerator Class="ColorGenerator_Options">
-            <options>
-                <li>
-                    <weight>10</weight>
-                    <only>(0.33,0.33,0.33,1)</only>
-                </li>
-                <li>
-                    <weight>10</weight>
-                    <only>(0.65,0.65,0.65,1)</only>
-                </li>
-                <li>
-                    <weight>6</weight>
-                    <min>(0.3,0.3,0.3,1)</min>
-                    <max>(0.5,0.5,0.5,1)</max>
-                </li>
-                <li>
-                    <weight>10</weight>
-                    <only>(0.9,0.9,0.9,1)</only>
-                </li>
-            </options>
-        </colorGenerator>
     </ThingDef>
-    <ThingDef ParentName="ArmorHelmetMakeableBase">
+    <ThingDef ParentName="Saracens_HelmetBase">
         <defName>SFE_Apparel_WrappedSouthernHelmet</defName>
         <label>wrapped southern helmet</label>
         <description>Covered with a thin layer of gold, this helmet not only shows the status of a person, but also gives him sufficient protection.</description>
@@ -281,13 +204,12 @@
             <maskPath>Apparel/Headgear/WrappedSouthernHelmet/Wrapped_Southern_Helmet_m</maskPath>
             <shaderType>CutoutComplex</shaderType>
             <color>(94, 96, 103)</color>
-
         </graphicData>
         <uiIconScale>1.25</uiIconScale>
         <costStuffCount>50</costStuffCount>
-        <stuffCategories>
-            <li>Metallic</li>
-        </stuffCategories>
+        <recipeMaker>
+            <researchPrerequisite>DankPyon_ProtectiveClothing</researchPrerequisite>
+        </recipeMaker>
         <statBases>
             <MaxHitPoints>140</MaxHitPoints>
             <WorkToMake>205</WorkToMake>
@@ -298,9 +220,7 @@
             <Insulation_Heat>6</Insulation_Heat>
             <EquipDelay>4</EquipDelay>
         </statBases>
-        <generateCommonality>0.5</generateCommonality>
         <apparel>
-            <countsAsClothingForNudity>true</countsAsClothingForNudity>
             <developmentalStageFilter>Child, Adult</developmentalStageFilter>
             <bodyPartGroups>
                 <li>UpperHead</li>
@@ -310,36 +230,9 @@
             <layers>
                 <li>Overhead</li>
             </layers>
-            <tags>
-                <li>MedievalMilitary</li>
-            </tags>
-            <defaultOutfitTags>
-                <li>Worker</li>
-            </defaultOutfitTags>
         </apparel>
-        <colorGenerator Class="ColorGenerator_Options">
-            <options>
-                <li>
-                    <weight>10</weight>
-                    <only>(0.33,0.33,0.33,1)</only>
-                </li>
-                <li>
-                    <weight>10</weight>
-                    <only>(0.65,0.65,0.65,1)</only>
-                </li>
-                <li>
-                    <weight>6</weight>
-                    <min>(0.3,0.3,0.3,1)</min>
-                    <max>(0.5,0.5,0.5,1)</max>
-                </li>
-                <li>
-                    <weight>10</weight>
-                    <only>(0.9,0.9,0.9,1)</only>
-                </li>
-            </options>
-        </colorGenerator>
     </ThingDef>
-    <ThingDef ParentName="ArmorHelmetMakeableBase">
+    <ThingDef ParentName="Saracens_HelmetBase">
         <defName>SFE_Apparel_SpikedSkullCapWithMail</defName>
         <label>spiked skull cap with mail</label>
         <description>The headwrap, made in dark tones, with a metal disguise, hides the identity of the owner, while providing high protection of the head.</description>
@@ -349,13 +242,12 @@
             <maskPath>Apparel/Headgear/SpikedSkullCapwithMail/Spiked_Skull_Cap_with_Mail_m</maskPath>
             <shaderType>CutoutComplex</shaderType>
             <color>(94, 96, 103)</color>
-
         </graphicData>
         <uiIconScale>1.25</uiIconScale>
         <costStuffCount>50</costStuffCount>
-        <stuffCategories>
-            <li>Metallic</li>
-        </stuffCategories>
+        <recipeMaker>
+            <researchPrerequisite>DankPyon_ProtectiveClothing</researchPrerequisite>
+        </recipeMaker>
         <statBases>
             <MaxHitPoints>150</MaxHitPoints>
             <WorkToMake>270</WorkToMake>
@@ -367,11 +259,9 @@
             <EquipDelay>10</EquipDelay>
         </statBases>
         <equippedStatOffsets>
-            <SocialImpact>5</SocialImpact>
+            <SocialImpact>0.5</SocialImpact>
         </equippedStatOffsets>
-        <generateCommonality>0.5</generateCommonality>
         <apparel>
-            <countsAsClothingForNudity>true</countsAsClothingForNudity>
             <developmentalStageFilter>Child, Adult</developmentalStageFilter>
             <bodyPartGroups>
                 <li>UpperHead</li>
@@ -381,36 +271,9 @@
             <layers>
                 <li>Overhead</li>
             </layers>
-            <tags>
-                <li>MedievalMilitary</li>
-            </tags>
-            <defaultOutfitTags>
-                <li>Worker</li>
-            </defaultOutfitTags>
         </apparel>
-        <colorGenerator Class="ColorGenerator_Options">
-            <options>
-                <li>
-                    <weight>10</weight>
-                    <only>(0.33,0.33,0.33,1)</only>
-                </li>
-                <li>
-                    <weight>10</weight>
-                    <only>(0.65,0.65,0.65,1)</only>
-                </li>
-                <li>
-                    <weight>6</weight>
-                    <min>(0.3,0.3,0.3,1)</min>
-                    <max>(0.5,0.5,0.5,1)</max>
-                </li>
-                <li>
-                    <weight>10</weight>
-                    <only>(0.9,0.9,0.9,1)</only>
-                </li>
-            </options>
-        </colorGenerator>
     </ThingDef>
-    <ThingDef ParentName="ArmorHelmetMakeableBase">
+    <ThingDef ParentName="Saracens_HelmetBase">
         <defName>SFE_Apparel_ReinforcedNomadHelmet</defName>
         <label>reinforced nomad helmet</label>
         <description>Nomads who have been wandering through lifeless deserts for a long time in search of means of living have acquired this extremely good helmet with a nanosuit and a bandage that can be used at any time to protect against heat or cold.</description>
@@ -420,13 +283,12 @@
             <maskPath>Apparel/Headgear/NomadReinforcedHelmet/Nomad_Reinforced_Helmet_m</maskPath>
             <shaderType>CutoutComplex</shaderType>
             <color>(94, 96, 103)</color>
-
         </graphicData>
         <uiIconScale>1.25</uiIconScale>
         <costStuffCount>65</costStuffCount>
-        <stuffCategories>
-            <li>Fabric</li>
-        </stuffCategories>
+        <recipeMaker>
+            <researchPrerequisite>DankPyon_ProtectiveClothing</researchPrerequisite>
+        </recipeMaker>
         <statBases>
             <MaxHitPoints>170</MaxHitPoints>
             <WorkToMake>300</WorkToMake>
@@ -438,11 +300,9 @@
             <EquipDelay>6</EquipDelay>
         </statBases>
         <equippedStatOffsets>
-            <SocialImpact>5</SocialImpact>
+            <SocialImpact>0.5</SocialImpact>
         </equippedStatOffsets>
-        <generateCommonality>0.5</generateCommonality>
         <apparel>
-            <countsAsClothingForNudity>true</countsAsClothingForNudity>
             <developmentalStageFilter>Child, Adult</developmentalStageFilter>
             <bodyPartGroups>
                 <li>FullHead</li>
@@ -452,36 +312,9 @@
             <layers>
                 <li>Overhead</li>
             </layers>
-            <tags>
-                <li>MedievalMilitary</li>
-            </tags>
-            <defaultOutfitTags>
-                <li>Worker</li>
-            </defaultOutfitTags>
         </apparel>
-        <colorGenerator Class="ColorGenerator_Options">
-            <options>
-                <li>
-                    <weight>10</weight>
-                    <only>(0.33,0.33,0.33,1)</only>
-                </li>
-                <li>
-                    <weight>10</weight>
-                    <only>(0.65,0.65,0.65,1)</only>
-                </li>
-                <li>
-                    <weight>6</weight>
-                    <min>(0.3,0.3,0.3,1)</min>
-                    <max>(0.5,0.5,0.5,1)</max>
-                </li>
-                <li>
-                    <weight>10</weight>
-                    <only>(0.9,0.9,0.9,1)</only>
-                </li>
-            </options>
-        </colorGenerator>
     </ThingDef>
-    <ThingDef ParentName="ArmorHelmetMakeableBase">
+    <ThingDef ParentName="Saracens_HelmetBase">
         <defName>SFE_Apparel_AssasinFaceMask</defName>
         <label>assasin face mask</label>
         <description>The headwrap, made in dark tones, with a metal disguise, hides the identity of the owner, while providing high protection of the head.</description>
@@ -494,9 +327,9 @@
         </graphicData>
         <uiIconScale>1.25</uiIconScale>
         <costStuffCount>55</costStuffCount>
-        <stuffCategories>
-            <li>Metallic</li>
-        </stuffCategories>
+        <recipeMaker>
+            <researchPrerequisite>DankPyon_ChainArmor</researchPrerequisite>
+        </recipeMaker>
         <statBases>
             <MaxHitPoints>140</MaxHitPoints>
             <WorkToMake>300</WorkToMake>
@@ -508,11 +341,9 @@
             <EquipDelay>6</EquipDelay>
         </statBases>
         <equippedStatOffsets>
-            <SocialImpact>5</SocialImpact>
+            <SocialImpact>0.5</SocialImpact>
         </equippedStatOffsets>
-        <generateCommonality>0.5</generateCommonality>
         <apparel>
-            <countsAsClothingForNudity>true</countsAsClothingForNudity>
             <developmentalStageFilter>Child, Adult</developmentalStageFilter>
             <bodyPartGroups>
                 <li>FullHead</li>
@@ -522,36 +353,9 @@
             <layers>
                 <li>Overhead</li>
             </layers>
-            <tags>
-                <li>MedievalMilitary</li>
-            </tags>
-            <defaultOutfitTags>
-                <li>Worker</li>
-            </defaultOutfitTags>
         </apparel>
-        <colorGenerator Class="ColorGenerator_Options">
-            <options>
-                <li>
-                    <weight>10</weight>
-                    <only>(0.33,0.33,0.33,1)</only>
-                </li>
-                <li>
-                    <weight>10</weight>
-                    <only>(0.65,0.65,0.65,1)</only>
-                </li>
-                <li>
-                    <weight>6</weight>
-                    <min>(0.3,0.3,0.3,1)</min>
-                    <max>(0.5,0.5,0.5,1)</max>
-                </li>
-                <li>
-                    <weight>10</weight>
-                    <only>(0.9,0.9,0.9,1)</only>
-                </li>
-            </options>
-        </colorGenerator>
     </ThingDef>
-    <ThingDef Name="HeavyLamellarHelmet" ParentName="ArmorHelmetMakeableBase">
+    <ThingDef Name="HeavyLamellarHelmet" ParentName="Saracens_HelmetBase">
         <defName>SFE_Apparel_HeavyLamellarHelmet</defName>
         <label>heavy lamellar helmet</label>
         <description>The heavy helmet of the southern army is not so popular because of its high cost and complexity in manufacturing. At the same time, it is worth the money, according to its carriers.</description>
@@ -561,13 +365,12 @@
             <maskPath>Apparel/Headgear/HeavyLamellarHelmet/Heavy_Lamellar_Helmet_m</maskPath>
             <shaderType>CutoutComplex</shaderType>
             <color>(94, 96, 103)</color>
-
         </graphicData>
         <uiIconScale>1.25</uiIconScale>
         <costStuffCount>80</costStuffCount>
-        <stuffCategories>
-            <li>Metallic</li>
-        </stuffCategories>
+        <recipeMaker>
+            <researchPrerequisite>PlateArmor</researchPrerequisite>
+        </recipeMaker>
         <statBases>
             <MaxHitPoints>200</MaxHitPoints>
             <WorkToMake>300</WorkToMake>
@@ -581,9 +384,7 @@
             <MeleeHitChance>                -1            </MeleeHitChance>
             <ShootingAccuracyPawn>-2</ShootingAccuracyPawn>
         </equippedStatOffsets>
-        <generateCommonality>0.5</generateCommonality>
         <apparel>
-            <countsAsClothingForNudity>true</countsAsClothingForNudity>
             <developmentalStageFilter>Child, Adult</developmentalStageFilter>
             <bodyPartGroups>
                 <li>FullHead</li>
@@ -593,34 +394,7 @@
             <layers>
                 <li>Overhead</li>
             </layers>
-            <tags>
-                <li>MedievalMilitary</li>
-            </tags>
-            <defaultOutfitTags>
-                <li>Worker</li>
-            </defaultOutfitTags>
         </apparel>
-        <colorGenerator Class="ColorGenerator_Options">
-            <options>
-                <li>
-                    <weight>10</weight>
-                    <only>(0.33,0.33,0.33,1)</only>
-                </li>
-                <li>
-                    <weight>10</weight>
-                    <only>(0.65,0.65,0.65,1)</only>
-                </li>
-                <li>
-                    <weight>6</weight>
-                    <min>(0.3,0.3,0.3,1)</min>
-                    <max>(0.5,0.5,0.5,1)</max>
-                </li>
-                <li>
-                    <weight>10</weight>
-                    <only>(0.9,0.9,0.9,1)</only>
-                </li>
-            </options>
-        </colorGenerator>
     </ThingDef>
     <ThingDef ParentName="HeavyLamellarHelmet">
         <defName>SFE_Apparel_OfficerHelmet</defName>
@@ -633,6 +407,12 @@
             <shaderType>CutoutComplex</shaderType>
             <color>(94, 96, 103)</color>
         </graphicData>
+        <recipeMaker>
+            <researchPrerequisites>
+                <li>PlateArmor</li>
+                <li>DankPyon_AdornedArmor</li>
+            </researchPrerequisites>
+        </recipeMaker>
         <statBases>
             <MaxHitPoints>225</MaxHitPoints>
             <WorkToMake>350</WorkToMake>
@@ -645,13 +425,12 @@
         <equippedStatOffsets>
             <SocialImpact>0.1</SocialImpact>
         </equippedStatOffsets>
-        <generateCommonality>0.5</generateCommonality>
         <apparel>
             <wornGraphicPath>Apparel/Headgear/Elite/OfficerHelmet/Officer_Helmet</wornGraphicPath>
             <useWornGraphicMask>true</useWornGraphicMask>
         </apparel>
     </ThingDef>
-    <ThingDef ParentName="ArmorHelmetMakeableBase">
+    <ThingDef ParentName="Saracens_HelmetBase">
         <defName>SFE_Apparel_SoutherHelmetWithCoif</defName>
         <label>southern helmet with coif</label>
         <description>Decorated with gold and lined with leather, the helmet provides excellent protection not only for the head, but also for the neck.</description>
@@ -661,13 +440,12 @@
             <maskPath>Apparel/Headgear/SouthernHelmetWithCoif/Southern_Helmet_with_Coif_m</maskPath>
             <shaderType>CutoutComplex</shaderType>
             <color>(94, 96, 103)</color>
-
         </graphicData>
         <uiIconScale>1.25</uiIconScale>
         <costStuffCount>75</costStuffCount>
-        <stuffCategories>
-            <li>Metallic</li>
-        </stuffCategories>
+        <recipeMaker>
+            <researchPrerequisite>DankPyon_ChainArmor</researchPrerequisite>
+        </recipeMaker>
         <statBases>
             <MaxHitPoints>160</MaxHitPoints>
             <WorkToMake>280</WorkToMake>
@@ -677,11 +455,9 @@
             <EquipDelay>12</EquipDelay>
         </statBases>
         <equippedStatOffsets>
-            <SocialImpact>5</SocialImpact>
+            <SocialImpact>0.5</SocialImpact>
         </equippedStatOffsets>
-        <generateCommonality>0.5</generateCommonality>
         <apparel>
-            <countsAsClothingForNudity>true</countsAsClothingForNudity>
             <developmentalStageFilter>Child, Adult</developmentalStageFilter>
             <bodyPartGroups>
                 <li>FullHead</li>
@@ -691,36 +467,9 @@
             <layers>
                 <li>Overhead</li>
             </layers>
-            <tags>
-                <li>MedievalMilitary</li>
-            </tags>
-            <defaultOutfitTags>
-                <li>Worker</li>
-            </defaultOutfitTags>
         </apparel>
-        <colorGenerator Class="ColorGenerator_Options">
-            <options>
-                <li>
-                    <weight>10</weight>
-                    <only>(0.33,0.33,0.33,1)</only>
-                </li>
-                <li>
-                    <weight>10</weight>
-                    <only>(0.65,0.65,0.65,1)</only>
-                </li>
-                <li>
-                    <weight>6</weight>
-                    <min>(0.3,0.3,0.3,1)</min>
-                    <max>(0.5,0.5,0.5,1)</max>
-                </li>
-                <li>
-                    <weight>10</weight>
-                    <only>(0.9,0.9,0.9,1)</only>
-                </li>
-            </options>
-        </colorGenerator>
     </ThingDef>
-    <ThingDef Name="TurbanHelm" ParentName="ArmorHelmetMakeableBase">
+    <ThingDef Name="TurbanHelm" ParentName="Saracens_HelmetBase">
         <defName>SFE_Apparel_TurbanHelm</defName>
         <label>turban helm</label>
         <description>A full helmet resembling the turban of sultans and other high-ranking personalities. The patterns on the helmet and the gold-plated coating indicate the strong status of the owner.</description>
@@ -733,9 +482,11 @@
         </graphicData>
         <uiIconScale>1.25</uiIconScale>
         <costStuffCount>85</costStuffCount>
-        <stuffCategories>
-            <li>Metallic</li>
-        </stuffCategories>
+        <recipeMaker>
+            <researchPrerequisites>
+                <li>PlateArmor</li>
+            </researchPrerequisites>
+        </recipeMaker>
         <statBases>
             <MaxHitPoints>240</MaxHitPoints>
             <WorkToMake>380</WorkToMake>
@@ -751,9 +502,7 @@
             <ShootingAccuracyPawn>-3</ShootingAccuracyPawn>
             <MeleeHitChance>-1.5</MeleeHitChance>
         </equippedStatOffsets>
-        <generateCommonality>0.5</generateCommonality>
         <apparel>
-            <countsAsClothingForNudity>true</countsAsClothingForNudity>
             <developmentalStageFilter>Child, Adult</developmentalStageFilter>
             <bodyPartGroups>
                 <li>FullHead</li>
@@ -763,12 +512,6 @@
             <layers>
                 <li>Overhead</li>
             </layers>
-            <tags>
-                <li>MedievalMilitary</li>
-            </tags>
-            <defaultOutfitTags>
-                <li>Worker</li>
-            </defaultOutfitTags>
         </apparel>
     </ThingDef>
     <ThingDef ParentName="TurbanHelm">
@@ -785,6 +528,11 @@
         <equippedStatOffsets>
             <SocialImpact>0.25</SocialImpact>
         </equippedStatOffsets>
+        <recipeMaker>
+            <researchPrerequisites>
+                <li>DankPyon_AdornedArmor</li>
+            </researchPrerequisites>
+        </recipeMaker>
         <apparel>
             <wornGraphicPath>Apparel/Headgear/GildedTurbanHelmet/Gilded_Turban_Helmet</wornGraphicPath>
             <useWornGraphicMask>true</useWornGraphicMask>
@@ -810,12 +558,17 @@
             <MeleeHitChance>-1.5</MeleeHitChance>
             <ShootingAccuracyPawn>-3</ShootingAccuracyPawn>
         </equippedStatOffsets>
+        <recipeMaker>
+            <researchPrerequisites>
+                <li>DankPyon_AdornedArmor</li>
+            </researchPrerequisites>
+        </recipeMaker>
         <apparel>
             <wornGraphicPath>Apparel/Headgear/Elite/GeneralHelm/General_Helm</wornGraphicPath>
             <useWornGraphicMask>true</useWornGraphicMask>
         </apparel>
     </ThingDef>
-    <ThingDef ParentName="ArmorHelmetMakeableBase">
+    <ThingDef ParentName="Saracens_HelmetBase">
         <defName>SFE_Apparel_WardenHelm</defName>
         <label>warden helm</label>
         <description>The former assassins cover the helmet with gold and strengthen it, achieving not only external beauty, but also perfect protection of the head and face.</description>
@@ -828,9 +581,6 @@
         </graphicData>
         <uiIconScale>1.25</uiIconScale>
         <costStuffCount>95</costStuffCount>
-        <stuffCategories>
-            <li>Metallic</li>
-        </stuffCategories>
         <statBases>
             <MaxHitPoints>320</MaxHitPoints>
             <WorkToMake>520</WorkToMake>
@@ -847,9 +597,13 @@
             <PainShockThreshold>0.75</PainShockThreshold>
             <MeleeHitChance>-1.5</MeleeHitChance>
         </equippedStatOffsets>
-        <generateCommonality>0.5</generateCommonality>
+        <recipeMaker>
+            <researchPrerequisites>
+                <li>PlateArmor</li>
+                <li>DankPyon_AdornedArmor</li>
+            </researchPrerequisites>
+        </recipeMaker>
         <apparel>
-            <countsAsClothingForNudity>true</countsAsClothingForNudity>
             <developmentalStageFilter>Child, Adult</developmentalStageFilter>
             <bodyPartGroups>
                 <li>FullHead</li>
@@ -859,15 +613,9 @@
             <layers>
                 <li>Overhead</li>
             </layers>
-            <tags>
-                <li>MedievalMilitary</li>
-            </tags>
-            <defaultOutfitTags>
-                <li>Worker</li>
-            </defaultOutfitTags>
         </apparel>
     </ThingDef>
-        <ThingDef ParentName="ArmorHelmetMakeableBase">
+    <ThingDef ParentName="Saracens_HelmetBase">
         <defName>SFE_Apparel_GladiatorHelm</defName>
         <label>gladiator helm</label>
         <graphicData>
@@ -876,9 +624,6 @@
         </graphicData>
         <uiIconScale>1.25</uiIconScale>
         <costStuffCount>160</costStuffCount>
-        <stuffCategories>
-            <li>Metallic</li>
-        </stuffCategories>
         <statBases>
             <MaxHitPoints>350</MaxHitPoints>
             <WorkToMake>300</WorkToMake>
@@ -892,9 +637,10 @@
             <PainShockThreshold>0.1</PainShockThreshold>
             <MeleeHitChance>-1.5</MeleeHitChance>
         </equippedStatOffsets>
-        <generateCommonality>0.5</generateCommonality>
+        <recipeMaker>
+            <researchPrerequisite>PlateArmor</researchPrerequisite>
+        </recipeMaker>
         <apparel>
-            <countsAsClothingForNudity>true</countsAsClothingForNudity>
             <developmentalStageFilter>Child, Adult</developmentalStageFilter>
             <bodyPartGroups>
                 <li>FullHead</li>
@@ -903,12 +649,6 @@
             <layers>
                 <li>Overhead</li>
             </layers>
-            <tags>
-                <li>MedievalMilitary</li>
-            </tags>
-            <defaultOutfitTags>
-                <li>Worker</li>
-            </defaultOutfitTags>
         </apparel>
     </ThingDef>
 </Defs>
