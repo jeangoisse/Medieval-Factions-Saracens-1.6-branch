@@ -1,5 +1,33 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+    <ThingDef ParentName="DankPyon_Base_Blunt_Oversize" Name="Saracens_BaseBlunt" Abstract="true">
+        <recipeMaker>
+            <researchPrerequisite>DankPyon_Tailoring</researchPrerequisite>
+            <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+            <recipeUsers>
+                <li>ElectricSmithy</li>
+                <li>FueledSmithy</li>
+                <li>DankPyon_Anvil</li>
+            </recipeUsers>
+        </recipeMaker>
+        <stuffCategories>
+            <li>Fabric</li>
+            <li>Leathery</li>
+        </stuffCategories>
+        <thingCategories>
+            <li>Apparel</li>
+        </thingCategories>
+        <apparel>
+            <countsAsClothingForNudity>true</countsAsClothingForNudity>
+            <tags>
+                <li>MedievalBasic</li>
+            </tags>
+            <defaultOutfitTags>
+                <li>Worker</li>
+            </defaultOutfitTags>
+            <canBeDesiredForIdeo>true</canBeDesiredForIdeo>
+        </apparel>
+    </ThingDef>
     <ThingDef ParentName="DankPyon_Base_Blunt_Oversize">
         <defName>SFE_MeleeWeapon_Polemace</defName>
         <label>polemace</label>

@@ -34,7 +34,7 @@
             <color>(94, 96, 103)</color>
         </graphicData>
         <costList>
-            <Cloth>40</Cloth>
+            <DankPyon_Linen>40</DankPyon_Linen>
         </costList>
         <costStuffCount>80</costStuffCount>
         <equippedStatOffsets>
@@ -84,7 +84,7 @@
             <color>(93, 96, 103)</color>
         </graphicData>
         <costList>
-            <Cloth>95</Cloth>
+            <DankPyon_Linen>95</DankPyon_Linen>
         </costList>
         <costStuffCount>120</costStuffCount>
         <equippedStatOffsets>

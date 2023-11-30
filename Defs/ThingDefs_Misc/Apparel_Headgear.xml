@@ -171,7 +171,7 @@
         <uiIconScale>1.25</uiIconScale>
         <costStuffCount>40</costStuffCount>
         <costList>
-            <Cloth>50</Cloth>
+            <DankPyon_Linen>50</DankPyon_Linen>
         </costList>
         <recipeMaker>
             <researchPrerequisite>DankPyon_ProtectiveClothing</researchPrerequisite>
@@ -214,7 +214,7 @@
         <uiIconScale>1.25</uiIconScale>
         <costStuffCount>50</costStuffCount>
         <costList>
-            <Cloth>35</Cloth>
+            <DankPyon_Linen>35</DankPyon_Linen>
         </costList>
         <recipeMaker>
             <researchPrerequisite>DankPyon_ProtectiveClothing</researchPrerequisite>
@@ -299,7 +299,7 @@
         <uiIconScale>1.25</uiIconScale>
         <costStuffCount>65</costStuffCount>
         <costList>
-            <Cloth>18</Cloth>
+            <DankPyon_Linen>18</DankPyon_Linen>
         </costList>
         <recipeMaker>
             <researchPrerequisite>DankPyon_ProtectiveClothing</researchPrerequisite>
@@ -343,7 +343,7 @@
         <uiIconScale>1.25</uiIconScale>
         <costStuffCount>55</costStuffCount>
         <costList>
-            <Cloth>55</Cloth>
+            <DankPyon_Linen>55</DankPyon_Linen>
         </costList>
         <recipeMaker>
             <researchPrerequisite>DankPyon_ChainArmor</researchPrerequisite>
@@ -436,7 +436,7 @@
         </recipeMaker>
         <costList>
             <Gold>1</Gold>
-            <Cloth>15</Cloth>
+            <DankPyon_Linen>15</DankPyon_Linen>
         </costList>
         <statBases>
             <MaxHitPoints>225</MaxHitPoints>
@@ -594,7 +594,7 @@
         </equippedStatOffsets>
         <costList>
             <Gold>3</Gold>
-            <Cloth>10</Cloth>
+            <DankPyon_Linen>10</DankPyon_Linen>
         </costList>
         <recipeMaker>
             <researchPrerequisites>
@@ -621,7 +621,7 @@
         <costStuffCount>95</costStuffCount>
         <costList>
             <Gold>8</Gold>
-            <Cloth>50</Cloth>
+            <DankPyon_Linen>50</DankPyon_Linen>
         </costList>
         <statBases>
             <MaxHitPoints>320</MaxHitPoints>

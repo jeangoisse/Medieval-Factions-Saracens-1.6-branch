@@ -74,7 +74,7 @@
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <costList>
-            <Cloth>40</Cloth>
+            <DankPyon_Linen>40</DankPyon_Linen>
         </costList>
         <costStuffCount>190</costStuffCount>
         <equippedStatOffsets>

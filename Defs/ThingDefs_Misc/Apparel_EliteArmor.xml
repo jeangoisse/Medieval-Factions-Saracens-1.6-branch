@@ -38,7 +38,7 @@
         </graphicData>
         <costList>
             <Gold>10</Gold>
-            <Cloth>20</Cloth>
+            <DankPyon_Linen>20</DankPyon_Linen>
         </costList>
         <costStuffCount>140</costStuffCount>
         <equippedStatOffsets>
@@ -93,7 +93,7 @@
         </graphicData>
         <costList>
             <Gold>15</Gold>
-            <Cloth>80</Cloth>
+            <DankPyon_Linen>80</DankPyon_Linen>
         </costList>
         <costStuffCount>160</costStuffCount>
         <equippedStatOffsets>
@@ -149,7 +149,7 @@
         </graphicData>
         <costList>
             <Gold>12</Gold>
-            <Cloth>55</Cloth>
+            <DankPyon_Linen>55</DankPyon_Linen>
         </costList>
         <costStuffCount>155</costStuffCount>
         <equippedStatOffsets>
