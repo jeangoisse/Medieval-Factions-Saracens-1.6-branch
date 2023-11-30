@@ -56,6 +56,9 @@
     <uiIconScale>1.2</uiIconScale>
     <techLevel>Medieval</techLevel>
     <costStuffCount>50</costStuffCount>
+    <costList>
+      <WoodLog>40</WoodLog>
+    </costList>
     <weaponTags>
       <li>MedievalMeleeDecent</li>
     </weaponTags>
@@ -100,6 +103,13 @@
         <cooldownTime>2.1</cooldownTime>
       </li>
     </tools>
+    <recipeMaker>
+      <researchPrerequisite>DankPyon_MilitaryPolearms</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>5</Crafting>
+      </skillRequirements>
+      <displayPriority>410</displayPriority>
+    </recipeMaker>
     <verbs>
       <li>
         <label>fire charge</label>

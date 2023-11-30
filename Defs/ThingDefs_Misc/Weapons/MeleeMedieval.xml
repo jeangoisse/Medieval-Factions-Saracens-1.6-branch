@@ -1,33 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-    <ThingDef ParentName="DankPyon_Base_Blunt_Oversize" Name="Saracens_BaseBlunt" Abstract="true">
-        <recipeMaker>
-            <researchPrerequisite>DankPyon_Tailoring</researchPrerequisite>
-            <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
-            <recipeUsers>
-                <li>ElectricSmithy</li>
-                <li>FueledSmithy</li>
-                <li>DankPyon_Anvil</li>
-            </recipeUsers>
-        </recipeMaker>
-        <stuffCategories>
-            <li>Fabric</li>
-            <li>Leathery</li>
-        </stuffCategories>
-        <thingCategories>
-            <li>Apparel</li>
-        </thingCategories>
-        <apparel>
-            <countsAsClothingForNudity>true</countsAsClothingForNudity>
-            <tags>
-                <li>MedievalBasic</li>
-            </tags>
-            <defaultOutfitTags>
-                <li>Worker</li>
-            </defaultOutfitTags>
-            <canBeDesiredForIdeo>true</canBeDesiredForIdeo>
-        </apparel>
-    </ThingDef>
     <ThingDef ParentName="DankPyon_Base_Blunt_Oversize">
         <defName>SFE_MeleeWeapon_Polemace</defName>
         <label>polemace</label>
@@ -44,6 +16,9 @@
         <uiIconScale>1.2</uiIconScale>
         <techLevel>Medieval</techLevel>
         <costStuffCount>50</costStuffCount>
+        <costList>
+            <WoodLog>50</WoodLog>
+        </costList>
         <statBases>
             <MaxHitPoints>105</MaxHitPoints>
             <WorkToMake>256</WorkToMake>
@@ -92,9 +67,9 @@
             </li>
         </tools>
         <recipeMaker>
-            <researchPrerequisite>Smithing</researchPrerequisite>
+            <researchPrerequisite>DankPyon_MilitaryMaces</researchPrerequisite>
             <skillRequirements>
-                <Crafting>3</Crafting>
+                <Crafting>5</Crafting>
             </skillRequirements>
             <displayPriority>410</displayPriority>
         </recipeMaker>
@@ -114,6 +89,9 @@
         <uiIconScale>1.2</uiIconScale>
         <techLevel>Medieval</techLevel>
         <costStuffCount>50</costStuffCount>
+        <costList>
+            <WoodLog>10</WoodLog>
+        </costList>
         <weaponTags>
             <li>MedievalMeleeDecent</li>
         </weaponTags>
@@ -161,7 +139,7 @@
             </li>
         </tools>
         <recipeMaker>
-            <researchPrerequisite>Smithing</researchPrerequisite>
+            <researchPrerequisite>DankPyon_BasicBlades</researchPrerequisite>
             <skillRequirements>
                 <Crafting>3</Crafting>
             </skillRequirements>
@@ -183,6 +161,9 @@
         <uiIconScale>1.2</uiIconScale>
         <techLevel>Medieval</techLevel>
         <costStuffCount>50</costStuffCount>
+        <costList>
+            <WoodLog>15</WoodLog>
+        </costList>
         <weaponTags>
             <li>MedievalMeleeDecent</li>
         </weaponTags>
@@ -221,9 +202,9 @@
             </li>
         </tools>
         <recipeMaker>
-            <researchPrerequisite>Smithing</researchPrerequisite>
+            <researchPrerequisite>DankPyon_BasicBlades</researchPrerequisite>
             <skillRequirements>
-                <Crafting>3</Crafting>
+                <Crafting>4</Crafting>
             </skillRequirements>
             <displayPriority>410</displayPriority>
         </recipeMaker>
@@ -243,6 +224,9 @@
         <uiIconScale>1.2</uiIconScale>
         <techLevel>Medieval</techLevel>
         <costStuffCount>50</costStuffCount>
+        <costList>
+            <WoodLog>15</WoodLog>
+        </costList>
         <weaponTags>
             <li>MedievalMeleeDecent</li>
         </weaponTags>
@@ -281,9 +265,9 @@
             </li>
         </tools>
         <recipeMaker>
-            <researchPrerequisite>Smithing</researchPrerequisite>
+            <researchPrerequisite>DankPyon_MilitaryBlades</researchPrerequisite>
             <skillRequirements>
-                <Crafting>3</Crafting>
+                <Crafting>5</Crafting>
             </skillRequirements>
             <displayPriority>410</displayPriority>
         </recipeMaker>
@@ -303,6 +287,9 @@
         <uiIconScale>1.2</uiIconScale>
         <techLevel>Medieval</techLevel>
         <costStuffCount>50</costStuffCount>
+        <costList>
+            <WoodLog>15</WoodLog>
+        </costList>
         <weaponTags>
             <li>MedievalMeleeDecent</li>
         </weaponTags>
@@ -341,9 +328,9 @@
             </li>
         </tools>
         <recipeMaker>
-            <researchPrerequisite>Smithing</researchPrerequisite>
+            <researchPrerequisite>LongBlades</researchPrerequisite>
             <skillRequirements>
-                <Crafting>3</Crafting>
+                <Crafting>5</Crafting>
             </skillRequirements>
             <displayPriority>410</displayPriority>
         </recipeMaker>
@@ -364,6 +351,9 @@
         <uiIconScale>1.2</uiIconScale>
         <techLevel>Medieval</techLevel>
         <costStuffCount>50</costStuffCount>
+        <costList>
+            <WoodLog>20</WoodLog>
+        </costList>
         <weaponTags>
             <li>MedievalMeleeDecent</li>
         </weaponTags>
@@ -401,9 +391,9 @@
             </li>
         </tools>
         <recipeMaker>
-            <researchPrerequisite>Smithing</researchPrerequisite>
+            <researchPrerequisite>LongBlades</researchPrerequisite>
             <skillRequirements>
-                <Crafting>3</Crafting>
+                <Crafting>6</Crafting>
             </skillRequirements>
             <displayPriority>410</displayPriority>
         </recipeMaker>
@@ -424,6 +414,9 @@
         <uiIconScale>1.2</uiIconScale>
         <techLevel>Medieval</techLevel>
         <costStuffCount>50</costStuffCount>
+        <costList>
+            <WoodLog>30</WoodLog>
+        </costList>
         <weaponTags>
             <li>MedievalMeleeDecent</li>
         </weaponTags>
@@ -461,9 +454,9 @@
             </li>
         </tools>
         <recipeMaker>
-            <researchPrerequisite>Smithing</researchPrerequisite>
+            <researchPrerequisite>LongBlades</researchPrerequisite>
             <skillRequirements>
-                <Crafting>3</Crafting>
+                <Crafting>6</Crafting>
             </skillRequirements>
             <displayPriority>410</displayPriority>
         </recipeMaker>
