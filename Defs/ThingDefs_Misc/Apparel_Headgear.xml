@@ -104,6 +104,9 @@
         </graphicData>
         <uiIconScale>1.25</uiIconScale>
         <costStuffCount>30</costStuffCount>
+        <costList>
+            <Gold>1</Gold>
+        </costList>
         <statBases>
             <MaxHitPoints>80</MaxHitPoints>
             <WorkToMake>110</WorkToMake>
@@ -167,6 +170,9 @@
         </graphicData>
         <uiIconScale>1.25</uiIconScale>
         <costStuffCount>40</costStuffCount>
+        <costList>
+            <Cloth>50</Cloth>
+        </costList>
         <recipeMaker>
             <researchPrerequisite>DankPyon_ProtectiveClothing</researchPrerequisite>
         </recipeMaker>
@@ -207,6 +213,9 @@
         </graphicData>
         <uiIconScale>1.25</uiIconScale>
         <costStuffCount>50</costStuffCount>
+        <costList>
+            <Cloth>35</Cloth>
+        </costList>
         <recipeMaker>
             <researchPrerequisite>DankPyon_ProtectiveClothing</researchPrerequisite>
         </recipeMaker>
@@ -245,6 +254,9 @@
         </graphicData>
         <uiIconScale>1.25</uiIconScale>
         <costStuffCount>50</costStuffCount>
+        <costList>
+            <Gold>2</Gold>
+        </costList>
         <recipeMaker>
             <researchPrerequisite>DankPyon_ProtectiveClothing</researchPrerequisite>
         </recipeMaker>
@@ -286,6 +298,9 @@
         </graphicData>
         <uiIconScale>1.25</uiIconScale>
         <costStuffCount>65</costStuffCount>
+        <costList>
+            <Cloth>18</Cloth>
+        </costList>
         <recipeMaker>
             <researchPrerequisite>DankPyon_ProtectiveClothing</researchPrerequisite>
         </recipeMaker>
@@ -327,6 +342,9 @@
         </graphicData>
         <uiIconScale>1.25</uiIconScale>
         <costStuffCount>55</costStuffCount>
+        <costList>
+            <Cloth>55</Cloth>
+        </costList>
         <recipeMaker>
             <researchPrerequisite>DankPyon_ChainArmor</researchPrerequisite>
         </recipeMaker>
@@ -368,6 +386,9 @@
         </graphicData>
         <uiIconScale>1.25</uiIconScale>
         <costStuffCount>80</costStuffCount>
+        <costList>
+            <Gold>1</Gold>
+        </costList>
         <recipeMaker>
             <researchPrerequisite>PlateArmor</researchPrerequisite>
         </recipeMaker>
@@ -413,6 +434,10 @@
                 <li>DankPyon_AdornedArmor</li>
             </researchPrerequisites>
         </recipeMaker>
+        <costList>
+            <Gold>1</Gold>
+            <Cloth>15</Cloth>
+        </costList>
         <statBases>
             <MaxHitPoints>225</MaxHitPoints>
             <WorkToMake>350</WorkToMake>
@@ -443,6 +468,9 @@
         </graphicData>
         <uiIconScale>1.25</uiIconScale>
         <costStuffCount>75</costStuffCount>
+        <costList>
+            <Gold>1</Gold>
+        </costList>
         <recipeMaker>
             <researchPrerequisite>DankPyon_ChainArmor</researchPrerequisite>
         </recipeMaker>
@@ -482,6 +510,9 @@
         </graphicData>
         <uiIconScale>1.25</uiIconScale>
         <costStuffCount>85</costStuffCount>
+        <costList>
+            <Gold>1</Gold>
+        </costList>
         <recipeMaker>
             <researchPrerequisites>
                 <li>PlateArmor</li>
@@ -533,6 +564,9 @@
                 <li>DankPyon_AdornedArmor</li>
             </researchPrerequisites>
         </recipeMaker>
+        <costList>
+            <Gold>5</Gold>
+        </costList>
         <apparel>
             <wornGraphicPath>Apparel/Headgear/GildedTurbanHelmet/Gilded_Turban_Helmet</wornGraphicPath>
             <useWornGraphicMask>true</useWornGraphicMask>
@@ -558,6 +592,10 @@
             <MeleeHitChance>-1.5</MeleeHitChance>
             <ShootingAccuracyPawn>-3</ShootingAccuracyPawn>
         </equippedStatOffsets>
+        <costList>
+            <Gold>3</Gold>
+            <Cloth>10</Cloth>
+        </costList>
         <recipeMaker>
             <researchPrerequisites>
                 <li>DankPyon_AdornedArmor</li>
@@ -581,6 +619,10 @@
         </graphicData>
         <uiIconScale>1.25</uiIconScale>
         <costStuffCount>95</costStuffCount>
+        <costList>
+            <Gold>8</Gold>
+            <Cloth>50</Cloth>
+        </costList>
         <statBases>
             <MaxHitPoints>320</MaxHitPoints>
             <WorkToMake>520</WorkToMake>
