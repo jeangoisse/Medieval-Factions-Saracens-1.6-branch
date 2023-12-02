@@ -34,7 +34,6 @@
     <projectile>
       <speed>64</speed>
       <arcHeightFactor>1.2</arcHeightFactor>
-      <shadowSize>1</shadowSize>
       <damageDef>SFE_HauntingFlame</damageDef>
       <explosionRadius>0.9</explosionRadius>
       <ai_IsIncendiary>true</ai_IsIncendiary>
@@ -70,6 +69,7 @@
       <Flammability>0.5</Flammability>
       <DeteriorationRate>2</DeteriorationRate>
       <SellPriceFactor>0.2</SellPriceFactor>
+      <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
     </statBases>
     <stuffCategories>
       <li>Metallic</li>

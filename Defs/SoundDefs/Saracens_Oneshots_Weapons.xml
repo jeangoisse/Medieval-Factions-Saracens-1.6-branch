@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <SoundDef>
+        <defName>WhipHit</defName>
+        <context>MapOnly</context>
+        <maxSimultaneous>1</maxSimultaneous>
+        <subSounds>
+            <li>
+                <grains>
+                    <li Class="AudioGrain_Folder">
+                        <clipFolderPath>Misc/Swish1</clipFolderPath>
+                    </li>
+                </grains>
+                <volumeRange>34.7826~34.7826</volumeRange>
+                <pitchRange>0.9576087~1.063587</pitchRange>
+                <sustainLoop>False</sustainLoop>
+                <sustainIntervalRange>0.1025641~0.1025641</sustainIntervalRange>
+            </li>
+            <li>
+                <grains>
+                    <li Class="AudioGrain_Clip">
+                        <clipPath>Weapon/WhipHit</clipPath>
+                    </li>
+                </grains>
+                <volumeRange>30~30</volumeRange>
+                <pitchRange>1~1.114706</pitchRange>
+                <sustainLoop>False</sustainLoop>
+            </li>
+        </subSounds>
+    </SoundDef>
+    <SoundDef>
+        <defName>SlingThrow</defName>
+        <context>MapOnly</context>
+        <maxSimultaneous>1</maxSimultaneous>
+        <subSounds>
+            <li>
+                <grains>
+                    <li Class="AudioGrain_Folder">
+                        <clipFolderPath>Misc/Swish1</clipFolderPath>
+                    </li>
+                </grains>
+                <volumeRange>54.7826~64.7826</volumeRange>
+                <pitchRange>0.5576087~0.763587</pitchRange>
+                <sustainLoop>False</sustainLoop>
+                <sustainIntervalRange>0.1025641~0.1025641</sustainIntervalRange>
+            </li>
+        </subSounds>
+    </SoundDef>
+</Defs>
