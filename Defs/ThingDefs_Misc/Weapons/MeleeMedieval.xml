@@ -461,4 +461,78 @@
             <displayPriority>410</displayPriority>
         </recipeMaker>
     </ThingDef>
+    <ThingDef ParentName="DankPyon_Base_Sharp_NormalSize">
+        <defName>SFE_MeleeWeapon_Trident</defName>
+        <label>Trident</label>
+        <description>A formidable gladiator weapon equipped with hooks on the tips, for more damage.</description>
+        <possessionCount>1</possessionCount>
+        <graphicData>
+            <texPath>WeaponMelee/Spears/Trident</texPath>
+            <maskPath>WeaponMelee/Spears/Trident_m</maskPath>
+            <shaderType>CutoutComplex</shaderType>
+            <graphicClass>Graphic_Single</graphicClass>
+            <color>(94, 96, 103)</color>
+        </graphicData>
+        <uiIconScale>1.2</uiIconScale>
+        <techLevel>Medieval</techLevel>
+        <costStuffCount>35</costStuffCount>
+        <costList>
+            <WoodLog>40</WoodLog>
+        </costList>
+        <weaponTags>
+            <li>MedievalMeleeDecent</li>
+        </weaponTags>
+        <statBases>
+            <MaxHitPoints>105</MaxHitPoints>
+            <WorkToMake>256</WorkToMake>
+            <Mass>3.5</Mass>
+            <Beauty>-3</Beauty>
+            <Flammability>0.5</Flammability>
+            <DeteriorationRate>2</DeteriorationRate>
+            <SellPriceFactor>0.2</SellPriceFactor>
+        </statBases>
+        <stuffCategories>
+            <li>Metallic</li>
+        </stuffCategories>
+        <tools>
+            <li>
+                <label>shaft</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <armorPenetration>0.2</armorPenetration>
+                <power>13</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+            <li>
+                <label>poke</label>
+                <capacities>
+                    <li>Poke</li>
+                </capacities>
+                <armorPenetration>0.2</armorPenetration>
+                <power>13</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+            <li>
+                <label>stab</label>
+                <capacities>
+                    <li>Stab</li>
+                </capacities>
+                <armorPenetration>0.3</armorPenetration>
+                <power>28</power>
+                <cooldownTime>2.6</cooldownTime>
+            </li>
+        </tools>
+        <recipeMaker>
+            <researchPrerequisite>DankPyon_MilitaryPolearms</researchPrerequisite>
+            <skillRequirements>
+                <Crafting>6</Crafting>
+            </skillRequirements>
+        </recipeMaker>
+        <modExtensions>
+            <li Class="VFECore.ThingDefExtension">
+                <usableWithShields>true</usableWithShields>
+            </li>
+        </modExtensions>
+    </ThingDef>
 </Defs>
