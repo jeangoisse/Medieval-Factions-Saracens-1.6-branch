@@ -1,20 +1,17 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-    <DamageDef>
-        <defName>SFE_WhipWound</defName>
-        <label>whip</label>
-        <workerClass>DamageWorker_AddInjury</workerClass>
-        <hasForcefulImpact>true</hasForcefulImpact>
-        <makesBlood>true</makesBlood>
-        <canInterruptJobs>true</canInterruptJobs>
-        <externalViolence>true</externalViolence>
-        <deathMessage>{0} has whiped to death.</deathMessage>
-        <hediff>Scratch</hediff>
-        <armorCategory>Sharp</armorCategory>
-        <defaultDamage>14</defaultDamage>
-        <defaultArmorPenetration>0.15</defaultArmorPenetration>
-        <canUseDeflectMetalEffect>false</canUseDeflectMetalEffect>
-    </DamageDef>
+    <ThingDef ParentName="BaseHumanMakeableGun" Name="Saracens_BaseMakeableLeatherGun" Abstract="true">
+        <techLevel>Medieval</techLevel>
+        <stuffCategories>
+            <li>Leathery</li>
+        </stuffCategories>
+        <recipeMaker>
+            <researchPrerequisite>DankPyon_ProtectiveClothing</researchPrerequisite>
+            <recipeUsers>
+                <li>DankPyon_TailorsBench</li>
+            </recipeUsers>
+        </recipeMaker>
+    </ThingDef>
     <ThingDef ParentName="BaseBullet">
         <defName>SFE_Bullet_WhipEdge</defName>
         <label>whip</label>
@@ -24,12 +21,12 @@
         </graphicData>
         <projectile>
             <speed>64</speed>
+            <damageAmountBase>14</damageAmountBase>
             <arcHeightFactor>1.1</arcHeightFactor>
-            <shadowSize>1</shadowSize>
-            <damageDef>SFE_WhipWound</damageDef>
+            <damageDef>Scratch</damageDef>
         </projectile>
     </ThingDef>
-    <ThingDef ParentName="BaseHumanMakeableGun">
+    <ThingDef ParentName="Saracens_BaseMakeableLeatherGun">
         <defName>SFE_RangedWeapon_Whip</defName>
         <label>whip</label>
         <description>The weapon of slavers and slave-drivers. This finely made length of corded leather can be used to strike at others at a distance or up close. Many a former slave knows the kiss of this tool, as it leaves its markers across their flesh.</description>
@@ -57,9 +54,6 @@
             <AccuracyLong>0.15</AccuracyLong>
             <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
         </statBases>
-        <stuffCategories>
-            <li>Leathery</li>
-        </stuffCategories>
         <tools>
             <li>
                 <label>edge</label>
@@ -81,7 +75,6 @@
             </li>
         </tools>
         <recipeMaker>
-            <researchPrerequisite>DankPyon_ProtectiveClothing</researchPrerequisite>
             <skillRequirements>
                 <Crafting>2</Crafting>
             </skillRequirements>
@@ -104,20 +97,6 @@
             </li>
         </modExtensions>
     </ThingDef>
-    <DamageDef>
-        <defName>SFE_SlingWound</defName>
-        <label>sling</label>
-        <workerClass>DamageWorker_AddInjury</workerClass>
-        <hasForcefulImpact>true</hasForcefulImpact>
-        <makesBlood>false</makesBlood>
-        <canInterruptJobs>true</canInterruptJobs>
-        <deathMessage>{0} has slinged to death.</deathMessage>
-        <hediff>Crack</hediff>
-        <armorCategory>Blunt</armorCategory>
-        <defaultDamage>13</defaultDamage>
-        <defaultArmorPenetration>0.1</defaultArmorPenetration>
-        <canUseDeflectMetalEffect>false</canUseDeflectMetalEffect>
-    </DamageDef>
     <ThingDef ParentName="BaseBullet">
         <defName>SFE_Bullet_SlingRock</defName>
         <label>rock</label>
@@ -127,12 +106,13 @@
         </graphicData>
         <projectile>
             <speed>64</speed>
+            <damageAmountBase>13</damageAmountBase>
             <arcHeightFactor>1.3</arcHeightFactor>
             <shadowSize>0.3</shadowSize>
-            <damageDef>SFE_SlingWound</damageDef>
+            <damageDef>Blunt</damageDef>
         </projectile>
     </ThingDef>
-    <ThingDef ParentName="BaseHumanMakeableGun">
+    <ThingDef ParentName="Saracens_BaseMakeableLeatherGun">
         <defName>SFE_RangedWeapon_NomadSling</defName>
         <label>nomad sling</label>
         <description>The staff sling of the desert nomads. A simple weapon that allows one to fire stones like a sling, but without the skill of a normal sling, and at far further distances.</description>
@@ -141,7 +121,6 @@
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <uiIconScale>1.2</uiIconScale>
-        <techLevel>Medieval</techLevel>
         <costStuffCount>60</costStuffCount>
         <costList>
             <WoodLog>20</WoodLog>
@@ -163,9 +142,6 @@
             <AccuracyLong>0.15</AccuracyLong>
             <RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
         </statBases>
-        <stuffCategories>
-            <li>Leathery</li>
-        </stuffCategories>
         <tools>
             <li>
                 <label>edge</label>
@@ -186,9 +162,6 @@
                 <cooldownTime>2</cooldownTime>
             </li>
         </tools>
-        <recipeMaker>
-            <researchPrerequisite>DankPyon_ProtectiveClothing</researchPrerequisite>
-        </recipeMaker>
         <verbs>
             <li>
                 <label>nomad sling throw</label>
