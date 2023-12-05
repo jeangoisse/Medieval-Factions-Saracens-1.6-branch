@@ -65,4 +65,69 @@
             </li>
         </comps>
     </ThingDef>
+    <ThingDef ParentName="DankPyon_BaseShield">
+        <defName>Saracens_Shields_Sipar</defName>
+        <label>sipar shield</label>
+        <description>The shield of Southern Nobility. A shield made of strips of overlapping metal, made in a circular laminar style with a metal rim to secure it together, with a wooden backing and handle. Heavy, unwieldy, but extremely protective as far as shields go.</description>
+        <graphicData>
+            <texPath>Apparel/Shields/Sipar_Shield</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>0.86</drawSize>
+        </graphicData>
+        <stuffCategories>
+            <li>Metallic</li>
+        </stuffCategories>
+        <costStuffCount>70</costStuffCount>
+        <costList>
+            <WoodLog>30</WoodLog>
+        </costList>
+        <equippedStatOffsets>
+            <MoveSpeed>-0.8</MoveSpeed>
+            <ShootingAccuracyPawn>-5</ShootingAccuracyPawn>
+            <MeleeDodgeChance>-5</MeleeDodgeChance>
+        </equippedStatOffsets>
+        <statBases>
+            <MaxHitPoints>275</MaxHitPoints>
+            <Flammability>0</Flammability>
+            <StuffEffectMultiplierArmor>0.5</StuffEffectMultiplierArmor>
+            <EquipDelay>2</EquipDelay>
+            <WorkToMake>87</WorkToMake>
+            <Mass>5</Mass>
+        </statBases>
+        <comps>
+            <li Class="VFECore.CompProperties_Shield">
+                <shieldTags>
+                    <li>Saracens_SiparsShield</li>
+                </shieldTags>
+                <useDeflectMetalEffect>true</useDeflectMetalEffect>
+                <coveredBodyPartGroups>
+                    <li>Torso</li>
+                    <li>Arms</li>
+                    <li>Hands</li>
+                </coveredBodyPartGroups>
+                <offHandGraphicData>
+                    <texPath>Apparel/Shields/Sipar_Shield</texPath>
+                    <graphicClass>Graphic_Multi</graphicClass>
+                    <shaderType>CutoutComplex</shaderType>
+                    <drawSize>1.65</drawSize>
+                </offHandGraphicData>
+                <offHandHoldOffset>
+                    <northDefault>
+                        <offset>(0, 0, 0.2)</offset>
+                        <behind>true</behind>
+                    </northDefault>
+                    <east>
+                        <offset>(-0.1, 0, 0.2)</offset>
+                        <behind>true</behind>
+                    </east>
+                    <south>
+                        <offset>(-0.1, -0.04, 0.2)</offset>
+                    </south>
+                    <west>
+                        <offset>(0.1, 0, 0.2)</offset>
+                    </west>
+                </offHandHoldOffset>
+            </li>
+        </comps>
+    </ThingDef>
 </Defs>
