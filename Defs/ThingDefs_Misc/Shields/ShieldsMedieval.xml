@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ThingDef ParentName="DankPyon_BaseShield">
+        <defName>Saracens_Shields_Adagra</defName>
+        <label>adagra shield</label>
+        <description>The Adarga is a shield that combines the best of metal, wood, and leather. A butterfly shaped shield that has a wooden frame and handle, with a thin layer of metal behind a main layer of leather. Cheap, decently effective, and light.</description>
+        <graphicData>
+            <texPath>Apparel/Shields/Adarga_Shield</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>0.83</drawSize>
+        </graphicData>
+        <stuffCategories>
+            <li>Leathery</li>
+        </stuffCategories>
+        <costStuffCount>20</costStuffCount>
+        <costList>
+            <WoodLog>30</WoodLog>
+            <Steel>15</Steel>
+        </costList>
+        <equippedStatOffsets>
+            <ShootingAccuracyPawn>-1</ShootingAccuracyPawn>
+            <MeleeDodgeChance>-0.4</MeleeDodgeChance>
+        </equippedStatOffsets>
+        <statBases>
+            <MaxHitPoints>80</MaxHitPoints>
+            <Flammability>0.8</Flammability>
+            <StuffEffectMultiplierArmor>0.3</StuffEffectMultiplierArmor>
+            <EquipDelay>2</EquipDelay>
+            <WorkToMake>30</WorkToMake>
+            <Mass>1.5</Mass>
+        </statBases>
+        <comps>
+            <li Class="VFECore.CompProperties_Shield">
+                <shieldTags>
+                    <li>Saracens_AdagraShield</li>
+                </shieldTags>
+                <useDeflectMetalEffect>false</useDeflectMetalEffect>
+                <coveredBodyPartGroups>
+                    <li>Torso</li>
+                    <li>Arms</li>
+                    <li>Hands</li>
+                </coveredBodyPartGroups>
+                <offHandGraphicData>
+                    <texPath>Apparel/Shields/Adarga_Shield</texPath>
+                    <graphicClass>Graphic_Multi</graphicClass>
+                    <shaderType>CutoutComplex</shaderType>
+                    <drawSize>1.6</drawSize>
+                </offHandGraphicData>
+                <offHandHoldOffset>
+                    <northDefault>
+                        <offset>(0, 0, 0.2)</offset>
+                        <behind>true</behind>
+                    </northDefault>
+                    <east>
+                        <offset>(-0.1, 0, 0.2)</offset>
+                        <behind>true</behind>
+                    </east>
+                    <south>
+                        <offset>(-0.1, -0.04, 0.2)</offset>
+                    </south>
+                    <west>
+                        <offset>(0.1, 0, 0.2)</offset>
+                    </west>
+                </offHandHoldOffset>
+            </li>
+        </comps>
+    </ThingDef>
+</Defs>
