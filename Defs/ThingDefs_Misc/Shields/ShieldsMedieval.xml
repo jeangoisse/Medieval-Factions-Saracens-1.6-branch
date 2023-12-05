@@ -44,7 +44,7 @@
                     <texPath>Apparel/Shields/Adarga_Shield</texPath>
                     <graphicClass>Graphic_Multi</graphicClass>
                     <shaderType>CutoutComplex</shaderType>
-                    <drawSize>1.6</drawSize>
+                    <drawSize>1.5</drawSize>
                 </offHandGraphicData>
                 <offHandHoldOffset>
                     <northDefault>
@@ -110,6 +110,69 @@
                     <graphicClass>Graphic_Multi</graphicClass>
                     <shaderType>CutoutComplex</shaderType>
                     <drawSize>1.65</drawSize>
+                </offHandGraphicData>
+                <offHandHoldOffset>
+                    <northDefault>
+                        <offset>(0, 0, 0.2)</offset>
+                        <behind>true</behind>
+                    </northDefault>
+                    <east>
+                        <offset>(-0.1, 0, 0.2)</offset>
+                        <behind>true</behind>
+                    </east>
+                    <south>
+                        <offset>(-0.1, -0.04, 0.2)</offset>
+                    </south>
+                    <west>
+                        <offset>(0.1, 0, 0.2)</offset>
+                    </west>
+                </offHandHoldOffset>
+            </li>
+        </comps>
+    </ThingDef>
+    <ThingDef ParentName="DankPyon_BaseShield">
+        <defName>Saracens_Shields_Buckler</defName>
+        <label>buckler</label>
+        <graphicData>
+            <texPath>Apparel/Shields/Buckler_Shield</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>0.95</drawSize>
+        </graphicData>
+        <stuffCategories>
+            <li>Woody</li>
+        </stuffCategories>
+        <costStuffCount>70</costStuffCount>
+        <costList>
+            <Steel>30</Steel>
+        </costList>
+        <equippedStatOffsets>
+            <ShootingAccuracyPawn>0.5</ShootingAccuracyPawn>
+            <MeleeDodgeChance>1</MeleeDodgeChance>
+        </equippedStatOffsets>
+        <statBases>
+            <MaxHitPoints>110</MaxHitPoints>
+            <Flammability>0</Flammability>
+            <StuffEffectMultiplierArmor>0.15</StuffEffectMultiplierArmor>
+            <EquipDelay>1</EquipDelay>
+            <WorkToMake>80</WorkToMake>
+            <Mass>1</Mass>
+        </statBases>
+        <comps>
+            <li Class="VFECore.CompProperties_Shield">
+                <shieldTags>
+                    <li>Saracens_BucklerShield</li>
+                </shieldTags>
+                <useDeflectMetalEffect>false</useDeflectMetalEffect>
+                <coveredBodyPartGroups>
+                    <li>Torso</li>
+                    <li>Arms</li>
+                    <li>Hands</li>
+                </coveredBodyPartGroups>
+                <offHandGraphicData>
+                    <texPath>Apparel/Shields/Buckler_Shield</texPath>
+                    <graphicClass>Graphic_Multi</graphicClass>
+                    <shaderType>CutoutComplex</shaderType>
+                    <drawSize>1.15</drawSize>
                 </offHandGraphicData>
                 <offHandHoldOffset>
                     <northDefault>
