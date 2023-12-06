@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <HediffDef>
+        <defName>Saracens_DrunkDarkOwnPotion</defName>
+        <label>on dark own potion</label>
+        <description>blank</description>
+        <makesSickThought>false</makesSickThought>
+        <tendable>false</tendable>
+        <isBad>false</isBad>
+        <defaultLabelColor>(0.51, 0.05, 0.64)</defaultLabelColor>
+        <hediffClass>HediffWithComps</hediffClass>
+        <initialSeverity>1</initialSeverity>
+        <maxSeverity>1</maxSeverity>
+        <comps>
+            <li Class="HediffCompProperties_SeverityPerDay">
+                <severityPerDay>-1</severityPerDay>
+                <showHoursToRecover>true</showHoursToRecover>
+            </li>
+        </comps>
+        <stages>
+            <li>
+                <statOffsets>
+                    <ShootingAccuracyOutdoorsDarkOffset>0.25</ShootingAccuracyOutdoorsDarkOffset>
+                    <ShootingAccuracyOutdoorsLitOffset>-0.2</ShootingAccuracyOutdoorsLitOffset>
+                    <ShootingAccuracyIndoorsDarkOffset>0.25</ShootingAccuracyIndoorsDarkOffset>
+                    <ShootingAccuracyIndoorsLitOffset>-0.2</ShootingAccuracyIndoorsLitOffset>
+                    <MeleeHitChanceOutdoorsDarkOffset>0.1</MeleeHitChanceOutdoorsDarkOffset>
+                    <MeleeHitChanceOutdoorsLitOffset>-0.1</MeleeHitChanceOutdoorsLitOffset>
+                    <MeleeHitChanceIndoorsDarkOffset>0.1</MeleeHitChanceIndoorsDarkOffset>
+                    <MeleeHitChanceIndoorsLitOffset>-0.1</MeleeHitChanceIndoorsLitOffset>
+                    <MeleeDodgeChanceOutdoorsDarkOffset>0.1</MeleeDodgeChanceOutdoorsDarkOffset>
+                    <MeleeDodgeChanceOutdoorsLitOffset>-0.1</MeleeDodgeChanceOutdoorsLitOffset>
+                    <MeleeDodgeChanceIndoorsDarkOffset>0.1</MeleeDodgeChanceIndoorsDarkOffset>
+                    <MeleeDodgeChanceIndoorsLitOffset>-0.1</MeleeDodgeChanceIndoorsLitOffset>
+                </statOffsets>
+                <statFactors>
+                    <RestFallRateFactor>0.75</RestFallRateFactor>
+                </statFactors>
+            </li>
+        </stages>
+    </HediffDef>
+</Defs>

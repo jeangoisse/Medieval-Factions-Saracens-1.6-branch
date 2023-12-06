@@ -10,7 +10,7 @@
         <defaultLabelColor>(0.29, 0.58, 0.83)</defaultLabelColor>
         <hediffClass>HediffWithComps</hediffClass>
         <initialSeverity>1</initialSeverity>
-        <maxSeverity>10</maxSeverity>
+        <maxSeverity>1</maxSeverity>
         <comps>
             <li Class="HediffCompProperties_SeverityPerDay">
                 <severityPerDay>-1</severityPerDay>
