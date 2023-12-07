@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
     <HediffDef>
-        <defName>Saracens_LionHeartPotion</defName>
+        <defName>Saracens_Hediff_LionHeartPotion</defName>
         <label>on lion heart potion</label>
         <description>blank</description>
         <makesSickThought>false</makesSickThought>
@@ -25,4 +25,28 @@
             </li>
         </stages>
     </HediffDef>
+    <ThingDef ParentName="DankPyon_DrugBase">
+        <defName>Saracens_LionHeartPotion</defName>
+        <label>lion heart potion</label>
+        <graphicData>
+            <texPath>Potions/LionheartPotion</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <rotatable>false</rotatable>
+        <statBases>
+            <MarketValue>350</MarketValue>
+            <Flammability>1</Flammability>
+            <Mass>0.005</Mass>
+        </statBases>
+        <techLevel>Medieval</techLevel>
+        <ingestible>
+            <foodType>Fluid</foodType>
+            <outcomeDoers>
+                <li Class="IngestionOutcomeDoer_GiveHediff">
+                    <hediffDef>Saracens_Hediff_LionHeartPotion</hediffDef>
+                    <severity>1</severity>
+                </li>
+            </outcomeDoers>
+        </ingestible>
+    </ThingDef>
 </Defs>

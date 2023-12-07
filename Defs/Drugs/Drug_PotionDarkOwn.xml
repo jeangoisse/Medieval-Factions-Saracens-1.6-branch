@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
     <HediffDef>
-        <defName>Saracens_DrunkDarkOwnPotion</defName>
+        <defName>Saracens_Hediff_DrunkDarkOwnPotion</defName>
         <label>on dark own potion</label>
         <description>blank</description>
         <makesSickThought>false</makesSickThought>
@@ -39,4 +39,28 @@
             </li>
         </stages>
     </HediffDef>
+    <ThingDef ParentName="DankPyon_DrugBase">
+        <defName>Saracens_DarkOwnPotion</defName>
+        <label>dark own potion</label>
+        <graphicData>
+            <texPath>Potions/NightOwlElixir</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <rotatable>false</rotatable>
+        <statBases>
+            <MarketValue>260</MarketValue>
+            <Flammability>1</Flammability>
+            <Mass>0.005</Mass>
+        </statBases>
+        <techLevel>Medieval</techLevel>
+        <ingestible>
+            <foodType>Fluid</foodType>
+            <outcomeDoers>
+                <li Class="IngestionOutcomeDoer_GiveHediff">
+                    <hediffDef>Saracens_Hediff_DrunkDarkOwnPotion</hediffDef>
+                    <severity>1</severity>
+                </li>
+            </outcomeDoers>
+        </ingestible>
+    </ThingDef>
 </Defs>
