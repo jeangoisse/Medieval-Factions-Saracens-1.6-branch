@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <Defs>
     <ThingDef ParentName="AnimalThingBase">
-        <defName>Saracens_Ifrit</defName>
+        <defName>SFE_Ifrit</defName>
         <label>ifrit</label>
         <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
         <tradeability>None</tradeability>
+        <soundInteract>IfritMerge</soundInteract>
         <statBases>
             <MoveSpeed>4</MoveSpeed>
             <ArmorRating_Blunt>0.78</ArmorRating_Blunt>
@@ -20,6 +21,7 @@
         <race>
             <thinkTreeMain>Ifrit</thinkTreeMain>
             <thinkTreeConstant>AnimalConstant</thinkTreeConstant>
+            <herdAnimal>true</herdAnimal>
             <needsRest>false</needsRest>
             <hasGenders>false</hasGenders>
             <foodType>None</foodType>
@@ -27,17 +29,23 @@
             <body>Saracens_IfritBody</body>
             <baseBodySize>0.7</baseBodySize>
             <baseHealthScale>4.7</baseHealthScale>
-            <lifeExpectancy>800</lifeExpectancy>
+            <lifeExpectancy>1500</lifeExpectancy>
             <ageGenerationCurve>
                 <points>
                     <li>(0, 0)</li>
                     <li>(50, 100)</li>
                     <li>(200, 100)</li>
                     <li>(300, 50)</li>
+                    <li>(0, 0)</li>
+                    <li>(50, 100)</li>
+                    <li>(200, 100)</li>
+                    <li>(300, 50)</li>
                     <li>(500, 10)</li>
                     <li>(700, 10)</li>
+                    <li>(700, 10)</li>
                     <li>(750, 5)</li>
-                    <li>(800, 0)</li>
+                    <li>(1500, 1)</li>
+                    <li>(1600, 0)</li>
                 </points>
             </ageGenerationCurve>
             <lifeStageAges>
@@ -48,9 +56,11 @@
                 <li>
                     <def>Saracens_IfritMediumlForm</def>
                     <minAge>196</minAge>
+                    <minAge>196</minAge>
                 </li>
                 <li>
                     <def>Saracens_IfritLargeForm</def>
+                    <minAge>590</minAge>
                     <minAge>590</minAge>
                 </li>
             </lifeStageAges>
@@ -80,7 +90,8 @@
         </comps>
     </ThingDef>
     <PawnKindDef Name="IfritBase" ParentName="AnimalKindBase" Abstract="True">
-        <race>Saracens_Ifrit</race>
+        <defaultFactionType>Pirate</defaultFactionType>
+        <race>SFE_Ifrit</race>
         <canArriveManhunter>false</canArriveManhunter>
         <lifeStages>
             <li>
@@ -88,10 +99,6 @@
                 <bodyGraphicData>
                     <texPath>Animal/LittleIfrit</texPath>
                     <drawSize>1.8</drawSize>
-                    <shadowData>
-                        <volume>(0.8, 1, 0.8)</volume>
-                        <offset>(0,0,0)</offset>
-                    </shadowData>
                 </bodyGraphicData>
             </li>
             <li>
@@ -99,10 +106,6 @@
                 <bodyGraphicData>
                     <texPath>Animal/Ifrit</texPath>
                     <drawSize>2</drawSize>
-                    <shadowData>
-                        <volume>(1.3, 1.5, 1.4)</volume>
-                        <offset>(0,0,0)</offset>
-                    </shadowData>
                 </bodyGraphicData>
             </li>
             <li>
@@ -110,10 +113,6 @@
                 <bodyGraphicData>
                     <texPath>Animal/BigIfrit</texPath>
                     <drawSize>2.78</drawSize>
-                    <shadowData>
-                        <volume>(2.0, 2.5, 2.4)</volume>
-                        <offset>(0,0,0)</offset>
-                    </shadowData>
                 </bodyGraphicData>
             </li>
         </lifeStages>
@@ -123,6 +122,7 @@
         <label>ifrit</label>
         <combatPower>40</combatPower>
         <maxGenerationAge>199</maxGenerationAge>
+        <maxGenerationAge>199</maxGenerationAge>
     </PawnKindDef>
     <PawnKindDef ParentName="IfritBase">
         <defName>Saracens_MediumIfrit</defName>
@@ -130,10 +130,13 @@
         <combatPower>200</combatPower>
         <minGenerationAge>200</minGenerationAge>
         <maxGenerationAge>594</maxGenerationAge>
+        <maxGenerationAge>594</maxGenerationAge>
     </PawnKindDef>
     <PawnKindDef ParentName="IfritBase">
         <defName>Saracens_LargeIfrit</defName>
         <label>ifrit</label>
+        <combatPower>500</combatPower>                
+        <minGenerationAge>595</minGenerationAge>
         <combatPower>500</combatPower>                
         <minGenerationAge>595</minGenerationAge>
     </PawnKindDef>

@@ -21,7 +21,7 @@
             <li>
                 <statOffsets>
                     <MeleeDodgeChance>2</MeleeDodgeChance>
-                    <MoveSpeed>-0.2</MoveSpeed>
+                    <MoveSpeed>0.2</MoveSpeed>
                 </statOffsets>
             </li>
         </stages>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <SoundDef>
+        <defName>IfritMerge</defName>
+        <context>MapOnly</context>
+        <maxSimultaneous>3</maxSimultaneous>
+        <subSounds>
+            <li>
+                <grains>
+                    <li Class="AudioGrain_Clip">
+                        <clipPath>Ifrit/Merge</clipPath>
+                    </li>
+                </grains>
+                <volumeRange>20~40</volumeRange>
+                <pitchRange>1~1.4</pitchRange>
+                <sustainLoop>False</sustainLoop>
+            </li>
+        </subSounds>
+    </SoundDef>
+</Defs>
