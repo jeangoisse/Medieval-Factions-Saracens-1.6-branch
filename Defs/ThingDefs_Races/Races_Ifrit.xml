@@ -23,11 +23,23 @@
             <needsRest>false</needsRest>
             <hasGenders>false</hasGenders>
             <foodType>None</foodType>
-            <lifeExpectancy>800</lifeExpectancy>
             <bloodDef>Filth_RubbleRock</bloodDef>
             <body>Saracens_IfritBody</body>
             <baseBodySize>0.7</baseBodySize>
             <baseHealthScale>4.7</baseHealthScale>
+            <lifeExpectancy>800</lifeExpectancy>
+            <ageGenerationCurve>
+                <points>
+                    <li>(0, 0)</li>                
+                    <li>(50, 100)</li>                 
+                    <li>(200, 100)</li>                   
+                    <li>(300, 50)</li>                  
+                    <li>(500, 10)</li>
+                    <li>(700, 10)</li>                
+                    <li>(750, 5)</li>
+                    <li>(800, 0)</li>                
+                </points>
+            </ageGenerationCurve>
             <lifeStageAges>
                 <li>
                     <def>Saracens_IfritSmallForm</def>
@@ -123,6 +135,5 @@
         <defName>Saracens_LargeIfrit</defName>
         <label>ifrit</label>
         <combatPower>500</combatPower>
-        <minGenerationAge>700</minGenerationAge>
     </PawnKindDef>
 </Defs>
