@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
     <HediffDef>
-        <defName>Saracens_Hediff_DrunkSecondWindPotion</defName>
+        <defName>SFE_Hediff_DrunkSecondWindPotion</defName>
         <label>on second wind potion</label>
         <description>blank</description>
         <makesSickThought>false</makesSickThought>
@@ -26,7 +26,7 @@
         </stages>
     </HediffDef>
     <ThingDef ParentName="DankPyon_DrugBase">
-        <defName>Saracens_SecondWindPotion</defName>
+        <defName>SFE_SecondWindPotion</defName>
         <label>potion of knowledge</label>
         <graphicData>
             <texPath>Potions/PotionOfKnowledge</texPath>
@@ -43,7 +43,7 @@
             <foodType>Fluid</foodType>
             <outcomeDoers>
                 <li Class="IngestionOutcomeDoer_GiveHediff">
-                    <hediffDef>Saracens_Hediff_DrunkSecondWindPotion</hediffDef>
+                    <hediffDef>SFE_Hediff_DrunkSecondWindPotion</hediffDef>
                     <severity>1</severity>
                 </li>
             </outcomeDoers>

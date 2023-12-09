@@ -38,7 +38,14 @@
                         <li Class="ThinkNode_Tagger">
                             <tagToGive>Misc</tagToGive>
                             <subNodes>
-                                <li Class="Saracens.JobGiver_Merge" />
+                                <li Class="Saracens.JobGiver_Merge" >
+                                    <Mode>Merge</Mode>
+                                    <MaxMergeDistance>20</MaxMergeDistance>
+                                </li>
+                                <li Class="Saracens.JobGiver_Merge" >
+                                    <Mode>Find</Mode>
+                                    <MaxMergeDistance>60</MaxMergeDistance>
+                                </li>
                             </subNodes>
                         </li>
                     </subNodes>

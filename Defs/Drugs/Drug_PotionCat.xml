@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
     <HediffDef>
-        <defName>Saracens_Hediff_CatPotion</defName>
+        <defName>SFE_Hediff_CatPotion</defName>
         <label>on cat potion</label>
         <description>blank</description>
         <makesSickThought>false</makesSickThought>
@@ -27,7 +27,7 @@
         </stages>
     </HediffDef>
     <ThingDef ParentName="DankPyon_DrugBase">
-        <defName>Saracens_CatPotion</defName>
+        <defName>SFE_CatPotion</defName>
         <label>cat potion</label>
         <graphicData>
             <texPath>Potions/CatPotion</texPath>
@@ -44,7 +44,7 @@
             <foodType>Fluid</foodType>
             <outcomeDoers>
                 <li Class="IngestionOutcomeDoer_GiveHediff">
-                    <hediffDef>Saracens_Hediff_CatPotion</hediffDef>
+                    <hediffDef>SFE_Hediff_CatPotion</hediffDef>
                     <severity>1</severity>
                 </li>
             </outcomeDoers>
