@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Defs>
+    <InteractionDef>
+        <defName>Merge</defName>
+        <label>merge</label>
+        <workerClass>Saracens.InteractionWorker_Merge</workerClass>
+    </InteractionDef>
+</Defs>

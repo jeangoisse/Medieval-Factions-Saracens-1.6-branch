@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <LifeStageDef>
+        <defName>Saracens_IfritSmallForm</defName>
+        <label>small ifrit</label>
+    </LifeStageDef>
+    <LifeStageDef>
+        <defName>Saracens_IfritMediumlForm</defName>
+        <label>medium ifrit</label>
+        <bodySizeFactor>2.1</bodySizeFactor>
+    </LifeStageDef>`
+    <LifeStageDef>
+        <defName>Saracens_IfritLargeForm</defName>
+        <label>large ifrit</label>
+        <bodySizeFactor>5.71</bodySizeFactor>
+    </LifeStageDef>
+</Defs>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Defs>
+    <ThingDef ParentName="BasePawn">
+        <defName>Saracens_Ifrit</defName>
+        <label>ifrit</label>
+        <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+        <tradeability>None</tradeability>
+        <statBases>
+            <MoveSpeed>4</MoveSpeed>
+            <ArmorRating_Blunt>0.78</ArmorRating_Blunt>
+            <ArmorRating_Sharp>0.15</ArmorRating_Sharp>
+            <PsychicSensitivity>0.7</PsychicSensitivity>
+            <Flammability>0</Flammability>
+            <ArmorRating_Heat>2</ArmorRating_Heat>
+            <ToxicResistance>1</ToxicResistance>
+            <ComfyTemperatureMin>-100</ComfyTemperatureMin>
+            <ComfyTemperatureMax>250</ComfyTemperatureMax>
+            <MeatAmount>0</MeatAmount>
+        </statBases>
+        <race>
+            <thinkTreeMain>Ifrit</thinkTreeMain>
+            <thinkTreeConstant>AnimalConstant</thinkTreeConstant>
+            <needsRest>false</needsRest>
+            <hasGenders>false</hasGenders>
+            <foodType>None</foodType>
+            <lifeExpectancy>800</lifeExpectancy>
+            <bloodDef>Filth_RubbleRock</bloodDef>
+            <body>Saracens_IfritBody</body>
+            <baseBodySize>0.7</baseBodySize>
+            <baseHealthScale>4.7</baseHealthScale>
+            <lifeStageAges>
+                <li>
+                    <def>Saracens_IfritSmallForm</def>
+                    <minAge>0</minAge>
+                </li>
+                <li>
+                    <def>Saracens_IfritMediumlForm</def>
+                    <minAge>200</minAge>
+                </li>
+                <li>
+                    <def>Saracens_IfritLargeForm</def>
+                    <minAge>700</minAge>
+                </li>
+            </lifeStageAges>
+            <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+            <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+            <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+            <trainability>None</trainability>
+        </race>
+        <tools>
+            <li>
+                <label>head</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>7</power>
+                <cooldownTime>2</cooldownTime>
+                <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+                <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+                <chanceFactor>1</chanceFactor>
+            </li>
+        </tools>
+        <comps>
+            <li Class="CompProperties_WakeUpDormant">
+                <wakeUpOnDamage>true</wakeUpOnDamage>
+            </li>
+            <li Class="Saracens.CompProperties_Mergable" />
+        </comps>
+    </ThingDef>
+    <PawnKindDef Name="IfritBase" ParentName="AnimalKindBase" Abstract="True">
+        <race>Saracens_Ifrit</race>
+        <canArriveManhunter>false</canArriveManhunter>
+        <lifeStages>
+            <li>
+                <label>small ifrit</label>
+                <bodyGraphicData>
+                    <texPath>Animal/LittleIfrit</texPath>
+                    <drawSize>1.8</drawSize>
+                    <shadowData>
+                        <volume>(0.8, 1, 0.8)</volume>
+                        <offset>(0,0,0)</offset>
+                    </shadowData>
+                </bodyGraphicData>
+            </li>
+            <li>
+                <label>medium ifrit</label>
+                <bodyGraphicData>
+                    <texPath>Animal/Ifrit</texPath>
+                    <drawSize>2</drawSize>
+                    <shadowData>
+                        <volume>(1.3, 1.5, 1.4)</volume>
+                        <offset>(0,0,0)</offset>
+                    </shadowData>
+                </bodyGraphicData>
+            </li>
+            <li>
+                <label>large ifrit</label>
+                <bodyGraphicData>
+                    <texPath>Animal/BigIfrit</texPath>
+                    <drawSize>2.78</drawSize>
+                    <shadowData>
+                        <volume>(2.0, 2.5, 2.4)</volume>
+                        <offset>(0,0,0)</offset>
+                    </shadowData>
+                </bodyGraphicData>
+            </li>
+        </lifeStages>
+    </PawnKindDef>
+    <PawnKindDef ParentName="IfritBase">
+        <defName>Saracens_SmallIfrit</defName>
+        <label>ifrit</label>
+        <combatPower>40</combatPower>
+        <maxGenerationAge>190</maxGenerationAge>
+    </PawnKindDef>
+    <PawnKindDef ParentName="IfritBase">
+        <defName>Saracens_MediumIfrit</defName>
+        <label>ifrit</label>
+        <combatPower>200</combatPower>
+        <minGenerationAge>200</minGenerationAge>
+        <maxGenerationAge>690</maxGenerationAge>
+    </PawnKindDef>
+    <PawnKindDef ParentName="IfritBase">
+        <defName>Saracens_LargeIfrit</defName>
+        <label>ifrit</label>
+        <combatPower>500</combatPower>
+        <minGenerationAge>700</minGenerationAge>
+    </PawnKindDef>
+</Defs>
