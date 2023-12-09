@@ -36,15 +36,12 @@
                     <li>(50, 100)</li>
                     <li>(200, 100)</li>
                     <li>(300, 50)</li>
-                    <li>(0, 0)</li>
-                    <li>(50, 100)</li>
-                    <li>(200, 100)</li>
-                    <li>(300, 50)</li>
                     <li>(500, 10)</li>
                     <li>(700, 10)</li>
                     <li>(700, 10)</li>
                     <li>(750, 5)</li>
-                    <li>(1500, 1)</li>
+                    <li>(1000, 5)</li>
+                    <li>(1500, 2)</li>
                     <li>(1600, 0)</li>
                 </points>
             </ageGenerationCurve>
@@ -56,11 +53,9 @@
                 <li>
                     <def>Saracens_IfritMediumlForm</def>
                     <minAge>196</minAge>
-                    <minAge>196</minAge>
                 </li>
                 <li>
                     <def>Saracens_IfritLargeForm</def>
-                    <minAge>590</minAge>
                     <minAge>590</minAge>
                 </li>
             </lifeStageAges>
@@ -121,23 +116,19 @@
         <defName>Saracens_SmallIfrit</defName>
         <label>ifrit</label>
         <combatPower>40</combatPower>
-        <maxGenerationAge>199</maxGenerationAge>
-        <maxGenerationAge>199</maxGenerationAge>
+        <maxGenerationAge>195</maxGenerationAge>
     </PawnKindDef>
     <PawnKindDef ParentName="IfritBase">
         <defName>Saracens_MediumIfrit</defName>
         <label>ifrit</label>
         <combatPower>200</combatPower>
         <minGenerationAge>200</minGenerationAge>
-        <maxGenerationAge>594</maxGenerationAge>
-        <maxGenerationAge>594</maxGenerationAge>
+        <maxGenerationAge>589</maxGenerationAge>
     </PawnKindDef>
     <PawnKindDef ParentName="IfritBase">
         <defName>Saracens_LargeIfrit</defName>
         <label>ifrit</label>
         <combatPower>500</combatPower>                
-        <minGenerationAge>595</minGenerationAge>
-        <combatPower>500</combatPower>                
-        <minGenerationAge>595</minGenerationAge>
+        <minGenerationAge>590</minGenerationAge>
     </PawnKindDef>
 </Defs>
