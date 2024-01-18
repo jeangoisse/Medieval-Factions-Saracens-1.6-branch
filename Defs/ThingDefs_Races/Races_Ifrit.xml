@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <Defs>
-    <ThingDef ParentName="AnimalThingBase">
+    <ThingDef ParentName="BasePawn">
         <defName>SFE_Ifrit</defName>
         <label>ifrit</label>
         <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
         <tradeability>None</tradeability>
         <soundInteract>IfritMerge</soundInteract>
+        <meleeHitSound>Roof_Collapse</meleeHitSound>
         <statBases>
             <MoveSpeed>4</MoveSpeed>
             <ArmorRating_Blunt>0.78</ArmorRating_Blunt>
@@ -84,10 +85,17 @@
             <li Class="Saracens.CompProperties_Mergable" />
         </comps>
     </ThingDef>
-    <PawnKindDef Name="IfritBase" ParentName="AnimalKindBase" Abstract="True">
-        <defaultFactionType>Pirate</defaultFactionType>
+    <PawnKindDef Name="BaseIfritKind" Abstract="True">
         <race>SFE_Ifrit</race>
         <canArriveManhunter>false</canArriveManhunter>
+        <inventoryOptions>
+            <subOptionsChooseOne>
+                <li>
+                    <thingDef>ChunkSandstone</thingDef>
+                    <countRange>1</countRange>
+                </li>
+            </subOptionsChooseOne>
+        </inventoryOptions>
         <lifeStages>
             <li>
                 <label>small ifrit</label>
@@ -112,23 +120,23 @@
             </li>
         </lifeStages>
     </PawnKindDef>
-    <PawnKindDef ParentName="IfritBase">
+    <PawnKindDef ParentName="BaseIfritKind">
         <defName>Saracens_SmallIfrit</defName>
         <label>ifrit</label>
         <combatPower>40</combatPower>
         <maxGenerationAge>195</maxGenerationAge>
     </PawnKindDef>
-    <PawnKindDef ParentName="IfritBase">
+    <PawnKindDef ParentName="BaseIfritKind">
         <defName>Saracens_MediumIfrit</defName>
         <label>ifrit</label>
         <combatPower>200</combatPower>
-        <minGenerationAge>200</minGenerationAge>
+        <minGenerationAge>196</minGenerationAge>
         <maxGenerationAge>589</maxGenerationAge>
     </PawnKindDef>
-    <PawnKindDef ParentName="IfritBase">
+    <PawnKindDef ParentName="BaseIfritKind">
         <defName>Saracens_LargeIfrit</defName>
         <label>ifrit</label>
-        <combatPower>500</combatPower>                
-        <minGenerationAge>590</minGenerationAge>
+        <combatPower>500</combatPower>
+        <maxGenerationAge>590</maxGenerationAge>
     </PawnKindDef>
 </Defs>

@@ -4,7 +4,7 @@
         <defName>Saracens_IfritBody</defName>
         <label>Ifrit</label>
         <corePart>
-          <def>DankPyon_GolemTorso</def>
+          <def>SFE_IfritTorso</def>
           <height>Middle</height>
           <depth>Outside</depth>
           <groups>
@@ -12,7 +12,7 @@
           </groups>
           <parts>
             <li>
-              <def>DankPyon_GolemCore</def>
+              <def>SFE_IfritCore</def>
               <coverage>0.020</coverage>
               <depth>Inside</depth>
               <groups>
@@ -20,7 +20,7 @@
               </groups>
             </li>
             <li>
-              <def>DankPyon_GolemNeck</def>
+              <def>SFE_IfritNeck</def>
               <coverage>0.075</coverage>
               <height>Top</height>
               <groups>
@@ -28,7 +28,7 @@
               </groups>
               <parts>
                 <li>
-                  <def>DankPyon_GolemHead</def>
+                  <def>SFE_IfritHead</def>
                   <coverage>0.80</coverage>
                   <groups>
                     <li>UpperHead</li>
@@ -37,7 +37,7 @@
                   </groups>
                   <parts>
                     <li>
-                      <def>DankPyon_GolemEye</def>
+                      <def>SFE_IfritEye</def>
                       <customLabel>left crystal eye</customLabel>
                       <coverage>0.07</coverage>
                       <groups>
@@ -46,7 +46,7 @@
                       </groups>
                     </li>
                     <li>
-                      <def>DankPyon_GolemEye</def>
+                      <def>SFE_IfritEye</def>
                       <customLabel>right crystal eye</customLabel>
                       <coverage>0.07</coverage>
                       <groups>
@@ -59,7 +59,7 @@
               </parts>
             </li>
             <li>
-              <def>DankPyon_GolemShoulder</def>
+              <def>SFE_IfritShoulder</def>
               <customLabel>left shoulder</customLabel>
               <coverage>0.12</coverage>
               <groups>
@@ -67,7 +67,7 @@
               </groups>
               <parts>
                 <li>
-                  <def>DankPyon_GolemArm</def>
+                  <def>SFE_IfritArm</def>
                   <customLabel>left arm</customLabel>
                   <coverage>0.77</coverage>
                   <groups>
@@ -75,7 +75,7 @@
                   </groups>
                   <parts>
                     <li>
-                      <def>DankPyon_GolemHand</def>
+                      <def>SFE_IfritHand</def>
                       <customLabel>left hand</customLabel>
                       <coverage>0.14</coverage>
                       <height>Bottom</height>
@@ -84,7 +84,7 @@
                       </groups>
                       <parts>
                         <li>
-                          <def>DankPyon_GolemFinger</def>
+                          <def>SFE_IfritFinger</def>
                           <customLabel>left pinky</customLabel>
                           <coverage>0.06</coverage>
                           <groups>
@@ -93,7 +93,7 @@
                           </groups>
                         </li>
                         <li>
-                          <def>DankPyon_GolemFinger</def>
+                          <def>SFE_IfritFinger</def>
                           <customLabel>left ring finger</customLabel>
                           <coverage>0.07</coverage>
                           <groups>
@@ -102,7 +102,7 @@
                           </groups>
                         </li>
                         <li>
-                          <def>DankPyon_GolemFinger</def>
+                          <def>SFE_IfritFinger</def>
                           <customLabel>left middle finger</customLabel>
                           <coverage>0.08</coverage>
                           <groups>
@@ -112,7 +112,7 @@
                           </groups>
                         </li>
                         <li>
-                          <def>DankPyon_GolemFinger</def>
+                          <def>SFE_IfritFinger</def>
                           <customLabel>left index finger</customLabel>
                           <coverage>0.07</coverage>
                           <groups>
@@ -121,7 +121,7 @@
                           </groups>
                         </li>
                         <li>
-                          <def>DankPyon_GolemFinger</def>
+                          <def>SFE_IfritFinger</def>
                           <customLabel>left thumb</customLabel>
                           <coverage>0.08</coverage>
                           <groups>
@@ -136,7 +136,7 @@
               </parts>
             </li>
             <li>
-              <def>DankPyon_GolemShoulder</def>
+              <def>SFE_IfritShoulder</def>
               <customLabel>right shoulder</customLabel>
               <coverage>0.12</coverage>
               <groups>
@@ -144,7 +144,7 @@
               </groups>
               <parts>
                 <li>
-                  <def>DankPyon_GolemArm</def>
+                  <def>SFE_IfritArm</def>
                   <customLabel>right arm</customLabel>
                   <coverage>0.77</coverage>
                   <groups>
@@ -152,7 +152,7 @@
                   </groups>
                   <parts>
                     <li>
-                      <def>DankPyon_GolemHand</def>
+                      <def>SFE_IfritHand</def>
                       <customLabel>right hand</customLabel>
                       <coverage>0.14</coverage>
                       <height>Bottom</height>
@@ -161,7 +161,7 @@
                       </groups>
                       <parts>
                         <li>
-                          <def>DankPyon_GolemFinger</def>
+                          <def>SFE_IfritFinger</def>
                           <customLabel>right pinky</customLabel>
                           <coverage>0.06</coverage>
                           <groups>
@@ -170,7 +170,7 @@
                           </groups>
                         </li>
                         <li>
-                          <def>DankPyon_GolemFinger</def>
+                          <def>SFE_IfritFinger</def>
                           <customLabel>right ring finger</customLabel>
                           <coverage>0.07</coverage>
                           <groups>
@@ -179,7 +179,7 @@
                           </groups>
                         </li>
                         <li>
-                          <def>DankPyon_GolemFinger</def>
+                          <def>SFE_IfritFinger</def>
                           <customLabel>right middle finger</customLabel>
                           <coverage>0.08</coverage>
                           <groups>
@@ -189,7 +189,7 @@
                           </groups>
                         </li>
                         <li>
-                          <def>DankPyon_GolemFinger</def>
+                          <def>SFE_IfritFinger</def>
                           <customLabel>right index finger</customLabel>
                           <coverage>0.07</coverage>
                           <groups>
@@ -198,7 +198,7 @@
                           </groups>
                         </li>
                         <li>
-                          <def>DankPyon_GolemFinger</def>
+                          <def>SFE_IfritFinger</def>
                           <customLabel>right thumb</customLabel>
                           <coverage>0.08</coverage>
                           <groups>
@@ -221,7 +221,7 @@
               </groups>
             </li>
             <li>
-              <def>DankPyon_GolemLeg</def>
+              <def>SFE_IfritLeg</def>
               <customLabel>left leg</customLabel>
               <coverage>0.14</coverage>
               <height>Bottom</height>
@@ -230,7 +230,7 @@
               </groups>
               <parts>
                 <li>
-                  <def>DankPyon_GolemFoot</def>
+                  <def>SFE_IfritFoot</def>
                   <customLabel>left foot</customLabel>
                   <coverage>0.1</coverage>
                   <groups>
@@ -240,7 +240,7 @@
               </parts>
             </li>
             <li>
-              <def>DankPyon_GolemLeg</def>
+              <def>SFE_IfritLeg</def>
               <customLabel>right leg</customLabel>
               <coverage>0.14</coverage>
               <height>Bottom</height>
@@ -249,7 +249,7 @@
               </groups>
               <parts>
                 <li>
-                  <def>DankPyon_GolemFoot</def>
+                  <def>SFE_IfritFoot</def>
                   <customLabel>right foot</customLabel>
                   <coverage>0.1</coverage>
                   <groups>

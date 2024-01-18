@@ -34,7 +34,7 @@
 
                 <!-- Merge randoms -->
                 <li Class="ThinkNode_ChancePerHour_Constant">
-                    <mtbHours>1</mtbHours>
+                    <mtbHours>3</mtbHours>
                     <subNodes>
                         <li Class="ThinkNode_Tagger">
                             <tagToGive>Misc</tagToGive>
