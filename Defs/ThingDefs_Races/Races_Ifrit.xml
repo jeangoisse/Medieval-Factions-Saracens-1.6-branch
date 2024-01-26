@@ -27,8 +27,8 @@
             <hasGenders>false</hasGenders>
             <foodType>None</foodType>
             <bloodDef>Filth_RubbleRock</bloodDef>
-            <body>Saracens_IfritBody</body>
-            <baseBodySize>0.7</baseBodySize>
+            <body>DankPyon_SchratBody</body>
+            <baseBodySize>5.71</baseBodySize>
             <baseHealthScale>4.7</baseHealthScale>
             <lifeExpectancy>1500</lifeExpectancy>
             <ageGenerationCurve>
@@ -71,11 +71,31 @@
                 <capacities>
                     <li>Blunt</li>
                 </capacities>
-                <power>7</power>
-                <cooldownTime>2</cooldownTime>
+                <power>28</power>
+                <cooldownTime>4</cooldownTime>
                 <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
                 <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
-                <chanceFactor>1</chanceFactor>
+                <chanceFactor>0.5</chanceFactor>
+            </li>
+            <li>
+                <label>left fist</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>21</power>
+                <cooldownTime>2</cooldownTime>
+                <linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+                <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+            </li>
+            <li>
+                <label>right fist</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>21</power>
+                <cooldownTime>2</cooldownTime>
+                <linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+                <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
             </li>
         </tools>
         <comps>
@@ -87,6 +107,7 @@
     </ThingDef>
     <PawnKindDef Name="BaseIfritKind" Abstract="True">
         <race>SFE_Ifrit</race>
+        <defaultFactionType>DankPyon_Forest_Faction</defaultFactionType>
         <canArriveManhunter>false</canArriveManhunter>
         <inventoryOptions>
             <subOptionsChooseOne>
@@ -137,6 +158,6 @@
         <defName>Saracens_LargeIfrit</defName>
         <label>ifrit</label>
         <combatPower>500</combatPower>
-        <maxGenerationAge>590</maxGenerationAge>
+        <minGenerationAge>590</minGenerationAge>
     </PawnKindDef>
 </Defs>

@@ -3,15 +3,32 @@
     <LifeStageDef>
         <defName>Saracens_IfritSmallForm</defName>
         <label>small ifrit</label>
+        <meleeDamageFactor>0.2</meleeDamageFactor>
+        <healthScaleFactor>0.2</healthScaleFactor>
+        <voxPitch>1.4</voxPitch>
+        <statFactors>
+            <MoveSpeed>1.2</MoveSpeed>
+            <ArmorRating_Blunt>0.5</ArmorRating_Blunt>
+            <ArmorRating_Sharp>0.8</ArmorRating_Sharp>
+        </statFactors>
     </LifeStageDef>
     <LifeStageDef>
         <defName>Saracens_IfritMediumlForm</defName>
         <label>medium ifrit</label>
-        <bodySizeFactor>2.1</bodySizeFactor>
+        <bodySizeFactor>0.41</bodySizeFactor>
+        <meleeDamageFactor>0.5</meleeDamageFactor>
+        <healthScaleFactor>0.45</healthScaleFactor>
+        <voxPitch>1.2</voxPitch>
+        <statFactors>
+            <ArmorRating_Blunt>0.7</ArmorRating_Blunt>
+            <ArmorRating_Sharp>0.9</ArmorRating_Sharp>
+        </statFactors>
     </LifeStageDef>`
     <LifeStageDef>
         <defName>Saracens_IfritLargeForm</defName>
         <label>large ifrit</label>
-        <bodySizeFactor>5.71</bodySizeFactor>
+        <statFactors>
+           <MoveSpeed>0.9</MoveSpeed>
+        </statFactors>
     </LifeStageDef>
 </Defs>
