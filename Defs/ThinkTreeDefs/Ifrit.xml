@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
+
     <ThinkTreeDef>
         <defName>Ifrit</defName>
         <thinkRoot Class="ThinkNode_Priority">
@@ -77,5 +78,27 @@
             </subNodes>
         </thinkRoot>
     </ThinkTreeDef>
+    
+    <ThinkTreeDef>
+    <defName>IfritConstant</defName>
+    <thinkRoot Class="ThinkNode_Priority">
+      <subNodes>
+        <!-- Despawned -->
+        <li Class="ThinkNode_Subtree">
+          <treeDef>Despawned</treeDef>
+        </li>
+
+        <li Class="ThinkNode_ConditionalCanDoLordJobNow">
+          <subNodes>
+            <!-- Lord directives -->
+            <li Class="ThinkNode_Subtree">
+              <treeDef>LordDutyConstant</treeDef>
+            </li>
+          </subNodes>
+        </li>
+      </subNodes>
+    </thinkRoot>
+  </ThinkTreeDef>
+
 </Defs>
   

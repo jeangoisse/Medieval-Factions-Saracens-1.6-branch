@@ -22,7 +22,7 @@
         </statBases>
         <race>
             <thinkTreeMain>Ifrit</thinkTreeMain>
-            <thinkTreeConstant>AnimalConstant</thinkTreeConstant>
+            <thinkTreeConstant>IfritConstant</thinkTreeConstant>
             <deathActionWorkerClass>Saracens.ActionWorkers.DeathActionWorker_NoCorpseAndLoot</deathActionWorkerClass>
             <herdAnimal>true</herdAnimal>
             <needsRest>false</needsRest>
@@ -103,12 +103,12 @@
             </li>
         </tools>
         <comps>
-            <li Class="Saracens.Comps.CompProperties_Mergable" />
             <li Class="AnimalBehaviours.CompProperties_DropOnDeath">
                 <resourceDef>ChunkSandstone</resourceDef>
                 <resourceAmount>1</resourceAmount>
                 <dropChance>1</dropChance>
             </li>
+            <li Class="Saracens.Comps.CompProperties_Mergable" />
         </comps>
     </ThingDef>
     <PawnKindDef Name="BaseIfritKind" Abstract="True">
