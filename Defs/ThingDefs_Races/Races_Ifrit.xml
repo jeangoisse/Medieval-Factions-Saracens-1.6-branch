@@ -5,23 +5,25 @@
         <label>ifrit</label>
         <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
         <tradeability>None</tradeability>
-        <soundInteract>IfritMerge</soundInteract>
+        <soundInteract>Ifrit_Merge</soundInteract>
         <meleeHitSound>Roof_Collapse</meleeHitSound>
         <statBases>
             <MoveSpeed>4</MoveSpeed>
-            <ArmorRating_Blunt>0.78</ArmorRating_Blunt>
-            <ArmorRating_Sharp>0.15</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.15</ArmorRating_Blunt>
+            <ArmorRating_Sharp>0.78</ArmorRating_Sharp>
             <PsychicSensitivity>0.7</PsychicSensitivity>
             <Flammability>0</Flammability>
             <ArmorRating_Heat>2</ArmorRating_Heat>
             <ToxicResistance>1</ToxicResistance>
             <ComfyTemperatureMin>-100</ComfyTemperatureMin>
             <ComfyTemperatureMax>250</ComfyTemperatureMax>
+            <soundCallIntervalRange>1000~2000</soundCallIntervalRange>
             <MeatAmount>0</MeatAmount>
         </statBases>
         <race>
             <thinkTreeMain>Ifrit</thinkTreeMain>
             <thinkTreeConstant>AnimalConstant</thinkTreeConstant>
+            <deathActionWorkerClass>Saracens.ActionWorkers.DeathActionWorker_NoCorpseAndLoot</deathActionWorkerClass>
             <herdAnimal>true</herdAnimal>
             <needsRest>false</needsRest>
             <hasGenders>false</hasGenders>
@@ -57,7 +59,9 @@
                 </li>
                 <li>
                     <def>Saracens_IfritLargeForm</def>
-                    <minAge>590</minAge>
+                    <minAge>392</minAge>
+                    <soundWounded>Ifrit_Idle</soundWounded>
+                    <soundCall>Ifrit_Idle</soundCall>
                 </li>
             </lifeStageAges>
             <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
@@ -99,24 +103,18 @@
             </li>
         </tools>
         <comps>
-            <li Class="CompProperties_WakeUpDormant">
-                <wakeUpOnDamage>true</wakeUpOnDamage>
+            <li Class="Saracens.Comps.CompProperties_Mergable" />
+            <li Class="AnimalBehaviours.CompProperties_DropOnDeath">
+                <resourceDef>ChunkSandstone</resourceDef>
+                <resourceAmount>1</resourceAmount>
+                <dropChance>1</dropChance>
             </li>
-            <li Class="Saracens.CompProperties_Mergable" />
         </comps>
     </ThingDef>
     <PawnKindDef Name="BaseIfritKind" Abstract="True">
         <race>SFE_Ifrit</race>
         <defaultFactionType>DankPyon_Forest_Faction</defaultFactionType>
         <canArriveManhunter>false</canArriveManhunter>
-        <inventoryOptions>
-            <subOptionsChooseOne>
-                <li>
-                    <thingDef>ChunkSandstone</thingDef>
-                    <countRange>1</countRange>
-                </li>
-            </subOptionsChooseOne>
-        </inventoryOptions>
         <lifeStages>
             <li>
                 <label>small ifrit</label>
@@ -152,12 +150,12 @@
         <label>ifrit</label>
         <combatPower>200</combatPower>
         <minGenerationAge>196</minGenerationAge>
-        <maxGenerationAge>589</maxGenerationAge>
+        <maxGenerationAge>391</maxGenerationAge>
     </PawnKindDef>
     <PawnKindDef ParentName="BaseIfritKind">
         <defName>Saracens_LargeIfrit</defName>
         <label>ifrit</label>
         <combatPower>500</combatPower>
-        <minGenerationAge>590</minGenerationAge>
+        <minGenerationAge>392</minGenerationAge>
     </PawnKindDef>
 </Defs>
