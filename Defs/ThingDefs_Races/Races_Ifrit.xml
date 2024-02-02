@@ -6,7 +6,6 @@
         <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
         <tradeability>None</tradeability>
         <soundInteract>Ifrit_Merge</soundInteract>
-        <meleeHitSound>Roof_Collapse</meleeHitSound>
         <statBases>
             <MoveSpeed>4</MoveSpeed>
             <ArmorRating_Blunt>0.15</ArmorRating_Blunt>
@@ -23,6 +22,7 @@
         <race>
             <thinkTreeMain>Ifrit</thinkTreeMain>
             <thinkTreeConstant>IfritConstant</thinkTreeConstant>
+            <fleshType>Mechanoid</fleshType>
             <deathActionWorkerClass>Saracens.ActionWorkers.DeathActionWorker_NoCorpseAndLoot</deathActionWorkerClass>
             <herdAnimal>true</herdAnimal>
             <needsRest>false</needsRest>
@@ -32,20 +32,16 @@
             <body>DankPyon_SchratBody</body>
             <baseBodySize>5.71</baseBodySize>
             <baseHealthScale>4.7</baseHealthScale>
-            <lifeExpectancy>1500</lifeExpectancy>
+            <lifeExpectancy>780</lifeExpectancy>
+            <soundCallIntervalRange>1000~2000</soundCallIntervalRange>
             <ageGenerationCurve>
                 <points>
                     <li>(0, 0)</li>
-                    <li>(50, 100)</li>
-                    <li>(200, 100)</li>
-                    <li>(300, 50)</li>
+                    <li>(50, 90)</li>
+                    <li>(200, 70)</li>
+                    <li>(300, 30)</li>
                     <li>(500, 10)</li>
-                    <li>(700, 10)</li>
-                    <li>(700, 10)</li>
-                    <li>(750, 5)</li>
-                    <li>(1000, 5)</li>
-                    <li>(1500, 2)</li>
-                    <li>(1600, 0)</li>
+                    <li>(700, 0)</li>
                 </points>
             </ageGenerationCurve>
             <lifeStageAges>
@@ -62,6 +58,7 @@
                     <minAge>392</minAge>
                     <soundWounded>Ifrit_Idle</soundWounded>
                     <soundCall>Ifrit_Idle</soundCall>
+                    <soundCall>Ifrit_Idle</soundCall>
                 </li>
             </lifeStageAges>
             <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
@@ -69,6 +66,7 @@
             <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
             <trainability>None</trainability>
         </race>
+        <meleeHitSound>Roof_Collapse</meleeHitSound>
         <tools>
             <li>
                 <label>head</label>
@@ -103,12 +101,12 @@
             </li>
         </tools>
         <comps>
+            <li Class="Saracens.Comps.CompProperties_Mergable" />
             <li Class="AnimalBehaviours.CompProperties_DropOnDeath">
                 <resourceDef>ChunkSandstone</resourceDef>
                 <resourceAmount>1</resourceAmount>
-                <dropChance>1</dropChance>
+                <dropChance>0.5</dropChance>
             </li>
-            <li Class="Saracens.Comps.CompProperties_Mergable" />
         </comps>
     </ThingDef>
     <PawnKindDef Name="BaseIfritKind" Abstract="True">

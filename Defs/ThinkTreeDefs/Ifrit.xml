@@ -35,12 +35,12 @@
 
                 <!-- Merge randoms -->
                 <li Class="ThinkNode_ChancePerHour_Constant">
-                    <mtbHours>3</mtbHours>
+                    <mtbDays>1</mtbDays>
                     <subNodes>
                         <li Class="ThinkNode_Tagger">
                             <tagToGive>Misc</tagToGive>
                             <subNodes>
-                                <li Class="Saracens.JobGiver_Merge" >
+                                <li Class="Saracens.JobGiver_Merge">
                                     <MaxMergeDistance>20</MaxMergeDistance>
                                 </li>
                             </subNodes>
@@ -78,27 +78,27 @@
             </subNodes>
         </thinkRoot>
     </ThinkTreeDef>
-    
-    <ThinkTreeDef>
-    <defName>IfritConstant</defName>
-    <thinkRoot Class="ThinkNode_Priority">
-      <subNodes>
-        <!-- Despawned -->
-        <li Class="ThinkNode_Subtree">
-          <treeDef>Despawned</treeDef>
-        </li>
 
-        <li Class="ThinkNode_ConditionalCanDoLordJobNow">
-          <subNodes>
-            <!-- Lord directives -->
-            <li Class="ThinkNode_Subtree">
-              <treeDef>LordDutyConstant</treeDef>
-            </li>
-          </subNodes>
-        </li>
-      </subNodes>
-    </thinkRoot>
-  </ThinkTreeDef>
+    <ThinkTreeDef>
+        <defName>IfritConstant</defName>
+        <thinkRoot Class="ThinkNode_Priority">
+            <subNodes>
+                <!-- Despawned -->
+                <li Class="ThinkNode_Subtree">
+                    <treeDef>Despawned</treeDef>
+                </li>
+
+                <!-- Lord -->
+                <li Class="ThinkNode_ConditionalCanDoLordJobNow">
+                    <subNodes>
+                      <li Class="ThinkNode_Subtree">
+                        <treeDef>LordDutyConstant</treeDef>
+                      </li>
+                    </subNodes>
+                </li>
+            </subNodes>
+        </thinkRoot>
+    </ThinkTreeDef>
 
 </Defs>
   
