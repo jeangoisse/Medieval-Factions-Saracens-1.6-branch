@@ -16,7 +16,6 @@
             <ToxicResistance>1</ToxicResistance>
             <ComfyTemperatureMin>-100</ComfyTemperatureMin>
             <ComfyTemperatureMax>250</ComfyTemperatureMax>
-            <soundCallIntervalRange>1000~2000</soundCallIntervalRange>
             <MeatAmount>0</MeatAmount>
         </statBases>
         <race>
