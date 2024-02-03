@@ -57,7 +57,6 @@
                     <minAge>392</minAge>
                     <soundWounded>Ifrit_Idle</soundWounded>
                     <soundCall>Ifrit_Idle</soundCall>
-                    <soundCall>Ifrit_Idle</soundCall>
                 </li>
             </lifeStageAges>
             <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
@@ -110,7 +109,7 @@
     </ThingDef>
     <PawnKindDef Name="BaseIfritKind" Abstract="True">
         <race>SFE_Ifrit</race>
-        <defaultFactionType>DankPyon_Forest_Faction</defaultFactionType>
+        <defaultFactionType>SFE_Desert_Faction</defaultFactionType>
         <canArriveManhunter>false</canArriveManhunter>
         <lifeStages>
             <li>

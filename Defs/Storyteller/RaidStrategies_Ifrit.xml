@@ -1,0 +1,36 @@
+<Defs>
+    <RaidStrategyDef ParentName="ImmediateAttack">
+        <defName>SFE_ArriveAndDefend</defName>
+        <workerClass>Saracens.Incidents.RaidStrategyWorker_DefendPoint</workerClass>
+        <selectionWeightPerPointsCurve>
+            <points>
+                <li>(0, 1)</li>
+            </points>
+        </selectionWeightPerPointsCurve>
+        <selectionWeightCurvesPerFaction>
+            <li>
+                <faction>Mechanoid</faction>
+                <selectionWeightPerPointsCurve>
+                    <points>
+                        <li>(0, 0)</li>
+                    </points>
+                </selectionWeightPerPointsCurve>
+            </li>
+        </selectionWeightCurvesPerFaction>
+        <pointsFactorCurve>
+            <points>
+                <li>0, 1</li>
+            </points>
+        </pointsFactorCurve>
+        <arriveModes>
+            <li>EdgeDrop</li>
+            <li>EdgeWalkIn</li>
+            <li>CenterDrop</li>
+            <li>RandomDrop</li>
+            <li>EdgeDropGroups</li>
+            <li>EdgeWalkInGroups</li>
+        </arriveModes>
+        <letterLabelEnemy>Raid</letterLabelEnemy>
+        <arrivalTextEnemy>They are attacking immediately.</arrivalTextEnemy>
+    </RaidStrategyDef>
+</Defs>
