@@ -6,6 +6,9 @@
         <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
         <tradeability>None</tradeability>
         <soundInteract>Ifrit_Merge</soundInteract>
+        <butcherProducts>
+            <ChunkSandstone>1</ChunkSandstone>
+        </butcherProducts>
         <statBases>
             <MoveSpeed>4</MoveSpeed>
             <ArmorRating_Blunt>0.15</ArmorRating_Blunt>
@@ -140,6 +143,14 @@
         <label>ifrit</label>
         <combatPower>40</combatPower>
         <maxGenerationAge>195</maxGenerationAge>
+        <inventoryOptions>
+            <subOptionsChooseOne>
+                <li>
+                    <thingDef>Gold</thingDef>
+                    <countRange>1~4</countRange>
+                </li>
+            </subOptionsChooseOne>
+        </inventoryOptions>
     </PawnKindDef>
     <PawnKindDef ParentName="BaseIfritKind">
         <defName>Saracens_MediumIfrit</defName>
@@ -147,11 +158,27 @@
         <combatPower>200</combatPower>
         <minGenerationAge>196</minGenerationAge>
         <maxGenerationAge>391</maxGenerationAge>
+        <inventoryOptions>
+            <subOptionsChooseOne>
+                <li>
+                    <thingDef>Gold</thingDef>
+                    <countRange>6~12</countRange>
+                </li>
+            </subOptionsChooseOne>
+        </inventoryOptions>
     </PawnKindDef>
     <PawnKindDef ParentName="BaseIfritKind">
         <defName>Saracens_LargeIfrit</defName>
         <label>ifrit</label>
         <combatPower>500</combatPower>
         <minGenerationAge>392</minGenerationAge>
+        <inventoryOptions>
+            <subOptionsChooseOne>
+                <li>
+                    <thingDef>Gold</thingDef>
+                    <countRange>14~24</countRange>
+                </li>
+            </subOptionsChooseOne>
+        </inventoryOptions>
     </PawnKindDef>
 </Defs>
