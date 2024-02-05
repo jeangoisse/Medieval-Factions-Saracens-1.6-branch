@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Defs>
+
+    <HediffDef Name="SFE_DrugHediffBase" Abstract="true">
+        <makesSickThought>false</makesSickThought>
+        <tendable>false</tendable>
+        <isBad>false</isBad>
+        <hediffClass>HediffWithComps</hediffClass>
+        <initialSeverity>1</initialSeverity>
+        <maxSeverity>1</maxSeverity>
+        <comps>
+            <li Class="HediffCompProperties_SeverityPerDay">
+                <severityPerDay>-1</severityPerDay>
+                <showHoursToRecover>true</showHoursToRecover>
+            </li>
+        </comps>
+    </HediffDef>
+
+    <HediffDef ParentName="SFE_DrugHediffBase">
+        <defName>SFE_Hediff_DrunkSecondWindPotion</defName>
+        <label>on second wind potion</label>
+        <description>blank</description>
+        <defaultLabelColor>(0.29, 0.58, 0.83)</defaultLabelColor>
+        <stages>
+            <li>
+                <statOffsets>
+                    <MoveSpeed>1.5</MoveSpeed>
+                </statOffsets>
+            </li>
+        </stages>
+    </HediffDef>
+
+    <HediffDef ParentName="SFE_DrugHediffBase">
+        <defName>SFE_Hediff_DrunkPotionOfKnowledge</defName>
+        <label>on potion of knowledge</label>
+        <description>blank</description>
+        <defaultLabelColor>(0.97, 0.73, 0.01)</defaultLabelColor>
+        <stages>
+            <li>
+                <statOffsets>
+                    <GlobalLearningFactor>1</GlobalLearningFactor>
+                </statOffsets>
+            </li>
+        </stages>
+    </HediffDef>
+
+    <HediffDef ParentName="SFE_DrugHediffBase">
+        <defName>SFE_Hediff_LionHeartPotion</defName>
+        <label>on lion heart potion</label>
+        <description>blank</description>
+        <defaultLabelColor>(0.53, 0.16, 0)</defaultLabelColor>
+        <stages>
+            <li>
+                <statOffsets>
+                    <MentalBreakThreshold>-0.2</MentalBreakThreshold>
+                </statOffsets>
+            </li>
+        </stages>
+    </HediffDef>
+
+    <HediffDef ParentName="SFE_DrugHediffBase">
+        <defName>SFE_Hediff_IronWillPotion</defName>
+        <label>on iron will potion</label>
+        <description>blank</description>
+        <defaultLabelColor>(0.64, 0.64, 0.64)</defaultLabelColor>
+        <stages>
+            <li>
+                <statOffsets>
+                    <PainShockThreshold>0.75</PainShockThreshold>          
+                </statOffsets>
+            </li>
+        </stages>
+    </HediffDef>
+
+    <HediffDef ParentName="SFE_DrugHediffBase">
+        <defName>SFE_Hediff_CatPotion</defName>
+        <label>on cat potion</label>
+        <description>blank</description>
+        <defaultLabelColor>(0.68, 0.52, 0.3)</defaultLabelColor>
+        <stages>
+            <li>
+                <statOffsets>
+                    <MeleeDodgeChance>2</MeleeDodgeChance>
+                    <MoveSpeed>0.2</MoveSpeed>
+                </statOffsets>
+            </li>
+        </stages>
+    </HediffDef>
+
+</Defs>

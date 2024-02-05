@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Defs>
+
+    <ThingDef ParentName="DankPyon_DrugBase" Name="SFE_BasePotion" Abstract="true">
+        <rotatable>false</rotatable>
+        <statBases>
+            <MarketValue>100</MarketValue>
+            <Flammability>1</Flammability>
+            <Mass>0.005</Mass>
+        </statBases>
+        <techLevel>Medieval</techLevel>
+        <ingestible>
+            <joyKind>Chemical</joyKind>
+            <joy>0.1</joy>
+            <foodType>Fluid</foodType>
+            <ingestSound>Ingest_Inject</ingestSound>
+        </ingestible>
+    </ThingDef>
+
+    <ThingDef ParentName="SFE_BasePotion">
+        <defName>SFE_SecondWindPotion</defName>
+        <label>potion of knowledge</label>
+        <graphicData>
+            <texPath>Potions/PotionOfKnowledge</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <rotatable>false</rotatable>
+        <ingestible>
+            <outcomeDoers>
+                <li Class="IngestionOutcomeDoer_GiveHediff">
+                    <hediffDef>SFE_Hediff_DrunkSecondWindPotion</hediffDef>
+                    <severity>1</severity>
+                </li>
+            </outcomeDoers>
+        </ingestible>
+    </ThingDef>
+
+    <ThingDef ParentName="SFE_BasePotion">
+        <defName>SFE_KnowledgePotion</defName>
+        <label>potion of knowledge</label>
+        <graphicData>
+            <texPath>Potions/PotionOfKnowledge</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <rotatable>false</rotatable>
+        <ingestible>
+            <outcomeDoers>
+                <li Class="IngestionOutcomeDoer_GiveHediff">
+                    <hediffDef>SFE_Hediff_DrunkPotionOfKnowledge</hediffDef>
+                    <severity>1</severity>
+                </li>
+            </outcomeDoers>
+        </ingestible>
+    </ThingDef>
+
+    <ThingDef ParentName="SFE_BasePotion">
+        <defName>SFE_LionHeartPotion</defName>
+        <label>lion heart potion</label>
+        <graphicData>
+            <texPath>Potions/LionheartPotion</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <rotatable>false</rotatable>
+        <ingestible>
+            <outcomeDoers>
+                <li Class="IngestionOutcomeDoer_GiveHediff">
+                    <hediffDef>SFE_Hediff_LionHeartPotion</hediffDef>
+                    <severity>1</severity>
+                </li>
+            </outcomeDoers>
+        </ingestible>
+    </ThingDef>
+
+    <ThingDef ParentName="SFE_BasePotion">
+        <defName>SFE_IronWillPotion</defName>
+        <label>iron will potion</label>
+        <graphicData>
+            <texPath>Potions/IronWillPotion</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <rotatable>false</rotatable>
+        <ingestible>
+            <outcomeDoers>
+                <li Class="IngestionOutcomeDoer_GiveHediff">
+                    <hediffDef>SFE_Hediff_IronWillPotion</hediffDef>
+                    <severity>1</severity>
+                </li>
+            </outcomeDoers>
+        </ingestible>
+    </ThingDef>
+
+    <ThingDef ParentName="SFE_BasePotion">
+        <defName>SFE_CatPotion</defName>
+        <label>cat potion</label>
+        <graphicData>
+            <texPath>Potions/CatPotion</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <rotatable>false</rotatable>
+        <ingestible>
+            <outcomeDoers>
+                <li Class="IngestionOutcomeDoer_GiveHediff">
+                    <hediffDef>SFE_Hediff_CatPotion</hediffDef>
+                    <severity>1</severity>
+                </li>
+            </outcomeDoers>
+        </ingestible>
+    </ThingDef>
+
+</Defs>
