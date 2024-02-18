@@ -24,14 +24,14 @@
         <race>
             <thinkTreeMain>Ifrit</thinkTreeMain>
             <thinkTreeConstant>IfritConstant</thinkTreeConstant>
-            <fleshType>Mechanoid</fleshType>
+            <fleshType>DankPyon_Schrat</fleshType>
+            <body>DankPyon_SchratBody</body>
             <deathActionWorkerClass>Saracens.ActionWorkers.DeathActionWorker_NoCorpseAndLoot</deathActionWorkerClass>
             <herdAnimal>true</herdAnimal>
             <needsRest>false</needsRest>
             <hasGenders>false</hasGenders>
             <foodType>None</foodType>
             <bloodDef>Filth_RubbleRock</bloodDef>
-            <body>DankPyon_SchratBody</body>
             <baseBodySize>5.71</baseBodySize>
             <baseHealthScale>4.7</baseHealthScale>
             <lifeExpectancy>780</lifeExpectancy>
