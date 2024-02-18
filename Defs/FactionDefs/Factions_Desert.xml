@@ -21,9 +21,6 @@
         <techLevel>Animal</techLevel>
         <permanentEnemy>true</permanentEnemy>
         <hostileToFactionlessHumanlikes>true</hostileToFactionlessHumanlikes>
-        <disallowedRaidStrategies>
-            <li>ImmediateAttack</li>
-        </disallowedRaidStrategies>
         <maxPawnCostPerTotalPointsCurve>
             <points>
                 <li>(400,200)</li>
@@ -40,6 +37,14 @@
                     <Saracens_SmallIfrit>30</Saracens_SmallIfrit>
                     <Saracens_MediumIfrit>5</Saracens_MediumIfrit>
                     <Saracens_LargeIfrit>1</Saracens_LargeIfrit>
+                </options>
+            </li>
+            <li>
+                <kindDef>Combat</kindDef>
+                <commonality>50</commonality>
+                <options>
+                    <Saracens_MediumIfrit>12</Saracens_MediumIfrit>
+                    <Saracens_LargeIfrit>6</Saracens_LargeIfrit>
                 </options>
             </li>
         </pawnGroupMakers>
