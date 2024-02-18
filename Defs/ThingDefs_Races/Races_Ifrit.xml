@@ -108,6 +108,9 @@
                 <resourceAmount>1</resourceAmount>
                 <dropChance>0.5</dropChance>
             </li>
+            <li Class="AnimalBehaviours.CompProperties_Regeneration">
+                <rateInTicks>1000</rateInTicks>
+            </li>
         </comps>
     </ThingDef>
     <PawnKindDef Name="BaseIfritKind" Abstract="True">
