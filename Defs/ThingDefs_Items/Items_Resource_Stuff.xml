@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ThingDef ParentName="ResourceBase">
+        <defName>SFE_Sulfur</defName>
+        <label>sulfur</label>
+        <description>An iron-carbon metal alloy used for building a huge variety of structures, weapons, and machines.</description>
+        <graphicData>
+            <texPath>Resources/SulfurousRock</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <soundInteract>Metal_Drop</soundInteract>
+        <soundDrop>Metal_Drop</soundDrop>
+        <useHitPoints>false</useHitPoints>
+        <healthAffectsPrice>false</healthAffectsPrice>
+        <thingCategories>
+            <li>ResourcesRaw</li>
+        </thingCategories>
+        <statBases>
+            <MarketValue>3</MarketValue>
+            <Mass>0.0025</Mass>
+        </statBases>
+        <deepCommonality>2</deepCommonality>
+        <deepCountPerPortion>10</deepCountPerPortion>
+        <deepLumpSizeRange>5~12</deepLumpSizeRange>
+        <burnableByRecipe>false</burnableByRecipe>
+        <allowedArchonexusCount>80</allowedArchonexusCount>
+    </ThingDef>
+</Defs>
