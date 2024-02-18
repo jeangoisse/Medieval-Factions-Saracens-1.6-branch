@@ -144,12 +144,18 @@
         <combatPower>40</combatPower>
         <maxGenerationAge>195</maxGenerationAge>
         <inventoryOptions>
-            <subOptionsChooseOne>
+            <subOptionsTakeAll>
                 <li>
                     <thingDef>Gold</thingDef>
                     <countRange>1~4</countRange>
+                    <skipChance>0.4</skipChance>
                 </li>
-            </subOptionsChooseOne>
+                <li>
+                    <thingDef>SFE_Sulfur</thingDef>
+                    <countRange>1~4</countRange>
+                    <skipChance>0.4</skipChance>
+                </li>
+            </subOptionsTakeAll>
         </inventoryOptions>
     </PawnKindDef>
     <PawnKindDef ParentName="BaseIfritKind">
@@ -159,12 +165,18 @@
         <minGenerationAge>196</minGenerationAge>
         <maxGenerationAge>391</maxGenerationAge>
         <inventoryOptions>
-            <subOptionsChooseOne>
+            <subOptionsTakeAll>
                 <li>
                     <thingDef>Gold</thingDef>
                     <countRange>6~12</countRange>
+                    <skipChance>0.2</skipChance>
                 </li>
-            </subOptionsChooseOne>
+                <li>
+                    <thingDef>SFE_Sulfur</thingDef>
+                    <countRange>6~12</countRange>
+                    <skipChance>0.2</skipChance>
+                </li>
+            </subOptionsTakeAll>
         </inventoryOptions>
     </PawnKindDef>
     <PawnKindDef ParentName="BaseIfritKind">
@@ -173,12 +185,18 @@
         <combatPower>500</combatPower>
         <minGenerationAge>392</minGenerationAge>
         <inventoryOptions>
-            <subOptionsChooseOne>
+            <subOptionsTakeAll>
                 <li>
                     <thingDef>Gold</thingDef>
                     <countRange>14~24</countRange>
+                    <skipChance>0.05</skipChance>
                 </li>
-            </subOptionsChooseOne>
+                <li>
+                    <thingDef>SFE_Sulfur</thingDef>
+                    <countRange>14~24</countRange>
+                    <skipChance>0.05</skipChance>
+                </li>
+            </subOptionsTakeAll>
         </inventoryOptions>
     </PawnKindDef>
 </Defs>
