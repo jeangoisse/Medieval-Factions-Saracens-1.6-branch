@@ -10,6 +10,9 @@
                 <li>DankPyon_TailorsBench</li>
             </recipeUsers>
         </recipeMaker>
+        <weaponTags Inherit="false">
+            <li>MedievalRanged</li>
+        </weaponTags>
     </ThingDef>
     <ThingDef ParentName="BaseBullet">
         <defName>SFE_Bullet_WhipEdge</defName>
@@ -35,9 +38,6 @@
         <uiIconScale>1.2</uiIconScale>
         <techLevel>Medieval</techLevel>
         <costStuffCount>60</costStuffCount>
-        <weaponTags>
-            <li>MedievalMeleeDecent</li>
-        </weaponTags>
         <statBases>
             <MaxHitPoints>100</MaxHitPoints>
             <WorkToMake>110</WorkToMake>
@@ -89,6 +89,9 @@
                 <ticksBetweenBurstShots>3</ticksBetweenBurstShots>
             </li>
         </verbs>
+        <weaponTags Inherit="false">
+            <li>MedievalMeleeDecent</li>
+        </weaponTags>
         <modExtensions>
             <li Class="VFECore.ThingDefExtension">
                 <usableWithShields>true</usableWithShields>
@@ -122,9 +125,6 @@
         <costList>
             <WoodLog>20</WoodLog>
         </costList>
-        <weaponTags>
-            <li>MedievalMeleeDecent</li>
-        </weaponTags>
         <statBases>
             <MaxHitPoints>100</MaxHitPoints>
             <WorkToMake>15</WorkToMake>
@@ -209,9 +209,6 @@
         <costList>
             <Leather_Plain>15</Leather_Plain>
         </costList>
-        <weaponTags>
-            <li>MedievalMeleeDecent</li>
-        </weaponTags>
         <statBases>
             <MaxHitPoints>15</MaxHitPoints>
             <WorkToMake>50</WorkToMake>
@@ -294,9 +291,6 @@
         <costList>
             <Leather_Plain>15</Leather_Plain>
         </costList>
-        <weaponTags>
-            <li>MedievalMeleeDecent</li>
-        </weaponTags>
         <statBases>
             <MaxHitPoints>20</MaxHitPoints>
             <WorkToMake>120</WorkToMake>

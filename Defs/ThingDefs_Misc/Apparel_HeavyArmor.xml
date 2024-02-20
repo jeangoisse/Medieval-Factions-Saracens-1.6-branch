@@ -57,13 +57,10 @@
                 <li>Shell</li>
             </layers>
             <tags>
-                <li>IndustrialBasic</li>
+                <li>MedievalMilitaryAdvanced</li>
             </tags>
             <canBeDesiredForIdeo>true</canBeDesiredForIdeo>
         </apparel>
-        <tradeTags>
-            <li>BasicClothing</li>
-        </tradeTags>
     </ThingDef>
     <ThingDef ParentName="Saracens_HeavyArmorBase">
         <defName>SFE_Apparel_LamellarHauberk</defName>
@@ -107,13 +104,10 @@
                 <li>Shell</li>
             </layers>
             <tags>
-                <li>IndustrialBasic</li>
+                <li>MedievalMilitaryAdvanced</li>
             </tags>
             <canBeDesiredForIdeo>true</canBeDesiredForIdeo>
         </apparel>
-        <tradeTags>
-            <li>BasicClothing</li>
-        </tradeTags>
     </ThingDef>
     <ThingDef ParentName="Saracens_HeavyArmorBase">
         <defName>SFE_Apparel_GladiatorArmor</defName>
@@ -155,6 +149,9 @@
                 <li>Middle</li>
                 <li>Shell</li>
             </layers>
+            <tags>
+                <li>MedievalMilitaryBasic</li>
+            </tags>
         </apparel>
     </ThingDef>
 </Defs>

@@ -17,9 +17,6 @@
         </thingCategories>
         <apparel>
             <countsAsClothingForNudity>true</countsAsClothingForNudity>
-            <tags>
-                <li>MedievalBasic</li>
-            </tags>
             <defaultOutfitTags>
                 <li>Worker</li>
             </defaultOutfitTags>
@@ -130,6 +127,9 @@
             <layers>
                 <li>Overhead</li>
             </layers>
+            <tags>
+                <li>MedievalMilitaryBasic</li>
+            </tags>
         </apparel>
     </ThingDef>
     <ThingDef ParentName="ArmorHelmetMakeableBase" Name="Saracens_HelmetBase" Abstract="true">
@@ -283,6 +283,9 @@
             <layers>
                 <li>Overhead</li>
             </layers>
+            <tags>
+                <li>MedievalMilitaryBasic</li>
+            </tags>
         </apparel>
     </ThingDef>
     <ThingDef ParentName="Saracens_HelmetBase">
@@ -370,7 +373,10 @@
             <useWornGraphicMask>true</useWornGraphicMask>
             <layers>
                 <li>Overhead</li>
-            </layers>
+            </layers        >
+            <tags>
+                <li>MedievalMilitaryBasic</li>
+            </tags>
         </apparel>
     </ThingDef>
     <ThingDef Name="HeavyLamellarHelmet" ParentName="Saracens_HelmetBase">
@@ -415,6 +421,9 @@
             <layers>
                 <li>Overhead</li>
             </layers>
+            <tags>
+                <li>MedievalMilitaryAdvanced</li>
+            </tags>
         </apparel>
     </ThingDef>
     <ThingDef ParentName="HeavyLamellarHelmet">
@@ -543,6 +552,9 @@
             <layers>
                 <li>Overhead</li>
             </layers>
+            <tags>
+                <li>MedievalMilitaryAdvanced</li>
+            </tags>
         </apparel>
     </ThingDef>
     <ThingDef ParentName="TurbanHelm">
@@ -570,6 +582,9 @@
         <apparel>
             <wornGraphicPath>Apparel/Headgear/GildedTurbanHelmet/Gilded_Turban_Helmet</wornGraphicPath>
             <useWornGraphicMask>true</useWornGraphicMask>
+            <tags>
+                <li>MedievalMilitaryAdvanced</li>
+            </tags>
         </apparel>
     </ThingDef>
     <ThingDef ParentName="TurbanHelm">
@@ -604,6 +619,9 @@
         <apparel>
             <wornGraphicPath>Apparel/Headgear/Elite/GeneralHelm/General_Helm</wornGraphicPath>
             <useWornGraphicMask>true</useWornGraphicMask>
+            <tags>
+                <li>MedievalMilitaryAdvanced</li>
+            </tags>
         </apparel>
     </ThingDef>
     <ThingDef ParentName="Saracens_HelmetBase">
@@ -691,6 +709,9 @@
             <layers>
                 <li>Overhead</li>
             </layers>
+            <tags>
+                <li>MedievalMilitaryBasic</li>
+            </tags>
         </apparel>
     </ThingDef>
 </Defs>
