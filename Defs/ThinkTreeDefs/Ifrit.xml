@@ -2,7 +2,7 @@
 <Defs>
 
     <ThinkTreeDef>
-        <defName>Ifrit</defName>
+        <defName>SFE_Ifrit</defName>
         <thinkRoot Class="ThinkNode_Priority">
             <subNodes>
                 <!-- Despawned -->
@@ -30,6 +30,15 @@
                     </subNodes>
                 </li>
 
+                <!-- Merge while pain-->
+                <li Class="Saracens.Jobs.ThinkNode_ConditionalFeelPain">
+                    <subNodes>
+                        <li Class="Saracens.JobGiver_Merge">
+                            <maxMergeDistance>6</maxMergeDistance>
+                        </li>
+                    </subNodes>
+                </li>
+
                 <!-- React to melee threat-->
                 <li Class="JobGiver_ReactToCloseMeleeThreat" />
 
@@ -41,7 +50,7 @@
                             <tagToGive>Misc</tagToGive>
                             <subNodes>
                                 <li Class="Saracens.JobGiver_Merge">
-                                    <MaxMergeDistance>20</MaxMergeDistance>
+                                    <maxMergeDistance>20</maxMergeDistance>
                                 </li>
                             </subNodes>
                         </li>
@@ -80,7 +89,7 @@
     </ThinkTreeDef>
 
     <ThinkTreeDef>
-        <defName>IfritConstant</defName>
+        <defName>SFE_IfritConstant</defName>
         <thinkRoot Class="ThinkNode_Priority">
             <subNodes>
                 <!-- Despawned -->
@@ -91,9 +100,33 @@
                 <!-- Lord -->
                 <li Class="ThinkNode_ConditionalCanDoLordJobNow">
                     <subNodes>
-                      <li Class="ThinkNode_Subtree">
-                        <treeDef>LordDutyConstant</treeDef>
-                      </li>
+                        <li Class="ThinkNode_Subtree">
+                            <treeDef>LordDutyConstant</treeDef>
+                        </li>
+                    </subNodes>
+                </li>
+            </subNodes>
+        </thinkRoot>
+    </ThinkTreeDef>
+
+    <ThinkTreeDef>
+        <defName>IfritConstant</defName>
+        <thinkRoot Class="ThinkNode_Priority">
+            <subNodes>
+                <!-- Despawned -->
+                <li Class="ThinkNode_Subtree">
+                    <treeDef>Despawned</treeDef>
+                </li>
+
+
+
+                <!-- Lord -->
+                <li Class="ThinkNode_ConditionalCanDoLordJobNow">
+                    <subNodes>
+
+                        <li Class="ThinkNode_Subtree">
+                            <treeDef>LordDutyConstant</treeDef>
+                        </li>
                     </subNodes>
                 </li>
             </subNodes>
