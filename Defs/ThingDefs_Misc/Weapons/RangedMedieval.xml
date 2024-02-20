@@ -166,7 +166,7 @@
                 <hasStandardCommand>true</hasStandardCommand>
                 <defaultProjectile>SFE_Bullet_SlingRock</defaultProjectile>
                 <soundCast>SlingThrow</soundCast>
-                <warmupTime>1.1</warmupTime>
+                <warmupTime>3.3</warmupTime>
                 <range>25</range>
             </li>
         </verbs>
@@ -334,7 +334,7 @@
                 <hasStandardCommand>true</hasStandardCommand>
                 <defaultProjectile>SFE_Bullet_Net</defaultProjectile>
                 <soundCast>SlingThrow</soundCast>
-                <warmupTime>1.1</warmupTime>
+                <warmupTime>3.3</warmupTime>
                 <range>9.9</range>
             </li>
         </verbs>
