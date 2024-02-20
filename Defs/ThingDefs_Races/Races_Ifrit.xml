@@ -22,10 +22,10 @@
             <MeatAmount>0</MeatAmount>
         </statBases>
         <race>
-            <thinkTreeMain>Ifrit</thinkTreeMain>
-            <thinkTreeConstant>IfritConstant</thinkTreeConstant>
+            <thinkTreeMain>SFE_Ifrit</thinkTreeMain>
+            <thinkTreeConstant>SFE_IfritConstant</thinkTreeConstant>
             <fleshType>DankPyon_Schrat</fleshType>
-            <body>DankPyon_SchratBody</body>
+            <body>SFE_IfritBody</body>
             <deathActionWorkerClass>Saracens.ActionWorkers.DeathActionWorker_NoCorpseAndLoot</deathActionWorkerClass>
             <herdAnimal>true</herdAnimal>
             <needsRest>false</needsRest>
@@ -109,7 +109,7 @@
                 <dropChance>0.5</dropChance>
             </li>
             <li Class="AnimalBehaviours.CompProperties_Regeneration">
-                <rateInTicks>1000</rateInTicks>
+                <rateInTicks>3000</rateInTicks>
             </li>
         </comps>
     </ThingDef>
