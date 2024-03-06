@@ -24,7 +24,7 @@
         <maxPawnCostPerTotalPointsCurve>
             <points>
                 <li>(400,200)</li>
-                <li>(1800,500)</li>
+                <li>(600,500)</li>
             </points>
         </maxPawnCostPerTotalPointsCurve>
         <allowedArrivalTemperatureRange>-100~200</allowedArrivalTemperatureRange>

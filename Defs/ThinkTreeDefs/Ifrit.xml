@@ -31,10 +31,15 @@
                 </li>
 
                 <!-- Merge while pain-->
-                <li Class="Saracens.Jobs.ThinkNode_ConditionalFeelPain">
+                <li Class="ThinkNode_ChancePerHour_Constant">
+                    <mtbHours>0.6</mtbHours>
                     <subNodes>
-                        <li Class="Saracens.JobGiver_Merge">
-                            <maxMergeDistance>6</maxMergeDistance>
+                        <li Class="Saracens.Jobs.ThinkNode_ConditionalFeelPain">
+                            <subNodes>
+                                <li Class="Saracens.JobGiver_Merge">
+                                    <maxMergeDistance>6</maxMergeDistance>
+                                </li>
+                            </subNodes>
                         </li>
                     </subNodes>
                 </li>
