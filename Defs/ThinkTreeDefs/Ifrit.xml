@@ -109,29 +109,5 @@
         </thinkRoot>
     </ThinkTreeDef>
 
-    <ThinkTreeDef>
-        <defName>IfritConstant</defName>
-        <thinkRoot Class="ThinkNode_Priority">
-            <subNodes>
-                <!-- Despawned -->
-                <li Class="ThinkNode_Subtree">
-                    <treeDef>Despawned</treeDef>
-                </li>
-
-
-
-                <!-- Lord -->
-                <li Class="ThinkNode_ConditionalCanDoLordJobNow">
-                    <subNodes>
-
-                        <li Class="ThinkNode_Subtree">
-                            <treeDef>LordDutyConstant</treeDef>
-                        </li>
-                    </subNodes>
-                </li>
-            </subNodes>
-        </thinkRoot>
-    </ThinkTreeDef>
-
 </Defs>
   
