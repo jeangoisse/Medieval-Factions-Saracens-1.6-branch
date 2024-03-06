@@ -48,15 +48,15 @@
             </ageGenerationCurve>
             <lifeStageAges>
                 <li>
-                    <def>Saracens_IfritSmallForm</def>
+                    <def>SFE_IfritSmallForm</def>
                     <minAge>0</minAge>
                 </li>
                 <li>
-                    <def>Saracens_IfritMediumlForm</def>
+                    <def>SFE_IfritMediumlForm</def>
                     <minAge>196</minAge>
                 </li>
                 <li>
-                    <def>Saracens_IfritLargeForm</def>
+                    <def>SFE_IfritLargeForm</def>
                     <minAge>392</minAge>
                     <soundWounded>Ifrit_Idle</soundWounded>
                     <soundCall>Ifrit_Idle</soundCall>
@@ -142,7 +142,7 @@
         </lifeStages>
     </PawnKindDef>
     <PawnKindDef ParentName="BaseIfritKind">
-        <defName>Saracens_SmallIfrit</defName>
+        <defName>SFE_SmallIfrit</defName>
         <label>ifrit</label>
         <combatPower>40</combatPower>
         <maxGenerationAge>195</maxGenerationAge>
@@ -162,7 +162,7 @@
         </inventoryOptions>
     </PawnKindDef>
     <PawnKindDef ParentName="BaseIfritKind">
-        <defName>Saracens_MediumIfrit</defName>
+        <defName>SFE_MediumIfrit</defName>
         <label>ifrit</label>
         <combatPower>200</combatPower>
         <minGenerationAge>196</minGenerationAge>
@@ -183,7 +183,7 @@
         </inventoryOptions>
     </PawnKindDef>
     <PawnKindDef ParentName="BaseIfritKind">
-        <defName>Saracens_LargeIfrit</defName>
+        <defName>SFE_LargeIfrit</defName>
         <label>ifrit</label>
         <combatPower>500</combatPower>
         <minGenerationAge>392</minGenerationAge>

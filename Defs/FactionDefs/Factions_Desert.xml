@@ -33,25 +33,25 @@
                 <kindDef>Combat</kindDef>
                 <commonality>100</commonality>
                 <options>
-                    <Saracens_SmallIfrit>30</Saracens_SmallIfrit>
-                    <Saracens_MediumIfrit>5</Saracens_MediumIfrit>
+                    <SFE_SmallIfrit>30</SFE_SmallIfrit>
+                    <SFE_MediumIfrit>5</SFE_MediumIfrit>
                 </options>
             </li>
             <li>
                 <kindDef>Combat</kindDef>
                 <commonality>70</commonality>
                 <options>
-                    <Saracens_SmallIfrit>18</Saracens_SmallIfrit>
-                    <Saracens_MediumIfrit>12</Saracens_MediumIfrit>
-                    <Saracens_LargeIfrit>6</Saracens_LargeIfrit>
+                    <SFE_SmallIfrit>18</SFE_SmallIfrit>
+                    <SFE_MediumIfrit>12</SFE_MediumIfrit>
+                    <SFE_LargeIfrit>6</SFE_LargeIfrit>
                 </options>
             </li>
             <li>
                 <kindDef>Combat</kindDef>
                 <commonality>40</commonality>
                 <options>
-                    <Saracens_MediumIfrit>6</Saracens_MediumIfrit>
-                    <Saracens_LargeIfrit>12</Saracens_LargeIfrit>
+                    <SFE_MediumIfrit>6</SFE_MediumIfrit>
+                    <SFE_LargeIfrit>12</SFE_LargeIfrit>
                 </options>
             </li>
         </pawnGroupMakers>

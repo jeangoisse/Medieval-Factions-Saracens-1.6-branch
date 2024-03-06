@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
     <ThingDef ParentName="DankPyon_BaseShield">
-        <defName>Saracens_Shields_Adagra</defName>
+        <defName>SFE_Shields_Adagra</defName>
         <label>adagra shield</label>
         <description>The Adarga is a shield that combines the best of metal, wood, and leather. A butterfly shaped shield that has a wooden frame and handle, with a thin layer of metal behind a main layer of leather. Cheap, decently effective, and light.</description>
         <graphicData>
@@ -32,7 +32,7 @@
         <comps>
             <li Class="VFECore.CompProperties_Shield">
                 <shieldTags>
-                    <li>Saracens_AdagraShield</li>
+                    <li>SFE_AdagraShield</li>
                 </shieldTags>
                 <useDeflectMetalEffect>false</useDeflectMetalEffect>
                 <coveredBodyPartGroups>
@@ -66,7 +66,7 @@
         </comps>
     </ThingDef>
     <ThingDef ParentName="DankPyon_BaseShield">
-        <defName>Saracens_Shields_Sipar</defName>
+        <defName>SFE_Shields_Sipar</defName>
         <label>sipar shield</label>
         <description>The shield of Southern Nobility. A shield made of strips of overlapping metal, made in a circular laminar style with a metal rim to secure it together, with a wooden backing and handle. Heavy, unwieldy, but extremely protective as far as shields go.</description>
         <graphicData>
@@ -97,7 +97,7 @@
         <comps>
             <li Class="VFECore.CompProperties_Shield">
                 <shieldTags>
-                    <li>Saracens_SiparsShield</li>
+                    <li>SFE_SiparsShield</li>
                 </shieldTags>
                 <useDeflectMetalEffect>true</useDeflectMetalEffect>
                 <coveredBodyPartGroups>
@@ -131,7 +131,7 @@
         </comps>
     </ThingDef>
     <ThingDef ParentName="DankPyon_BaseShield">
-        <defName>Saracens_Shields_Buckler</defName>
+        <defName>SFE_Shields_Buckler</defName>
         <label>buckler</label>
         <graphicData>
             <texPath>Apparel/Shields/Buckler_Shield</texPath>
@@ -160,7 +160,7 @@
         <comps>
             <li Class="VFECore.CompProperties_Shield">
                 <shieldTags>
-                    <li>Saracens_BucklerShield</li>
+                    <li>SFE_BucklerShield</li>
                 </shieldTags>
                 <useDeflectMetalEffect>false</useDeflectMetalEffect>
                 <coveredBodyPartGroups>

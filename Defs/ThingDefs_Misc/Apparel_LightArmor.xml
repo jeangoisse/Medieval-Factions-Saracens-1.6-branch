@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-    <ThingDef ParentName="ApparelMakeableBase" Name="Saracens_ClothesBase" Abstract="true">
+    <ThingDef ParentName="ApparelMakeableBase" Name="SFE_ClothesBase" Abstract="true">
         <recipeMaker>
             <researchPrerequisite>DankPyon_Tailoring</researchPrerequisite>
             <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
@@ -23,7 +23,7 @@
             <canBeDesiredForIdeo>true</canBeDesiredForIdeo>
         </apparel>
     </ThingDef>
-    <ThingDef ParentName="Saracens_ClothesBase">
+    <ThingDef ParentName="SFE_ClothesBase">
         <defName>SFE_Apparel_NomadRobe</defName>
         <label>nomad robe</label>
         <description>The Nomad's two-layer robe provides full body coverage and protection from the sun, as well as some types of cutting and blunt damage.</description>
@@ -65,7 +65,7 @@
             </layers>
         </apparel>
     </ThingDef>
-    <ThingDef ParentName="Saracens_ClothesBase">
+    <ThingDef ParentName="SFE_ClothesBase">
         <defName>SFE_Apparel_PaddedVest</defName>
         <label>padded vest</label>
         <description>Padded vest, worn over light clothing. The most common solution in the south for basic self-defense.</description>
@@ -110,7 +110,7 @@
             </tags>
         </apparel>
     </ThingDef>
-    <ThingDef ParentName="Saracens_ClothesBase">
+    <ThingDef ParentName="SFE_ClothesBase">
         <defName>SFE_Apparel_LeatherNomadRobe</defName>
         <label>leather nomad robe</label>
         <description>This rough robe made of pieces of leather does not require high craft skills, as well as manufacturing time. Light fabric clothing is put on under it so that this leather armor does not rub the body.</description>
@@ -152,7 +152,7 @@
             </layers>
         </apparel>
     </ThingDef>
-    <ThingDef ParentName="Saracens_ClothesBase" Name="Saracens_LightArmorBase" Abstract="true">
+    <ThingDef ParentName="SFE_ClothesBase" Name="SFE_LightArmorBase" Abstract="true">
         <recipeMaker>
             <researchPrerequisite>DankPyon_ProtectiveClothing</researchPrerequisite>
         </recipeMaker>
@@ -166,7 +166,7 @@
             <canBeDesiredForIdeo>false</canBeDesiredForIdeo>
         </apparel>
     </ThingDef>
-    <ThingDef ParentName="Saracens_LightArmorBase">
+    <ThingDef ParentName="SFE_LightArmorBase">
         <defName>SFE_Apparel_Linothorax</defName>
         <label>linothorax</label>
         <description>The linothorax, worn over any clothing, provides a high degree of protection against any type of damage, despite the fact that it is made of fabric. At the same time, it protects only vital organs.</description>
@@ -207,7 +207,7 @@
             </tags>
         </apparel>
     </ThingDef>
-    <ThingDef ParentName="Saracens_LightArmorBase">
+    <ThingDef ParentName="SFE_LightArmorBase">
         <defName>SFE_Apparel_StitchedNomadArmor</defName>
         <label>stiched nomad armor</label>
         <description>This armor is made of two-layer pieces of leather and bonded together. Such armor allows warriors to put on some other light armor on the body.</description>

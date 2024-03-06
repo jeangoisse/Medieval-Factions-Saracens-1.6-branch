@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-    <ThingDef ParentName="ArmorSmithableBase" Name="Saracens_HeavyArmorBase" Abstract="true">
+    <ThingDef ParentName="ArmorSmithableBase" Name="SFE_HeavyArmorBase" Abstract="true">
         <recipeMaker>
             <recipeUsers>
                 <li>ElectricSmithy</li>
@@ -22,7 +22,7 @@
             </defaultOutfitTags>
         </apparel>
     </ThingDef>
-    <ThingDef ParentName="Saracens_HeavyArmorBase">
+    <ThingDef ParentName="SFE_HeavyArmorBase">
         <defName>SFE_Apparel_LamellarVest</defName>
         <label>lamellar vest</label>
         <description>In the "Golden" army, a lamellar vest is the most popular solution, due to its cheapness, as well as protection and repair. Large plates wrap around the body, holding on to the shoulders, and also provide the main body protection.</description>
@@ -62,7 +62,7 @@
             <canBeDesiredForIdeo>true</canBeDesiredForIdeo>
         </apparel>
     </ThingDef>
-    <ThingDef ParentName="Saracens_HeavyArmorBase">
+    <ThingDef ParentName="SFE_HeavyArmorBase">
         <defName>SFE_Apparel_LamellarHauberk</defName>
         <label>lamellar hauberk</label>
         <description>The heavy armor of exceptional desert warriors is made of many plates sewn onto a leather base. Extremely heavy, but provides the same protection as plate armor in the middle lane.</description>
@@ -109,7 +109,7 @@
             <canBeDesiredForIdeo>true</canBeDesiredForIdeo>
         </apparel>
     </ThingDef>
-    <ThingDef ParentName="Saracens_HeavyArmorBase">
+    <ThingDef ParentName="SFE_HeavyArmorBase">
         <defName>SFE_Apparel_GladiatorArmor</defName>
         <label>gladiator armor</label>
         <description>This armor is made of two-layer pieces of leather and bonded together. Such armor allows warriors to put on some other light armor on the body.</description>

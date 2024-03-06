@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
     <LifeStageDef>
-        <defName>Saracens_IfritSmallForm</defName>
+        <defName>SFE_IfritSmallForm</defName>
         <label>small ifrit</label>
         <meleeDamageFactor>0.2</meleeDamageFactor>
         <healthScaleFactor>0.2</healthScaleFactor>
@@ -13,7 +13,7 @@
         </statFactors>
     </LifeStageDef>
     <LifeStageDef>
-        <defName>Saracens_IfritMediumlForm</defName>
+        <defName>SFE_IfritMediumlForm</defName>
         <label>medium ifrit</label>
         <bodySizeFactor>0.41</bodySizeFactor>
         <meleeDamageFactor>0.5</meleeDamageFactor>
@@ -25,7 +25,7 @@
         </statFactors>
     </LifeStageDef>`
     <LifeStageDef>
-        <defName>Saracens_IfritLargeForm</defName>
+        <defName>SFE_IfritLargeForm</defName>
         <label>large ifrit</label>
         <statFactors>
            <MoveSpeed>0.9</MoveSpeed>

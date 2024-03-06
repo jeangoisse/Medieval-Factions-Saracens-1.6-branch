@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-    <ThingDef ParentName="ArmorSmithableBase" Name="Saracens_ChainMailBase" Abstract="true">
+    <ThingDef ParentName="ArmorSmithableBase" Name="SFE_ChainMailBase" Abstract="true">
         <recipeMaker>
             <recipeUsers>
                 <li>ElectricSmithy</li>
@@ -22,7 +22,7 @@
             </defaultOutfitTags>
         </apparel>
     </ThingDef>
-    <ThingDef ParentName="Saracens_ChainMailBase">
+    <ThingDef ParentName="SFE_ChainMailBase">
         <defName>SFE_Apparel_SouthernMailShirt</defName>
         <label>southern mail shirt</label>
         <description>Light chain mail, with a decorated cape on top, provides a good level of protection, while remaining fashionable.</description>
@@ -72,7 +72,7 @@
             </tags>
         </apparel>
     </ThingDef>
-    <ThingDef ParentName="Saracens_ChainMailBase">
+    <ThingDef ParentName="SFE_ChainMailBase">
         <defName>SFE_Apparel_AssasinRobe</defName>
         <label>assasin robe</label>
         <description>Dense chain mail, worn under a thick robe, worn over it, allows wearers not to use other armor. It is equally good at any time of the day, but it is best suited for night operations in the rear.</description>

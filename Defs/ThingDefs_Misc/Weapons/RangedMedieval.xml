@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-    <ThingDef ParentName="BaseHumanMakeableGun" Name="Saracens_BaseMakeableLeatherGun" Abstract="true">
+    <ThingDef ParentName="BaseHumanMakeableGun" Name="SFE_BaseMakeableLeatherGun" Abstract="true">
         <techLevel>Medieval</techLevel>
         <stuffCategories>
             <li>Leathery</li>
@@ -27,7 +27,7 @@
             <damageDef>Scratch</damageDef>
         </projectile>
     </ThingDef>
-    <ThingDef ParentName="Saracens_BaseMakeableLeatherGun">
+    <ThingDef ParentName="SFE_BaseMakeableLeatherGun">
         <defName>SFE_RangedWeapon_Whip</defName>
         <label>whip</label>
         <description>The weapon of slavers and slave-drivers. This finely made length of corded leather can be used to strike at others at a distance or up close. Many a former slave knows the kiss of this tool, as it leaves its markers across their flesh.</description>
@@ -112,7 +112,7 @@
             <damageDef>Blunt</damageDef>
         </projectile>
     </ThingDef>
-    <ThingDef ParentName="Saracens_BaseMakeableLeatherGun">
+    <ThingDef ParentName="SFE_BaseMakeableLeatherGun">
         <defName>SFE_RangedWeapon_NomadSling</defName>
         <label>nomad sling</label>
         <description>A throwing net equipped with weights at the edges for better throwing and immobilization of the victim.</description>
@@ -190,7 +190,7 @@
             <damageDef>Stun</damageDef>
         </projectile>
     </ThingDef>
-    <ThingDef ParentName="Saracens_BaseMakeableLeatherGun">
+    <ThingDef ParentName="SFE_BaseMakeableLeatherGun">
         <defName>SFE_RangedWeapon_Bolas</defName>
         <label>bolas</label>
         <description>Three small weights fastened with a rope can briefly stop the victim, as well as cause good damage close up.</description>
@@ -273,7 +273,7 @@
             <damageDef>Stun</damageDef>
         </projectile>
     </ThingDef>
-    <ThingDef ParentName="Saracens_BaseMakeableLeatherGun">
+    <ThingDef ParentName="SFE_BaseMakeableLeatherGun">
         <defName>SFE_RangedWeapon_ThrowingNet</defName>
         <label>throwing net</label>
         <graphicData>

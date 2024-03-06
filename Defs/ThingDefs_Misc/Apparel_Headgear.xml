@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-    <ThingDef ParentName="HatMakeableBase" Name="Saracens_HatBase" Abstract="true">
+    <ThingDef ParentName="HatMakeableBase" Name="SFE_HatBase" Abstract="true">
         <recipeMaker>
             <researchPrerequisite>DankPyon_Tailoring</researchPrerequisite>
             <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
@@ -23,7 +23,7 @@
             <canBeDesiredForIdeo>true</canBeDesiredForIdeo>
         </apparel>
     </ThingDef>
-    <ThingDef ParentName="Saracens_HatBase">
+    <ThingDef ParentName="SFE_HatBase">
         <defName>SFE_Apparel_NomadHeadWrap</defName>
         <label>nomad head wrap</label>
         <description>A headwrap helps to survive the heat, as well as the coolness of the night.</description>
@@ -56,7 +56,7 @@
             </layers>
         </apparel>
     </ThingDef>
-    <ThingDef ParentName="Saracens_HatBase">
+    <ThingDef ParentName="SFE_HatBase">
         <defName>SFE_Apparel_LeatherHeadWrap</defName>
         <label>leather head wrap</label>
         <description>A rough leather headwrap is usually worn by poor nomads who own cattle. Cheap and not very strong, but it allows you to survive some types of not the best weapons.</description>
@@ -88,7 +88,7 @@
             </layers>
         </apparel>
     </ThingDef>
-    <ThingDef ParentName="Saracens_HatBase">
+    <ThingDef ParentName="SFE_HatBase">
         <defName>SFE_Apparel_GunnersHat</defName>
         <label>gunner hat</label>
         <description>Elite armband of the southern arrows. It does not provide much protection, but it allows the enemy to understand from afar that a storm is coming.</description>
@@ -132,7 +132,7 @@
             </tags>
         </apparel>
     </ThingDef>
-    <ThingDef ParentName="ArmorHelmetMakeableBase" Name="Saracens_HelmetBase" Abstract="true">
+    <ThingDef ParentName="ArmorHelmetMakeableBase" Name="SFE_HelmetBase" Abstract="true">
         <recipeMaker>
             <recipeUsers>
                 <li>ElectricSmithy</li>
@@ -157,7 +157,7 @@
             </defaultOutfitTags>
         </apparel>
     </ThingDef>
-    <ThingDef ParentName="Saracens_HelmetBase">
+    <ThingDef ParentName="SFE_HelmetBase">
         <defName>SFE_Apparel_NomadLightHelmet</defName>
         <label>nomad light helmet</label>
         <description>Under this headwrap there is a helmet that protects most of the head not only from physical damage, but also from climatic damage.</description>
@@ -200,7 +200,7 @@
             </layers>
         </apparel>
     </ThingDef>
-    <ThingDef ParentName="Saracens_HelmetBase">
+    <ThingDef ParentName="SFE_HelmetBase">
         <defName>SFE_Apparel_WrappedSouthernHelmet</defName>
         <label>wrapped southern helmet</label>
         <description>Covered with a thin layer of gold, this helmet not only shows the status of a person, but also gives him sufficient protection.</description>
@@ -241,7 +241,7 @@
             </layers>
         </apparel>
     </ThingDef>
-    <ThingDef ParentName="Saracens_HelmetBase">
+    <ThingDef ParentName="SFE_HelmetBase">
         <defName>SFE_Apparel_SpikedSkullCapWithMail</defName>
         <label>spiked skull cap with mail</label>
         <description>The headwrap, made in dark tones, with a metal disguise, hides the identity of the owner, while providing high protection of the head.</description>
@@ -288,7 +288,7 @@
             </tags>
         </apparel>
     </ThingDef>
-    <ThingDef ParentName="Saracens_HelmetBase">
+    <ThingDef ParentName="SFE_HelmetBase">
         <defName>SFE_Apparel_ReinforcedNomadHelmet</defName>
         <label>reinforced nomad helmet</label>
         <description>Nomads who have been wandering through lifeless deserts for a long time in search of means of living have acquired this extremely good helmet with a nanosuit and a bandage that can be used at any time to protect against heat or cold.</description>
@@ -332,7 +332,7 @@
             </layers>
         </apparel>
     </ThingDef>
-    <ThingDef ParentName="Saracens_HelmetBase">
+    <ThingDef ParentName="SFE_HelmetBase">
         <defName>SFE_Apparel_AssasinFaceMask</defName>
         <label>assasin face mask</label>
         <description>The headwrap, made in dark tones, with a metal disguise, hides the identity of the owner, while providing high protection of the head.</description>
@@ -379,7 +379,7 @@
             </tags>
         </apparel>
     </ThingDef>
-    <ThingDef Name="HeavyLamellarHelmet" ParentName="Saracens_HelmetBase">
+    <ThingDef Name="HeavyLamellarHelmet" ParentName="SFE_HelmetBase">
         <defName>SFE_Apparel_HeavyLamellarHelmet</defName>
         <label>heavy lamellar helmet</label>
         <description>The heavy helmet of the southern army is not so popular because of its high cost and complexity in manufacturing. At the same time, it is worth the money, according to its carriers.</description>
@@ -464,7 +464,7 @@
             <useWornGraphicMask>true</useWornGraphicMask>
         </apparel>
     </ThingDef>
-    <ThingDef ParentName="Saracens_HelmetBase">
+    <ThingDef ParentName="SFE_HelmetBase">
         <defName>SFE_Apparel_SoutherHelmetWithCoif</defName>
         <label>southern helmet with coif</label>
         <description>Decorated with gold and lined with leather, the helmet provides excellent protection not only for the head, but also for the neck.</description>
@@ -506,7 +506,7 @@
             </layers>
         </apparel>
     </ThingDef>
-    <ThingDef Name="TurbanHelm" ParentName="Saracens_HelmetBase">
+    <ThingDef Name="TurbanHelm" ParentName="SFE_HelmetBase">
         <defName>SFE_Apparel_TurbanHelm</defName>
         <label>turban helm</label>
         <description>A full helmet resembling the turban of sultans and other high-ranking personalities. The patterns on the helmet and the gold-plated coating indicate the strong status of the owner.</description>
@@ -624,7 +624,7 @@
             </tags>
         </apparel>
     </ThingDef>
-    <ThingDef ParentName="Saracens_HelmetBase">
+    <ThingDef ParentName="SFE_HelmetBase">
         <defName>SFE_Apparel_WardenHelm</defName>
         <label>warden helm</label>
         <description>The former assassins cover the helmet with gold and strengthen it, achieving not only external beauty, but also perfect protection of the head and face.</description>
@@ -675,7 +675,7 @@
             </layers>
         </apparel>
     </ThingDef>
-    <ThingDef ParentName="Saracens_HelmetBase">
+    <ThingDef ParentName="SFE_HelmetBase">
         <defName>SFE_Apparel_GladiatorHelm</defName>
         <label>gladiator helm</label>
         <graphicData>
