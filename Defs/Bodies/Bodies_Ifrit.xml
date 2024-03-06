@@ -42,12 +42,12 @@
           <parts>
             <li>
               <def>MechanicalArm</def>
-              <customLabel>left branch arm</customLabel>
+              <customLabel>left shaft arm</customLabel>
               <coverage>0.85</coverage>
               <parts>
                 <li>
                   <def>MechanicalHand</def>
-                  <customLabel>left branch hand</customLabel>
+                  <customLabel>left shaft hand</customLabel>
                   <coverage>0.2</coverage>
                   <height>Bottom</height>
                   <parts>
@@ -97,12 +97,12 @@
           <parts>
             <li>
               <def>MechanicalArm</def>
-              <customLabel>right branch arm</customLabel>
+              <customLabel>right shaft arm</customLabel>
               <coverage>0.85</coverage>
               <parts>
                 <li>
                   <def>MechanicalHand</def>
-                  <customLabel>right branch hand</customLabel>
+                  <customLabel>right shaft hand</customLabel>
                   <coverage>0.2</coverage>
                   <height>Bottom</height>
                   <parts>
@@ -147,26 +147,26 @@
         </li>
         <li>
           <def>MechanicalLeg</def>
-          <customLabel>left branch leg</customLabel>
+          <customLabel>left shaft leg</customLabel>
           <coverage>0.2</coverage>
           <height>Bottom</height>
           <parts>
             <li>
               <def>MechanicalFoot</def>
-              <customLabel>left branch foot</customLabel>
+              <customLabel>left shaft foot</customLabel>
               <coverage>0.2</coverage>
             </li>
           </parts>
         </li>
         <li>
           <def>MechanicalLeg</def>
-          <customLabel>right branch leg</customLabel>
+          <customLabel>right shaft leg</customLabel>
           <coverage>0.2</coverage>
           <height>Bottom</height>
           <parts>
             <li>
               <def>MechanicalFoot</def>
-              <customLabel>right branch foot</customLabel>
+              <customLabel>right shaft foot</customLabel>
               <coverage>0.2</coverage>
             </li>
           </parts>

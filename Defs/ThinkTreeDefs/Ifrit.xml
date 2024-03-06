@@ -15,24 +15,9 @@
                     <treeDef>Downed</treeDef>
                 </li>
 
-                <!-- Mental state -->
-                <li Class="ThinkNode_ConditionalMentalState">
-                    <state>BerserkMechanoid</state>
-                    <subNodes>
-                        <li Class="ThinkNode_Priority">
-                            <subNodes>
-                                <li Class="JobGiver_Berserk" />
-                                <li Class="JobGiver_WanderAnywhere">
-                                    <maxDanger>Deadly</maxDanger>
-                                </li>
-                            </subNodes>
-                        </li>
-                    </subNodes>
-                </li>
-
                 <!-- Merge while pain-->
                 <li Class="ThinkNode_ChancePerHour_Constant">
-                    <mtbHours>0.6</mtbHours>
+                    <mtbHours>0.25</mtbHours>
                     <subNodes>
                         <li Class="Saracens.Jobs.ThinkNode_ConditionalFeelPain">
                             <subNodes>
@@ -71,15 +56,6 @@
                 <li Class="ThinkNode_Tagger">
                     <tagToGive>Idle</tagToGive>
                     <subNodes>
-                        <li Class="ThinkNode_ConditionalHerdAnimal">
-                            <subNodes>
-                                <li Class="JobGiver_WanderHerd">
-                                    <maxDanger>Deadly</maxDanger>
-                                    <ticksBetweenWandersRange>120~240</ticksBetweenWandersRange>
-                                </li>
-                            </subNodes>
-                        </li>
-
                         <li Class="JobGiver_WanderAnywhere">
                             <maxDanger>Deadly</maxDanger>
                             <ticksBetweenWandersRange>120~240</ticksBetweenWandersRange>
