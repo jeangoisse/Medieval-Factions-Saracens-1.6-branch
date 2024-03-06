@@ -15,7 +15,7 @@
         <arriveModes Inherit="false">
             <li>EdgeWalkIn</li>
         </arriveModes>
-        <letterLabelEnemy>Raid</letterLabelEnemy>
-        <arrivalTextEnemy>They are attacking immediately.</arrivalTextEnemy>
+        <letterLabelEnemy>Arrive And Defend Raid</letterLabelEnemy>
+        <arrivalTextEnemy>A hostile force has been spotted nearing our territory.</arrivalTextEnemy>
     </RaidStrategyDef>
 </Defs>

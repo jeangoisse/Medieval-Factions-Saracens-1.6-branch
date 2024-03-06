@@ -7,13 +7,13 @@
         <pawnSingular>desert demon</pawnSingular>
         <pawnsPlural>desert demons</pawnsPlural>
         <requiredCountAtGameStart>1</requiredCountAtGameStart>
-        <fixedName>Creatures of the Desert</fixedName>
-        <factionIconPath>WorldObjects/Desert</factionIconPath>
+        <fixedName>Demons of the Desert</fixedName>
+        <factionIconPath>WorldObjects/Ifrits</factionIconPath>
         <colorSpectrum>
             <li>(0.97, 0.73, 0.01)</li>
         </colorSpectrum>
         <configurationListOrderPriority>90</configurationListOrderPriority>
-        <displayInFactionSelection>false</displayInFactionSelection>
+        <displayInFactionSelection>true</displayInFactionSelection>
         <humanlikeFaction>false</humanlikeFaction>
         <hidden>true</hidden>
         <autoFlee>false</autoFlee>
@@ -24,8 +24,7 @@
         <maxPawnCostPerTotalPointsCurve>
             <points>
                 <li>(400,200)</li>
-                <li>(900,300)</li>
-                <li>(100000,10000)</li>
+                <li>(1800,500)</li>
             </points>
         </maxPawnCostPerTotalPointsCurve>
         <allowedArrivalTemperatureRange>-100~200</allowedArrivalTemperatureRange>
@@ -36,18 +35,27 @@
                 <options>
                     <Saracens_SmallIfrit>30</Saracens_SmallIfrit>
                     <Saracens_MediumIfrit>5</Saracens_MediumIfrit>
-                    <Saracens_LargeIfrit>1</Saracens_LargeIfrit>
                 </options>
             </li>
             <li>
                 <kindDef>Combat</kindDef>
-                <commonality>50</commonality>
+                <commonality>70</commonality>
                 <options>
+                    <Saracens_SmallIfrit>18</Saracens_SmallIfrit>
                     <Saracens_MediumIfrit>12</Saracens_MediumIfrit>
                     <Saracens_LargeIfrit>6</Saracens_LargeIfrit>
                 </options>
             </li>
+            <li>
+                <kindDef>Combat</kindDef>
+                <commonality>40</commonality>
+                <options>
+                    <Saracens_MediumIfrit>6</Saracens_MediumIfrit>
+                    <Saracens_LargeIfrit>12</Saracens_LargeIfrit>
+                </options>
+            </li>
         </pawnGroupMakers>
+        <canStageAttacks>true</canStageAttacks>
         <modExtensions>
             <li Class="Saracens.Extensions.CanArriveAndDefend">
                 <canArriveAndDefend>true</canArriveAndDefend>
