@@ -10,6 +10,9 @@
         <chemicalAddictionChance>0.02</chemicalAddictionChance>
         <invNutrition>2.55</invNutrition>
         <invFoodDef>DankPyon_MealRations</invFoodDef>
+        <apparelTags>
+            <li>MedievalBasic</li>
+        </apparelTags>
     </PawnKindDef>
 
     <PawnKindDef ParentName="SFE_SaracensPawnKindBase">
@@ -65,7 +68,7 @@
             <min>0.7</min>
             <max>1.1</max>
         </gearHealthRange>
-        <apparelMoney>300~650</apparelMoney>
+        <apparelMoney>500~700</apparelMoney>
         <apparelTags>
             <li>DankPyon_Peasant</li>
             <li>SFE_Conscript</li>
