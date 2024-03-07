@@ -51,6 +51,7 @@
       <WoodLog>40</WoodLog>
     </costList>
     <weaponTags>
+      <li>SFE_Conscript</li>
       <li>MedievalMeleeDecent</li>
     </weaponTags>
     <statBases>

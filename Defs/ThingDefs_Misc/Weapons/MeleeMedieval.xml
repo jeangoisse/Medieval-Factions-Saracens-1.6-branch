@@ -32,7 +32,7 @@
             <li>Metallic</li>
         </stuffCategories>
         <weaponTags>
-            <li>MedievalMeleeDecent</li>
+            <li>SFE_Conscript</li>
         </weaponTags>
         <weaponClasses>
             <li>Melee</li>
@@ -228,6 +228,7 @@
             <WoodLog>15</WoodLog>
         </costList>
         <weaponTags>
+            <li>SFE_Conscript</li>
             <li>MedievalMeleeDecent</li>
         </weaponTags>
         <statBases>

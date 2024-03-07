@@ -242,6 +242,9 @@
             <layers>
                 <li>Overhead</li>
             </layers>
+            <tags>
+                <li>SFE_ConscriptHelmet</li>
+            </tags>
         </apparel>
     </ThingDef>
     <ThingDef ParentName="SFE_HelmetBase">
@@ -287,6 +290,7 @@
                 <li>Overhead</li>
             </layers>
             <tags>
+                <li>SFE_ConscriptHelmet</li>
                 <li>MedievalMilitaryBasic</li>
             </tags>
         </apparel>

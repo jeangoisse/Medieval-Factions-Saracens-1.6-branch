@@ -32,6 +32,7 @@
         <comps>
             <li Class="VFECore.CompProperties_Shield">
                 <shieldTags>
+                    <li>SFE_Conscript</li>
                     <li>SFE_AdagraShield</li>
                 </shieldTags>
                 <useDeflectMetalEffect>false</useDeflectMetalEffect>

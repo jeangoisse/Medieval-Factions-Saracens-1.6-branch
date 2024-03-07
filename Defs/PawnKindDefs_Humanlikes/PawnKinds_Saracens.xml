@@ -12,7 +12,7 @@
         <invFoodDef>DankPyon_MealRations</invFoodDef>
     </PawnKindDef>
 
-    <PawnKindDef ParentName="DankPyon_MedievalPawnKindBase">
+    <PawnKindDef ParentName="SFE_SaracensPawnKindBase">
         <defName>SFE_Saracens_Indebted</defName>
         <label>Indebted</label>
         <combatPower>40</combatPower>
@@ -46,13 +46,59 @@
         <techHediffsChance>0.2</techHediffsChance>
         <initialWillRange>1~2</initialWillRange>
         <initialResistanceRange>3~8</initialResistanceRange>
-        <pawnMustBeCapableOfViolence>true</pawnMustBeCapableOfViolence>
         <skills>
             <li>
                 <skill>Melee</skill>
                 <range>2~5</range>
             </li>
         </skills>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="SFE_SaracensPawnKindBase">
+        <defName>SFE_Saracens_Conscript</defName>
+        <label>Conscript</label>
+        <combatPower>50</combatPower>
+        <invNutrition>0</invNutrition>
+        <itemQuality>Normal</itemQuality>
+        <isFighter>true</isFighter>
+        <gearHealthRange>
+            <min>0.7</min>
+            <max>1.1</max>
+        </gearHealthRange>
+        <apparelMoney>300~650</apparelMoney>
+        <apparelTags>
+            <li>DankPyon_Peasant</li>
+            <li>SFE_Conscript</li>
+            <li>SFE_ConscriptHelmet</li>
+        </apparelTags>
+        <weaponMoney>200~350</weaponMoney>
+        <weaponTags>
+            <li>SFE_Conscript</li>
+        </weaponTags>
+        <techHediffsMoney>
+            <min>50</min>
+            <max>100</max>
+        </techHediffsMoney>
+        <techHediffsTags>
+            <li>Poor</li>
+        </techHediffsTags>
+        <techHediffsChance>0.15</techHediffsChance>
+        <initialWillRange>2~3</initialWillRange>
+        <initialResistanceRange>4~9</initialResistanceRange>
+        <skills>
+            <li>
+                <skill>Melee</skill>
+                <range>4~8</range>
+            </li>
+        </skills>
+        <modExtensions>
+            <li Class="VFECore.PawnKindDefExtension">
+                <shieldTags>
+                    <li>SFE_Conscript</li>
+                </shieldTags>
+                <shieldMoney>100~200</shieldMoney>
+            </li>
+        </modExtensions>
     </PawnKindDef>
 
 </Defs>
