@@ -166,6 +166,7 @@
         </costList>
         <weaponTags>
             <li>MedievalMeleeDecent</li>
+            <li>SFE_Gunner</li>
         </weaponTags>
         <statBases>
             <MaxHitPoints>100</MaxHitPoints>

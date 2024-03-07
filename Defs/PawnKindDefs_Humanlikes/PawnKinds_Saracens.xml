@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
-
     <PawnKindDef Name="SFE_SaracensPawnKindBase" Abstract="True">
         <race>Human</race>
         <backstoryCategories>
             <li>Tribal</li>
         </backstoryCategories>
+        <defaultFactionType>Pirate</defaultFactionType>
         <maxGenerationAge>70</maxGenerationAge>
         <chemicalAddictionChance>0.02</chemicalAddictionChance>
         <invNutrition>2.55</invNutrition>
@@ -14,7 +14,6 @@
             <li>MedievalBasic</li>
         </apparelTags>
     </PawnKindDef>
-
     <PawnKindDef ParentName="SFE_SaracensPawnKindBase">
         <defName>SFE_Saracens_Indebted</defName>
         <label>Indebted</label>
@@ -23,10 +22,7 @@
         <invNutrition>0</invNutrition>
         <itemQuality>Poor</itemQuality>
         <isFighter>true</isFighter>
-        <gearHealthRange>
-            <min>0.2</min>
-            <max>1.1</max>
-        </gearHealthRange>
+        <gearHealthRange>0.2~0.8</gearHealthRange>
         <apparelMoney>50~200</apparelMoney>
         <apparelTags>
             <li>DankPyon_Peasant</li>
@@ -56,18 +52,14 @@
             </li>
         </skills>
     </PawnKindDef>
-
     <PawnKindDef ParentName="SFE_SaracensPawnKindBase">
         <defName>SFE_Saracens_Conscript</defName>
         <label>Conscript</label>
         <combatPower>50</combatPower>
-        <invNutrition>0</invNutrition>
+        <invNutrition>1</invNutrition>
         <itemQuality>Normal</itemQuality>
         <isFighter>true</isFighter>
-        <gearHealthRange>
-            <min>0.7</min>
-            <max>1.1</max>
-        </gearHealthRange>
+        <gearHealthRange>0.7~1.0</gearHealthRange>
         <apparelMoney>500~700</apparelMoney>
         <apparelTags>
             <li>DankPyon_Peasant</li>
@@ -103,5 +95,38 @@
             </li>
         </modExtensions>
     </PawnKindDef>
-
+        <PawnKindDef ParentName="SFE_SaracensPawnKindBase">
+        <defName>SFE_Saracens_Gunner</defName>
+        <label>Gunner</label>
+        <combatPower>60</combatPower>
+        <invNutrition>1</invNutrition>
+        <itemQuality>Normal</itemQuality>
+        <isFighter>true</isFighter>
+        <gearHealthRange>0.8~1.0</gearHealthRange>
+        <apparelMoney>400~600</apparelMoney>
+        <apparelTags>
+            <li>SFE_Gunner</li>
+            <li>SFE_GunnerHelmet</li>
+        </apparelTags>
+        <weaponMoney>250~400</weaponMoney>
+        <weaponTags>
+            <li>SFE_Gunner</li>
+        </weaponTags>
+        <techHediffsMoney>
+            <min>50</min>
+            <max>100</max>
+        </techHediffsMoney>
+        <techHediffsTags>
+            <li>Poor</li>
+        </techHediffsTags>
+        <techHediffsChance>0.15</techHediffsChance>
+        <initialWillRange>2~3</initialWillRange>
+        <initialResistanceRange>4~9</initialResistanceRange>
+        <skills>
+            <li>
+                <skill>Shooting</skill>
+                <range>5~12</range>
+            </li>
+        </skills>
+    </PawnKindDef>
 </Defs>

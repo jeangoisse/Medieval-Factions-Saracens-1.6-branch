@@ -94,10 +94,7 @@
         </statBases>
         <apparel>
             <bodyPartGroups>
-                <li>Arms</li>
                 <li>Torso</li>
-                <li>Shoulders</li>
-                <li>Legs</li>
             </bodyPartGroups>
             <wornGraphicPath>Apparel/Armor/LightArmor/PaddedVest/Padded_Vest</wornGraphicPath>
             <useWornGraphicMask>true</useWornGraphicMask>
@@ -107,6 +104,7 @@
             </layers>
             <tags>
                 <li>MedievalMilitaryBasic</li>
+                <li>SFE_Gunner</li>
             </tags>
         </apparel>
     </ThingDef>
@@ -203,8 +201,9 @@
                 <li>Shell</li>
             </layers>
             <tags>
-                <li>SFE_Conscript</li>
                 <li>MedievalMilitaryBasic</li>
+                <li>SFE_Conscript</li>
+                <li>SFE_Gunner</li>
             </tags>
         </apparel>
     </ThingDef>
