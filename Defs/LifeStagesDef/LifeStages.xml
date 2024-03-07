@@ -3,6 +3,7 @@
     <LifeStageDef>
         <defName>SFE_IfritSmallForm</defName>
         <label>small ifrit</label>
+        <bodySizeFactor>0.13</bodySizeFactor>
         <meleeDamageFactor>0.2</meleeDamageFactor>
         <healthScaleFactor>0.2</healthScaleFactor>
         <voxPitch>1.4</voxPitch>
@@ -17,7 +18,7 @@
         <label>medium ifrit</label>
         <bodySizeFactor>0.41</bodySizeFactor>
         <meleeDamageFactor>0.5</meleeDamageFactor>
-        <healthScaleFactor>0.45</healthScaleFactor>
+        <healthScaleFactor>0.5</healthScaleFactor>
         <voxPitch>1.2</voxPitch>
         <statFactors>
             <ArmorRating_Blunt>0.7</ArmorRating_Blunt>

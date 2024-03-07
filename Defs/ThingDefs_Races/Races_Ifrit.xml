@@ -27,23 +27,24 @@
             <fleshType>DankPyon_Schrat</fleshType>
             <body>SFE_IfritBody</body>
             <deathActionWorkerClass>Saracens.ActionWorkers.DeathActionWorker_NoCorpseAndLoot</deathActionWorkerClass>
-            <herdAnimal>true</herdAnimal>
             <needsRest>false</needsRest>
             <hasGenders>false</hasGenders>
             <foodType>None</foodType>
             <bloodDef>Filth_RubbleRock</bloodDef>
             <baseBodySize>5.71</baseBodySize>
             <baseHealthScale>4.7</baseHealthScale>
-            <lifeExpectancy>780</lifeExpectancy>
+            <lifeExpectancy>50</lifeExpectancy>
             <soundCallIntervalRange>1000~2000</soundCallIntervalRange>
             <ageGenerationCurve>
                 <points>
                     <li>(0, 0)</li>
-                    <li>(50, 90)</li>
-                    <li>(200, 70)</li>
-                    <li>(300, 30)</li>
-                    <li>(500, 10)</li>
-                    <li>(700, 0)</li>
+                    <li>(3, 100)</li>
+                    <li>(6, 90)</li>
+                    <li>(10, 50)</li>
+                    <li>(16, 40)</li>
+                    <li>(20, 30)</li>
+                    <li>(30, 10)</li>
+                    <li>(35, 0)</li>
                 </points>
             </ageGenerationCurve>
             <lifeStageAges>
@@ -53,11 +54,11 @@
                 </li>
                 <li>
                     <def>SFE_IfritMediumlForm</def>
-                    <minAge>196</minAge>
+                    <minAge>10</minAge>
                 </li>
                 <li>
                     <def>SFE_IfritLargeForm</def>
-                    <minAge>392</minAge>
+                    <minAge>20</minAge>
                     <soundWounded>Ifrit_Idle</soundWounded>
                     <soundCall>Ifrit_Idle</soundCall>
                 </li>
@@ -117,6 +118,7 @@
         <race>SFE_Ifrit</race>
         <defaultFactionType>SFE_Desert_Faction</defaultFactionType>
         <canArriveManhunter>false</canArriveManhunter>
+        <chronologicalAgeRange>0~1250</chronologicalAgeRange>
         <lifeStages>
             <li>
                 <label>small ifrit</label>
@@ -145,7 +147,7 @@
         <defName>SFE_SmallIfrit</defName>
         <label>ifrit</label>
         <combatPower>40</combatPower>
-        <maxGenerationAge>195</maxGenerationAge>
+        <maxGenerationAge>9</maxGenerationAge>
         <inventoryOptions>
             <subOptionsTakeAll>
                 <li>
@@ -165,8 +167,8 @@
         <defName>SFE_MediumIfrit</defName>
         <label>ifrit</label>
         <combatPower>200</combatPower>
-        <minGenerationAge>196</minGenerationAge>
-        <maxGenerationAge>391</maxGenerationAge>
+        <minGenerationAge>10</minGenerationAge>
+        <maxGenerationAge>19</maxGenerationAge>
         <inventoryOptions>
             <subOptionsTakeAll>
                 <li>
@@ -186,7 +188,7 @@
         <defName>SFE_LargeIfrit</defName>
         <label>ifrit</label>
         <combatPower>500</combatPower>
-        <minGenerationAge>392</minGenerationAge>
+        <minGenerationAge>20</minGenerationAge>
         <inventoryOptions>
             <subOptionsTakeAll>
                 <li>
