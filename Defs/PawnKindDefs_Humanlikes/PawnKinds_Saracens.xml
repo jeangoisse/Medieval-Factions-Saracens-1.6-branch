@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <PawnKindDef Name="SFE_SaracensPawnKindBase" Abstract="True">
+        <race>Human</race>
+        <backstoryCategories>
+            <li>Tribal</li>
+        </backstoryCategories>
+        <maxGenerationAge>70</maxGenerationAge>
+        <chemicalAddictionChance>0.02</chemicalAddictionChance>
+        <invNutrition>2.55</invNutrition>
+        <invFoodDef>DankPyon_MealRations</invFoodDef>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="DankPyon_MedievalPawnKindBase">
+        <defName>SFE_Saracens_Indebted</defName>
+        <label>Indebted</label>
+        <combatPower>40</combatPower>
+        <chemicalAddictionChance>0.04</chemicalAddictionChance>
+        <invNutrition>0</invNutrition>
+        <itemQuality>Poor</itemQuality>
+        <isFighter>true</isFighter>
+        <gearHealthRange>
+            <min>0.2</min>
+            <max>1.1</max>
+        </gearHealthRange>
+        <apparelMoney>50~200</apparelMoney>
+        <apparelTags>
+            <li>DankPyon_Peasant</li>
+            <li>SFE_IndebtedHelmet</li>
+        </apparelTags>
+        <weaponMoney>150~300</weaponMoney>
+        <weaponTags>
+            <li>DankPyon_Pitchfork</li>
+            <li>DankPyon_Pickaxe</li>
+            <li>DankPyon_Hatchet</li>
+            <li>NeolithicMeleeBasic</li>
+        </weaponTags>
+        <techHediffsMoney>
+            <min>50</min>
+            <max>50</max>
+        </techHediffsMoney>
+        <techHediffsTags>
+            <li>Poor</li>
+        </techHediffsTags>
+        <techHediffsChance>0.2</techHediffsChance>
+        <initialWillRange>1~2</initialWillRange>
+        <initialResistanceRange>3~8</initialResistanceRange>
+        <pawnMustBeCapableOfViolence>true</pawnMustBeCapableOfViolence>
+        <skills>
+            <li>
+                <skill>Melee</skill>
+                <range>2~5</range>
+            </li>
+        </skills>
+    </PawnKindDef>
+
+</Defs>
