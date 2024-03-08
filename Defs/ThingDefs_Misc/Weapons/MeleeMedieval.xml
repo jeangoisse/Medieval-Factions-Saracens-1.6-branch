@@ -537,4 +537,88 @@
             </li>
         </modExtensions>
     </ThingDef>
+    <ThingDef ParentName="DankPyon_Base_Sharp_NormalSize" Name="SFE_Pike" Abstract="true">
+        <graphicData>
+            <drawSize>(1.5, 1.5)</drawSize>
+            <shaderType>CutoutComplex</shaderType>
+            <graphicClass>Graphic_Single</graphicClass>
+            <color>(94, 96, 103)</color>
+        </graphicData>
+        <possessionCount>1</possessionCount>
+        <uiIconScale>1.2</uiIconScale>
+        <techLevel>Medieval</techLevel>
+        <costStuffCount>75</costStuffCount>
+        <weaponTags>
+            <li>SFE_Pike</li>
+        </weaponTags>
+        <statBases>
+            <MaxHitPoints>100</MaxHitPoints>
+            <WorkToMake>250</WorkToMake>
+            <Mass>2.75</Mass>
+            <Beauty>-3</Beauty>
+            <Flammability>0.4</Flammability>
+            <DeteriorationRate>2</DeteriorationRate>
+            <SellPriceFactor>0.2</SellPriceFactor>
+        </statBases>
+        <stuffCategories>
+            <li>Metallic</li>
+        </stuffCategories>
+        <tools>
+            <li>
+                <label>shaft</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <armorPenetration>0.15</armorPenetration>
+                <power>10</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+            <li>
+                <label>poke</label>
+                <capacities>
+                    <li>Poke</li>
+                </capacities>
+                <armorPenetration>0.15</armorPenetration>
+                <power>10</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+            <li>
+                <label>stab</label>
+                <capacities>
+                    <li>Stab</li>
+                </capacities>
+                <armorPenetration>0.3</armorPenetration>
+                <power>19</power>
+                <cooldownTime>2.95</cooldownTime>
+            </li>
+        </tools>
+        <recipeMaker Inherit="false" />
+    </ThingDef>
+    <ThingDef ParentName="SFE_Pike">
+        <defName>SFE_MeleeWeapon_KarakanPike</defName>
+        <label>Pike Karakan</label>
+        <description>Unlike the spear, pikes must be wielded with both hands to be effective. This allows pike-users to impale enemies at a distance, making pikemen feared warriors even from the backline.This pike carries the colors of Grand Karakan</description>
+        <graphicData>
+            <texPath>WeaponMelee/Polearms/StandardKarakan</texPath>
+            <maskPath>WeaponMelee/Polearms/StandardKarakan_m</maskPath>
+        </graphicData>
+    </ThingDef>
+    <ThingDef ParentName="SFE_Pike">
+        <defName>SFE_MeleeWeapon_StandardDahab</defName>
+        <label>Pike Dahab</label>
+        <description>Unlike the spear, pikes must be wielded with both hands to be effective. This allows pike-users to impale enemies at a distance, making pikemen feared warriors even from the backline.This pike carries the colors of Realm Dahab</description>
+        <graphicData>
+            <texPath>WeaponMelee/Polearms/StandardDahab</texPath>
+            <maskPath>WeaponMelee/Polearms/StandardDahab_m</maskPath>
+        </graphicData>
+    </ThingDef>
+    <ThingDef ParentName="SFE_Pike">
+        <defName>SFE_MeleeWeapon_StandardTanwir</defName>
+        <label>Pike Tanwir</label>
+        <description>Unlike the spear, pikes must be wielded with both hands to be effective. This allows pike-users to impale enemies at a distance, making pikemen feared warriors even from the backline.This pike carries the colors of Holy Tanwir</description>
+        <graphicData>
+            <texPath>WeaponMelee/Polearms/StandardTanwir</texPath>
+            <maskPath>WeaponMelee/Polearms/StandardTanwir_m</maskPath>
+        </graphicData>
+    </ThingDef>
 </Defs>
