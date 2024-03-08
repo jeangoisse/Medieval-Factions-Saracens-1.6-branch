@@ -527,36 +527,6 @@
             </tags>
         </apparel>
     </ThingDef>
-    <ThingDef ParentName="TurbanHelm">
-        <defName>SFE_Apparel_GildedTurbanHelm</defName>
-        <label>gilded turban helm</label>
-        <description>A full helmet resembling the turban of sultans and other high-ranking personalities. The patterns on the helmet and the gold-plated coating indicate the strong status of the owner. This specimen is covered with gold on the crown.</description>
-        <graphicData>
-            <texPath>Apparel/Headgear/GildedTurbanHelmet/Gilded_Turban_Helmet</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
-            <maskPath>Apparel/Headgear/GildedTurbanHelmet/Gilded_Turban_Helmet_m</maskPath>
-            <shaderType>CutoutComplex</shaderType>
-            <color>(94, 96, 103)</color>
-        </graphicData>
-        <equippedStatOffsets>
-            <SocialImpact>0.25</SocialImpact>
-        </equippedStatOffsets>
-        <recipeMaker>
-            <researchPrerequisites>
-                <li>DankPyon_AdornedArmor</li>
-            </researchPrerequisites>
-        </recipeMaker>
-        <costList>
-            <Gold>5</Gold>
-        </costList>
-        <apparel>
-            <wornGraphicPath>Apparel/Headgear/GildedTurbanHelmet/Gilded_Turban_Helmet</wornGraphicPath>
-            <useWornGraphicMask>true</useWornGraphicMask>
-            <tags>
-                <li>MedievalMilitaryAdvanced</li>
-            </tags>
-        </apparel>
-    </ThingDef>
     <ThingDef ParentName="SFE_HelmetBase">
         <defName>SFE_Apparel_GladiatorHelm</defName>
         <label>gladiator helm</label>
