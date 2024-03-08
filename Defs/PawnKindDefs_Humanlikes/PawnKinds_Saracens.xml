@@ -62,7 +62,6 @@
         <gearHealthRange>0.7~1.0</gearHealthRange>
         <apparelMoney>500~700</apparelMoney>
         <apparelTags>
-            <li>DankPyon_Peasant</li>
             <li>SFE_Conscript</li>
             <li>SFE_ConscriptHelmet</li>
         </apparelTags>
