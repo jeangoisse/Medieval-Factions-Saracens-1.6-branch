@@ -549,6 +549,7 @@
         <techLevel>Medieval</techLevel>
         <costStuffCount>75</costStuffCount>
         <weaponTags>
+            <li>SFE_Bearer</li>
             <li>SFE_Pike</li>
         </weaponTags>
         <statBases>

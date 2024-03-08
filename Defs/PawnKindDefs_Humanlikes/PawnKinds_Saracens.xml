@@ -7,7 +7,7 @@
         </backstoryCategories>
         <defaultFactionType>Pirate</defaultFactionType>
         <maxGenerationAge>70</maxGenerationAge>
-        <chemicalAddictionChance>0.02</chemicalAddictionChance>
+        <chemicalAddictionChance>0.004</chemicalAddictionChance>
         <invNutrition>2.55</invNutrition>
         <invFoodDef>DankPyon_MealRations</invFoodDef>
         <apparelTags>
@@ -94,7 +94,7 @@
             </li>
         </modExtensions>
     </PawnKindDef>
-        <PawnKindDef ParentName="SFE_SaracensPawnKindBase">
+    <PawnKindDef ParentName="SFE_SaracensPawnKindBase">
         <defName>SFE_Saracens_Gunner</defName>
         <label>Gunner</label>
         <combatPower>60</combatPower>
@@ -125,6 +125,41 @@
             <li>
                 <skill>Shooting</skill>
                 <range>5~12</range>
+            </li>
+        </skills>
+    </PawnKindDef>
+    <PawnKindDef ParentName="SFE_SaracensPawnKindBase">
+        <defName>SFE_Saracens_Bearer</defName>
+        <label>Bearer</label>
+        <combatPower>60</combatPower>
+        <invNutrition>2</invNutrition>
+        <itemQuality>Normal</itemQuality>
+        <isFighter>true</isFighter>
+        <gearHealthRange>0.9~1.0</gearHealthRange>
+        <apparelMoney>650~900</apparelMoney>
+        <apparelTags>
+            <li>DankPyon_ChainArmor</li>
+            <li>SFE_Bearer</li>
+            <li>SFE_BearerHelmet</li>
+        </apparelTags>
+        <weaponMoney>250~400</weaponMoney>
+        <weaponTags>
+            <li>SFE_Bearer</li>
+        </weaponTags>
+        <techHediffsMoney>
+            <min>100</min>
+            <max>200</max>
+        </techHediffsMoney>
+        <techHediffsTags>
+            <li>Poor</li>
+        </techHediffsTags>
+        <techHediffsChance>0.15</techHediffsChance>
+        <initialWillRange>2~3</initialWillRange>
+        <initialResistanceRange>4~9</initialResistanceRange>
+        <skills>
+            <li>
+                <skill>Melee</skill>
+                <range>5~10</range>
             </li>
         </skills>
     </PawnKindDef>

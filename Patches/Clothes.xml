@@ -5,6 +5,8 @@
         <xpath>Defs/ThingDef[defName="DankPyon_Apparel_Hose"]/apparel/tags</xpath>
         <value>
           <li>SFE_Conscript</li>
+          <li>SFE_Gunner</li>
+          <li>SFE_Bearer</li>
         </value>
       </Operation>
 
