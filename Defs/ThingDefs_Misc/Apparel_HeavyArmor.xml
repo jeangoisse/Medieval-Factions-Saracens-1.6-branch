@@ -57,8 +57,9 @@
                 <li>Shell</li>
             </layers>
             <tags>
-                <li>MedievalMilitaryAdvanced</li>
-                <li>SFE_Bearer</li>
+                <li>SFE_Footman</li>
+
+                <li>MedievalMilitaryDecent</li>
             </tags>
             <canBeDesiredForIdeo>true</canBeDesiredForIdeo>
         </apparel>
@@ -151,7 +152,6 @@
                 <li>Shell</li>
             </layers>
             <tags>
-                <li>MedievalMilitaryBasic</li>
             </tags>
         </apparel>
     </ThingDef>

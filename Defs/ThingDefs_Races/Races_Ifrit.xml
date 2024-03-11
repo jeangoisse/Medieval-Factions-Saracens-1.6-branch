@@ -119,6 +119,7 @@
         <defaultFactionType>SFE_Desert_Faction</defaultFactionType>
         <canArriveManhunter>false</canArriveManhunter>
         <chronologicalAgeRange>0~1250</chronologicalAgeRange>
+        <aiAvoidCover>true</aiAvoidCover>
         <lifeStages>
             <li>
                 <label>small ifrit</label>

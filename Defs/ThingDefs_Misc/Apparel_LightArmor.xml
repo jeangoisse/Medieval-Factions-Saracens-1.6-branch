@@ -103,8 +103,9 @@
                 <li>Middle</li>
             </layers>
             <tags>
-                <li>MedievalMilitaryBasic</li>
                 <li>SFE_Gunner</li>
+
+                <li>MedievalMilitaryDecent</li>
             </tags>
         </apparel>
     </ThingDef>
@@ -201,9 +202,10 @@
                 <li>Shell</li>
             </layers>
             <tags>
-                <li>MedievalMilitaryBasic</li>
                 <li>SFE_Conscript</li>
                 <li>SFE_Gunner</li>
+
+                <li>MedievalMilitaryBasic</li>
             </tags>
         </apparel>
     </ThingDef>
@@ -250,7 +252,6 @@
                 <li>Shell</li>
             </layers>
             <tags>
-                <li>MedievalMilitaryBasic</li>
             </tags>
         </apparel>
     </ThingDef>

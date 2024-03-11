@@ -230,6 +230,7 @@
         </costList>
         <weaponTags>
             <li>SFE_Conscript</li>
+            <li>SFE_Footman</li>
             <li>MedievalMeleeDecent</li>
         </weaponTags>
         <statBases>
@@ -294,6 +295,7 @@
         </costList>
         <weaponTags>
             <li>MedievalMeleeDecent</li>
+            <li>SFE_Footman</li>
         </weaponTags>
         <statBases>
             <MaxHitPoints>100</MaxHitPoints>

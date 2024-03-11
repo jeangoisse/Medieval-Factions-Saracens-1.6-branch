@@ -64,6 +64,8 @@
         <apparelTags>
             <li>SFE_Conscript</li>
             <li>SFE_ConscriptHelmet</li>
+
+            <li>MedievalMilitaryBasic</li>
         </apparelTags>
         <weaponMoney>200~350</weaponMoney>
         <weaponTags>
@@ -106,7 +108,12 @@
         <apparelTags>
             <li>SFE_Gunner</li>
             <li>SFE_GunnerHelmet</li>
+
+            <li>MedievalMilitaryBasic</li>
         </apparelTags>
+        <apparelRequired>
+            <li>SFE_Apparel_GunnersHat</li>
+        </apparelRequired>
         <weaponMoney>250~400</weaponMoney>
         <weaponTags>
             <li>SFE_Gunner</li>
@@ -126,40 +133,62 @@
                 <skill>Shooting</skill>
                 <range>5~12</range>
             </li>
+            <li>
+                <skill>Melee</skill>
+                <range>3~6</range>
+            </li>
         </skills>
     </PawnKindDef>
-    <PawnKindDef ParentName="SFE_SaracensPawnKindBase">
-        <defName>SFE_Saracens_Bearer</defName>
-        <label>Bearer</label>
+    <PawnKindDef ParentName="SFE_SaracensPawnKindBase" Name="SFE_BaseFootman" Abstract="true">
         <combatPower>60</combatPower>
         <invNutrition>2</invNutrition>
         <itemQuality>Normal</itemQuality>
+        <apparelTags>
+            <li>DankPyon_ChainArmor</li>
+            <li>SFE_Footman</li>
+            <li>SFE_FootmanHelmet</li>
+
+            <li>MedievalMilitaryDecent</li>
+        </apparelTags>
+        <apparelRequired>
+            <li>DankPyon_Footwear_BootsSplinted</li>
+            <li>DankPyon_Handwear_GlovesSplinted</li>
+            <li>SFE_Apparel_LamellarVest</li>
+        </apparelRequired>
+        <techHediffsChance>0.15</techHediffsChance>
+        <initialWillRange>4~6</initialWillRange>
+        <initialResistanceRange>6~12</initialResistanceRange>
         <isFighter>true</isFighter>
         <gearHealthRange>0.9~1.0</gearHealthRange>
         <apparelMoney>650~900</apparelMoney>
-        <apparelTags>
-            <li>DankPyon_ChainArmor</li>
-            <li>SFE_Bearer</li>
-            <li>SFE_BearerHelmet</li>
-        </apparelTags>
         <weaponMoney>250~400</weaponMoney>
+    </PawnKindDef>
+    <PawnKindDef ParentName="SFE_BaseFootman">
+        <defName>SFE_Saracens_Bearer</defName>
+        <label>Bearer</label>
         <weaponTags>
             <li>SFE_Bearer</li>
         </weaponTags>
-        <techHediffsMoney>
-            <min>100</min>
-            <max>200</max>
-        </techHediffsMoney>
-        <techHediffsTags>
-            <li>Poor</li>
-        </techHediffsTags>
-        <techHediffsChance>0.15</techHediffsChance>
-        <initialWillRange>2~3</initialWillRange>
-        <initialResistanceRange>4~9</initialResistanceRange>
+        <apparelRequired>
+            <li>SFE_Apparel_HeavyLamellarHelmet</li>
+        </apparelRequired>
         <skills>
             <li>
                 <skill>Melee</skill>
-                <range>5~10</range>
+                <range>5~11</range>
+            </li>
+        </skills>
+    </PawnKindDef>
+    <PawnKindDef ParentName="SFE_BaseFootman">
+        <defName>SFE_Saracens_Footman</defName>
+        <label>Footman</label>
+        <weaponTags>
+            <li>SFE_Footman</li>
+        </weaponTags>
+        <skills>
+            <li>
+                <skill>Melee</skill>
+                <range>6~12</range>
             </li>
         </skills>
     </PawnKindDef>

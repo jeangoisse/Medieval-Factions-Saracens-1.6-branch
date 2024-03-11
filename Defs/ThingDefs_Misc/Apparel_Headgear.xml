@@ -131,7 +131,6 @@
                 <li>Overhead</li>
             </layers>
             <tags>
-                <li>MedievalMilitaryBasic</li>
                 <li>SFE_GunnerHelmet</li>
             </tags>
         </apparel>
@@ -292,6 +291,9 @@
             </layers>
             <tags>
                 <li>SFE_ConscriptHelmet</li>
+                <li>SFE_FootmanHelmet</li>
+
+                <li>MedievalMilitaryDecent</li>
                 <li>MedievalMilitaryBasic</li>
             </tags>
         </apparel>
@@ -383,7 +385,6 @@
                 <li>Overhead</li>
             </layers        >
             <tags>
-                <li>MedievalMilitaryBasic</li>
             </tags>
         </apparel>
     </ThingDef>
@@ -430,8 +431,10 @@
                 <li>Overhead</li>
             </layers>
             <tags>
+                <li>SFE_FootmanHelmet</li>
+
+                <li>MedievalMilitaryDecent</li>
                 <li>MedievalMilitaryAdvanced</li>
-                <li>SFE_BearerHelmet</li>
             </tags>
         </apparel>
     </ThingDef>
@@ -472,6 +475,11 @@
             </bodyPartGroups>
             <wornGraphicPath>Apparel/Headgear/SouthernHelmetWithCoif/Southern_Helmet_with_Coif</wornGraphicPath>
             <useWornGraphicMask>true</useWornGraphicMask>
+            <tags>
+                <li>SFE_Footman</li>
+
+                <li>MedievalMilitaryDecent</li>
+            </tags>
             <layers>
                 <li>Overhead</li>
             </layers>
@@ -563,7 +571,6 @@
                 <li>Overhead</li>
             </layers>
             <tags>
-                <li>MedievalMilitaryBasic</li>
             </tags>
         </apparel>
     </ThingDef>
