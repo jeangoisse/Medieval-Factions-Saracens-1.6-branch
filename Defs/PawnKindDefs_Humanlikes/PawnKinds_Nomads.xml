@@ -32,6 +32,10 @@
 
             <li>NeolithicMeleeBasic</li>
         </weaponTags>
+        <apparelTags>
+            <li>SFE_Nomad</li>
+            <li>SFE_NomadHelmet</li>
+        </apparelTags>
         <apparelRequired>
             <li>SFE_Apparel_NomadHeadWrap</li>
         </apparelRequired>
