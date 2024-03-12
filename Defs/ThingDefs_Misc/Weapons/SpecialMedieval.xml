@@ -51,9 +51,10 @@
       <WoodLog>40</WoodLog>
     </costList>
     <weaponTags>
-      <li>MedievalMeleeDecent</li>
       <li>SFE_Conscript</li>
       <li>SFE_Gunner</li>
+
+      <li>MedievalMeleeDecent</li>
     </weaponTags>
     <statBases>
       <MaxHitPoints>100</MaxHitPoints>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <PawnKindDef Name="SFENomadPawnKindBase" Abstract="True">
+        <race>Human</race>
+        <backstoryCategories>
+            <li>Tribal</li>
+        </backstoryCategories>
+        <defaultFactionType>Pirate</defaultFactionType>
+        <maxGenerationAge>70</maxGenerationAge>
+        <chemicalAddictionChance>0.04</chemicalAddictionChance>
+        <invNutrition>2.55</invNutrition>
+        <invFoodDef>DankPyon_MealRations</invFoodDef>
+        <apparelTags>
+            <li>SFE_Nomad</li>
+            <li>SFE_NomadHelmet</li>
+
+            <li>MedievalBasic</li>
+        </apparelTags>
+        <apparelRequired>
+            <li>DankPyon_Footwear_BootsSplinted</li>
+        </apparelRequired>
+    </PawnKindDef>
+    <PawnKindDef ParentName="SFENomadPawnKindBase">
+        <defName>SFE_Nomad_Slinger</defName>
+        <label>Slinger</label>
+        <combatPower>50</combatPower>
+        <isFighter>true</isFighter>
+        <gearHealthRange>0.6~1</gearHealthRange>
+        <apparelMoney>100~300</apparelMoney>
+        <weaponMoney>150~300</weaponMoney>
+        <weaponTags>
+            <li>SFE_NomadSlinger</li>
+            <li>NeolithicMeleeBasic</li>
+        </weaponTags>
+        <apparelRequired>
+            <li>SFE_Apparel_NomadHeadWrap</li>
+        </apparelRequired>
+        <techHediffsMoney>
+            <min>50</min>
+            <max>50</max>
+        </techHediffsMoney>
+        <techHediffsTags>
+            <li>Poor</li>
+        </techHediffsTags>
+        <techHediffsChance>0.05</techHediffsChance>
+        <initialWillRange>2~3</initialWillRange>
+        <initialResistanceRange>4~9</initialResistanceRange>
+        <skills>
+            <li>
+                <skill>Shooting</skill>
+                <range>3~7</range>
+            </li>
+        </skills>
+    </PawnKindDef>
+</Defs>

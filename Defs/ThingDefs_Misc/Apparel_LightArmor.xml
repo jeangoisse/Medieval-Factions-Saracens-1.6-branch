@@ -63,6 +63,9 @@
                 <li>OnSkin</li>
                 <li>Middle</li>
             </layers>
+            <tags>
+                <li>SFE_Nomad</li>
+            </tags>
         </apparel>
     </ThingDef>
     <ThingDef ParentName="SFE_ClothesBase">
