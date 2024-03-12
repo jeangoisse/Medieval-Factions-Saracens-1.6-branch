@@ -32,8 +32,9 @@
         <comps>
             <li Class="VFECore.CompProperties_Shield">
                 <shieldTags>
-                    <li>SFE_Conscript</li>
                     <li>SFE_AdagraShield</li>
+
+                    <li>SFE_Conscript</li>
                 </shieldTags>
                 <useDeflectMetalEffect>false</useDeflectMetalEffect>
                 <coveredBodyPartGroups>
@@ -98,7 +99,9 @@
         <comps>
             <li Class="VFECore.CompProperties_Shield">
                 <shieldTags>
-                    <li>SFE_SiparsShield</li>
+                    <li>SFE_SiparShield</li>
+
+                    <li>SFE_Officer</li>
                 </shieldTags>
                 <useDeflectMetalEffect>true</useDeflectMetalEffect>
                 <coveredBodyPartGroups>
@@ -108,9 +111,7 @@
                 </coveredBodyPartGroups>
                 <offHandGraphicData>
                     <texPath>Apparel/Shields/Sipar_Shield</texPath>
-                    <graphicClass>Graphic_Multi</graphicClass>
-                    <shaderType>CutoutComplex</shaderType>
-                    <drawSize>1.65</drawSize>
+                    <graphicClass>Graphic_Single</graphicClass>
                 </offHandGraphicData>
                 <offHandHoldOffset>
                     <northDefault>

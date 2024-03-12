@@ -106,6 +106,8 @@
                 <li>Shell</li>
             </layers>
             <tags>
+                <li>SFE_Officer</li>
+
                 <li>MedievalMilitaryAdvanced</li>
             </tags>
             <canBeDesiredForIdeo>true</canBeDesiredForIdeo>

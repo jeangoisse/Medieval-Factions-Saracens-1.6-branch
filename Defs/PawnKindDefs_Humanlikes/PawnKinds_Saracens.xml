@@ -153,7 +153,6 @@
         <apparelRequired>
             <li>DankPyon_Footwear_BootsSplinted</li>
             <li>DankPyon_Handwear_GlovesSplinted</li>
-            <li>SFE_Apparel_LamellarVest</li>
         </apparelRequired>
         <techHediffsChance>0.15</techHediffsChance>
         <initialWillRange>4~6</initialWillRange>
@@ -170,6 +169,7 @@
             <li>SFE_Bearer</li>
         </weaponTags>
         <apparelRequired>
+            <li>SFE_Apparel_LamellarVest</li>
             <li>SFE_Apparel_HeavyLamellarHelmet</li>
         </apparelRequired>
         <skills>
@@ -185,11 +185,57 @@
         <weaponTags>
             <li>SFE_Footman</li>
         </weaponTags>
+        <apparelRequired>
+            <li>SFE_Apparel_LamellarVest</li>
+        </apparelRequired>
         <skills>
             <li>
                 <skill>Melee</skill>
                 <range>6~12</range>
             </li>
         </skills>
+    </PawnKindDef>
+    <PawnKindDef ParentName="SFE_BaseFootman">
+        <defName>SFE_Saracens_Officer</defName>
+        <label>Officer</label>
+        <combatPower>100</combatPower>
+        <invNutrition>3</invNutrition>
+        <itemQuality>Good</itemQuality>
+        <apparelTags>
+            <li>SFE_Officer</li>
+            <li>SFE_OfficerHelmet</li>
+        </apparelTags>
+        <techHediffsChance>0.15</techHediffsChance>
+        <initialWillRange>6~8</initialWillRange>
+        <initialResistanceRange>10~24</initialResistanceRange>
+        <isFighter>true</isFighter>
+        <gearHealthRange>0.95~1.0</gearHealthRange>
+        <apparelMoney>900~1350</apparelMoney>
+        <weaponMoney>350~700</weaponMoney>
+        <weaponTags>
+            <li>SFE_Footman</li>
+        </weaponTags>
+        <skills>
+            <li>
+                <skill>Melee</skill>
+                <range>8~16</range>
+            </li>
+            <li>
+                <skill>Social</skill>
+                <range>6~14</range>
+            </li>
+            <li>
+                <skill>Intellectual</skill>
+                <range>6~14</range>
+            </li>
+        </skills>
+        <modExtensions>
+            <li Class="VFECore.PawnKindDefExtension">
+                <shieldTags>
+                    <li>SFE_Officer</li>
+                </shieldTags>
+                <shieldMoney>350~700</shieldMoney>
+            </li>
+        </modExtensions>
     </PawnKindDef>
 </Defs>
