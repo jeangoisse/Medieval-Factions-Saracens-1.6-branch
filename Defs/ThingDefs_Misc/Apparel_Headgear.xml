@@ -85,11 +85,14 @@
             <bodyPartGroups>
                 <li>UpperHead</li>
             </bodyPartGroups>
-            <wornGraphicPath>Apparel/Headgear/NomadHeadWarp/Nomad_Head_Wrap</wornGraphicPath>
-            <useWornGraphicMask>true</useWornGraphicMask>
+            <wornGraphicPath>Apparel/Headgear/LeatherHeadWrap/Leather_Head_Wrap</wornGraphicPath>
+            <useWornGraphicMask>false</useWornGraphicMask>
             <layers>
                 <li>Overhead</li>
             </layers>
+            <tags>
+                <li>SFE_CutthroatHelmet</li>
+            </tags>
         </apparel>
     </ThingDef>
     <ThingDef ParentName="SFE_HatBase">
@@ -202,6 +205,9 @@
             <layers>
                 <li>Overhead</li>
             </layers>
+            <tags>
+                <li>SFE_CutthroatHelmet</li>
+            </tags>
         </apparel>
     </ThingDef>
     <ThingDef ParentName="SFE_HelmetBase">
@@ -341,6 +347,9 @@
             <layers>
                 <li>Overhead</li>
             </layers>
+            <tags>
+                <li>SFE_Cutthroat</li>
+            </tags>
         </apparel>
     </ThingDef>
     <ThingDef ParentName="SFE_HelmetBase">

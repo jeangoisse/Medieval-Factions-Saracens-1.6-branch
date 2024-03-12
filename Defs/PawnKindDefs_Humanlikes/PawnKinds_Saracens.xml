@@ -11,9 +11,10 @@
         <invNutrition>2.55</invNutrition>
         <invFoodDef>DankPyon_MealRations</invFoodDef>
         <apparelTags>
-            <li>SFE_Nomad</li>
             <li>MedievalBasic</li>
+            <li>MedievalMilitaryBasic</li>
         </apparelTags>
+        <fixedGender>Male</fixedGender>
     </PawnKindDef>
     <PawnKindDef ParentName="SFE_SaracensPawnKindBase">
         <defName>SFE_Saracens_Indebted</defName>
@@ -26,7 +27,6 @@
         <gearHealthRange>0.2~0.8</gearHealthRange>
         <apparelMoney>50~200</apparelMoney>
         <apparelTags>
-            <li>DankPyon_Peasant</li>
             <li>SFE_IndebtedHelmet</li>
         </apparelTags>
         <weaponMoney>150~300</weaponMoney>
@@ -34,13 +34,10 @@
             <li>DankPyon_Pitchfork</li>
             <li>DankPyon_Pickaxe</li>
             <li>DankPyon_Hatchet</li>
-            
+
             <li>NeolithicMeleeBasic</li>
         </weaponTags>
-        <techHediffsMoney>
-            <min>50</min>
-            <max>50</max>
-        </techHediffsMoney>
+        <techHediffsMoney>50</techHediffsMoney>
         <techHediffsTags>
             <li>Poor</li>
         </techHediffsTags>
@@ -65,17 +62,12 @@
         <apparelTags>
             <li>SFE_Conscript</li>
             <li>SFE_ConscriptHelmet</li>
-
-            <li>MedievalMilitaryBasic</li>
         </apparelTags>
         <weaponMoney>200~350</weaponMoney>
         <weaponTags>
             <li>SFE_Conscript</li>
         </weaponTags>
-        <techHediffsMoney>
-            <min>50</min>
-            <max>100</max>
-        </techHediffsMoney>
+        <techHediffsMoney>50~100</techHediffsMoney>
         <techHediffsTags>
             <li>Poor</li>
         </techHediffsTags>
@@ -108,20 +100,16 @@
         <apparelTags>
             <li>SFE_Gunner</li>
             <li>SFE_GunnerHelmet</li>
-
-            <li>MedievalMilitaryBasic</li>
         </apparelTags>
         <apparelRequired>
             <li>SFE_Apparel_GunnersHat</li>
+            <li>SFE_Apparel_PaddedVest</li>
         </apparelRequired>
         <weaponMoney>250~400</weaponMoney>
         <weaponTags>
             <li>SFE_Gunner</li>
         </weaponTags>
-        <techHediffsMoney>
-            <min>50</min>
-            <max>100</max>
-        </techHediffsMoney>
+        <techHediffsMoney>50~100</techHediffsMoney>
         <techHediffsTags>
             <li>Poor</li>
         </techHediffsTags>
@@ -142,17 +130,14 @@
     <PawnKindDef ParentName="SFE_SaracensPawnKindBase" Name="SFE_BaseFootmanKindBase" Abstract="true">
         <combatPower>60</combatPower>
         <itemQuality>Normal</itemQuality>
-        <apparelTags>
+        <apparelTags Inherit="false">
             <li>DankPyon_ChainArmor</li>
             <li>SFE_Footman</li>
             <li>SFE_FootmanHelmet</li>
 
+            <li>MedievalMilitaryBasic</li>
             <li>MedievalMilitaryDecent</li>
         </apparelTags>
-        <apparelRequired>
-            <li>DankPyon_Footwear_BootsSplinted</li>
-            <li>DankPyon_Handwear_GlovesSplinted</li>
-        </apparelRequired>
         <techHediffsChance>0.15</techHediffsChance>
         <initialWillRange>4~6</initialWillRange>
         <initialResistanceRange>6~12</initialResistanceRange>
@@ -160,10 +145,12 @@
         <gearHealthRange>0.9~1.0</gearHealthRange>
         <apparelMoney>650~900</apparelMoney>
         <weaponMoney>250~400</weaponMoney>
+        <canStrip>false</canStrip>
     </PawnKindDef>
     <PawnKindDef ParentName="SFE_BaseFootmanKindBase">
         <defName>SFE_Saracens_Bearer</defName>
         <label>Bearer</label>
+        <itemQuality>Good</itemQuality>
         <weaponTags>
             <li>SFE_Bearer</li>
         </weaponTags>
@@ -199,7 +186,7 @@
         <label>Officer</label>
         <combatPower>100</combatPower>
         <invNutrition>3</invNutrition>
-        <itemQuality>Good</itemQuality>
+        <itemQuality>Excellent</itemQuality>
         <apparelTags>
             <li>SFE_Officer</li>
             <li>SFE_OfficerHelmet</li>
@@ -208,7 +195,6 @@
         <initialWillRange>6~8</initialWillRange>
         <initialResistanceRange>10~24</initialResistanceRange>
         <isFighter>true</isFighter>
-        <gearHealthRange>0.95~1.0</gearHealthRange>
         <apparelMoney>900~1350</apparelMoney>
         <weaponMoney>350~700</weaponMoney>
         <weaponTags>
@@ -233,7 +219,7 @@
                 <shieldTags>
                     <li>SFE_Officer</li>
                 </shieldTags>
-                <shieldMoney>350~700</shieldMoney>
+                <shieldMoney>200~400</shieldMoney>
             </li>
         </modExtensions>
     </PawnKindDef>

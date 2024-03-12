@@ -106,9 +106,10 @@
                 <li>Middle</li>
             </layers>
             <tags>
+                <li>SFE_Conscript</li>
                 <li>SFE_Gunner</li>
 
-                <li>MedievalMilitaryDecent</li>
+                <li>MedievalBasic</li>
             </tags>
         </apparel>
     </ThingDef>
@@ -147,11 +148,14 @@
                 <li>Legs</li>
             </bodyPartGroups>
             <wornGraphicPath>Apparel/Armor/LightArmor/LeatherNomadRobe/Leather_Nomad_Robe</wornGraphicPath>
-            <useWornGraphicMask>true</useWornGraphicMask>
+            <useWornGraphicMask>false</useWornGraphicMask>
             <layers>
                 <li>OnSkin</li>
                 <li>Middle</li>
             </layers>
+            <tags>
+                <li>SFE_Cutthroat</li>
+            </tags>
         </apparel>
     </ThingDef>
     <ThingDef ParentName="SFE_ClothesBase" Name="SFE_LightArmorBase" Abstract="true">
@@ -255,6 +259,7 @@
                 <li>Shell</li>
             </layers>
             <tags>
+                <li>SFE_Cutthroat</li>
             </tags>
         </apparel>
     </ThingDef>

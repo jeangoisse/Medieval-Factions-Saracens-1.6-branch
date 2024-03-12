@@ -33,6 +33,10 @@
         </stuffCategories>
         <weaponTags>
             <li>SFE_Conscript</li>
+            <li>SFE_Cutthroat</li>
+
+
+            <li>MedievalMilitaryDecent</li>
         </weaponTags>
         <weaponClasses>
             <li>Melee</li>
@@ -165,8 +169,10 @@
             <WoodLog>15</WoodLog>
         </costList>
         <weaponTags>
-            <li>MedievalMeleeDecent</li>
             <li>SFE_Gunner</li>
+            <li>SFE_Cutthroat</li>
+
+            <li>MedievalMeleeBasic</li>
         </weaponTags>
         <statBases>
             <MaxHitPoints>100</MaxHitPoints>
@@ -231,6 +237,8 @@
         <weaponTags>
             <li>SFE_Conscript</li>
             <li>SFE_Footman</li>
+            <li>SFE_Cutthroat</li>
+
             <li>MedievalMeleeDecent</li>
         </weaponTags>
         <statBases>
@@ -359,6 +367,8 @@
             <WoodLog>20</WoodLog>
         </costList>
         <weaponTags>
+            <li>SFE_Cutthroat</li>
+
             <li>MedievalMeleeDecent</li>
         </weaponTags>
         <statBases>

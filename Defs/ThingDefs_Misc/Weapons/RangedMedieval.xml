@@ -90,6 +90,8 @@
             </li>
         </verbs>
         <weaponTags Inherit="false">
+            <li>SFE_Cutthroat</li>
+
             <li>MedievalMeleeDecent</li>
         </weaponTags>
         <modExtensions>
