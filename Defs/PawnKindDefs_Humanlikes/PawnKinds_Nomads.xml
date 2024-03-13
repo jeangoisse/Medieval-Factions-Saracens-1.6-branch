@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
-    <PawnKindDef Name="SFENomadPawnKindBase" Abstract="True">
+    <PawnKindDef Name="SFE_NomadPawnKindBase" Abstract="True">
         <race>Human</race>
         <backstoryCategories>
             <li>Tribal</li>
@@ -14,10 +14,13 @@
             <li>MedievalBasic</li>
             <li>MedievalMilitaryBasic</li>
         </apparelTags>
+        <apparelRequired>
+            <li>DankPyon_Footwear_BootsLeather</li>
+        </apparelRequired>
         <fixedGender>Male</fixedGender>
         <canStrip>false</canStrip>
     </PawnKindDef>
-    <PawnKindDef ParentName="SFENomadPawnKindBase">
+    <PawnKindDef ParentName="SFE_NomadPawnKindBase">
         <defName>SFE_NomadSlinger_Slinger</defName>
         <label>Slinger</label>
         <combatPower>50</combatPower>
@@ -51,7 +54,7 @@
             </li>
         </skills>
     </PawnKindDef>
-    <PawnKindDef ParentName="SFENomadPawnKindBase">
+    <PawnKindDef ParentName="SFE_NomadPawnKindBase">
         <defName>SFE_NomadSlinger_Cutthroat</defName>
         <label>Cutthroat</label>
         <combatPower>60</combatPower>
@@ -77,6 +80,9 @@
             <li>SFE_Cutthroat</li>
             <li>SFE_CutthroatHelmet</li>
         </apparelTags>
+        <apparelRequired>
+            <li>DankPyon_Handwear_GlovesLeather</li>
+        </apparelRequired>
         <techHediffsMoney>50~200</techHediffsMoney>
         <techHediffsTags>
             <li>Poor</li>
@@ -104,7 +110,7 @@
             </li>
         </modExtensions>
     </PawnKindDef>
-    <PawnKindDef ParentName="SFENomadPawnKindBase">
+    <PawnKindDef ParentName="SFE_NomadPawnKindBase">
         <defName>SFE_NomadSlinger_DesertStalker</defName>
         <label>Desert stalker</label>
         <combatPower>90</combatPower>
@@ -125,6 +131,7 @@
         </apparelTags>
         <apparelRequired>
             <li>SFE_Apparel_SouthernMailShirt</li>
+            <li>DankPyon_Handwear_GlovesLeather</li>
         </apparelRequired>
         <techHediffsMoney>50~200</techHediffsMoney>
         <techHediffsTags>
@@ -155,7 +162,7 @@
             <li>Brawler</li>
         </disallowedTraits>
     </PawnKindDef>
-    <PawnKindDef ParentName="SFENomadPawnKindBase">
+    <PawnKindDef ParentName="SFE_NomadPawnKindBase">
         <defName>SFE_NomadSlinger_BladeDancer</defName>
         <label>Blade dancer</label>
         <combatPower>100</combatPower>
@@ -175,6 +182,7 @@
         <apparelRequired>
             <li>SFE_Apparel_NomadHeadWrap</li>
             <li>SFE_Apparel_AssasinRobe</li>
+            <li>DankPyon_Handwear_GlovesSplinted</li>
         </apparelRequired>
         <techHediffsMoney>50~200</techHediffsMoney>
         <techHediffsTags>

@@ -63,6 +63,10 @@
             <li>SFE_Conscript</li>
             <li>SFE_ConscriptHelmet</li>
         </apparelTags>
+        <apparelRequired>
+            <li>DankPyon_Handwear_GlovesLeather</li>
+            <li>DankPyon_Footwear_BootsLeather</li>
+        </apparelRequired>
         <weaponMoney>200~350</weaponMoney>
         <weaponTags>
             <li>SFE_Polemace</li>
@@ -105,6 +109,8 @@
         <apparelRequired>
             <li>SFE_Apparel_GunnersHat</li>
             <li>SFE_Apparel_PaddedVest</li>
+            <li>DankPyon_Handwear_GlovesLeather</li>
+            <li>DankPyon_Footwear_BootsLeather</li>
         </apparelRequired>
         <weaponMoney>250~400</weaponMoney>
         <weaponTags>
@@ -132,16 +138,22 @@
     <PawnKindDef ParentName="SFE_SaracensPawnKindBase" Name="SFE_BaseFootmanKindBase" Abstract="true">
         <combatPower>60</combatPower>
         <itemQuality>Normal</itemQuality>
-        <apparelTags>
+        <apparelTags Inherit="false">
             <li>DankPyon_ChainArmor</li>
             <li>SFE_Footman</li>
             <li>SFE_FootmanHelmet</li>
+
+            <li>MedievalMilitaryDecent</li>
         </apparelTags>
+        <apparelRequired>
+            <li>DankPyon_Footwear_BootsSplinted</li>
+            <li>DankPyon_Handwear_GlovesSplinted</li>
+        </apparelRequired>
         <techHediffsChance>0.15</techHediffsChance>
         <initialWillRange>4~6</initialWillRange>
         <initialResistanceRange>6~12</initialResistanceRange>
         <isFighter>true</isFighter>
-        <gearHealthRange>0.9~1.0</gearHealthRange>
+        <gearHealthRange>0.95~1.0</gearHealthRange>
         <apparelMoney>650~900</apparelMoney>
         <weaponMoney>250~400</weaponMoney>
         <canStrip>false</canStrip>
@@ -171,20 +183,15 @@
             <li>SFE_Scimitar</li>
             <li>SFE_Shamshir</li>
         </weaponTags>
+        <apparelRequired>
+            <li>SFE_Apparel_LamellarVest</li>
+        </apparelRequired>
         <skills>
             <li>
                 <skill>Melee</skill>
                 <range>6~12</range>
             </li>
         </skills>
-        <modExtensions>
-            <li Class="VFECore.PawnKindDefExtension">
-                <shieldTags>
-                    <li>SFE_Sipar</li>
-                </shieldTags>
-                <shieldMoney>150~250</shieldMoney>
-            </li>
-        </modExtensions>
     </PawnKindDef>
     <PawnKindDef ParentName="SFE_BaseFootmanKindBase">
         <defName>SFE_Saracens_Officer</defName>
@@ -200,6 +207,7 @@
         <initialWillRange>6~8</initialWillRange>
         <initialResistanceRange>10~24</initialResistanceRange>
         <isFighter>true</isFighter>
+        <gearHealthRange>1.0</gearHealthRange>
         <apparelMoney>900~1350</apparelMoney>
         <weaponMoney>350~700</weaponMoney>
         <weaponTags>
