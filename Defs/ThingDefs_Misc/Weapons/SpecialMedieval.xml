@@ -51,8 +51,7 @@
       <WoodLog>40</WoodLog>
     </costList>
     <weaponTags>
-      <li>SFE_Conscript</li>
-      <li>SFE_Gunner</li>
+      <li>SFE_FireLance</li>
 
       <li>MedievalMeleeDecent</li>
     </weaponTags>

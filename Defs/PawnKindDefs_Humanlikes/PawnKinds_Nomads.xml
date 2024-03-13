@@ -18,7 +18,7 @@
         <canStrip>false</canStrip>
     </PawnKindDef>
     <PawnKindDef ParentName="SFENomadPawnKindBase">
-        <defName>SFE_Nomad_Slinger</defName>
+        <defName>SFE_NomadSlinger_Slinger</defName>
         <label>Slinger</label>
         <combatPower>50</combatPower>
         <isFighter>true</isFighter>
@@ -26,13 +26,13 @@
         <apparelMoney>100~300</apparelMoney>
         <weaponMoney>150~300</weaponMoney>
         <weaponTags>
-            <li>SFE_NomadSlinger</li>
+            <li>SFE_Sling</li>
 
             <li>NeolithicMeleeBasic</li>
         </weaponTags>
         <apparelTags>
-            <li>SFE_Nomad</li>
-            <li>SFE_NomadHelmet</li>
+            <li>SFE_NomadSlinger</li>
+            <li>SFE_NomadSlingerHelmet</li>
         </apparelTags>
         <apparelRequired>
             <li>SFE_Apparel_NomadHeadWrap</li>
@@ -52,20 +52,25 @@
         </skills>
     </PawnKindDef>
     <PawnKindDef ParentName="SFENomadPawnKindBase">
-        <defName>SFE_Nomad_Cutthroat</defName>
+        <defName>SFE_NomadSlinger_Cutthroat</defName>
         <label>Cutthroat</label>
         <combatPower>60</combatPower>
         <isFighter>true</isFighter>
         <gearHealthRange>0.7~1</gearHealthRange>
         <weaponMoney>200~350</weaponMoney>
         <weaponTags>
-            <li>SFE_Nomad</li>
-            <li>SFE_NomadHelmet</li>
-            <li>SFE_Cutthroat</li>
+            <li>SFE_Polemace</li>
+            <li>SFE_Qatal</li>
+            <li>SFE_Whip</li>
+            <li>SFE_Saif</li>
+            <li>SFE_Scimitar</li>
+            <li>SFE_TwoHandedSaif</li>
+            <li>DankPyon_MorningStar</li>
+            <li>DankPyon_Falchion</li>
+            <li>DankPyon_BoarSpear</li>
 
             <li>NeolithicMeleeBasic</li>
             <li>MedievalMeleeBasic</li>
-            <li>MedievalMeleeDecent</li>
         </weaponTags>
         <apparelMoney>150~500</apparelMoney>
         <apparelTags>
@@ -93,14 +98,14 @@
         <modExtensions>
             <li Class="VFECore.PawnKindDefExtension">
                 <shieldTags>
-                    <li>SFE_Cutthroat</li>
+                    <li>SFE_Adagra</li>
                 </shieldTags>
                 <shieldMoney>80~200</shieldMoney>
             </li>
         </modExtensions>
     </PawnKindDef>
     <PawnKindDef ParentName="SFENomadPawnKindBase">
-        <defName>SFE_Nomad_DesertStalker</defName>
+        <defName>SFE_NomadSlinger_DesertStalker</defName>
         <label>Desert stalker</label>
         <combatPower>90</combatPower>
         <itemQuality>Good</itemQuality>
@@ -108,15 +113,13 @@
         <gearHealthRange>0.9~1</gearHealthRange>
         <weaponMoney>300~450</weaponMoney>
         <weaponTags>
-            <li>SFE_DesertStalker</li>
+            <li>SFE_Qatal</li>
             <li>DankPyon_Warbow</li>
 
             <li>NeolithicRangedDecent</li>
         </weaponTags>
         <apparelMoney>350~700</apparelMoney>
         <apparelTags>
-            <li>SFE_NomadHelmet</li>
-
             <li>SFE_DesertStalker</li>
             <li>SFE_DesertStalkerHelmet</li>
         </apparelTags>
@@ -153,7 +156,7 @@
         </disallowedTraits>
     </PawnKindDef>
     <PawnKindDef ParentName="SFENomadPawnKindBase">
-        <defName>SFE_Nomad_BladeDancer</defName>
+        <defName>SFE_NomadSlinger_BladeDancer</defName>
         <label>Blade dancer</label>
         <combatPower>100</combatPower>
         <itemQuality>Good</itemQuality>
@@ -162,12 +165,12 @@
         <weaponMoney>300~450</weaponMoney>
         <weaponTags>
             <li>DankPyon_Swordlance</li>
-            <li>SFE_BladeDancer</li>
+            <li>SFE_Shamshir</li>
         </weaponTags>
         <apparelMoney>350~700</apparelMoney>
         <apparelTags>
-            <li>SFE_NomadHelmet</li>
-            <li>SFE_Assassin</li>
+            <li>SFE_BladeDancerHelmet</li>
+            <li>SFE_BladeDancer</li>
         </apparelTags>
         <apparelRequired>
             <li>SFE_Apparel_NomadHeadWrap</li>

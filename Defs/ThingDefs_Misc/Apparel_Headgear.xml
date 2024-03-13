@@ -56,7 +56,12 @@
             </layers>
             <tags>
                 <li>SFE_IndebtedHelmet</li>
-                <li>SFE_NomadHelmet</li>
+                <li>SFE_NomadSlingerHelmet</li>
+                <li>SFE_CutthroatHelmet</li>
+                <li>SFE_DesertStalkerHelmet</li>
+                <li>SFE_BladeDancerHelmet</li>
+
+                <li>MedievalBasic</li>
             </tags>
         </apparel>
     </ThingDef>
@@ -92,6 +97,8 @@
             </layers>
             <tags>
                 <li>SFE_CutthroatHelmet</li>
+                
+                <li>MedievalBasic</li>
             </tags>
         </apparel>
     </ThingDef>

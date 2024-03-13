@@ -32,9 +32,7 @@
             <li>Metallic</li>
         </stuffCategories>
         <weaponTags>
-            <li>SFE_Conscript</li>
-            <li>SFE_Cutthroat</li>
-
+            <li>SFE_Polemace</li>
 
             <li>MedievalMilitaryDecent</li>
         </weaponTags>
@@ -97,7 +95,7 @@
             <WoodLog>10</WoodLog>
         </costList>
         <weaponTags>
-            <li>SFE_DesertStalker</li>
+            <li>SFE_Qatal</li>
 
             <li>MedievalMeleeDecent</li>
         </weaponTags>
@@ -171,8 +169,7 @@
             <WoodLog>15</WoodLog>
         </costList>
         <weaponTags>
-            <li>SFE_Gunner</li>
-            <li>SFE_Cutthroat</li>
+            <li>SFE_Saif</li>
 
             <li>MedievalMeleeBasic</li>
         </weaponTags>
@@ -237,9 +234,7 @@
             <WoodLog>15</WoodLog>
         </costList>
         <weaponTags>
-            <li>SFE_Conscript</li>
-            <li>SFE_Footman</li>
-            <li>SFE_Cutthroat</li>
+            <li>SFE_Scimitar</li>
 
             <li>MedievalMeleeDecent</li>
         </weaponTags>
@@ -305,8 +300,7 @@
             <WoodLog>15</WoodLog>
         </costList>
         <weaponTags>
-            <li>SFE_Footman</li>
-            <li>SFE_BladeDancer</li>
+            <li>SFE_Shamshir</li>
 
             <li>MedievalMeleeDecent</li>
         </weaponTags>
@@ -372,9 +366,9 @@
             <WoodLog>20</WoodLog>
         </costList>
         <weaponTags>
-            <li>SFE_Cutthroat</li>
+            <li>SFE_TwoHandedSaif</li>
 
-            <li>MedievalMeleeDecent</li>
+            <li>MedievalMeleeAdvanced</li>
         </weaponTags>
         <statBases>
             <MaxHitPoints>100</MaxHitPoints>
@@ -437,7 +431,9 @@
             <WoodLog>30</WoodLog>
         </costList>
         <weaponTags>
-            <li>MedievalMeleeDecent</li>
+            <li>SFE_TwoHandedScimitar</li>
+
+            <li>MedievalMeleeAdvanced</li>
         </weaponTags>
         <statBases>
             <MaxHitPoints>100</MaxHitPoints>
@@ -566,8 +562,7 @@
         <techLevel>Medieval</techLevel>
         <costStuffCount>75</costStuffCount>
         <weaponTags>
-            <li>SFE_Bearer</li>
-            <li>SFE_Pike</li>
+            <li>SFE_Bear</li>
         </weaponTags>
         <statBases>
             <MaxHitPoints>100</MaxHitPoints>
@@ -611,6 +606,11 @@
             </li>
         </tools>
         <recipeMaker Inherit="false" />
+        <modExtensions>
+            <li Class="VFECore.ThingDefExtension">
+                <usableWithShields>false</usableWithShields>
+            </li>
+        </modExtensions>
     </ThingDef>
     <ThingDef ParentName="SFE_Pike">
         <defName>SFE_MeleeWeapon_KarakanPike</defName>

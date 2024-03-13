@@ -65,7 +65,8 @@
         </apparelTags>
         <weaponMoney>200~350</weaponMoney>
         <weaponTags>
-            <li>SFE_Conscript</li>
+            <li>SFE_Polemace</li>
+            <li>SFE_Scimitar</li>
         </weaponTags>
         <techHediffsMoney>50~100</techHediffsMoney>
         <techHediffsTags>
@@ -83,7 +84,7 @@
         <modExtensions>
             <li Class="VFECore.PawnKindDefExtension">
                 <shieldTags>
-                    <li>SFE_Conscript</li>
+                    <li>SFE_Adagra</li>
                 </shieldTags>
                 <shieldMoney>100~200</shieldMoney>
             </li>
@@ -107,7 +108,8 @@
         </apparelRequired>
         <weaponMoney>250~400</weaponMoney>
         <weaponTags>
-            <li>SFE_Gunner</li>
+            <li>SFE_FireLance</li>
+            <li>SFE_Saif</li>
         </weaponTags>
         <techHediffsMoney>50~100</techHediffsMoney>
         <techHediffsTags>
@@ -130,13 +132,10 @@
     <PawnKindDef ParentName="SFE_SaracensPawnKindBase" Name="SFE_BaseFootmanKindBase" Abstract="true">
         <combatPower>60</combatPower>
         <itemQuality>Normal</itemQuality>
-        <apparelTags Inherit="false">
+        <apparelTags>
             <li>DankPyon_ChainArmor</li>
             <li>SFE_Footman</li>
             <li>SFE_FootmanHelmet</li>
-
-            <li>MedievalMilitaryBasic</li>
-            <li>MedievalMilitaryDecent</li>
         </apparelTags>
         <techHediffsChance>0.15</techHediffsChance>
         <initialWillRange>4~6</initialWillRange>
@@ -152,7 +151,7 @@
         <label>Bearer</label>
         <itemQuality>Good</itemQuality>
         <weaponTags>
-            <li>SFE_Bearer</li>
+            <li>SFE_Bear</li>
         </weaponTags>
         <apparelRequired>
             <li>SFE_Apparel_LamellarVest</li>
@@ -169,17 +168,23 @@
         <defName>SFE_Saracens_Footman</defName>
         <label>Footman</label>
         <weaponTags>
-            <li>SFE_Footman</li>
+            <li>SFE_Scimitar</li>
+            <li>SFE_Shamshir</li>
         </weaponTags>
-        <apparelRequired>
-            <li>SFE_Apparel_LamellarVest</li>
-        </apparelRequired>
         <skills>
             <li>
                 <skill>Melee</skill>
                 <range>6~12</range>
             </li>
         </skills>
+        <modExtensions>
+            <li Class="VFECore.PawnKindDefExtension">
+                <shieldTags>
+                    <li>SFE_Sipar</li>
+                </shieldTags>
+                <shieldMoney>150~250</shieldMoney>
+            </li>
+        </modExtensions>
     </PawnKindDef>
     <PawnKindDef ParentName="SFE_BaseFootmanKindBase">
         <defName>SFE_Saracens_Officer</defName>
@@ -198,7 +203,10 @@
         <apparelMoney>900~1350</apparelMoney>
         <weaponMoney>350~700</weaponMoney>
         <weaponTags>
-            <li>SFE_Footman</li>
+            <li>SFE_Shamshir</li>
+            <li>SFE_TwoHandedSaif</li>
+            <li>SFE_TwoHandedScimitar</li>
+            <li>DankPyon_WingedMace</li>
         </weaponTags>
         <skills>
             <li>
@@ -217,7 +225,7 @@
         <modExtensions>
             <li Class="VFECore.PawnKindDefExtension">
                 <shieldTags>
-                    <li>SFE_Officer</li>
+                    <li>SFE_Sipar</li>
                 </shieldTags>
                 <shieldMoney>200~400</shieldMoney>
             </li>

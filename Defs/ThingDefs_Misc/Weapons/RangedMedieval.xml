@@ -90,9 +90,9 @@
             </li>
         </verbs>
         <weaponTags Inherit="false">
-            <li>SFE_Cutthroat</li>
+            <li>SFE_Whip</li>
 
-            <li>MedievalMeleeDecent</li>
+            <li>MedievalMeleeBasic</li>
         </weaponTags>
         <modExtensions>
             <li Class="VFECore.ThingDefExtension">
@@ -128,7 +128,7 @@
             <WoodLog>20</WoodLog>
         </costList>
         <weaponTags>
-            <li>SFE_NomadSlinger</li>
+            <li>SFE_Sling</li>
         </weaponTags>
         <statBases>
             <MaxHitPoints>100</MaxHitPoints>

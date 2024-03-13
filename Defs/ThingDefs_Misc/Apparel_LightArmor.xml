@@ -64,7 +64,9 @@
                 <li>Middle</li>
             </layers>
             <tags>
-                <li>SFE_Nomad</li>
+                <li>SFE_NomadSlinger</li>
+
+                <li>MedievalBasic</li>
             </tags>
         </apparel>
     </ThingDef>
@@ -154,7 +156,10 @@
                 <li>Middle</li>
             </layers>
             <tags>
+                <li>SFE_NomadSlinger</li>
                 <li>SFE_Cutthroat</li>
+                
+                <li>MedievalBasic</li>
             </tags>
         </apparel>
     </ThingDef>

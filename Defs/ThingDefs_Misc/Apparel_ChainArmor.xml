@@ -124,7 +124,10 @@
                 <li>Middle</li>
             </layers>
             <tags>
+                <li>SFE_BladeDancer</li>
                 <li>SFE_Assassin</li>
+
+                <li>MedievalMilitaryAdvanced</li>
             </tags>
         </apparel>
     </ThingDef>

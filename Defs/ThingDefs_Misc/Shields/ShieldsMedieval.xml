@@ -31,10 +31,7 @@
         <comps>
             <li Class="VFECore.CompProperties_Shield">
                 <shieldTags>
-                    <li>SFE_AdagraShield</li>
-
-                    <li>SFE_Conscript</li>
-                    <li>SFE_Cutthroat</li>
+                    <li>SFE_Adagra</li>
                 </shieldTags>
                 <useDeflectMetalEffect>false</useDeflectMetalEffect>
                 <coveredBodyPartGroups>
@@ -98,10 +95,7 @@
         <comps>
             <li Class="VFECore.CompProperties_Shield">
                 <shieldTags>
-                    <li>SFE_SiparShield</li>
-
-                    <li>SFE_Officer</li>
-                    <li>SFE_Cutthroat</li>
+                    <li>SFE_Sipar</li>
                 </shieldTags>
                 <useDeflectMetalEffect>true</useDeflectMetalEffect>
                 <coveredBodyPartGroups>
@@ -161,7 +155,7 @@
         <comps>
             <li Class="VFECore.CompProperties_Shield">
                 <shieldTags>
-                    <li>SFE_BucklerShield</li>
+                    <li>SFE_Buckler</li>
                 </shieldTags>
                 <useDeflectMetalEffect>false</useDeflectMetalEffect>
                 <coveredBodyPartGroups>
