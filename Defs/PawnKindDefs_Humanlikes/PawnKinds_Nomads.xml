@@ -26,8 +26,6 @@
         <apparelMoney>100~300</apparelMoney>
         <weaponMoney>150~300</weaponMoney>
         <weaponTags>
-            <li>SFE_Nomad</li>
-            <li>SFE_NomadHelmet</li>
             <li>SFE_NomadSlinger</li>
 
             <li>NeolithicMeleeBasic</li>
@@ -99,5 +97,52 @@
                 <shieldMoney>80~200</shieldMoney>
             </li>
         </modExtensions>
+    </PawnKindDef>
+    <PawnKindDef ParentName="SFENomadPawnKindBase">
+        <defName>SFE_Nomad_DesertStalker</defName>
+        <label>Desert stalker</label>
+        <combatPower>90</combatPower>
+        <itemQuality>Good</itemQuality>
+        <isFighter>true</isFighter>
+        <gearHealthRange>0.9~1</gearHealthRange>
+        <weaponMoney>300~450</weaponMoney>
+        <weaponTags>
+            <li>SFE_DesertStalker</li>
+            <li>DankPyon_Warbow</li>
+
+            <li>NeolithicRangedDecent</li>
+        </weaponTags>
+        <apparelMoney>350~700</apparelMoney>
+        <apparelTags>
+            <li>SFE_NomadHelmet</li>
+
+            <li>SFE_DesertStalker</li>
+            <li>SFE_DesertStalkerHelmet</li>
+        </apparelTags>
+        <apparelRequired>
+            <li>SFE_Apparel_SouthernMailShirt</li>
+        </apparelRequired>
+        <techHediffsMoney>50~200</techHediffsMoney>
+        <techHediffsTags>
+            <li>Poor</li>
+            <li>Simple</li>
+        </techHediffsTags>
+        <techHediffsChance>0.05</techHediffsChance>
+        <initialWillRange>3~5</initialWillRange>
+        <initialResistanceRange>5~12</initialResistanceRange>
+        <skills>
+            <li>
+                <skill>Melee</skill>
+                <range>5~10</range>
+            </li>
+            <li>
+                <skill>Shooting</skill>
+                <range>8~16</range>
+            </li>
+            <li>
+                <skill>Animals</skill>
+                <range>5~12</range>
+            </li>
+        </skills>
     </PawnKindDef>
 </Defs>

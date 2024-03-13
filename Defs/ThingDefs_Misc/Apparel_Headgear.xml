@@ -207,6 +207,9 @@
             </layers>
             <tags>
                 <li>SFE_CutthroatHelmet</li>
+                <li>SFE_DesertStalkerHelmet</li>
+
+                <li>MedievalMilitaryBasic</li>
             </tags>
         </apparel>
     </ThingDef>
@@ -301,7 +304,6 @@
                 <li>SFE_FootmanHelmet</li>
 
                 <li>MedievalMilitaryDecent</li>
-                <li>MedievalMilitaryBasic</li>
             </tags>
         </apparel>
     </ThingDef>

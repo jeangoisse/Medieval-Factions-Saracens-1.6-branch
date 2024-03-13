@@ -97,6 +97,8 @@
             <WoodLog>10</WoodLog>
         </costList>
         <weaponTags>
+            <li>SFE_DesertStalker</li>
+
             <li>MedievalMeleeDecent</li>
         </weaponTags>
         <statBases>
