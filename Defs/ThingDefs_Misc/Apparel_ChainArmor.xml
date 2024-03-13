@@ -123,6 +123,9 @@
                 <li>OnSkin</li>
                 <li>Middle</li>
             </layers>
+            <tags>
+                <li>SFE_Assassin</li>
+            </tags>
         </apparel>
     </ThingDef>
 </Defs>

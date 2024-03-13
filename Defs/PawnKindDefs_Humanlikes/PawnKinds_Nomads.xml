@@ -64,6 +64,7 @@
             <li>SFE_Cutthroat</li>
 
             <li>NeolithicMeleeBasic</li>
+            <li>MedievalMeleeBasic</li>
             <li>MedievalMeleeDecent</li>
         </weaponTags>
         <apparelMoney>150~500</apparelMoney>
@@ -144,5 +145,53 @@
                 <range>5~12</range>
             </li>
         </skills>
+        <forcedTraits>
+            <ShootingAccuracy>1</ShootingAccuracy>
+        </forcedTraits>
+        <disallowedTraits>
+            <li>Brawler</li>
+        </disallowedTraits>
+    </PawnKindDef>
+    <PawnKindDef ParentName="SFENomadPawnKindBase">
+        <defName>SFE_Nomad_BladeDancer</defName>
+        <label>Blade dancer</label>
+        <combatPower>100</combatPower>
+        <itemQuality>Good</itemQuality>
+        <isFighter>true</isFighter>
+        <gearHealthRange>0.9~1</gearHealthRange>
+        <weaponMoney>300~450</weaponMoney>
+        <weaponTags>
+            <li>DankPyon_Swordlance</li>
+            <li>SFE_BladeDancer</li>
+        </weaponTags>
+        <apparelMoney>350~700</apparelMoney>
+        <apparelTags>
+            <li>SFE_NomadHelmet</li>
+            <li>SFE_Assassin</li>
+        </apparelTags>
+        <apparelRequired>
+            <li>SFE_Apparel_NomadHeadWrap</li>
+            <li>SFE_Apparel_AssasinRobe</li>
+        </apparelRequired>
+        <techHediffsMoney>50~200</techHediffsMoney>
+        <techHediffsTags>
+            <li>Poor</li>
+            <li>Simple</li>
+        </techHediffsTags>
+        <techHediffsChance>0.05</techHediffsChance>
+        <initialWillRange>3~5</initialWillRange>
+        <initialResistanceRange>5~12</initialResistanceRange>
+        <skills>
+            <li>
+                <skill>Melee</skill>
+                <range>12~18</range>
+            </li>
+        </skills>
+        <forcedTraits>
+            <Brawler>0</Brawler>
+        </forcedTraits>
+        <disallowedTraits>
+            <li>ShootingAccuracy</li>
+        </disallowedTraits>
     </PawnKindDef>
 </Defs>
