@@ -107,8 +107,9 @@
             </layers>
             <tags>
                 <li>SFE_Officer</li>
+                <li>SFE_NomadExecutioner</li>
 
-                <li>MedievalMilitaryAdvanced</li>
+                <li>MedievalMilitaryDecent</li>
             </tags>
             <canBeDesiredForIdeo>true</canBeDesiredForIdeo>
         </apparel>

@@ -97,7 +97,7 @@
             </layers>
             <tags>
                 <li>SFE_CutthroatHelmet</li>
-                
+
                 <li>MedievalBasic</li>
             </tags>
         </apparel>
@@ -357,7 +357,10 @@
                 <li>Overhead</li>
             </layers>
             <tags>
-                <li>SFE_Cutthroat</li>
+                <li>SFE_CutthroatHelmet</li>
+                <li>SFE_NomadExecutionerHelmet</li>
+
+                <li>MedievalMilitaryDecent</li>
             </tags>
         </apparel>
     </ThingDef>
@@ -496,6 +499,7 @@
             <useWornGraphicMask>true</useWornGraphicMask>
             <tags>
                 <li>SFE_Footman</li>
+                <li>SFE_NomadExecutionerHelmet</li>
 
                 <li>MedievalMilitaryDecent</li>
             </tags>
@@ -552,6 +556,7 @@
             </layers>
             <tags>
                 <li>SFE_Officer</li>
+                <li>SFE_NomadExecutionerHelmet</li>
 
                 <li>MedievalMilitaryAdvanced</li>
             </tags>

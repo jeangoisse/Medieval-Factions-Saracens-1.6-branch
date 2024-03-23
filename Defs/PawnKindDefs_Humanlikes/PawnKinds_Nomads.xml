@@ -21,7 +21,7 @@
         <canStrip>false</canStrip>
     </PawnKindDef>
     <PawnKindDef ParentName="SFE_NomadPawnKindBase">
-        <defName>SFE_NomadSlinger_Slinger</defName>
+        <defName>SFE_Nomads_Slinger</defName>
         <label>Slinger</label>
         <combatPower>50</combatPower>
         <isFighter>true</isFighter>
@@ -55,7 +55,7 @@
         </skills>
     </PawnKindDef>
     <PawnKindDef ParentName="SFE_NomadPawnKindBase">
-        <defName>SFE_NomadSlinger_Cutthroat</defName>
+        <defName>SFE_Nomads_Cutthroat</defName>
         <label>Cutthroat</label>
         <combatPower>60</combatPower>
         <isFighter>true</isFighter>
@@ -111,7 +111,7 @@
         </modExtensions>
     </PawnKindDef>
     <PawnKindDef ParentName="SFE_NomadPawnKindBase">
-        <defName>SFE_NomadSlinger_DesertStalker</defName>
+        <defName>SFE_Nomads_DesertStalker</defName>
         <label>Desert stalker</label>
         <combatPower>90</combatPower>
         <itemQuality>Good</itemQuality>
@@ -163,7 +163,7 @@
         </disallowedTraits>
     </PawnKindDef>
     <PawnKindDef ParentName="SFE_NomadPawnKindBase">
-        <defName>SFE_NomadSlinger_BladeDancer</defName>
+        <defName>SFE_Nomads_BladeDancer</defName>
         <label>Blade dancer</label>
         <combatPower>100</combatPower>
         <itemQuality>Good</itemQuality>
@@ -204,5 +204,47 @@
         <disallowedTraits>
             <li>ShootingAccuracy</li>
         </disallowedTraits>
+    </PawnKindDef>
+    <PawnKindDef ParentName="SFE_NomadPawnKindBase">
+        <defName>SFE_Nomads_Executioner</defName>
+        <label>Nomad executioner</label>
+        <combatPower>110</combatPower>
+        <itemQuality>Excellent</itemQuality>
+        <isFighter>true</isFighter>
+        <gearHealthRange>0.95~1</gearHealthRange>
+        <weaponMoney>350~500</weaponMoney>
+        <weaponTags>
+            <li>SFE_TwoHandedSaif</li>
+            <li>DankPyon_Swordlance</li>
+            <li>DankPyon_NamedTwoHandedFlangedMace</li>
+            <li>DankPyon_Bardiche</li>
+        </weaponTags>
+        <apparelMoney>600~1200</apparelMoney>
+        <apparelTags>
+            <li>SFE_NomadExecutionerHelmet</li>
+            <li>SFE_NomadExecutioner</li>
+        </apparelTags>
+        <apparelRequired Inherit ="false">
+            <li>DankPyon_Handwear_GlovesSplinted</li>
+            <li>DankPyon_Footwear_BootsSplinted</li>
+            <li>SFE_Apparel_LamellarHauberk</li>
+        </apparelRequired>
+        <techHediffsMoney>50~200</techHediffsMoney>
+        <techHediffsTags>
+            <li>Poor</li>
+            <li>Simple</li>
+        </techHediffsTags>
+        <techHediffsChance>0.05</techHediffsChance>
+        <initialWillRange>4~6</initialWillRange>
+        <initialResistanceRange>8~14</initialResistanceRange>
+        <skills>
+            <li>
+                <skill>Melee</skill>
+                <range>12~18</range>
+            </li>
+        </skills>
+        <forcedTraits>
+            <Tough>0</Tough>
+        </forcedTraits>
     </PawnKindDef>
 </Defs>
