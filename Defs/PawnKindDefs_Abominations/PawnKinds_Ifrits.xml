@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Defs>
+        <PawnKindDef Name="BaseIfritKind" Abstract="True">
+        <race>SFE_Ifrit</race>
+        <defaultFactionType>SFE_Desert_Faction</defaultFactionType>
+        <canArriveManhunter>false</canArriveManhunter>
+        <chronologicalAgeRange>0~1250</chronologicalAgeRange>
+        <aiAvoidCover>true</aiAvoidCover>
+        <lifeStages>
+            <li>
+                <label>small ifrit</label>
+                <bodyGraphicData>
+                    <texPath>Animal/LittleIfrit</texPath>
+                    <drawSize>1.8</drawSize>
+                </bodyGraphicData>
+            </li>
+            <li>
+                <label>medium ifrit</label>
+                <bodyGraphicData>
+                    <texPath>Animal/Ifrit</texPath>
+                    <drawSize>2</drawSize>
+                </bodyGraphicData>
+            </li>
+            <li>
+                <label>large ifrit</label>
+                <bodyGraphicData>
+                    <texPath>Animal/BigIfrit</texPath>
+                    <drawSize>2.78</drawSize>
+                </bodyGraphicData>
+            </li>
+        </lifeStages>
+    </PawnKindDef>
+    <PawnKindDef ParentName="BaseIfritKind">
+        <defName>SFE_SmallIfrit</defName>
+        <label>ifrit</label>
+        <combatPower>40</combatPower>
+        <maxGenerationAge>9</maxGenerationAge>
+        <inventoryOptions>
+            <subOptionsTakeAll>
+                <li>
+                    <thingDef>Gold</thingDef>
+                    <countRange>1~4</countRange>
+                    <skipChance>0.4</skipChance>
+                </li>
+                <li>
+                    <thingDef>SFE_Sulfur</thingDef>
+                    <countRange>1~4</countRange>
+                    <skipChance>0.4</skipChance>
+                </li>
+            </subOptionsTakeAll>
+        </inventoryOptions>
+    </PawnKindDef>
+    <PawnKindDef ParentName="BaseIfritKind">
+        <defName>SFE_MediumIfrit</defName>
+        <label>ifrit</label>
+        <combatPower>200</combatPower>
+        <minGenerationAge>10</minGenerationAge>
+        <maxGenerationAge>19</maxGenerationAge>
+        <inventoryOptions>
+            <subOptionsTakeAll>
+                <li>
+                    <thingDef>Gold</thingDef>
+                    <countRange>6~12</countRange>
+                    <skipChance>0.2</skipChance>
+                </li>
+                <li>
+                    <thingDef>SFE_Sulfur</thingDef>
+                    <countRange>6~12</countRange>
+                    <skipChance>0.2</skipChance>
+                </li>
+            </subOptionsTakeAll>
+        </inventoryOptions>
+    </PawnKindDef>
+    <PawnKindDef ParentName="BaseIfritKind">
+        <defName>SFE_LargeIfrit</defName>
+        <label>ifrit</label>
+        <combatPower>500</combatPower>
+        <minGenerationAge>20</minGenerationAge>
+        <inventoryOptions>
+            <subOptionsTakeAll>
+                <li>
+                    <thingDef>Gold</thingDef>
+                    <countRange>14~24</countRange>
+                    <skipChance>0.05</skipChance>
+                </li>
+                <li>
+                    <thingDef>SFE_Sulfur</thingDef>
+                    <countRange>14~24</countRange>
+                    <skipChance>0.05</skipChance>
+                </li>
+            </subOptionsTakeAll>
+        </inventoryOptions>
+    </PawnKindDef>
+</Defs>
