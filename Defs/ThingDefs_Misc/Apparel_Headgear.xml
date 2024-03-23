@@ -359,6 +359,7 @@
             <tags>
                 <li>SFE_CutthroatHelmet</li>
                 <li>SFE_NomadExecutionerHelmet</li>
+                <li>SFE_NomadLeaderHelmet</li>
 
                 <li>MedievalMilitaryDecent</li>
             </tags>
@@ -498,8 +499,9 @@
             <wornGraphicPath>Apparel/Headgear/SouthernHelmetWithCoif/Southern_Helmet_with_Coif</wornGraphicPath>
             <useWornGraphicMask>true</useWornGraphicMask>
             <tags>
-                <li>SFE_Footman</li>
+                <li>SFE_FootmanHelmet</li>
                 <li>SFE_NomadExecutionerHelmet</li>
+                <li>SFE_NomadLeaderHelmet</li>
 
                 <li>MedievalMilitaryDecent</li>
             </tags>

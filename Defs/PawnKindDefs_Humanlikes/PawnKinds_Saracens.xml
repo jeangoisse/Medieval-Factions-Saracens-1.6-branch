@@ -7,7 +7,6 @@
         </backstoryCategories>
         <defaultFactionType>Pirate</defaultFactionType>
         <maxGenerationAge>70</maxGenerationAge>
-        <chemicalAddictionChance>0.004</chemicalAddictionChance>
         <invNutrition>2.55</invNutrition>
         <invFoodDef>DankPyon_MealRations</invFoodDef>
         <apparelTags>
@@ -15,6 +14,11 @@
             <li>MedievalMilitaryBasic</li>
         </apparelTags>
         <fixedGender>Male</fixedGender>
+        <techHediffsTags>
+            <li>Poor</li>
+            <li>Simple</li>
+        </techHediffsTags>
+        <techHediffsChance>0.05</techHediffsChance>
     </PawnKindDef>
     <PawnKindDef ParentName="SFE_SaracensPawnKindBase">
         <defName>SFE_Saracens_Indebted</defName>
@@ -41,7 +45,7 @@
         <techHediffsTags>
             <li>Poor</li>
         </techHediffsTags>
-        <techHediffsChance>0.2</techHediffsChance>
+        <techHediffsChance>0.3</techHediffsChance>
         <initialWillRange>1~2</initialWillRange>
         <initialResistanceRange>3~8</initialResistanceRange>
         <skills>
@@ -73,10 +77,6 @@
             <li>SFE_Scimitar</li>
         </weaponTags>
         <techHediffsMoney>50~100</techHediffsMoney>
-        <techHediffsTags>
-            <li>Poor</li>
-        </techHediffsTags>
-        <techHediffsChance>0.15</techHediffsChance>
         <initialWillRange>2~3</initialWillRange>
         <initialResistanceRange>4~9</initialResistanceRange>
         <skills>
@@ -121,7 +121,6 @@
         <techHediffsTags>
             <li>Poor</li>
         </techHediffsTags>
-        <techHediffsChance>0.15</techHediffsChance>
         <initialWillRange>2~3</initialWillRange>
         <initialResistanceRange>4~9</initialResistanceRange>
         <skills>
@@ -149,7 +148,6 @@
             <li>DankPyon_Footwear_BootsSplinted</li>
             <li>DankPyon_Handwear_GlovesSplinted</li>
         </apparelRequired>
-        <techHediffsChance>0.15</techHediffsChance>
         <initialWillRange>4~6</initialWillRange>
         <initialResistanceRange>6~12</initialResistanceRange>
         <isFighter>true</isFighter>
@@ -203,7 +201,6 @@
             <li>SFE_Officer</li>
             <li>SFE_OfficerHelmet</li>
         </apparelTags>
-        <techHediffsChance>0.15</techHediffsChance>
         <initialWillRange>6~8</initialWillRange>
         <initialResistanceRange>10~24</initialResistanceRange>
         <isFighter>true</isFighter>

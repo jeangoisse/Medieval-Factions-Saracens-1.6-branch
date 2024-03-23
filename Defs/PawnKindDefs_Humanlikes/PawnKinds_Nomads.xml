@@ -17,8 +17,14 @@
         <apparelRequired>
             <li>DankPyon_Footwear_BootsLeather</li>
         </apparelRequired>
+        <invNutrition>4</invNutrition>
         <fixedGender>Male</fixedGender>
         <canStrip>false</canStrip>
+        <techHediffsChance>0.05</techHediffsChance>
+        <techHediffsTags>
+            <li>Poor</li>
+            <li>Simple</li>
+        </techHediffsTags>
     </PawnKindDef>
     <PawnKindDef ParentName="SFE_NomadPawnKindBase">
         <defName>SFE_Nomads_Slinger</defName>
@@ -41,10 +47,6 @@
             <li>SFE_Apparel_NomadHeadWrap</li>
         </apparelRequired>
         <techHediffsMoney>50</techHediffsMoney>
-        <techHediffsTags>
-            <li>Poor</li>
-        </techHediffsTags>
-        <techHediffsChance>0.05</techHediffsChance>
         <initialWillRange>2~3</initialWillRange>
         <initialResistanceRange>4~9</initialResistanceRange>
         <skills>
@@ -84,11 +86,6 @@
             <li>DankPyon_Handwear_GlovesLeather</li>
         </apparelRequired>
         <techHediffsMoney>50~200</techHediffsMoney>
-        <techHediffsTags>
-            <li>Poor</li>
-            <li>Simple</li>
-        </techHediffsTags>
-        <techHediffsChance>0.05</techHediffsChance>
         <initialWillRange>2~3</initialWillRange>
         <initialResistanceRange>4~9</initialResistanceRange>
         <skills>
@@ -116,6 +113,7 @@
         <combatPower>90</combatPower>
         <itemQuality>Good</itemQuality>
         <isFighter>true</isFighter>
+        <invNutrition>5</invNutrition>
         <gearHealthRange>0.9~1</gearHealthRange>
         <weaponMoney>300~450</weaponMoney>
         <weaponTags>
@@ -134,11 +132,6 @@
             <li>DankPyon_Handwear_GlovesLeather</li>
         </apparelRequired>
         <techHediffsMoney>50~200</techHediffsMoney>
-        <techHediffsTags>
-            <li>Poor</li>
-            <li>Simple</li>
-        </techHediffsTags>
-        <techHediffsChance>0.05</techHediffsChance>
         <initialWillRange>3~5</initialWillRange>
         <initialResistanceRange>5~12</initialResistanceRange>
         <skills>
@@ -168,6 +161,7 @@
         <combatPower>100</combatPower>
         <itemQuality>Good</itemQuality>
         <isFighter>true</isFighter>
+        <invNutrition>5</invNutrition>
         <gearHealthRange>0.9~1</gearHealthRange>
         <weaponMoney>300~450</weaponMoney>
         <weaponTags>
@@ -185,11 +179,6 @@
             <li>DankPyon_Handwear_GlovesSplinted</li>
         </apparelRequired>
         <techHediffsMoney>50~200</techHediffsMoney>
-        <techHediffsTags>
-            <li>Poor</li>
-            <li>Simple</li>
-        </techHediffsTags>
-        <techHediffsChance>0.05</techHediffsChance>
         <initialWillRange>3~5</initialWillRange>
         <initialResistanceRange>5~12</initialResistanceRange>
         <skills>
@@ -211,6 +200,7 @@
         <combatPower>110</combatPower>
         <itemQuality>Excellent</itemQuality>
         <isFighter>true</isFighter>
+        <invNutrition>5</invNutrition>
         <gearHealthRange>0.95~1</gearHealthRange>
         <weaponMoney>350~500</weaponMoney>
         <weaponTags>
@@ -230,11 +220,6 @@
             <li>SFE_Apparel_LamellarHauberk</li>
         </apparelRequired>
         <techHediffsMoney>50~200</techHediffsMoney>
-        <techHediffsTags>
-            <li>Poor</li>
-            <li>Simple</li>
-        </techHediffsTags>
-        <techHediffsChance>0.05</techHediffsChance>
         <initialWillRange>4~6</initialWillRange>
         <initialResistanceRange>8~14</initialResistanceRange>
         <skills>
@@ -246,5 +231,54 @@
         <forcedTraits>
             <Tough>0</Tough>
         </forcedTraits>
+    </PawnKindDef>
+    <PawnKindDef ParentName="SFE_NomadPawnKindBase">
+        <defName>SFE_Nomads_Leader</defName>
+        <label>Nomad leader</label>
+        <combatPower>90</combatPower>
+        <itemQuality>Masterwork</itemQuality>
+        <isFighter>true</isFighter>
+        <factionLeader>true</factionLeader>
+        <gearHealthRange>0.98~1</gearHealthRange>
+        <invNutrition>7</invNutrition>
+        <weaponMoney>400~600</weaponMoney>
+        <weaponTags>
+            <li>SFE_TwoHandedSaif</li>
+            <li>SFE_TwoHandedScimitar</li >
+            <li>SFE_Shamshir</li>
+            <li>DankPyon_FightingSpear</li>
+            <li>DankPyon_WingedMace</li>
+        </weaponTags>
+        <apparelMoney>600~1200</apparelMoney>
+        <apparelTags>
+            <li>DankPyon_ChainArmor</li>
+            <li>SFE_NomadLeaderHelmet</li>
+            <li>SFE_NomadLeader</li>
+        </apparelTags>
+        <apparelRequired Inherit="false">
+            <li>DankPyon_Handwear_GlovesSplinted</li>
+            <li>DankPyon_Footwear_BootsSplinted</li>
+        </apparelRequired>
+        <techHediffsMoney>150~400</techHediffsMoney>
+        <initialWillRange>8~14</initialWillRange>
+        <initialResistanceRange>16~24</initialResistanceRange>
+        <skills>
+            <li>
+                <skill>Melee</skill>
+                <range>9~12</range>
+            </li>
+            <li>
+                <skill>Social</skill>
+                <range>8~18</range>
+            </li>
+        </skills>
+        <modExtensions>
+            <li Class="VFECore.PawnKindDefExtension">
+                <shieldTags>
+                    <li>SFE_Sipar</li>
+                </shieldTags>
+                <shieldMoney>200~400</shieldMoney>
+            </li>
+        </modExtensions>
     </PawnKindDef>
 </Defs>
