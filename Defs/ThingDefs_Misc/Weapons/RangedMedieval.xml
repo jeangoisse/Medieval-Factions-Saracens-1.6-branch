@@ -92,7 +92,7 @@
         <weaponTags Inherit="false">
             <li>SFE_Whip</li>
 
-            <li>MedievalMeleeBasic</li>
+            <li>MedievalRangedBasic</li>
         </weaponTags>
         <modExtensions>
             <li Class="VFECore.ThingDefExtension">

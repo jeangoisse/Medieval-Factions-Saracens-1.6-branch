@@ -13,12 +13,36 @@
             <li>MedievalBasic</li>
             <li>MedievalMilitaryBasic</li>
         </apparelTags>
+        <apparelRequired>
+            <li>DankPyon_Footwear_BootsLeather</li>
+        </apparelRequired>
         <fixedGender>Male</fixedGender>
         <techHediffsTags>
             <li>Poor</li>
             <li>Simple</li>
         </techHediffsTags>
         <techHediffsChance>0.05</techHediffsChance>
+    </PawnKindDef>
+    <PawnKindDef ParentName="SFE_SaracensPawnKindBase">
+        <defName>SFE_Saracens_Peasant</defName>
+        <label>Saracen</label>
+        <combatPower>30</combatPower>
+        <isFighter>false</isFighter>
+        <apparelMoney>50~200</apparelMoney>
+        <apparelTags Inherit="false">
+            <li>MedievalBasic</li>
+            <li>Neolithic</li>
+        </apparelTags>
+        <apparelRequired>
+            <li>SFE_Apparel_NomadRobe</li>
+        </apparelRequired>
+        <weaponMoney>50~100</weaponMoney>
+        <weaponTags>
+            <li>NeolithicMeleeBasic</li>
+            <li>MedievalMeleeBasic</li>
+        </weaponTags>
+        <initialWillRange>1~2</initialWillRange>
+        <initialResistanceRange>3~8</initialResistanceRange>
     </PawnKindDef>
     <PawnKindDef ParentName="SFE_SaracensPawnKindBase">
         <defName>SFE_Saracens_Indebted</defName>
@@ -32,6 +56,8 @@
         <apparelMoney>50~200</apparelMoney>
         <apparelTags>
             <li>SFE_IndebtedHelmet</li>
+
+            <li>Neolithic</li>
         </apparelTags>
         <weaponMoney>150~300</weaponMoney>
         <weaponTags>
@@ -69,7 +95,6 @@
         </apparelTags>
         <apparelRequired>
             <li>DankPyon_Handwear_GlovesLeather</li>
-            <li>DankPyon_Footwear_BootsLeather</li>
         </apparelRequired>
         <weaponMoney>200~350</weaponMoney>
         <weaponTags>
@@ -110,7 +135,6 @@
             <li>SFE_Apparel_GunnersHat</li>
             <li>SFE_Apparel_PaddedVest</li>
             <li>DankPyon_Handwear_GlovesLeather</li>
-            <li>DankPyon_Footwear_BootsLeather</li>
         </apparelRequired>
         <weaponMoney>250~400</weaponMoney>
         <weaponTags>
@@ -133,6 +157,9 @@
                 <range>3~6</range>
             </li>
         </skills>
+        <disallowedTraits>
+            <li>Brawler</li>
+        </disallowedTraits>
     </PawnKindDef>
     <PawnKindDef ParentName="SFE_SaracensPawnKindBase" Name="SFE_BaseFootmanKindBase" Abstract="true">
         <combatPower>60</combatPower>
@@ -144,7 +171,7 @@
 
             <li>MedievalMilitaryDecent</li>
         </apparelTags>
-        <apparelRequired>
+        <apparelRequired Inherit="false">
             <li>DankPyon_Footwear_BootsSplinted</li>
             <li>DankPyon_Handwear_GlovesSplinted</li>
         </apparelRequired>

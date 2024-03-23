@@ -8,7 +8,7 @@
         <defaultFactionType>Pirate</defaultFactionType>
         <maxGenerationAge>70</maxGenerationAge>
         <chemicalAddictionChance>0.04</chemicalAddictionChance>
-        <invNutrition>2.55</invNutrition>
+        <invNutrition>3.55</invNutrition>
         <invFoodDef>DankPyon_MealRations</invFoodDef>
         <apparelTags>
             <li>MedievalBasic</li>
@@ -17,7 +17,6 @@
         <apparelRequired>
             <li>DankPyon_Footwear_BootsLeather</li>
         </apparelRequired>
-        <invNutrition>4</invNutrition>
         <fixedGender>Male</fixedGender>
         <canStrip>false</canStrip>
         <techHediffsChance>0.05</techHediffsChance>
@@ -25,6 +24,29 @@
             <li>Poor</li>
             <li>Simple</li>
         </techHediffsTags>
+    </PawnKindDef>
+    <PawnKindDef ParentName="SFE_NomadPawnKindBase">
+        <defName>SFE_Nomads_Peasant</defName>
+        <label>Nomad</label>
+        <combatPower>30</combatPower>
+        <isFighter>false</isFighter>
+        <weaponMoney>50~120</weaponMoney>
+        <weaponTags>
+            <li>NeolithicMeleeBasic</li>
+            <li>MedievalMeleeBasic</li>
+        </weaponTags>
+        <apparelMoney>50~150</apparelMoney>
+        <apparelTags Inherit="false">
+            <li>MedievalBasic</li>
+            <li>Neolithic</li>
+        </apparelTags>
+        <apparelRequired>
+            <li>SFE_Apparel_LeatherHeadWrap</li>
+            <li>SFE_Apparel_LeatherNomadRobe</li>
+        </apparelRequired>
+        <techHediffsMoney>50</techHediffsMoney>
+        <initialWillRange>1~2</initialWillRange>
+        <initialResistanceRange>3~8</initialResistanceRange>
     </PawnKindDef>
     <PawnKindDef ParentName="SFE_NomadPawnKindBase">
         <defName>SFE_Nomads_Slinger</defName>
@@ -55,6 +77,9 @@
                 <range>3~7</range>
             </li>
         </skills>
+        <disallowedTraits>
+            <li>Brawler</li>
+        </disallowedTraits>
     </PawnKindDef>
     <PawnKindDef ParentName="SFE_NomadPawnKindBase">
         <defName>SFE_Nomads_Cutthroat</defName>
@@ -198,7 +223,7 @@
         <defName>SFE_Nomads_Executioner</defName>
         <label>Nomad executioner</label>
         <combatPower>110</combatPower>
-        <itemQuality>Excellent</itemQuality>
+        <itemQuality>Good</itemQuality>
         <isFighter>true</isFighter>
         <invNutrition>5</invNutrition>
         <gearHealthRange>0.95~1</gearHealthRange>
@@ -236,7 +261,7 @@
         <defName>SFE_Nomads_Leader</defName>
         <label>Nomad leader</label>
         <combatPower>90</combatPower>
-        <itemQuality>Masterwork</itemQuality>
+        <itemQuality>Excellent</itemQuality>
         <isFighter>true</isFighter>
         <factionLeader>true</factionLeader>
         <gearHealthRange>0.98~1</gearHealthRange>
