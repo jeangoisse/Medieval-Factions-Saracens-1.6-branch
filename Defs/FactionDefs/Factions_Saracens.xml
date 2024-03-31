@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <FactionDef ParentName="FactionBase" Name="BaseSaracenFaction" Abstract="true">
+    <requiredCountAtGameStart>1</requiredCountAtGameStart>
+    <configurationListOrderPriority>90</configurationListOrderPriority>
+    <displayInFactionSelection>true</displayInFactionSelection>
+    <humanlikeFaction>true</humanlikeFaction>
+    <hidden>false</hidden>
+    <autoFlee>true</autoFlee>
+    <canUseAvoidGrid>false</canUseAvoidGrid>
+    <techLevel>Medieval</techLevel>
+    <hostileToFactionlessHumanlikes>false</hostileToFactionlessHumanlikes>
+    <allowedArrivalTemperatureRange>20~60</allowedArrivalTemperatureRange>
+    <maxPawnCostPerTotalPointsCurve>
+      <points>
+        <li>(0,35)</li>
+        <li>(70, 50)</li>
+        <li>(700, 100)</li>
+        <li>(1300, 150)</li>
+        <li>(100000, 10000)</li>
+      </points>
+    </maxPawnCostPerTotalPointsCurve>
+    <pawnGroupMakers>
+      <li>
+        <!-- Saracen skirmishes, a mix of ranged and melee fighters -->
+        <kindDef>Combat</kindDef>
+        <commonality>100</commonality>
+        <options>
+          <SFE_Saracens_Indebted>5</SFE_Saracens_Indebted>
+          <SFE_Saracens_Conscript>10</SFE_Saracens_Conscript>
+          <SFE_Saracens_Gunner>10</SFE_Saracens_Gunner>
+          <SFE_Saracens_Bearer>3</SFE_Saracens_Bearer>
+          <SFE_Saracens_Footman>10</SFE_Saracens_Footman>
+          <SFE_Saracens_Officer>3</SFE_Saracens_Officer>
+        </options>
+      </li>
+      <li>
+        <!-- Ranged engagements -->
+        <kindDef>Combat</kindDef>
+        <commonality>60</commonality>
+        <options>
+          <SFE_Saracens_Gunner>20</SFE_Saracens_Gunner>
+          <SFE_Saracens_Officer>3</SFE_Saracens_Officer>
+        </options>
+      </li>
+      <li>
+        <!-- Melee confrontations -->
+        <kindDef>Combat</kindDef>
+        <commonality>60</commonality>
+        <options>
+          <SFE_Saracens_Indebted>10</SFE_Saracens_Indebted>
+          <SFE_Saracens_Bearer>3</SFE_Saracens_Bearer>
+          <SFE_Saracens_Footman>10</SFE_Saracens_Footman>
+          <SFE_Saracens_Officer>3</SFE_Saracens_Officer>
+        </options>
+      </li>
+      <li>
+        <!-- Saracen caravans -->
+        <kindDef>Trader</kindDef>
+        <traders>
+          <SFE_Saracens_Peasant>1</SFE_Saracens_Peasant>
+        </traders>
+        <carriers>
+          <Muffalo>6</Muffalo>
+          <Dromedary>5</Dromedary>
+          <Alpaca>2.5</Alpaca>
+          <Elephant>2</Elephant>
+        </carriers>
+        <guards>
+          <SFE_Saracens_Indebted>7</SFE_Saracens_Indebted>
+          <SFE_Saracens_Gunner>10</SFE_Saracens_Gunner>
+          <SFE_Saracens_Bearer>10</SFE_Saracens_Bearer>
+          <SFE_Saracens_Footman>7</SFE_Saracens_Footman>
+        </guards>
+      </li>
+      <li>
+        <!-- Saracen settlements -->
+        <kindDef>Settlement</kindDef>
+        <options>
+          <SFE_Saracens_Peasant>30</SFE_Saracens_Peasant>
+          <SFE_Saracens_Gunner>10</SFE_Saracens_Gunner>
+          <SFE_Saracens_Bearer>3</SFE_Saracens_Bearer>
+          <SFE_Saracens_Footman>10</SFE_Saracens_Footman>
+          <SFE_Saracens_Officer>3</SFE_Saracens_Officer>
+        </options>
+      </li>
+      <li>
+        <!-- Settlements, ranged defenders -->
+        <kindDef>Settlement_RangedOnly</kindDef>
+        <options>
+          <SFE_Saracens_Gunner>20</SFE_Saracens_Gunner>
+          <SFE_Saracens_Officer>3</SFE_Saracens_Officer>
+        </options>
+      </li>
+    </pawnGroupMakers>
+    <canStageAttacks>true</canStageAttacks>
+    <xenotypeSet>
+      <xenotypeChances>
+        <Hussar MayRequire="Ludeon.RimWorld.Biotech">0.05</Hussar>
+        <Neanderthal MayRequire="Ludeon.RimWorld.Biotech">0.025</Neanderthal>
+        <Impid MayRequire="Ludeon.RimWorld.Biotech">0.05</Impid>
+      </xenotypeChances>
+    </xenotypeSet>
+    <requiredMemes>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
+    </requiredMemes>
+    <allowedMemes>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Collectivist</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Proselytizer</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">HumanPrimacy</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">MaleSupremacy</li>
+    </allowedMemes>
+    <structureMemeWeights>
+      <Structure_OriginIslamic MayRequire="Ludeon.RimWorld.Ideology">1</Structure_OriginIslamic>
+    </structureMemeWeights>
+    <backstoryFilters>
+      <li>
+        <categories>
+          <li>Tribal</li>
+          <li>Medieval</li>
+        </categories>
+      </li>
+    </backstoryFilters>
+    <maxConfigurableAtWorldCreation>1</maxConfigurableAtWorldCreation>
+  </FactionDef>
+  <FactionDef ParentName="BaseSaracenFaction">
+    <defName>SFE_GrandKarakan</defName>
+    <pawnSingular>karakan's</pawnSingular>
+    <pawnsPlural>karakeans</pawnsPlural>
+    <fixedName>Grand Karakan</fixedName>
+    <allowedCultures>
+      <li>SFE_GrandKarakan</li>
+    </allowedCultures>
+    <factionIconPath>WorldObjects/Sultanat_a</factionIconPath>
+    <colorSpectrum>
+      <li>(0.64, 0.5, 0.82)</li>
+    </colorSpectrum>
+  </FactionDef>
+  <FactionDef ParentName="BaseSaracenFaction">
+    <defName>SFE_HolyTanwir</defName>
+    <pawnSingular>tanwir's</pawnSingular>
+    <pawnsPlural>tanwirians</pawnsPlural>
+    <fixedName>Holy Tanwir</fixedName>
+    <allowedCultures>
+      <li>SFE_HolyTanwir</li>
+    </allowedCultures>
+    <factionIconPath>WorldObjects/Sultanat_b</factionIconPath>
+    <colorSpectrum>
+      <li>(0.96, 0.5, 0.41)</li>
+    </colorSpectrum>
+  </FactionDef>
+  <FactionDef ParentName="BaseSaracenFaction">
+    <defName>SFE_RealmDahab</defName>
+    <pawnSingular>dahab's</pawnSingular>
+    <pawnsPlural>dahabeans</pawnsPlural>
+    <fixedName>Realm Dahab</fixedName>
+    <allowedCultures>
+      <li>SFE_RealmDahab</li>
+    </allowedCultures>
+    <factionIconPath>WorldObjects/Sultanat_c</factionIconPath>
+    <colorSpectrum>
+      <li>(1, 0.97, 0.56)</li>
+    </colorSpectrum>
+  </FactionDef>
+</Defs>

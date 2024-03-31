@@ -17,7 +17,6 @@
         <apparelRequired>
             <li>DankPyon_Footwear_BootsLeather</li>
         </apparelRequired>
-        <fixedGender>Male</fixedGender>
         <canStrip>false</canStrip>
         <techHediffsChance>0.05</techHediffsChance>
         <techHediffsTags>
@@ -29,6 +28,7 @@
         <defName>SFE_Nomads_Peasant</defName>
         <label>Nomad</label>
         <combatPower>30</combatPower>
+        <trader>true</trader>
         <isFighter>false</isFighter>
         <weaponMoney>50~120</weaponMoney>
         <weaponTags>

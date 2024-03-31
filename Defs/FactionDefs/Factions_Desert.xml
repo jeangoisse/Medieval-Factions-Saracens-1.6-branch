@@ -12,7 +12,6 @@
         <colorSpectrum>
             <li>(0.97, 0.73, 0.01)</li>
         </colorSpectrum>
-        <configurationListOrderPriority>90</configurationListOrderPriority>
         <displayInFactionSelection>true</displayInFactionSelection>
         <humanlikeFaction>false</humanlikeFaction>
         <hidden>true</hidden>
@@ -56,6 +55,7 @@
             </li>
         </pawnGroupMakers>
         <canStageAttacks>true</canStageAttacks>
+        <configurationListOrderPriority>90</configurationListOrderPriority>
         <modExtensions>
             <li Class="Saracens.Extensions.CanArriveAndDefend">
                 <canArriveAndDefend>true</canArriveAndDefend>

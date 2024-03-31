@@ -16,7 +16,6 @@
         <apparelRequired>
             <li>DankPyon_Footwear_BootsLeather</li>
         </apparelRequired>
-        <fixedGender>Male</fixedGender>
         <techHediffsTags>
             <li>Poor</li>
             <li>Simple</li>
@@ -28,6 +27,7 @@
         <label>Saracen</label>
         <combatPower>30</combatPower>
         <isFighter>false</isFighter>
+        <trader>true</trader>
         <apparelMoney>50~200</apparelMoney>
         <apparelTags Inherit="false">
             <li>MedievalBasic</li>
@@ -234,6 +234,7 @@
         <gearHealthRange>1.0</gearHealthRange>
         <apparelMoney>900~1350</apparelMoney>
         <weaponMoney>350~700</weaponMoney>
+        <factionLeader>true</factionLeader>
         <weaponTags>
             <li>SFE_Shamshir</li>
             <li>SFE_TwoHandedSaif</li>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <CultureDef Name="SFE_BaseSaracenCulture" Abstract="true">
+        <ideoNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerIdeoRustican</ideoNameMaker>
+        <deityNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerDeityRustican</deityNameMaker>
+        <deityTypeMaker MayRequire="Ludeon.RimWorld.Ideology">DeityTypeMakerRustican</deityTypeMaker>
+        <leaderTitleMaker MayRequire="Ludeon.RimWorld.Ideology">LeaderTitleMaker_Rustican</leaderTitleMaker>
+        <festivalNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerFestivalRustican</festivalNameMaker>
+        <allowedPlaceTags>
+            <li>OriginTribal</li>
+        </allowedPlaceTags>
+        <iconPath>UI/Structures/OriginIslamic</iconPath>
+        <thingStyleCategories>
+            <li MayRequire="Ludeon.RimWorld.Ideology">
+                <category>Islamic</category>
+                <priority>2</priority>
+            </li>
+        </thingStyleCategories>
+        <styleItemTags>
+            <li>
+                <tag>NoBeard</tag>
+                <baseWeight>10</baseWeight>
+                <weightFactor>1</weightFactor>
+            </li>
+            <li>
+                <tag>BeardTribal</tag>
+                <baseWeight>0.3</baseWeight>
+                <weightFactor>1</weightFactor>
+            </li>
+            <li>
+                <tag>NoTattoo</tag>
+                <baseWeight>1</baseWeight>
+                <weightFactor>1</weightFactor>
+            </li>
+        </styleItemTags>
+    </CultureDef>
+
+    <CultureDef ParentName="SFE_BaseSaracenCulture">
+        <defName>SFE_GrandKarakan</defName>
+        <label>karakan ogrigin</label>
+        <description>An ancient culture common among rimworld tribes.</description>
+        <iconColor>(0.64, 0.5, 0.82)</iconColor>
+    </CultureDef>
+
+    <CultureDef ParentName="SFE_BaseSaracenCulture">
+        <defName>SFE_HolyTanwir</defName>
+        <label>tanwir origin</label>
+        <description>An ancient culture common among rimworld tribes.</description>
+        <iconColor>(0.96, 0.5, 0.41)</iconColor>
+    </CultureDef>
+
+    <CultureDef ParentName="SFE_BaseSaracenCulture">
+        <defName>SFE_RealmDahab</defName>
+        <label>dahab origin</label>
+        <description>An ancient culture common among rimworld tribes.</description>
+        <iconColor>(1, 0.97, 0.56)</iconColor>
+    </CultureDef>
+
+</Defs>
