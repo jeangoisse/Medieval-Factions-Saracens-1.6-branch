@@ -138,6 +138,7 @@
         </apparelRequired>
         <weaponMoney>250~400</weaponMoney>
         <weaponTags>
+            <li>DankPyon_Handgonne</li>
             <li>SFE_FireLance</li>
             <li>SFE_Saif</li>
         </weaponTags>
