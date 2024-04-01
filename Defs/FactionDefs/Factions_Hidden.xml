@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
     <FactionDef ParentName="FactionBase">
-        <defName>SFE_Desert_Faction</defName>
+        <defName>SFE_DesertFaction</defName>
         <label>the desert</label>
         <description>Beasts and abominations that roam the sands of the desert. Known to mercilessly prey on travelers yet peacefully coexist with creatures of the arid land.</description>
         <pawnSingular>desert demon</pawnSingular>
         <pawnsPlural>desert demons</pawnsPlural>
         <requiredCountAtGameStart>1</requiredCountAtGameStart>
+        <maxConfigurableAtWorldCreation>1</maxConfigurableAtWorldCreation>
         <fixedName>Demons of the Desert</fixedName>
         <factionIconPath>WorldObjects/Ifrits</factionIconPath>
         <colorSpectrum>
             <li>(0.97, 0.73, 0.01)</li>
         </colorSpectrum>
-        <displayInFactionSelection>true</displayInFactionSelection>
         <humanlikeFaction>false</humanlikeFaction>
         <hidden>true</hidden>
         <autoFlee>false</autoFlee>
@@ -22,11 +22,11 @@
         <hostileToFactionlessHumanlikes>true</hostileToFactionlessHumanlikes>
         <maxPawnCostPerTotalPointsCurve>
             <points>
-                <li>(400,200)</li>
-                <li>(600,500)</li>
+                <li>(800,200)</li>
+                <li>(1200,500)</li>
             </points>
         </maxPawnCostPerTotalPointsCurve>
-        <allowedArrivalTemperatureRange>-100~200</allowedArrivalTemperatureRange>
+        <allowedArrivalTemperatureRange>30~200</allowedArrivalTemperatureRange>
         <pawnGroupMakers>
             <li>
                 <kindDef>Combat</kindDef>
@@ -55,7 +55,7 @@
             </li>
         </pawnGroupMakers>
         <canStageAttacks>true</canStageAttacks>
-        <configurationListOrderPriority>90</configurationListOrderPriority>
+        <configurationListOrderPriority>1000</configurationListOrderPriority>
         <modExtensions>
             <li Class="Saracens.Extensions.CanArriveAndDefend">
                 <canArriveAndDefend>true</canArriveAndDefend>

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
   <FactionDef ParentName="FactionBase" Name="BaseSaracenFaction" Abstract="true">
+    <label>Saracen</label>
     <requiredCountAtGameStart>1</requiredCountAtGameStart>
     <configurationListOrderPriority>90</configurationListOrderPriority>
     <displayInFactionSelection>true</displayInFactionSelection>
@@ -9,8 +10,11 @@
     <autoFlee>true</autoFlee>
     <canUseAvoidGrid>false</canUseAvoidGrid>
     <techLevel>Medieval</techLevel>
+    <categoryTag>Saracen</categoryTag>
     <hostileToFactionlessHumanlikes>false</hostileToFactionlessHumanlikes>
     <allowedArrivalTemperatureRange>20~60</allowedArrivalTemperatureRange>
+    <factionNameMaker>NamerFactionOutlander</factionNameMaker>
+    <settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
     <maxPawnCostPerTotalPointsCurve>
       <points>
         <li>(0,35)</li>
@@ -111,9 +115,7 @@
       <li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
     </requiredMemes>
     <allowedMemes>
-      <li MayRequire="Ludeon.RimWorld.Ideology">Collectivist</li>
       <li MayRequire="Ludeon.RimWorld.Ideology">Proselytizer</li>
-      <li MayRequire="Ludeon.RimWorld.Ideology">HumanPrimacy</li>
       <li MayRequire="Ludeon.RimWorld.Ideology">MaleSupremacy</li>
     </allowedMemes>
     <structureMemeWeights>
@@ -127,16 +129,18 @@
         </categories>
       </li>
     </backstoryFilters>
+    <allowedCultures>
+      <li>DankPyon_Desert</li>
+    </allowedCultures>
+    <settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
     <maxConfigurableAtWorldCreation>1</maxConfigurableAtWorldCreation>
   </FactionDef>
   <FactionDef ParentName="BaseSaracenFaction">
     <defName>SFE_GrandKarakan</defName>
+    <label>Grand Karakan</label>
     <pawnSingular>karakan's</pawnSingular>
     <pawnsPlural>karakeans</pawnsPlural>
     <fixedName>Grand Karakan</fixedName>
-    <allowedCultures>
-      <li>SFE_GrandKarakan</li>
-    </allowedCultures>
     <factionIconPath>WorldObjects/Sultanat_a</factionIconPath>
     <colorSpectrum>
       <li>(0.64, 0.5, 0.82)</li>
@@ -144,12 +148,10 @@
   </FactionDef>
   <FactionDef ParentName="BaseSaracenFaction">
     <defName>SFE_HolyTanwir</defName>
+    <label>Holy Tanwir</label>
     <pawnSingular>tanwir's</pawnSingular>
     <pawnsPlural>tanwirians</pawnsPlural>
     <fixedName>Holy Tanwir</fixedName>
-    <allowedCultures>
-      <li>SFE_HolyTanwir</li>
-    </allowedCultures>
     <factionIconPath>WorldObjects/Sultanat_b</factionIconPath>
     <colorSpectrum>
       <li>(0.96, 0.5, 0.41)</li>
@@ -157,12 +159,10 @@
   </FactionDef>
   <FactionDef ParentName="BaseSaracenFaction">
     <defName>SFE_RealmDahab</defName>
+    <label>Realm Dahab</label>
     <pawnSingular>dahab's</pawnSingular>
     <pawnsPlural>dahabeans</pawnsPlural>
     <fixedName>Realm Dahab</fixedName>
-    <allowedCultures>
-      <li>SFE_RealmDahab</li>
-    </allowedCultures>
     <factionIconPath>WorldObjects/Sultanat_c</factionIconPath>
     <colorSpectrum>
       <li>(1, 0.97, 0.56)</li>

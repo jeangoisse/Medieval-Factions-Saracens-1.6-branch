@@ -5,7 +5,7 @@
         <backstoryCategories>
             <li>Tribal</li>
         </backstoryCategories>
-        <defaultFactionType>Pirate</defaultFactionType>
+        <defaultFactionType>SFE_HolyTanwir</defaultFactionType>
         <maxGenerationAge>70</maxGenerationAge>
         <invNutrition>2.55</invNutrition>
         <invFoodDef>DankPyon_MealRations</invFoodDef>
@@ -16,11 +16,11 @@
         <apparelRequired>
             <li>DankPyon_Footwear_BootsLeather</li>
         </apparelRequired>
+        <techHediffsChance>0.05</techHediffsChance>
         <techHediffsTags>
             <li>Poor</li>
             <li>Simple</li>
         </techHediffsTags>
-        <techHediffsChance>0.05</techHediffsChance>
     </PawnKindDef>
     <PawnKindDef ParentName="SFE_SaracensPawnKindBase">
         <defName>SFE_Saracens_Peasant</defName>
