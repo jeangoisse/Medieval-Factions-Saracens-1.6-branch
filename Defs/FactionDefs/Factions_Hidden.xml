@@ -40,14 +40,14 @@
                 <kindDef>Combat</kindDef>
                 <commonality>70</commonality>
                 <options>
-                    <SFE_SmallIfrit>18</SFE_SmallIfrit>
-                    <SFE_MediumIfrit>12</SFE_MediumIfrit>
-                    <SFE_LargeIfrit>6</SFE_LargeIfrit>
+                    <SFE_SmallIfrit>24</SFE_SmallIfrit>
+                    <SFE_MediumIfrit>7</SFE_MediumIfrit>
+                    <SFE_LargeIfrit>2</SFE_LargeIfrit>
                 </options>
             </li>
             <li>
                 <kindDef>Combat</kindDef>
-                <commonality>40</commonality>
+                <commonality>10</commonality>
                 <options>
                     <SFE_MediumIfrit>6</SFE_MediumIfrit>
                     <SFE_LargeIfrit>12</SFE_LargeIfrit>
