@@ -34,6 +34,17 @@
     </caravanTraderKinds>
     <pawnGroupMakers>
       <li>
+        <!-- Peaceful -->
+        <kindDef>Peaceful</kindDef>
+        <options>
+          <SFE_Saracens_Peasant>30</SFE_Saracens_Peasant>
+          <SFE_Saracens_Conscript>10</SFE_Saracens_Conscript>
+          <SFE_Saracens_Gunner>10</SFE_Saracens_Gunner>
+          <SFE_Saracens_Footman>6</SFE_Saracens_Footman>
+          <SFE_Saracens_Officer>1.5</SFE_Saracens_Officer>
+        </options>
+      </li>
+      <li>
         <!-- Saracen skirmishes, a mix of ranged and melee fighters -->
         <kindDef>Combat</kindDef>
         <commonality>100</commonality>
@@ -113,6 +124,7 @@
     </xenotypeSet>
     <requiredMemes>
       <li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">FleshPurity</li>
     </requiredMemes>
     <allowedMemes>
       <li MayRequire="Ludeon.RimWorld.Ideology">Proselytizer</li>
