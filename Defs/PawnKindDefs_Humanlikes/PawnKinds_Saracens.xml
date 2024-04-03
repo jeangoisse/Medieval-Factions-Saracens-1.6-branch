@@ -21,6 +21,15 @@
             <li>Poor</li>
             <li>Simple</li>
         </techHediffsTags>
+        <inventoryOptions>
+            <subOptionsTakeAll>
+                <li>
+                    <thingDef>MedicineHerbal</thingDef>
+                    <countRange>1~3</countRange>
+                    <skipChance>0.9</skipChance>
+                </li>
+            </subOptionsTakeAll>
+        </inventoryOptions>
     </PawnKindDef>
     <PawnKindDef ParentName="SFE_SaracensPawnKindBase">
         <defName>SFE_Saracens_Peasant</defName>
@@ -43,6 +52,15 @@
         </weaponTags>
         <initialWillRange>1~2</initialWillRange>
         <initialResistanceRange>3~8</initialResistanceRange>
+        <inventoryOptions>
+            <subOptionsTakeAll>
+                <li>
+                    <thingDef>MedicineHerbal</thingDef>
+                    <countRange>1~3</countRange>
+                    <skipChance>0.9</skipChance>
+                </li>
+            </subOptionsTakeAll>
+        </inventoryOptions>
     </PawnKindDef>
     <PawnKindDef ParentName="SFE_SaracensPawnKindBase">
         <defName>SFE_Saracens_Indebted</defName>

@@ -22,6 +22,15 @@
             <li>Poor</li>
             <li>Simple</li>
         </techHediffsTags>
+        <inventoryOptions>
+            <subOptionsTakeAll>
+                <li>
+                    <thingDef>MedicineHerbal</thingDef>
+                    <countRange>1~3</countRange>
+                    <skipChance>0.9</skipChance>
+                </li>
+            </subOptionsTakeAll>
+        </inventoryOptions>
     </PawnKindDef>
     <PawnKindDef ParentName="SFE_NomadPawnKindBase">
         <defName>SFE_Nomads_Peasant</defName>
