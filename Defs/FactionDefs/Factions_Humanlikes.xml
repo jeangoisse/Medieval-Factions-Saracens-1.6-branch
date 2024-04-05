@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
   <FactionDef ParentName="FactionBase" Name="BaseSaracenFaction" Abstract="true">
-    <label>Saracen</label>
+    <label>Saracens</label>
     <requiredCountAtGameStart>1</requiredCountAtGameStart>
     <configurationListOrderPriority>90</configurationListOrderPriority>
     <displayInFactionSelection>true</displayInFactionSelection>
+    <leaderTitle>sultan</leaderTitle>
     <humanlikeFaction>true</humanlikeFaction>
     <hidden>false</hidden>
     <autoFlee>true</autoFlee>
@@ -149,7 +150,6 @@
   </FactionDef>
   <FactionDef ParentName="BaseSaracenFaction">
     <defName>SFE_GrandKarakan</defName>
-    <label>Grand Karakan</label>
     <pawnSingular>karakan's</pawnSingular>
     <pawnsPlural>karakeans</pawnsPlural>
     <fixedName>Grand Karakan</fixedName>
@@ -160,7 +160,6 @@
   </FactionDef>
   <FactionDef ParentName="BaseSaracenFaction">
     <defName>SFE_HolyTanwir</defName>
-    <label>Holy Tanwir</label>
     <pawnSingular>tanwir's</pawnSingular>
     <pawnsPlural>tanwirians</pawnsPlural>
     <fixedName>Holy Tanwir</fixedName>
@@ -171,7 +170,6 @@
   </FactionDef>
   <FactionDef ParentName="BaseSaracenFaction">
     <defName>SFE_RealmDahab</defName>
-    <label>Realm Dahab</label>
     <pawnSingular>dahab's</pawnSingular>
     <pawnsPlural>dahabeans</pawnsPlural>
     <fixedName>Realm Dahab</fixedName>
@@ -179,5 +177,175 @@
     <colorSpectrum>
       <li>(1, 0.97, 0.56)</li>
     </colorSpectrum>
+  </FactionDef>
+  <FactionDef ParentName="FactionBase" Name="BaseNomadFaction" Abstract="true">
+    <pawnSingular>nomad's</pawnSingular>
+    <pawnsPlural>nomadeans</pawnsPlural>
+    <requiredCountAtGameStart>1</requiredCountAtGameStart>
+    <configurationListOrderPriority>90</configurationListOrderPriority>
+    <humanlikeFaction>true</humanlikeFaction>
+    <autoFlee>true</autoFlee>
+    <canUseAvoidGrid>false</canUseAvoidGrid>
+    <techLevel>Medieval</techLevel>
+    <leaderTitle>grand nomad</leaderTitle>
+    <categoryTag>Nomad</categoryTag>
+    <allowedArrivalTemperatureRange>20~60</allowedArrivalTemperatureRange>
+    <factionNameMaker>NamerFactionOutlander</factionNameMaker>
+    <settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
+    <factionIconPath>WorldObjects/Nomads</factionIconPath>
+    <hidden>true</hidden>
+    <maxPawnCostPerTotalPointsCurve>
+      <points>
+        <li>(0,35)</li>
+        <li>(70, 50)</li>
+        <li>(700, 100)</li>
+        <li>(1300, 150)</li>
+        <li>(100000, 10000)</li>
+      </points>
+    </maxPawnCostPerTotalPointsCurve>
+    <caravanTraderKinds>
+      <li>DankPyon_Caravan_Medieval_BulkGoodsMerchant</li>
+      <li>DankPyon_Caravan_Medieval_ArtPatron</li>
+      <li>DankPyon_Caravan_Medieval_Armorsmith</li>
+      <li>DankPyon_Caravan_Medieval_Weaponsmith</li>
+      <li>DankPyon_Caravan_Medieval_RuinsMerchant</li>
+      <li>DankPyon_Caravan_Medieval_Scholar</li>
+    </caravanTraderKinds>
+    <pawnGroupMakers>
+      <li>
+        <!-- Peaceful encounters -->
+        <kindDef>Peaceful</kindDef>
+        <options>
+          <SFE_Nomads_Peasant>30</SFE_Nomads_Peasant>
+          <SFE_Nomads_Slinger>10</SFE_Nomads_Slinger>
+          <SFE_Nomads_Cutthroat>10</SFE_Nomads_Cutthroat>
+          <SFE_Nomads_Leader>0.5</SFE_Nomads_Leader>
+        </options>
+      </li>
+      <li>
+        <!-- Nomad skirmishes, a balance of ranged and melee -->
+        <kindDef>Combat</kindDef>
+        <commonality>100</commonality>
+        <options>
+          <SFE_Nomads_Slinger>10</SFE_Nomads_Slinger>
+          <SFE_Nomads_Cutthroat>10</SFE_Nomads_Cutthroat>
+          <SFE_Nomads_DesertStalker>3</SFE_Nomads_DesertStalker>
+          <SFE_Nomads_BladeDancer>3</SFE_Nomads_BladeDancer>
+          <SFE_Nomads_Executioner>3</SFE_Nomads_Executioner>
+          <SFE_Nomads_Leader>1</SFE_Nomads_Leader>
+        </options>
+      </li>
+      <li>
+        <!-- Ranged confrontations -->
+        <kindDef>Combat</kindDef>
+        <commonality>60</commonality>
+        <options>
+          <SFE_Nomads_Slinger>20</SFE_Nomads_Slinger>
+          <SFE_Nomads_DesertStalker>10</SFE_Nomads_DesertStalker>
+          <SFE_Nomads_Leader>3</SFE_Nomads_Leader>
+        </options>
+      </li>
+      <li>
+        <!-- Melee confrontations -->
+        <kindDef>Combat</kindDef>
+        <commonality>60</commonality>
+        <options>
+          <SFE_Nomads_DesertStalker>6</SFE_Nomads_DesertStalker>
+          <SFE_Nomads_BladeDancer>6</SFE_Nomads_BladeDancer>
+          <SFE_Nomads_Executioner>6</SFE_Nomads_Executioner>
+          <SFE_Nomads_Leader>3</SFE_Nomads_Leader>
+        </options>
+      </li>
+      <li>
+        <!-- Nomad caravans -->
+        <kindDef>Trader</kindDef>
+        <traders>
+          <SFE_Nomads_Peasant>1</SFE_Nomads_Peasant>
+        </traders>
+        <carriers>
+          <Muffalo>6</Muffalo>
+          <Dromedary>5</Dromedary>
+          <Alpaca>2.5</Alpaca>
+          <Elephant>2</Elephant>
+        </carriers>
+        <guards>
+          <SFE_Nomads_Slinger>10</SFE_Nomads_Slinger>
+          <SFE_Nomads_Cutthroat>10</SFE_Nomads_Cutthroat>
+          <SFE_Nomads_DesertStalker>2</SFE_Nomads_DesertStalker>
+        </guards>
+      </li>
+      <li>
+        <!-- Nomad settlements -->
+        <kindDef>Settlement</kindDef>
+        <options>
+          <SFE_Nomads_Peasant>30</SFE_Nomads_Peasant>
+          <SFE_Nomads_Slinger>10</SFE_Nomads_Slinger>
+          <SFE_Nomads_Cutthroat>10</SFE_Nomads_Cutthroat>
+          <SFE_Nomads_BladeDancer>3</SFE_Nomads_BladeDancer>
+          <SFE_Nomads_Executioner>3</SFE_Nomads_Executioner>
+          <SFE_Nomads_Leader>1</SFE_Nomads_Leader>
+        </options>
+      </li>
+      <li>
+        <!-- Settlements, ranged defenders -->
+        <kindDef>Settlement_RangedOnly</kindDef>
+        <options>
+          <SFE_Nomads_Slinger>30</SFE_Nomads_Slinger>
+          <SFE_Nomads_DesertStalker>10</SFE_Nomads_DesertStalker>
+        </options>
+      </li>
+    </pawnGroupMakers>
+    <canStageAttacks>true</canStageAttacks>
+    <xenotypeSet>
+      <xenotypeChances>
+        <Neanderthal MayRequire="Ludeon.RimWorld.Biotech">0.075</Neanderthal>
+        <Impid MayRequire="Ludeon.RimWorld.Biotech">0.15</Impid>
+      </xenotypeChances>
+    </xenotypeSet>
+    <allowedMemes>
+      <li MayRequire="Ludeon.RimWorld.Ideology">FleshPurity</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Proselytizer</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">MaleSupremacy</li>
+    </allowedMemes>
+    <structureMemeWeights>
+      <Structure_OriginIslamic MayRequire="Ludeon.RimWorld.Ideology">1</Structure_OriginIslamic>
+    </structureMemeWeights>
+    <backstoryFilters>
+      <li>
+        <categories>
+          <li>Tribal</li>
+          <li>Medieval</li>
+        </categories>
+      </li>
+    </backstoryFilters>
+    <allowedCultures>
+      <li>DankPyon_Desert</li>
+    </allowedCultures>
+    <maxConfigurableAtWorldCreation>1</maxConfigurableAtWorldCreation>
+  </FactionDef>
+  <FactionDef ParentName="BaseNomadFaction">
+    <defName>SFE_Nomads</defName>
+    <label>Nomads</label>
+    <fixedName>Nomads</fixedName>
+    <colorSpectrum>
+      <li>(1, 0.97, 0.56)</li>
+    </colorSpectrum>
+    <hostileToFactionlessHumanlikes>false</hostileToFactionlessHumanlikes>
+    <requiredMemes>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Rancher</li>
+    </requiredMemes>
+  </FactionDef>
+  <FactionDef ParentName="BaseNomadFaction">
+    <defName>SFE_DesertRaiders</defName>
+    <label>Desert Raiders</label>
+    <fixedName>Desert Raiders</fixedName>
+    <colorSpectrum>
+      <li>(0.91, 0.13, 0.13)</li>
+    </colorSpectrum>
+    <hostileToFactionlessHumanlikes>true</hostileToFactionlessHumanlikes>
+    <permanentEnemy>true</permanentEnemy>
+    <requiredMemes>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Raider</li>
+    </requiredMemes>
   </FactionDef>
 </Defs>
