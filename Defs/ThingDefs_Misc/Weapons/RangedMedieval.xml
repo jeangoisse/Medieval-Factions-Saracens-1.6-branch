@@ -14,7 +14,7 @@
             <li>MedievalRanged</li>
         </weaponTags>
     </ThingDef>
-    <ThingDef ParentName="BaseBullet">
+    <!-- <ThingDef ParentName="BaseBullet">
         <defName>SFE_Bullet_WhipEdge</defName>
         <label>whip</label>
         <graphicData>
@@ -99,7 +99,7 @@
                 <usableWithShields>true</usableWithShields>
             </li>
         </modExtensions>
-    </ThingDef>
+    </ThingDef> -->
     <ThingDef ParentName="BaseBullet">
         <defName>SFE_Bullet_SlingRock</defName>
         <label>rock</label>
@@ -181,7 +181,7 @@
             </li>
         </modExtensions>
     </ThingDef>
-    <ThingDef ParentName="BaseBullet">
+    <!-- <ThingDef ParentName="BaseBullet">
         <defName>SFE_Bullet_Bolas</defName>
         <label>bolas</label>
         <graphicData>
@@ -342,5 +342,5 @@
                 <usableWithShields>true</usableWithShields>
             </li>
         </modExtensions>
-    </ThingDef>
+    </ThingDef> -->
 </Defs>
