@@ -25,4 +25,20 @@
         <burnableByRecipe>false</burnableByRecipe>
         <allowedArchonexusCount>80</allowedArchonexusCount>
     </ThingDef>
+
+    <ThingDef ParentName="DankPyon_HideBaseLarge">
+        <defName>SFE_Hide_Leopard</defName>
+        <label>large leopard pelt</label>
+        <graphicData>
+            <texPath>Resources/LeatherLeopard</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <statBases>
+            <MarketValue>75.6</MarketValue>
+            <Mass>10.8</Mass>
+        </statBases>
+        <butcherProducts Inherit="False">
+            <Leather_Plain>42</Leather_Plain>
+        </butcherProducts>
+    </ThingDef>
 </Defs>

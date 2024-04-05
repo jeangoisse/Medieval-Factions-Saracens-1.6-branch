@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Defs>
+    <PawnKindDef ParentName="BigCatKindBase">
+        <defName>SFE_Leopard</defName>
+        <label>leopard</label>
+        <race>Cougar</race>
+        <lifeStages>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Animal/Leopard</texPath>
+                    <drawSize>1.1</drawSize>
+                    <color>(177,136,112)</color>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Cougar/Dessicated_Cougar</texPath>
+                    <drawSize>1.1</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Animal/Leopard</texPath>
+                    <drawSize>1.4</drawSize>
+                    <color>(177,136,112)</color>
+                    <shadowData>
+                        <volume>(0.3, 0.3, 0.3)</volume>
+                        <offset>(0,0,-0.3)</offset>
+                    </shadowData>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Cougar/Dessicated_Cougar</texPath>
+                    <drawSize>1.4</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Animal/Leopard</texPath>
+                    <drawSize>2.18</drawSize>
+                    <color>(177,136,112)</color>
+                    <shadowData>
+                        <volume>(0.4, 0.4, 0.4)</volume>
+                        <offset>(0,0,-0.1)</offset>
+                    </shadowData>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Cougar/Dessicated_Cougar</texPath>
+                    <drawSize>2.18</drawSize>
+                </dessicatedBodyGraphicData>
+                <butcherBodyPart>
+                    <bodyPartGroup>HeadAttackTool</bodyPartGroup>
+                    <thing>SFE_Hide_Leopard</thing>
+                    <allowFemale>true</allowFemale>
+                </butcherBodyPart>
+            </li>
+        </lifeStages>
+    </PawnKindDef>
+</Defs>
