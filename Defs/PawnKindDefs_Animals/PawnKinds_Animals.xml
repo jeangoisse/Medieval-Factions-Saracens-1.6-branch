@@ -45,11 +45,6 @@
                     <texPath>Things/Pawn/Animal/Cougar/Dessicated_Cougar</texPath>
                     <drawSize>2.18</drawSize>
                 </dessicatedBodyGraphicData>
-                <butcherBodyPart>
-                    <bodyPartGroup>HeadAttackTool</bodyPartGroup>
-                    <thing>SFE_Hide_Leopard</thing>
-                    <allowFemale>true</allowFemale>
-                </butcherBodyPart>
             </li>
         </lifeStages>
     </PawnKindDef>

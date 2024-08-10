@@ -26,7 +26,7 @@
         <allowedArchonexusCount>80</allowedArchonexusCount>
     </ThingDef>
 
-    <ThingDef ParentName="DankPyon_HideBaseLarge">
+    <!-- <ThingDef ParentName="DankPyon_Hide_HideLarge">
         <defName>SFE_Hide_Leopard</defName>
         <label>large leopard pelt</label>
         <graphicData>
@@ -40,5 +40,5 @@
         <butcherProducts Inherit="False">
             <Leather_Plain>42</Leather_Plain>
         </butcherProducts>
-    </ThingDef>
+    </ThingDef> -->
 </Defs>

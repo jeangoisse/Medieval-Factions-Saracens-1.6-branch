@@ -26,7 +26,9 @@
             <thinkTreeConstant>SFE_IfritConstant</thinkTreeConstant>
             <fleshType>DankPyon_Schrat</fleshType>
             <body>SFE_IfritBody</body>
-            <deathActionWorkerClass>Saracens.ActionWorkers.DeathActionWorker_NoCorpseAndLoot</deathActionWorkerClass>
+            <deathAction>
+              <workerClass>Saracens.ActionWorkers.DeathActionWorker_NoCorpseButLoot</workerClass>
+            </deathAction>
             <needsRest>false</needsRest>
             <hasGenders>false</hasGenders>
             <foodType>None</foodType>
