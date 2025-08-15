@@ -9,6 +9,7 @@
                 <!-- add vanilla workbenches -->
             </recipeUsers>
         </recipeMaker>
+        <tradeability>Sellable</tradeability>        
         <techLevel>Medieval</techLevel>        
         <thingCategories>
             <li>Apparel</li>
@@ -197,7 +198,7 @@
             <Mass>5</Mass>
             <ArmorRating_Sharp>0.31</ArmorRating_Sharp> <!-- about 50% metallic flat armor value -->
             <ArmorRating_Blunt>0.14</ArmorRating_Blunt>
-            <ArmorRating_Heat>1.25</ArmorRating_Heat>
+            <Insulation_Heat>3</Insulation_Heat>
             <EquipDelay>12</EquipDelay> <!-- MO Lamellar = 10 -->
         </statBases>
         <apparel>

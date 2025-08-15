@@ -39,6 +39,7 @@
             </defaultOutfitTags>
             <canBeDesiredForIdeo>true</canBeDesiredForIdeo>
         </apparel>
+        <tradeability>Sellable</tradeability>        
     </ThingDef>
 
     <!-- Desert Outfit -->
