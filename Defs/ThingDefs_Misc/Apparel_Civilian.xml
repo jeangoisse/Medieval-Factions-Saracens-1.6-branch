@@ -5,6 +5,7 @@
 
     Todo :
 
+    - research prereq
     - Beauty factor
     - Flammability 
     - ThingCategorie separated from MO for southern apparels ?
@@ -278,7 +279,7 @@
                 <Crafting>0</Crafting>
             </skillRequirements>
         </recipeMaker>
-        <costStuffCount>20</costStuffCount>
+        <costStuffCount>20</costStuffCount> 
         <statBases>
             <MaxHitPoints>20</MaxHitPoints> 
             <WorkToMake>1200</WorkToMake> 

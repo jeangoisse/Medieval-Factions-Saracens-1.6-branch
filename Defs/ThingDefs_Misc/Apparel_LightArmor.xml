@@ -1,17 +1,15 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-    <ThingDef ParentName="ApparelMakeableBase" Name="SFE_ClothesBase" Abstract="true">
+    <ThingDef ParentName="ApparelMakeableBase" Name="MFS_LightArmorBase" Abstract="true">
         <recipeMaker>
             <researchPrerequisite>DankPyon_Tailoring</researchPrerequisite>
             <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
             <recipeUsers>
                 <li>DankPyon_TailorsBench</li>
+                <!-- add vanilla workbenches -->
             </recipeUsers>
         </recipeMaker>
-        <stuffCategories>
-            <li>Fabric</li>
-            <li>Leathery</li>
-        </stuffCategories>
+        <techLevel>Medieval</techLevel>        
         <thingCategories>
             <li>Apparel</li>
         </thingCategories>
@@ -20,188 +18,187 @@
                 <li>Worker</li>
                 <li>Soldier</li>
             </defaultOutfitTags>
-            <canBeDesiredForIdeo>true</canBeDesiredForIdeo>
+        <canBeDesiredForIdeo>true</canBeDesiredForIdeo>
         </apparel>
     </ThingDef>
-    <ThingDef ParentName="SFE_ClothesBase">
-        <defName>SFE_Apparel_NomadRobe</defName>
-        <label>nomad robe</label>
-        <description>The Nomad's two-layer robe provides full body coverage and protection from the sun, as well as some types of cutting and blunt damage.</description>
-        <graphicData>
-            <texPath>Apparel/Armor/LightArmor/NomadRobe/Nomad_Robe</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
-            <maskPath>Apparel/Armor/LightArmor/NomadRobe/Nomad_Robe_m</maskPath>
-            <shaderType>CutoutComplex</shaderType>
-            <color>(94, 96, 103)</color>
-        </graphicData>
-        <costStuffCount>80</costStuffCount>
-        <recipeMaker>
-            <skillRequirements>
-                <Crafting>2</Crafting>
-            </skillRequirements>
-        </recipeMaker>
-        <statBases>
-            <Flammability>1.5</Flammability>
-            <MaxHitPoints>130</MaxHitPoints>
-            <WorkToMake>60</WorkToMake>
-            <Mass>1</Mass>
-            <StuffEffectMultiplierArmor>0.25</StuffEffectMultiplierArmor>
-            <StuffEffectMultiplierInsulation_Cold>0.6</StuffEffectMultiplierInsulation_Cold>
-            <StuffEffectMultiplierInsulation_Heat>0.5</StuffEffectMultiplierInsulation_Heat>
-            <EquipDelay>1</EquipDelay>
-        </statBases>
-        <apparel>
-            <bodyPartGroups>
-                <li>Torso</li>
-                <li>Shoulders</li>
-                <li>Arms</li>
-                <li>Legs</li>
-            </bodyPartGroups>
-            <wornGraphicPath>Apparel/Armor/LightArmor/NomadRobe/Nomad_Robe</wornGraphicPath>
-            <useWornGraphicMask>true</useWornGraphicMask>
-            <layers>
-                <li>OnSkin</li>
-                <li>Middle</li>
-            </layers>
-            <tags>
-                <li>SFE_NomadSlinger</li>
 
-                <li>MedievalBasic</li>
-            </tags>
-        </apparel>
-    </ThingDef>
-    <ThingDef ParentName="SFE_ClothesBase">
-        <defName>SFE_Apparel_PaddedVest</defName>
-        <label>padded vest</label>
-        <description>Padded vest, worn over light clothing. The most common solution in the south for basic self-defense.</description>
+    <!-- Cloth Sash -->
+
+    <ThingDef ParentName="MFS_LightArmorBase">
+        <defName>MFS_ClothSash</defName>
+        <label>cloth sash</label>
+        <description>A double sash made from thick cloth that is worn across the body.\nA double layer sash made from thicker layers of clothing in order to protect the body not just from the sun but from blows of an enemy as well. Practical for those who wander the desert.</description>
         <graphicData>
-            <texPath>Apparel/Armor/LightArmor/PaddedVest/Padded_Vest</texPath>
+            <texPath>Apparel/Armor/LightArmor/Cloth_Sash/Cloth_Sash</texPath>
             <graphicClass>Graphic_Single</graphicClass>
-            <maskPath>Apparel/Armor/LightArmor/PaddedVest/Padded_Vest_m</maskPath>
-            <shaderType>CutoutComplex</shaderType>
-            <color>(94, 96, 103)</color>
         </graphicData>
-        <costStuffCount>105</costStuffCount>
         <recipeMaker>
             <skillRequirements>
                 <Crafting>4</Crafting>
             </skillRequirements>
         </recipeMaker>
+        <costStuffCount>100</costStuffCount> <!-- 75 ? -->
+        <stuffCategories>
+            <li>Fabric</li>
+        </stuffCategories>
         <statBases>
-            <Flammability>1</Flammability>
-            <MaxHitPoints>170</MaxHitPoints>
-            <WorkToMake>215</WorkToMake>
-            <Mass>4</Mass>
-            <StuffEffectMultiplierArmor>0.25</StuffEffectMultiplierArmor>
-            <StuffEffectMultiplierInsulation_Cold>0.2</StuffEffectMultiplierInsulation_Cold>
-            <StuffEffectMultiplierInsulation_Heat>0.3</StuffEffectMultiplierInsulation_Heat>
-            <EquipDelay>5</EquipDelay>
+            <MaxHitPoints>150</MaxHitPoints> <!-- 100 -->
+            <WorkToMake>7400</WorkToMake>
+            <Mass>2</Mass>
+            <StuffEffectMultiplierArmor>0.3</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>0.6</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0.5</StuffEffectMultiplierInsulation_Heat>
+            <EquipDelay>6</EquipDelay>
         </statBases>
         <apparel>
             <bodyPartGroups>
+                <li>Neck</li>
                 <li>Torso</li>
+                <li>Arms</li>
+                <li>Shoulders</li>
+                <li>Legs</li>
             </bodyPartGroups>
-            <wornGraphicPath>Apparel/Armor/LightArmor/PaddedVest/Padded_Vest</wornGraphicPath>
-            <useWornGraphicMask>true</useWornGraphicMask>
-            <layers>
-                <li>OnSkin</li>
-                <li>Middle</li>
-            </layers>
+            <wornGraphicPath>Apparel/Armor/LightArmor/Cloth_Sash/Cloth_Sash</wornGraphicPath>
             <tags>
-                <li>SFE_Conscript</li>
-                <li>SFE_Gunner</li>
-
-                <li>MedievalBasic</li>
+                <li>MFS_LightArmor</li>
             </tags>
+            <layers>
+                <li>Middle</li>
+                <li>Shell</li>
+            </layers>
         </apparel>
+        <colorGenerator Class="ColorGenerator_StandardApparel"/>
     </ThingDef>
-    <ThingDef ParentName="SFE_ClothesBase">
-        <defName>SFE_Apparel_LeatherNomadRobe</defName>
-        <label>leather nomad robe</label>
-        <description>This rough robe made of pieces of leather does not require high craft skills, as well as manufacturing time. Light fabric clothing is put on under it so that this leather armor does not rub the body.</description>
+
+    <!-- Leather Robe  -->
+
+    <ThingDef ParentName="MFS_LightArmorBase">
+        <defName>MFS_LeatherRobe</defName>
+        <label>cloth sash</label>
+        <description>This patchwork of leather robe requires not a lot of time or skill to put together, but provides some amount of protection. A thin layer of fabric is sometimes sewn inside it so the stitching and the leather do not rub against the skin.</description>
         <graphicData>
-            <texPath>Apparel/Armor/LightArmor/LeatherNomadRobe/Leather_Nomad_Robe</texPath>
+            <texPath>Apparel/Armor/LightArmor/Leather_Robe/Leather_Robe</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
-        <costStuffCount>85</costStuffCount>
-        <stuffCategories Inherit="false">
-            <li>Leathery</li>
-        </stuffCategories>
         <recipeMaker>
             <skillRequirements>
                 <Crafting>3</Crafting>
             </skillRequirements>
         </recipeMaker>
+        <costStuffCount>75</costStuffCount> 
+        <stuffCategories>
+            <li>Leathery</li>
+        </stuffCategories>
         <statBases>
-            <Flammability>0.6</Flammability>
-            <MaxHitPoints>160</MaxHitPoints>
-            <WorkToMake>150</WorkToMake>
-            <Mass>5.7</Mass>
-            <StuffEffectMultiplierArmor>0.42</StuffEffectMultiplierArmor>
-            <StuffEffectMultiplierInsulation_Cold>0.8</StuffEffectMultiplierInsulation_Cold>
-            <StuffEffectMultiplierInsulation_Heat>0.35</StuffEffectMultiplierInsulation_Heat>
-            <EquipDelay>8</EquipDelay>
+            <MaxHitPoints>120</MaxHitPoints> <!-- 100-120 -->
+            <WorkToMake>10000</WorkToMake>
+            <Mass>2.5</Mass>
+            <StuffEffectMultiplierArmor>0.47</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>0.3</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0.2</StuffEffectMultiplierInsulation_Heat>
+            <EquipDelay>6</EquipDelay>
         </statBases>
         <apparel>
             <bodyPartGroups>
-                <li>Arms</li>
+                <li>Neck</li>
                 <li>Torso</li>
+                <li>Arms</li>
                 <li>Shoulders</li>
                 <li>Legs</li>
             </bodyPartGroups>
-            <wornGraphicPath>Apparel/Armor/LightArmor/LeatherNomadRobe/Leather_Nomad_Robe</wornGraphicPath>
-            <useWornGraphicMask>false</useWornGraphicMask>
+            <wornGraphicPath>Apparel/Armor/LightArmor/Leather_Robe/Leather_Robe</wornGraphicPath>
+            <tags>
+                <li>MFS_LightArmor</li>
+            </tags>
             <layers>
-                <li>OnSkin</li>
                 <li>Middle</li>
             </layers>
-            <tags>
-                <li>SFE_NomadSlinger</li>
-                <li>SFE_Cutthroat</li>
-                
-                <li>MedievalBasic</li>
-            </tags>
         </apparel>
+        <colorGenerator Class="ColorGenerator_StandardApparel"/>
     </ThingDef>
-    <ThingDef ParentName="SFE_ClothesBase" Name="SFE_LightArmorBase" Abstract="true">
-        <recipeMaker>
-            <researchPrerequisite>DankPyon_ProtectiveClothing</researchPrerequisite>
-        </recipeMaker>
-        <stuffCategories Inherit="false">
-            <li>Leathery</li>
-        </stuffCategories>
-        <apparel>
-            <defaultOutfitTags Inherit="false">
-                <li>Soldier</li>
-            </defaultOutfitTags>
-            <canBeDesiredForIdeo>false</canBeDesiredForIdeo>
-        </apparel>
-    </ThingDef>
-    <ThingDef ParentName="SFE_LightArmorBase">
-        <defName>SFE_Apparel_Linothorax</defName>
-        <label>linothorax</label>
-        <description>The linothorax, worn over any clothing, provides a high degree of protection against any type of damage, despite the fact that it is made of fabric. At the same time, it protects only vital organs.</description>
+
+    <!-- Light Gladiator Armor  -->
+
+   <ThingDef ParentName="MFS_LightArmorBase">
+        <defName>MFS_LightGladiatorArmor</defName>
+        <label>light gladiator armor</label>
+        <description>Warriors of the southern arenas often fight in lighter armor for its agility, to show off their well-muscled bodies to intimidate enemies and to entertain the masses with bloodshed. Thus this armor is made of straps and thick fabric padding for local protection.</description>
         <graphicData>
-            <texPath>Apparel/Armor/LightArmor/Linothorax/Linothorax</texPath>
+            <texPath>Apparel/Armor/LightArmor/Light_Gladiator_Armor/Light_Gladiator_Armor</texPath>
             <graphicClass>Graphic_Single</graphicClass>
-            <maskPath>Apparel/Armor/LightArmor/Linothorax/Linothorax_m</maskPath>
-            <shaderType>CutoutComplex</shaderType>
-            <color>(94, 96, 103)</color>
+            <shaderType>CutoutComplex</shaderType>        
         </graphicData>
-        <costStuffCount>140</costStuffCount>
         <recipeMaker>
             <skillRequirements>
                 <Crafting>5</Crafting>
             </skillRequirements>
         </recipeMaker>
+        <costStuffCount>50</costStuffCount> 
+        <stuffCategories>
+            <li>Fabric</li>
+        </stuffCategories>
+        <costList>
+            <Leather_Heavy>10</Leather_Heavy>
+        </costList>
         <statBases>
-            <Flammability>1</Flammability>
-            <MaxHitPoints>220</MaxHitPoints>
-            <WorkToMake>340</WorkToMake>
-            <Mass>7</Mass>
-            <StuffEffectMultiplierArmor>0.55</StuffEffectMultiplierArmor>
-            <StuffEffectMultiplierInsulation_Heat>0.2</StuffEffectMultiplierInsulation_Heat>
-            <EquipDelay>12</EquipDelay>
+            <MaxHitPoints>125</MaxHitPoints> 
+            <WorkToMake>10800</WorkToMake>
+            <Mass>3</Mass>
+            <StuffEffectMultiplierArmor>0.5</StuffEffectMultiplierArmor>
+<!--             <StuffEffectMultiplierInsulation_Cold>0.3</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0.2</StuffEffectMultiplierInsulation_Heat> no insulation on the miro -->
+            <EquipDelay>1.5</EquipDelay> 
+        </statBases>
+        <equippedStatOffsets>
+            <MoveSpeed>0.5</MoveSpeed>
+            <MeleeDodgeChance>0.5</MeleeDodgeChance>
+        </equippedStatOffsets>
+        <apparel>
+            <bodyPartGroups>
+                <li>Neck</li>
+                <li>Torso</li>
+                <li>Arms</li>
+                <li>Shoulders</li>
+                <li>Legs</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Apparel/Armor/LightArmor/Light_Gladiator_Armor/Light_Gladiator_Armor</wornGraphicPath>
+            <tags>
+                <li>MFS_LightArmor</li>
+            </tags>
+            <layers>
+                <li>Middle</li>
+                <li>Shell</li>
+            </layers>
+        </apparel>
+        <!-- <colorGenerator Class="ColorGenerator_StandardApparel"/> -->
+    </ThingDef>
+
+   <!-- Linothorax  -->
+
+   <ThingDef ParentName="MFS_LightArmorBase">
+        <defName>MFS_Linothorax</defName>
+        <label>linothorax</label>
+        <description>Despite being made out of fabric, linothorax provide a high degree of protection. Its light nature means it can be worn over most clothing, and it does not weigh down the wearer. However, it only covers the vital organs of the body.</description>
+        <graphicData>
+            <texPath>Apparel/Armor/LightArmor/Linothorax/Linothorax</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <recipeMaker>
+            <skillRequirements>
+                <Crafting>4</Crafting>
+            </skillRequirements>
+        </recipeMaker>
+        <costList>
+            <DankPyon_Linen>70</DankPyon_Linen>
+        </costList> 
+        <statBases>
+            <MaxHitPoints>200</MaxHitPoints> 
+            <WorkToMake>15000</WorkToMake>
+            <Mass>5</Mass>
+            <ArmorRating_Sharp>0.31</ArmorRating_Sharp> <!-- about 50% metallic flat armor value -->
+            <ArmorRating_Blunt>0.14</ArmorRating_Blunt>
+            <ArmorRating_Heat>1.25</ArmorRating_Heat>
+            <EquipDelay>12</EquipDelay> <!-- MO Lamellar = 10 -->
         </statBases>
         <apparel>
             <bodyPartGroups>
@@ -209,63 +206,113 @@
                 <li>Shoulders</li>
             </bodyPartGroups>
             <wornGraphicPath>Apparel/Armor/LightArmor/Linothorax/Linothorax</wornGraphicPath>
-            <useWornGraphicMask>true</useWornGraphicMask>
+            <tags>
+                <li>MFS_LightArmor</li>
+            </tags>
             <layers>
                 <li>Shell</li>
             </layers>
-            <tags>
-                <li>SFE_Conscript</li>
-                <li>SFE_Gunner</li>
-
-                <li>MedievalMilitaryBasic</li>
-            </tags>
         </apparel>
+        <colorGenerator Class="ColorGenerator_StandardApparel"/>
     </ThingDef>
-    <ThingDef ParentName="SFE_LightArmorBase">
-        <defName>SFE_Apparel_StitchedNomadArmor</defName>
-        <label>stiched nomad armor</label>
-        <description>This armor is made of two-layer pieces of leather and bonded together. Such armor allows warriors to put on some other light armor on the body.</description>
+
+    <!-- Padded Vest -->
+
+   <ThingDef ParentName="MFS_LightArmorBase">
+        <defName>MFS_PaddedVest</defName>
+        <label>padded vest</label>
+        <description>A thickly vest to wear over clothing. A widespread solution for self-defense in the south. The pockets of air between the padding provide some amount of insulation.</description>
         <graphicData>
-            <texPath>Apparel/Armor/LightArmor/StitchedNomadArmor/Stitched_Nomad_Armor</texPath>
+            <texPath>Apparel/Armor/LightArmor/Padded_Vest/Padded_Vest</texPath>
             <graphicClass>Graphic_Single</graphicClass>
-            <maskPath>Apparel/Armor/LightArmor/StitchedNomadArmor/Stitched_Nomad_Armor_m</maskPath>
-            <shaderType>CutoutComplex</shaderType>
-            <color>(94, 96, 103)</color>
         </graphicData>
-        <costStuffCount>175</costStuffCount>
+        <recipeMaker>
+            <skillRequirements>
+                <Crafting>4</Crafting>
+            </skillRequirements>
+        </recipeMaker>
+        <costStuffCount>70</costStuffCount> 
+        <stuffCategories>
+            <li>Fabric</li>
+        </stuffCategories>
+        <statBases>
+            <MaxHitPoints>150</MaxHitPoints> <!-- 100-120 -->
+            <WorkToMake>10000</WorkToMake>
+            <Mass>3</Mass>
+            <StuffEffectMultiplierArmor>0.3</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>0.2</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0.3</StuffEffectMultiplierInsulation_Heat>
+            <EquipDelay>5</EquipDelay>
+        </statBases>
+        <apparel>
+            <bodyPartGroups>
+                <li>Torso</li>
+                <li>Arms</li>
+                <li>Shoulders</li>
+                <li>Legs</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Apparel/Armor/LightArmor/Padded_Vest/Padded_Vest</wornGraphicPath>
+            <tags>
+                <li>MFS_LightArmor</li>
+            </tags>
+            <layers>
+                <li>Middle</li>
+            </layers>
+        </apparel>
+        <colorGenerator Class="ColorGenerator_StandardApparel"/>
+    </ThingDef>
+
+    <!-- Stitched Armor -->
+
+   <ThingDef ParentName="MFS_LightArmorBase">
+        <defName>MFS_StitchedArmor</defName>
+        <label>stiched armor</label>
+        <description>Made of leather strips sewn together, this armor allows the wearer to wear some lighter armor underneath.</description>
+        <graphicData>
+            <texPath>Apparel/Armor/LightArmor/Stitched_Armor/Stitched_Armor</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>            
+        </graphicData>
         <recipeMaker>
             <skillRequirements>
                 <Crafting>6</Crafting>
             </skillRequirements>
         </recipeMaker>
+        <costStuffCount>85</costStuffCount> 
+        <stuffCategories>
+            <li>Leathery</li>
+        </stuffCategories>
         <statBases>
-            <Flammability>0.6</Flammability>
-            <MaxHitPoints>220</MaxHitPoints>
-            <WorkToMake>415</WorkToMake>
+            <MaxHitPoints>250</MaxHitPoints> 
+            <WorkToMake>17400</WorkToMake>
             <Mass>9</Mass>
-            <StuffEffectMultiplierArmor>0.65</StuffEffectMultiplierArmor>
-            <StuffEffectMultiplierInsulation_Heat>0.6</StuffEffectMultiplierInsulation_Heat>
-            <StuffEffectMultiplierInsulation_Cold>1.6</StuffEffectMultiplierInsulation_Cold>
-            <EquipDelay>20</EquipDelay>
+            <StuffEffectMultiplierArmor>0.62</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>0.8</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0.35</StuffEffectMultiplierInsulation_Heat>
+            <EquipDelay>16</EquipDelay> <!-- MO Plate = 15 -->
         </statBases>
         <equippedStatOffsets>
-            <MoveSpeed>-0.3</MoveSpeed>
+            <MoveSpeed>-0.2</MoveSpeed>
         </equippedStatOffsets>
         <apparel>
             <bodyPartGroups>
-                <li>Arms</li>
-                <li>Legs</li>
                 <li>Torso</li>
+                <li>Neck</li>
+                <li>Arms</li>
                 <li>Shoulders</li>
+                <li>Legs</li>
             </bodyPartGroups>
-            <wornGraphicPath>Apparel/Armor/LightArmor/StitchedNomadArmor/Stitched_Nomad_Armor</wornGraphicPath>
-            <useWornGraphicMask>true</useWornGraphicMask>
-            <layers>
-                <li>Shell</li>
-            </layers>
+            <wornGraphicPath>Apparel/Armor/LightArmor/Stitched_Armor/Stitched_Armor</wornGraphicPath>
             <tags>
-                <li>SFE_Cutthroat</li>
+                <li>MFS_LightArmor</li>
             </tags>
+            <layers>
+                <li>Middle</li>
+            </layers>
         </apparel>
+        <colorGenerator Class="ColorGenerator_StandardApparel"/>
     </ThingDef>
+
+
+
 </Defs>
