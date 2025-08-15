@@ -38,6 +38,7 @@
                 <li>Soldier</li>
             </defaultOutfitTags>
             <canBeDesiredForIdeo>true</canBeDesiredForIdeo>
+            <developmentalStageFilter>Child, Adult</developmentalStageFilter>            
         </apparel>
         <tradeability>Sellable</tradeability>        
     </ThingDef>
