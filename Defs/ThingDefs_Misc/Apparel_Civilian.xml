@@ -56,9 +56,6 @@
             </skillRequirements>
         </recipeMaker>
         <costStuffCount>40</costStuffCount>
-        <thingCategories>
-            <li>Apparel</li>
-        </thingCategories>
         <statBases>
             <MaxHitPoints>125</MaxHitPoints>
             <WorkToMake>4500</WorkToMake>
@@ -102,9 +99,6 @@
             </skillRequirements>
         </recipeMaker>
         <costStuffCount>50</costStuffCount>
-        <thingCategories>
-            <li>Apparel</li>
-        </thingCategories>
         <statBases>
             <MaxHitPoints>100</MaxHitPoints>
             <WorkToMake>4500</WorkToMake>
@@ -150,9 +144,6 @@
             </skillRequirements>
         </recipeMaker>
         <costStuffCount>120</costStuffCount>
-        <thingCategories>
-            <li>Apparel</li> <!-- Apparel Noble ? -->
-        </thingCategories>
         <statBases>
             <MaxHitPoints>125</MaxHitPoints>
             <WorkToMake>8500</WorkToMake>
@@ -199,9 +190,6 @@
             </skillRequirements>
         </recipeMaker>
         <costStuffCount>65</costStuffCount>
-        <thingCategories>
-            <li>Apparel</li> <!-- Apparel Noble ? -->
-        </thingCategories>
         <statBases>
             <MaxHitPoints>125</MaxHitPoints>
             <WorkToMake>8500</WorkToMake>
@@ -247,9 +235,6 @@
             </skillRequirements>
         </recipeMaker>
         <costStuffCount>40</costStuffCount>
-        <thingCategories>
-            <li>Apparel</li> <!-- Apparel Noble ? -->
-        </thingCategories>
         <statBases>
             <MaxHitPoints>100</MaxHitPoints> <!-- 80 -->
             <WorkToMake>3000</WorkToMake> 
@@ -293,13 +278,10 @@
                 <Crafting>0</Crafting>
             </skillRequirements>
         </recipeMaker>
-        <costStuffCount>40</costStuffCount>
-        <thingCategories>
-            <li>Apparel</li> 
-        </thingCategories>
+        <costStuffCount>20</costStuffCount>
         <statBases>
             <MaxHitPoints>20</MaxHitPoints> 
-            <WorkToMake>3000</WorkToMake> 
+            <WorkToMake>1200</WorkToMake> 
             <Mass>0.2</Mass>
             <StuffEffectMultiplierArmor>0.05</StuffEffectMultiplierArmor>
             <StuffEffectMultiplierInsulation_Cold>0.1</StuffEffectMultiplierInsulation_Cold>
