@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!-- 
+
+    Todo :
+
+    - Beauty factor
+    - Flammability 
+    - ThingCategorie separated from MO for southern apparels ?
+    - Sale prices / Commonality / Market Value
+
+     -->
+
+    <!-- Base Civilian -->
+
+    <ThingDef ParentName="ApparelMakeableBase" Name="MFS_CvilianBase" Abstract="true">
+        <recipeMaker>
+            <researchPrerequisite>DankPyon_Tailoring</researchPrerequisite>
+            <techLevel>Medieval</techLevel>
+            <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+            <recipeUsers>
+                <li>DankPyon_TailorsBench</li>
+                <!-- add vanilla workbenches in case -->
+            </recipeUsers>
+        </recipeMaker>
+        <stuffCategories>
+            <li>Fabric</li>
+            <li>Leathery</li>
+        </stuffCategories>
+        <thingCategories>
+            <li>Apparel</li>
+        </thingCategories>
+        <apparel>
+            <defaultOutfitTags>
+                <li>Worker</li>
+                <li>Soldier</li>
+            </defaultOutfitTags>
+            <canBeDesiredForIdeo>true</canBeDesiredForIdeo>
+        </apparel>
+    </ThingDef>
+
+    <!-- Desert Outfit -->
+
+    <ThingDef ParentName="MFS_CivilianBase">
+        <defName>MFS_DesertOutfit</defName>
+        <label>desert outfit</label>
+        <description>A vest, a thick cloth belt and some trousers make up a common outfit not just for the city states but for all inhabitants of the desert. It is ideal for long journeys across the wind battered dunes.</description>
+        <graphicData>
+            <texPath>Apparel/Armor/Civilian/Desert_Outfit</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <recipeMaker>
+            <skillRequirements>
+                <Crafting>3</Crafting>
+            </skillRequirements>
+        </recipeMaker>
+        <costStuffCount>40</costStuffCount>
+        <thingCategories>
+            <li>Apparel</li>
+        </thingCategories>
+        <statBases>
+            <MaxHitPoints>125</MaxHitPoints>
+            <WorkToMake>4500</WorkToMake>
+            <Mass>0.8</Mass>
+            <StuffEffectMultiplierArmor>0.15</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>0.3</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0.45</StuffEffectMultiplierInsulation_Heat>
+            <EquipDelay>1.5</EquipDelay>
+        </statBases>
+        <apparel>
+            <bodyPartGroups>
+                <li>Torso</li>
+                <li>Shoulders</li>
+                <li>Arms</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Apparel/Armor/Civilian/Desert_Outfit</wornGraphicPath>
+            <tags>
+                <!-- <li>MedievalBasic</li> -->
+                <li>MFS_CivilianBasic</li>
+            </tags>
+            <layers>
+                <li>Middle</li>
+            </layers>
+        </apparel>
+        <colorGenerator Class="ColorGenerator_StandardApparel"/>
+    </ThingDef>
+
+    <!-- Light Robe -->
+
+    <ThingDef ParentName="MFS_CivilianBase">
+        <defName>MFS_LightRobe</defName>
+        <label>light robe</label>
+        <description>A simple outfit formed by layering folds of fabric and draping them down the shoulders. The many air pockets created this way provide natural insulation both against the blistering heat of the day and the chilling winds of the night.</description>
+        <graphicData>
+            <texPath>Apparel/Armor/Civilian/Light_Robe</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <recipeMaker>
+            <skillRequirements>
+                <Crafting>4</Crafting>
+            </skillRequirements>
+        </recipeMaker>
+        <costStuffCount>50</costStuffCount>
+        <thingCategories>
+            <li>Apparel</li>
+        </thingCategories>
+        <statBases>
+            <MaxHitPoints>100</MaxHitPoints>
+            <WorkToMake>4500</WorkToMake>
+            <Mass>0.8</Mass>
+            <StuffEffectMultiplierArmor>0.15</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>0.5</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0.35</StuffEffectMultiplierInsulation_Heat>
+            <EquipDelay>1.5</EquipDelay>
+        </statBases>
+        <apparel>
+            <bodyPartGroups>
+                <li>Torso</li>
+                <li>Shoulders</li>
+                <li>Arms</li>
+                <li>Legs</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Apparel/Armor/Civilian/Light_Robe</wornGraphicPath>
+            <tags>
+                <!-- <li>MedievalBasic</li> -->
+                <li>MFS_CivilianBasic</li>
+            </tags>
+            <layers>
+                <li>Middle</li>
+                <li>OnSkin</li>
+            </layers>
+        </apparel>
+        <colorGenerator Class="ColorGenerator_StandardApparel"/>
+    </ThingDef>
+
+    <!-- Ornate Robe -->
+
+    <ThingDef ParentName="MFS_CivilianBase">
+        <defName>MFS_OrnateRobe</defName>
+        <label>ornate robe</label>
+        <description>A long flowing robe and a caftan underneath, both decorated with the geometric patterns that are so enmeshed into the city state’s fashion and design. High-ranking viziers and the sultan wear this fashionable and comfortable outfit.</description>
+        <graphicData>
+            <texPath>Apparel/Armor/Civilian/Ornate_Robe</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <recipeMaker>
+            <skillRequirements>
+                <Crafting>6</Crafting>
+            </skillRequirements>
+        </recipeMaker>
+        <costStuffCount>120</costStuffCount>
+        <thingCategories>
+            <li>Apparel</li> <!-- Apparel Noble ? -->
+        </thingCategories>
+        <statBases>
+            <MaxHitPoints>125</MaxHitPoints>
+            <WorkToMake>8500</WorkToMake>
+            <Mass>0.8</Mass>
+            <StuffEffectMultiplierArmor>0.22</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>0.8</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0.7</StuffEffectMultiplierInsulation_Heat>
+            <EquipDelay>8</EquipDelay> 
+        </statBases>
+        <apparel>
+            <bodyPartGroups>
+                <li>Torso</li>
+                <li>Shoulders</li>
+                <li>Neck</li>
+                <li>Arms</li>
+                <li>Legs</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Apparel/Armor/Civilian/Ornate_Robe</wornGraphicPath>
+            <tags>
+                <!-- <li>MedievalBasic</li> -->
+                <li>MFS_CivilianNoble</li>
+            </tags>
+            <layers>
+                <li>Middle</li>
+                <li>Shell</li>
+            </layers>
+        </apparel>
+        <colorGenerator Class="ColorGenerator_StandardApparel"/>
+    </ThingDef>
+
+    <!-- Rich attire -->
+
+    <ThingDef ParentName="MFS_CivilianBase">
+        <defName>MFS_RichAttire</defName>
+        <label>southern rich attire</label>
+        <description>Decorated with geometric patterns, these clothes are fit for wealthy merchants and distinguished citizens of the city states alike. </description>
+        <graphicData>
+            <texPath>Apparel/Armor/Civilian/Rich_Attire</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <recipeMaker>
+            <skillRequirements>
+                <Crafting>6</Crafting>
+            </skillRequirements>
+        </recipeMaker>
+        <costStuffCount>65</costStuffCount>
+        <thingCategories>
+            <li>Apparel</li> <!-- Apparel Noble ? -->
+        </thingCategories>
+        <statBases>
+            <MaxHitPoints>125</MaxHitPoints>
+            <WorkToMake>8500</WorkToMake>
+            <Mass>0.8</Mass>
+            <StuffEffectMultiplierArmor>0.15</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>0.35</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0.2</StuffEffectMultiplierInsulation_Heat>
+            <EquipDelay>2</EquipDelay> 
+        </statBases>
+        <apparel>
+            <bodyPartGroups>
+                <li>Torso</li>
+                <li>Shoulders</li>
+                <li>Arms</li>
+                <li>Legs</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Apparel/Armor/Civilian/Rich_Attire</wornGraphicPath>
+            <tags>
+                <!-- <li>MedievalBasic</li> -->
+                <li>MFS_CivilianNoble</li>
+            </tags>
+            <layers>
+                <!-- <li>Middle</li> -->
+                <li>OnSkin</li>
+            </layers>
+        </apparel>
+        <colorGenerator Class="ColorGenerator_StandardApparel"/>
+    </ThingDef>
+
+    <!-- Southern CLothing -->
+
+    <ThingDef ParentName="MFS_CivilianBase">
+        <defName>MFS_SouthernClothing</defName>
+        <label>southern clothing</label>
+        <description>Recognizable everyday clothing of a city state’s citizen. Its loose and thinly form does not protect the wearer from blows, but at least it covers the body against constant sun exposure.</description>
+        <graphicData>
+            <texPath>Apparel/Armor/Civilian/Southern_CLothing</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <recipeMaker>
+            <skillRequirements>
+                <Crafting>6</Crafting>
+            </skillRequirements>
+        </recipeMaker>
+        <costStuffCount>40</costStuffCount>
+        <thingCategories>
+            <li>Apparel</li> <!-- Apparel Noble ? -->
+        </thingCategories>
+        <statBases>
+            <MaxHitPoints>100</MaxHitPoints> <!-- 80 -->
+            <WorkToMake>3000</WorkToMake> 
+            <Mass>0.4</Mass>
+            <StuffEffectMultiplierArmor>0.15</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>0.35</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0.2</StuffEffectMultiplierInsulation_Heat>
+            <EquipDelay>1</EquipDelay> 
+        </statBases>
+        <apparel>
+            <bodyPartGroups>
+                <li>Torso</li>
+                <li>Shoulders</li>
+                <li>Arms</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Apparel/Armor/Civilian/Southern_CLothing</wornGraphicPath>
+            <tags>
+                <!-- <li>MedievalBasic</li> -->
+                <li>MFS_CivilianBasic</li>
+            </tags>
+            <layers>
+                <!-- <li>Middle</li> -->
+                <li>OnSkin</li>
+            </layers>
+        </apparel>
+        <colorGenerator Class="ColorGenerator_StandardApparel"/>
+    </ThingDef>
+
+    <!-- Sackloth -->
+
+    <ThingDef ParentName="MFS_CivilianBase">
+        <defName>MFS_TatteredSackloth</defName>
+        <label>tattered sackloth</label>
+        <description>Tattered and worn, these rags are often worn by the slaves or the destitute in the southern city states. Barely keeps the scorching sun off the skin.</description>
+        <graphicData>
+            <texPath>Apparel/Armor/Civilian/Tattered_Sackloth</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <recipeMaker>
+            <skillRequirements>
+                <Crafting>0</Crafting>
+            </skillRequirements>
+        </recipeMaker>
+        <costStuffCount>40</costStuffCount>
+        <thingCategories>
+            <li>Apparel</li> 
+        </thingCategories>
+        <statBases>
+            <MaxHitPoints>20</MaxHitPoints> 
+            <WorkToMake>3000</WorkToMake> 
+            <Mass>0.2</Mass>
+            <StuffEffectMultiplierArmor>0.05</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>0.1</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0.05</StuffEffectMultiplierInsulation_Heat>
+            <EquipDelay>1</EquipDelay> 
+        </statBases>
+        <apparel>
+            <bodyPartGroups>
+                <li>Torso</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Apparel/Armor/Civilian/Tattered_Sackloth</wornGraphicPath>
+            <tags>
+                <!-- <li>MedievalBasic</li> -->
+                <li>MFS_CivilianBasic</li>
+            </tags>
+            <layers>
+                <!-- <li>Middle</li> -->
+                <li>OnSkin</li>
+            </layers>
+        </apparel>
+        <colorGenerator Class="ColorGenerator_StandardApparel"/>
+    </ThingDef>
+
+
+</Defs>
