@@ -1,3 +1,4 @@
+
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
@@ -5,6 +6,7 @@
 
     Todo :
 
+    - research prereq
     - Beauty factor
     - Flammability 
     - ThingCategorie separated from MO for southern apparels ?
@@ -37,7 +39,9 @@
                 <li>Soldier</li>
             </defaultOutfitTags>
             <canBeDesiredForIdeo>true</canBeDesiredForIdeo>
+            <developmentalStageFilter>Child, Adult</developmentalStageFilter>            
         </apparel>
+        <tradeability>Sellable</tradeability>        
     </ThingDef>
 
     <!-- Desert Outfit -->
@@ -47,7 +51,7 @@
         <label>desert outfit</label>
         <description>A vest, a thick cloth belt and some trousers make up a common outfit not just for the city states but for all inhabitants of the desert. It is ideal for long journeys across the wind battered dunes.</description>
         <graphicData>
-            <texPath>Apparel/Armor/Civilian/Desert_Outfit</texPath>
+            <texPath>Apparel/Armor/Civilian/Desert_Outfit/Desert_Outfit</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <recipeMaker>
@@ -71,7 +75,7 @@
                 <li>Shoulders</li>
                 <li>Arms</li>
             </bodyPartGroups>
-            <wornGraphicPath>Apparel/Armor/Civilian/Desert_Outfit</wornGraphicPath>
+            <wornGraphicPath>Apparel/Armor/Civilian/Desert_Outfit/Desert_Outfit</wornGraphicPath>
             <tags>
                 <!-- <li>MedievalBasic</li> -->
                 <li>MFS_CivilianBasic</li>
@@ -90,7 +94,7 @@
         <label>light robe</label>
         <description>A simple outfit formed by layering folds of fabric and draping them down the shoulders. The many air pockets created this way provide natural insulation both against the blistering heat of the day and the chilling winds of the night.</description>
         <graphicData>
-            <texPath>Apparel/Armor/Civilian/Light_Robe</texPath>
+            <texPath>Apparel/Armor/Civilian/Light_Robe/Light_Robe</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <recipeMaker>
@@ -115,7 +119,7 @@
                 <li>Arms</li>
                 <li>Legs</li>
             </bodyPartGroups>
-            <wornGraphicPath>Apparel/Armor/Civilian/Light_Robe</wornGraphicPath>
+            <wornGraphicPath>Apparel/Armor/Civilian/Light_Robe/Light_Robe</wornGraphicPath>
             <tags>
                 <!-- <li>MedievalBasic</li> -->
                 <li>MFS_CivilianBasic</li>
@@ -135,7 +139,7 @@
         <label>ornate robe</label>
         <description>A long flowing robe and a caftan underneath, both decorated with the geometric patterns that are so enmeshed into the city state’s fashion and design. High-ranking viziers and the sultan wear this fashionable and comfortable outfit.</description>
         <graphicData>
-            <texPath>Apparel/Armor/Civilian/Ornate_Robe</texPath>
+            <texPath>Apparel/Armor/Civilian/Ornate_Robe/Ornate_Robe</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <recipeMaker>
@@ -161,7 +165,7 @@
                 <li>Arms</li>
                 <li>Legs</li>
             </bodyPartGroups>
-            <wornGraphicPath>Apparel/Armor/Civilian/Ornate_Robe</wornGraphicPath>
+            <wornGraphicPath>Apparel/Armor/Civilian/Ornate_Robe/Ornate_Robe</wornGraphicPath>
             <tags>
                 <!-- <li>MedievalBasic</li> -->
                 <li>MFS_CivilianNoble</li>
@@ -181,7 +185,7 @@
         <label>southern rich attire</label>
         <description>Decorated with geometric patterns, these clothes are fit for wealthy merchants and distinguished citizens of the city states alike. </description>
         <graphicData>
-            <texPath>Apparel/Armor/Civilian/Rich_Attire</texPath>
+            <texPath>Apparel/Armor/Civilian/Rich_Attire/Rich_Attire</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <recipeMaker>
@@ -206,7 +210,7 @@
                 <li>Arms</li>
                 <li>Legs</li>
             </bodyPartGroups>
-            <wornGraphicPath>Apparel/Armor/Civilian/Rich_Attire</wornGraphicPath>
+            <wornGraphicPath>Apparel/Armor/Civilian/Rich_Attire/Rich_Attire</wornGraphicPath>
             <tags>
                 <!-- <li>MedievalBasic</li> -->
                 <li>MFS_CivilianNoble</li>
@@ -226,7 +230,7 @@
         <label>southern clothing</label>
         <description>Recognizable everyday clothing of a city state’s citizen. Its loose and thinly form does not protect the wearer from blows, but at least it covers the body against constant sun exposure.</description>
         <graphicData>
-            <texPath>Apparel/Armor/Civilian/Southern_CLothing</texPath>
+            <texPath>Apparel/Armor/Civilian/Southern_CLothing/Southern_CLothing</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <recipeMaker>
@@ -250,7 +254,7 @@
                 <li>Shoulders</li>
                 <li>Arms</li>
             </bodyPartGroups>
-            <wornGraphicPath>Apparel/Armor/Civilian/Southern_CLothing</wornGraphicPath>
+            <wornGraphicPath>Apparel/Armor/Civilian/Southern_CLothing/Southern_CLothing</wornGraphicPath>
             <tags>
                 <!-- <li>MedievalBasic</li> -->
                 <li>MFS_CivilianBasic</li>
@@ -270,7 +274,7 @@
         <label>tattered sackloth</label>
         <description>Tattered and worn, these rags are often worn by the slaves or the destitute in the southern city states. Barely keeps the scorching sun off the skin.</description>
         <graphicData>
-            <texPath>Apparel/Armor/Civilian/Tattered_Sackloth</texPath>
+            <texPath>Apparel/Armor/Civilian/Tattered_Sackloth/Tattered_Sackloth</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <recipeMaker>
@@ -278,7 +282,7 @@
                 <Crafting>0</Crafting>
             </skillRequirements>
         </recipeMaker>
-        <costStuffCount>20</costStuffCount>
+        <costStuffCount>20</costStuffCount> 
         <statBases>
             <MaxHitPoints>20</MaxHitPoints> 
             <WorkToMake>1200</WorkToMake> 
@@ -292,7 +296,7 @@
             <bodyPartGroups>
                 <li>Torso</li>
             </bodyPartGroups>
-            <wornGraphicPath>Apparel/Armor/Civilian/Tattered_Sackloth</wornGraphicPath>
+            <wornGraphicPath>Apparel/Armor/Civilian/Tattered_Sackloth/Tattered_Sackloth</wornGraphicPath>
             <tags>
                 <!-- <li>MedievalBasic</li> -->
                 <li>MFS_CivilianBasic</li>
