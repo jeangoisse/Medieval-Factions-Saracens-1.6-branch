@@ -1,4 +1,3 @@
-
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
@@ -18,7 +17,7 @@
 
     <ThingDef ParentName="ApparelMakeableBase" Name="MFS_CvilianBase" Abstract="true">
         <recipeMaker>
-            <researchPrerequisite>DankPyon_Tailoring</researchPrerequisite>
+            <!-- <researchPrerequisite>MFS_SouthernTailoring</researchPrerequisite> -->
             <techLevel>Medieval</techLevel>
             <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
             <recipeUsers>
@@ -39,6 +38,7 @@
                 <li>Soldier</li>
             </defaultOutfitTags>
             <canBeDesiredForIdeo>true</canBeDesiredForIdeo>
+            <countsAsClothingForNudity>false</countsAsClothingForNudity>
             <developmentalStageFilter>Child, Adult</developmentalStageFilter>            
         </apparel>
         <tradeability>Sellable</tradeability>        
@@ -55,6 +55,7 @@
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <recipeMaker>
+            <researchPrerequisite>MFS_SouthernTailoring</researchPrerequisite>            
             <skillRequirements>
                 <Crafting>3</Crafting>
             </skillRequirements>
@@ -234,6 +235,7 @@
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <recipeMaker>
+            <researchPrerequisite>MFS_SouthernTailoring</researchPrerequisite>            
             <skillRequirements>
                 <Crafting>6</Crafting>
             </skillRequirements>

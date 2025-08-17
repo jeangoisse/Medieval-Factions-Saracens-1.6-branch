@@ -1,9 +1,8 @@
-
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
     <ThingDef ParentName="ApparelMakeableBase" Name="MFS_LightArmorBase" Abstract="true">
         <recipeMaker>
-            <researchPrerequisite>DankPyon_Tailoring</researchPrerequisite>
+            <!-- <researchPrerequisite>DankPyon_Tailoring</researchPrerequisite> -->
             <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
             <recipeUsers>
                 <li>DankPyon_TailorsBench</li>
@@ -35,6 +34,7 @@
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <recipeMaker>
+            <researchPrerequisite>MFS_SouthernProtectiveArmor</researchPrerequisite>            
             <skillRequirements>
                 <Crafting>4</Crafting>
             </skillRequirements>
@@ -83,6 +83,7 @@
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <recipeMaker>
+            <researchPrerequisite>MFS_SouthernProtectiveArmor</researchPrerequisite>            
             <skillRequirements>
                 <Crafting>3</Crafting>
             </skillRequirements>
@@ -132,6 +133,7 @@
         </graphicData>
         <recipeMaker>
             <skillRequirements>
+            <researchPrerequisite>MFS_SouthernProtectiveArmor</researchPrerequisite>
                 <Crafting>5</Crafting>
             </skillRequirements>
         </recipeMaker>
@@ -186,6 +188,7 @@
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <recipeMaker>
+            <researchPrerequisite>MFS_SouthernProtectiveArmor</researchPrerequisite>            
             <skillRequirements>
                 <Crafting>4</Crafting>
             </skillRequirements>
@@ -229,6 +232,7 @@
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <recipeMaker>
+            <researchPrerequisite>MFS_SouthernProtectiveArmor</researchPrerequisite>            
             <skillRequirements>
                 <Crafting>4</Crafting>
             </skillRequirements>
@@ -276,6 +280,7 @@
             <shaderType>CutoutComplex</shaderType>            
         </graphicData>
         <recipeMaker>
+            <researchPrerequisite>MFS_SouthernProtectiveArmor</researchPrerequisite>            
             <skillRequirements>
                 <Crafting>6</Crafting>
             </skillRequirements>

@@ -5,6 +5,8 @@
 
     to do :
 
+    - trade tags
+    - crafting Skill requirement
     - beauty / deterioration / flammability
     - crafting level harmonization
     - decorative helmet with new layer
@@ -17,7 +19,7 @@
 
     <ThingDef ParentName="HatMakeableBase" Name="MFS_HeadgearHatBase" Abstract="true">
         <recipeMaker>
-            <researchPrerequisite>DankPyon_Tailoring</researchPrerequisite>
+            <!-- <researchPrerequisite>DankPyon_Tailoring</researchPrerequisite> -->
             <techLevel>Medieval</techLevel>
             <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
             <recipeUsers>
@@ -54,6 +56,9 @@
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <generateCommonality>0.4</generateCommonality>
+        <recipeMaker>
+            <researchPrerequisite>MFS_SouthernTailoring</researchPrerequisite>            
+        </recipeMaker>            
         <costStuffCount>35</costStuffCount>
         <stuffCategories>
             <li>Fabric</li>
@@ -128,6 +133,9 @@
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <generateCommonality>0.3</generateCommonality>
+        <recipeMaker>
+            <researchPrerequisite>MFS_SouthernTailoring</researchPrerequisite>            
+        </recipeMaker>         
         <costStuffCount>35</costStuffCount>
         <stuffCategories>
             <li>Fabric</li>
@@ -165,6 +173,9 @@
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <generateCommonality>0.2</generateCommonality>
+        <recipeMaker>
+            <researchPrerequisite>MFS_SouthernTailoring</researchPrerequisite>            
+        </recipeMaker>         
         <costStuffCount>40</costStuffCount>
         <stuffCategories>
             <li>Fabric</li>
@@ -203,6 +214,9 @@
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <generateCommonality>0.3</generateCommonality>
+        <recipeMaker>
+            <researchPrerequisite>MFS_SouthernTailoring</researchPrerequisite>            
+        </recipeMaker>         
         <costStuffCount>30</costStuffCount>
         <stuffCategories>
             <li>Fabric</li>
@@ -241,6 +255,9 @@
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <!-- <generateCommonality>0.1</generateCommonality> -->
+        <recipeMaker>
+            <researchPrerequisite>MFS_SouthernProtectiveArmor</researchPrerequisite>            
+        </recipeMaker>           
         <costStuffCount>50</costStuffCount>
         <stuffCategories>
             <li>Fabric</li>
@@ -278,6 +295,9 @@
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <generateCommonality>0.2</generateCommonality>
+        <recipeMaker>
+            <researchPrerequisite>MFS_SouthernProtectiveArmor</researchPrerequisite>            
+        </recipeMaker>         
         <costStuffCount>35</costStuffCount>
         <stuffCategories>
             <li>Leathery</li>
@@ -314,7 +334,10 @@
             <texPath>Apparel/Headgear/GunnersHat/GunnersHat</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
-        <!-- <generateCommonality>0.4</generateCommonality> -->
+        <generateCommonality>0.2</generateCommonality>
+        <recipeMaker>
+            <researchPrerequisite>MFS_SouthernProtectiveArmor</researchPrerequisite>            
+        </recipeMaker>         
         <costStuffCount>30</costStuffCount>
         <stuffCategories>
             <li>Fabric</li>
