@@ -382,6 +382,9 @@
         </graphicData>
         <!-- <generateCommonality>0.4</generateCommonality> -->
         <costStuffCount>40</costStuffCount>
+        <recipeMaker>
+            <researchPrerequisite MayRequire="Ludeon.RimWorld.Royalty">NobleApparel</researchPrerequisite>            
+        </recipeMaker>           
         <stuffCategories>
             <li>Fabric</li>
         </stuffCategories>
