@@ -57,7 +57,10 @@
         </graphicData>
         <generateCommonality>0.4</generateCommonality>
         <recipeMaker>
-            <researchPrerequisite>MFS_SouthernTailoring</researchPrerequisite>            
+            <researchPrerequisite>MFS_SouthernTailoring</researchPrerequisite>
+            <skillRequirements>
+                <Crafting>2</Crafting>
+            </skillRequirements>       
         </recipeMaker>            
         <costStuffCount>35</costStuffCount>
         <stuffCategories>
@@ -134,7 +137,10 @@
         </graphicData>
         <generateCommonality>0.3</generateCommonality>
         <recipeMaker>
-            <researchPrerequisite>MFS_SouthernTailoring</researchPrerequisite>            
+            <researchPrerequisite>MFS_SouthernTailoring</researchPrerequisite>
+            <skillRequirements>
+                <Crafting>2</Crafting>
+            </skillRequirements>                     
         </recipeMaker>         
         <costStuffCount>35</costStuffCount>
         <stuffCategories>
@@ -174,7 +180,10 @@
         </graphicData>
         <generateCommonality>0.2</generateCommonality>
         <recipeMaker>
-            <researchPrerequisite>MFS_SouthernTailoring</researchPrerequisite>            
+            <researchPrerequisite>MFS_SouthernTailoring</researchPrerequisite>
+            <skillRequirements>
+                <Crafting>3</Crafting>
+            </skillRequirements>                        
         </recipeMaker>         
         <costStuffCount>40</costStuffCount>
         <stuffCategories>
@@ -256,7 +265,10 @@
         </graphicData>
         <!-- <generateCommonality>0.1</generateCommonality> -->
         <recipeMaker>
-            <researchPrerequisite>MFS_SouthernProtectiveArmor</researchPrerequisite>            
+            <researchPrerequisite>MFS_SouthernProtectiveArmor</researchPrerequisite>
+            <skillRequirements>
+                <Crafting>4</Crafting>
+            </skillRequirements>                        
         </recipeMaker>           
         <costStuffCount>50</costStuffCount>
         <stuffCategories>
@@ -296,7 +308,10 @@
         </graphicData>
         <generateCommonality>0.2</generateCommonality>
         <recipeMaker>
-            <researchPrerequisite>MFS_SouthernProtectiveArmor</researchPrerequisite>            
+            <researchPrerequisite>MFS_SouthernProtectiveArmor</researchPrerequisite>
+            <skillRequirements>
+                <Crafting>3</Crafting>
+            </skillRequirements>              
         </recipeMaker>         
         <costStuffCount>35</costStuffCount>
         <stuffCategories>
@@ -333,10 +348,14 @@
         <graphicData>
             <texPath>Apparel/Headgear/GunnersHat/GunnersHat</texPath>
             <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>            
         </graphicData>
         <generateCommonality>0.2</generateCommonality>
         <recipeMaker>
-            <researchPrerequisite>MFS_SouthernProtectiveArmor</researchPrerequisite>            
+            <researchPrerequisite>MFS_SouthernProtectiveArmor</researchPrerequisite>
+            <skillRequirements>
+                <Crafting>4</Crafting>
+            </skillRequirements>             
         </recipeMaker>         
         <costStuffCount>30</costStuffCount>
         <stuffCategories>
@@ -379,11 +398,15 @@
         <graphicData>
             <texPath>Apparel/Headgear/AdornedTurban/AdornedTurban</texPath>
             <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
         </graphicData>
         <!-- <generateCommonality>0.4</generateCommonality> -->
         <costStuffCount>40</costStuffCount>
         <recipeMaker>
-            <researchPrerequisite MayRequire="Ludeon.RimWorld.Royalty">NobleApparel</researchPrerequisite>            
+            <researchPrerequisite MayRequire="Ludeon.RimWorld.Royalty">NobleApparel</researchPrerequisite>
+            <skillRequirements>
+                <Crafting>5</Crafting>
+            </skillRequirements>              
         </recipeMaker>           
         <stuffCategories>
             <li>Fabric</li>
