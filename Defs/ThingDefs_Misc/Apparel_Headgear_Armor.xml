@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <ThingDef ParentName="HatMakeableBase" Name="MFS_HeadgearArmorBase" Abstract="true">
+        <recipeMaker>
+            <researchPrerequisite>DankPyon_Tailoring</researchPrerequisite>
+            <techLevel>Medieval</techLevel>
+            <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+            <recipeUsers>
+                <li>DankPyon_TailorsBench</li>
+                <!-- DankPyon_Anvil -->
+                <!-- vanilla benches -->
+            </recipeUsers>        
+        </recipeMaker>
+        <tradeability>Sellable</tradeability>        
+        <thingCategories>
+            <li>Apparel</li>
+        </thingCategories>
+        <apparel>
+            <defaultOutfitTags>
+                <li>Soldier</li>
+            </defaultOutfitTags>
+            <canBeDesiredForIdeo>true</canBeDesiredForIdeo>
+            <developmentalStageFilter>Child, Adult</developmentalStageFilter>            
+        </apparel>
+    </ThingDef>
+
+    <!-- 
+    <ThingDef ParentName="MFS_CivilianBase">
+        <defName>MFS_DesertOutfit</defName>
+        <label>desert outfit</label>
+        <description>A vest, a thick cloth belt and some trousers make up a common outfit not just for the city states but for all inhabitants of the desert. It is ideal for long journeys across the wind battered dunes.</description>
+        <graphicData>
+            <texPath>Apparel/Armor/Civilian/Desert_Outfit/Desert_Outfit</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <recipeMaker>
+            <skillRequirements>
+                <Crafting>3</Crafting>
+            </skillRequirements>
+        </recipeMaker>
+        <costStuffCount>40</costStuffCount>
+        <statBases>
+            <MaxHitPoints>125</MaxHitPoints>
+            <WorkToMake>4500</WorkToMake>
+            <Mass>0.8</Mass>
+            <StuffEffectMultiplierArmor>0.15</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>0.3</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0.45</StuffEffectMultiplierInsulation_Heat>
+            <EquipDelay>1.5</EquipDelay>
+        </statBases>
+        <apparel>
+            <bodyPartGroups>
+                <li>Torso</li>
+                <li>Shoulders</li>
+                <li>Arms</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Apparel/Armor/Civilian/Desert_Outfit/Desert_Outfit</wornGraphicPath>
+            <tags>
+                <li>MedievalBasic</li>
+                <li>MFS_CivilianBasic</li>
+            </tags>
+            <layers>
+                <li>Middle</li>
+            </layers>
+        </apparel>
+        <colorGenerator Class="ColorGenerator_StandardApparel"/>
+    </ThingDef>
+
+-->
+
+
+
+</Defs>
