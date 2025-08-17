@@ -60,10 +60,14 @@ Notes :
             <WorkToMake>30000</WorkToMake>
             <Mass>5</Mass>
             <StuffEffectMultiplierArmor>0.55</StuffEffectMultiplierArmor>
-<!--             <StuffEffectMultiplierInsulation_Cold>0.6</StuffEffectMultiplierInsulation_Cold>
-            <StuffEffectMultiplierInsulation_Heat>0.5</StuffEffectMultiplierInsulation_Heat> -->
+            <Insulation_Cold>7</Insulation_Cold>
+            <Insulation_Heat>14</Insulation_Heat> <!-- waiting for value -->
             <EquipDelay>10</EquipDelay>
         </statBases>
+        <equippedStatOffsets>
+            <MoveSpeed>-0.3</MoveSpeed>
+            <MeleeDodgeChance>0.34</MeleeDodgeChance>
+        </equippedStatOffsets>
         <apparel>
             <bodyPartGroups>
                 <li>Neck</li>
@@ -82,5 +86,117 @@ Notes :
         <colorGenerator Class="ColorGenerator_StandardApparel"/>
     </ThingDef>
 
+    <!-- Assassins Robe -->
+
+    <ThingDef ParentName="MFS_ChainArmorBase">
+        <defName>MFS_AssassinsRobe</defName>
+        <label>assassin's robe</label>
+        <description>A dense chainmail hidden under layers and layers of clothing to keep it hidden. This secretive nature and the thick layers of cloth on top means it can not be worn alongside other armor or clothing. Its shade can be spotted easily during the day, but makes the armor more suitable for clandestine night operations.</description>
+        <graphicData>
+            <texPath>Apparel/Armor/MediumArmor/AssassinsRobe/Assassins_Robe</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <recipeMaker>
+            <skillRequirements>
+                <Crafting>6</Crafting>
+            </skillRequirements>
+        </recipeMaker>
+        <costStuffCount>90</costStuffCount> 
+        <stuffCategories>
+            <li>Metallic</li>
+        </stuffCategories>
+        <costList>
+            <Cloth>80</Cloth>
+        </costList>
+        <statBases>
+            <MaxHitPoints>260</MaxHitPoints> 
+            <WorkToMake>38800</WorkToMake>
+            <Mass>7</Mass>
+            <StuffEffectMultiplierArmor>0.55</StuffEffectMultiplierArmor>
+            <Insulation_Cold>10</Insulation_Cold>
+            <Insulation_Heat>14</Insulation_Heat>
+            <EquipDelay>15</EquipDelay>
+        </statBases>
+        <equippedStatOffsets>
+            <MoveSpeed>0.2</MoveSpeed>
+            <MeleeDodgeChance>0.34</MeleeDodgeChance>
+        </equippedStatOffsets>        
+        <apparel>
+            <bodyPartGroups>
+                <li>Neck</li>
+                <li>Torso</li>
+                <li>Arms</li>
+                <li>Shoulders</li>
+                <li>Legs</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Apparel/Armor/MediumArmor/AssassinsRobe/Assassins_Robe</wornGraphicPath>
+            <tags>
+                <li>MFS_ChainArmor</li>
+            </tags>
+            <layers>
+                <li>Middle</li>
+                <li>Shell</li>
+            </layers>
+        </apparel>
+        <colorGenerator Class="ColorGenerator_StandardApparel"/>
+    </ThingDef>
+
+    <!-- Heavy gladiator armor -->
+
+    <ThingDef ParentName="MFS_ChainArmorBase">
+        <defName>MFS_HeavyGladiatorArmor</defName>
+        <label>heavy gladiator armor</label>
+        <description>Successful gladiators who have become public favorites are better protected due to the powerups added to their equipment. Special attention is paid to the balance between agility and protection. After all, a gladiator is supposed to entertain, and those who are better at it can do it for longer.</description>
+        <graphicData>
+            <texPath>Apparel/Armor/MediumArmor/HeavyGladiatorArmor/Heavy_Gladiator_Armor</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+        </graphicData>
+        <recipeMaker>
+            <skillRequirements>
+                <Crafting>6</Crafting>
+            </skillRequirements>
+        </recipeMaker>
+        <costStuffCount>30</costStuffCount> 
+        <stuffCategories>
+            <li>Metallic</li>
+        </stuffCategories>
+        <costList>
+            <Cloth>20</Cloth>
+            <Leather_Plain>10</Leather_Plain>
+        </costList>
+        <statBases>
+            <MaxHitPoints>260</MaxHitPoints> 
+            <WorkToMake>38800</WorkToMake>
+            <Mass>7</Mass>
+            <StuffEffectMultiplierArmor>0.50</StuffEffectMultiplierArmor>
+<!--             <Insulation_Cold>10</Insulation_Cold>
+            <Insulation_Heat>14</Insulation_Heat> -->
+            <EquipDelay>5</EquipDelay>
+        </statBases>
+        <equippedStatOffsets>
+            <MoveSpeed>0.05</MoveSpeed>
+            <SocialImpact>0.5</SocialImpact>
+            <MeleeDodgeChance>0.50</MeleeDodgeChance>
+        </equippedStatOffsets>        
+        <apparel>
+            <bodyPartGroups>
+                <li>Neck</li>
+                <li>Torso</li>
+                <li>Arms</li>
+                <li>Shoulders</li>
+                <li>Legs</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Apparel/Armor/MediumArmor/HeavyGladiatorArmor/Heavy_Gladiator_Armor</wornGraphicPath>
+            <tags>
+                <li>MFS_ChainArmor</li>
+            </tags>
+            <layers>
+                <li>Middle</li>
+                <li>Shell</li>
+            </layers>
+        </apparel>
+        <colorGenerator Class="ColorGenerator_StandardApparel"/>
+    </ThingDef>
 
 </Defs>
