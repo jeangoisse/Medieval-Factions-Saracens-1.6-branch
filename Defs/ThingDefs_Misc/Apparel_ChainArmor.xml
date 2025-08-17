@@ -77,7 +77,6 @@ Notes :
             </tags>
             <layers>
                 <li>Middle</li>
-                <li>Skin</li>
             </layers>
         </apparel>
         <colorGenerator Class="ColorGenerator_StandardApparel"/>
