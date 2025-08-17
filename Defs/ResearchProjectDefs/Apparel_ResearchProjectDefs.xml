@@ -23,9 +23,9 @@ Southern Heavy Armor
 		<techLevel>Medieval</techLevel>
 		<researchViewX>0</researchViewX>
 		<researchViewY>0.6</researchViewY>
-<!-- 		<prerequisites>
+		<prerequisites>
 			<li>ComplexClothing</li>
-		</prerequisites> -->
+		</prerequisites>
 		<generalRules>
 			<rulesStrings>
 				<li>subject->southern tailoring</li>
@@ -62,7 +62,7 @@ Southern Heavy Armor
 		<researchViewX>2</researchViewX>
 		<researchViewY>0.6</researchViewY>
 		<prerequisites>
-			<li>MFS_SouthernProtectiveArmor</li> <!-- temporary until we find out -->
+			<li>MFS_SouthernProtectiveArmor</li>
 		</prerequisites>
 		<generalRules>
 			<rulesStrings>
@@ -81,7 +81,7 @@ Southern Heavy Armor
 		<researchViewX>3</researchViewX>
 		<researchViewY>0.6</researchViewY>
 		<prerequisites>
-			<li>MFS_SouthernProtectiveArmor</li> <!-- temporary until we find out -->
+			<li>MFS_SouthernChainArmor</li> 
 		</prerequisites>
 		<generalRules>
 			<rulesStrings>

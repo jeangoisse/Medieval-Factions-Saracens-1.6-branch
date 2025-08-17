@@ -147,6 +147,7 @@
             <skillRequirements>
                 <Crafting>6</Crafting>
             </skillRequirements>
+            <researchPrerequisite MayRequire="Ludeon.RimWorld.Royalty">RoyalApparel</researchPrerequisite>               
         </recipeMaker>
         <costStuffCount>120</costStuffCount>
         <statBases>
@@ -193,6 +194,7 @@
             <skillRequirements>
                 <Crafting>6</Crafting>
             </skillRequirements>
+            <researchPrerequisite MayRequire="Ludeon.RimWorld.Royalty">NobleApparel</researchPrerequisite>            
         </recipeMaker>
         <costStuffCount>65</costStuffCount>
         <statBases>
