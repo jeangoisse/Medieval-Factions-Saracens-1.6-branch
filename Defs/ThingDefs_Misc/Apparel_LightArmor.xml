@@ -20,6 +20,8 @@
                 <li>Soldier</li>
             </defaultOutfitTags>
         <canBeDesiredForIdeo>true</canBeDesiredForIdeo>
+        <countsAsClothingForNudity>false</countsAsClothingForNudity>
+        <developmentalStageFilter>Child, Adult</developmentalStageFilter>           
         </apparel>
     </ThingDef>
 

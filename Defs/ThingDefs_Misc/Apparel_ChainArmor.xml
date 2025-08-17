@@ -1,135 +1,87 @@
 <?xml version="1.0" encoding="utf-8" ?>
+
+
+<!-- 
+
+Notes : 
+
+-->
 <Defs>
-    <ThingDef ParentName="ArmorSmithableBase" Name="SFE_ChainMailBase" Abstract="true">
+
+
+    <ThingDef ParentName="ArmorSmithableBase" Name="MFS_ChainArmorBase" Abstract="true">
         <recipeMaker>
             <recipeUsers>
-                <li>ElectricSmithy</li>
-                <li>FueledSmithy</li>
+<!--                 <li>ElectricSmithy</li>
+                <li>FueledSmithy</li> -->
                 <li>DankPyon_Anvil</li>
             </recipeUsers>
             <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
-            <researchPrerequisite>DankPyon_ChainArmor</researchPrerequisite>
+            <researchPrerequisite>MFS_SouthernChainArmor</researchPrerequisite>
         </recipeMaker>
-        <stuffCategories>
-            <li>Metallic</li>
-        </stuffCategories>
         <thingCategories>
-            <li>Apparel</li>
+            <li>Apparel</li> <!-- ApparelArmor -->
         </thingCategories>
         <apparel>
             <defaultOutfitTags>
                 <li>Soldier</li>
             </defaultOutfitTags>
+            <countsAsClothingForNudity>false</countsAsClothingForNudity>
+            <developmentalStageFilter>Child, Adult</developmentalStageFilter>              
         </apparel>
+        <techLevel>Medieval</techLevel>        
     </ThingDef>
-    <ThingDef ParentName="SFE_ChainMailBase">
-        <defName>SFE_Apparel_SouthernMailShirt</defName>
+
+    <!-- Southern mail shirt -->
+
+    <ThingDef ParentName="MFS_ChainArmorBase">
+        <defName>MFS_SouthernMail</defName>
         <label>southern mail shirt</label>
-        <description>Light chain mail, with a decorated cape on top, provides a good level of protection, while remaining fashionable.</description>
+        <description>A light chainmail with a decorated layer of cloth on top, this shirt provides decent protection while not sacrificing fashion. Worn by caravan guards and well-off mercenaries alike to not stick out when venturing into cities.</description>
         <graphicData>
-            <texPath>Apparel/Armor/ChainMailArmor/SouthernMailShirt/Southern_Mail_Shirt</texPath>
+            <texPath>Apparel/Armor/MediumArmor/SouthernMailShirt/Southern_Mail_Shirt</texPath>
             <graphicClass>Graphic_Single</graphicClass>
-            <maskPath>Apparel/Armor/ChainMailArmor/SouthernMailShirt/Southern_Mail_Shirt_m</maskPath>
             <shaderType>CutoutComplex</shaderType>
-            <color>(94, 96, 103)</color>
         </graphicData>
-        <costList>
-            <DankPyon_Linen>40</DankPyon_Linen>
-        </costList>
-        <costStuffCount>80</costStuffCount>
-        <equippedStatOffsets>
-            <MoveSpeed>-0.4</MoveSpeed>
-        </equippedStatOffsets>
         <recipeMaker>
             <skillRequirements>
                 <Crafting>6</Crafting>
             </skillRequirements>
         </recipeMaker>
-        <statBases>
-            <Flammability>1</Flammability>
-            <MaxHitPoints>130</MaxHitPoints>
-            <WorkToMake>510</WorkToMake>
-            <Mass>7.8</Mass>
-            <StuffEffectMultiplierArmor>0.6</StuffEffectMultiplierArmor>
-            <StuffEffectMultiplierInsulation_Cold>0.2</StuffEffectMultiplierInsulation_Cold>
-            <StuffEffectMultiplierInsulation_Heat>0.3</StuffEffectMultiplierInsulation_Heat>
-            <EquipDelay>12</EquipDelay>
-        </statBases>
-        <apparel>
-            <bodyPartGroups>
-                <li>Torso</li>
-                <li>Shoulders</li>
-                <li>Arms</li>
-            </bodyPartGroups>
-            <wornGraphicPath>Apparel/Armor/ChainMailArmor/SouthernMailShirt/Southern_Mail_Shirt</wornGraphicPath>
-            <useWornGraphicMask>true</useWornGraphicMask>
-            <layers>
-                <li>OnSkin</li>
-                <li>Middle</li>
-            </layers>
-            <tags>
-                <li>SFE_Conscript</li>
-                <li>SFE_Cutthroat</li>
-                <li>SFE_DesertStalker</li>
-                <li>SFE_NomadLeader</li>
-
-                <li>MedievalMilitaryBasic</li>
-            </tags>
-        </apparel>
-    </ThingDef>
-    <ThingDef ParentName="SFE_ChainMailBase">
-        <defName>SFE_Apparel_AssasinRobe</defName>
-        <label>assasin robe</label>
-        <description>Dense chain mail, worn under a thick robe, worn over it, allows wearers not to use other armor. It is equally good at any time of the day, but it is best suited for night operations in the rear.</description>
-        <graphicData>
-            <texPath>Apparel/Armor/ChainMailArmor/AssasinsRobe/Assassins_Robe</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
-            <maskPath>Apparel/Armor/ChainMailArmor/AssasinsRobe/Assassins_Robe_m</maskPath>
-            <shaderType>CutoutComplex</shaderType>
-            <color>(93, 96, 103)</color>
-        </graphicData>
+        <costStuffCount>70</costStuffCount> 
+        <stuffCategories>
+            <li>Metallic</li>
+        </stuffCategories>
         <costList>
-            <DankPyon_Linen>95</DankPyon_Linen>
+            <Cloth>40</Cloth>
         </costList>
-        <costStuffCount>120</costStuffCount>
-        <equippedStatOffsets>
-            <MeleeDodgeChance>1</MeleeDodgeChance>
-        </equippedStatOffsets>
-        <recipeMaker>
-            <skillRequirements>
-                <Crafting>7</Crafting>
-            </skillRequirements>
-        </recipeMaker>
         <statBases>
-            <Flammability>0.65</Flammability>
-            <MaxHitPoints>260</MaxHitPoints>
-            <WorkToMake>647</WorkToMake>
-            <Mass>12</Mass>
-            <StuffEffectMultiplierArmor>0.65</StuffEffectMultiplierArmor>
-            <StuffEffectMultiplierInsulation_Cold>1</StuffEffectMultiplierInsulation_Cold>
-            <StuffEffectMultiplierInsulation_Heat>0.8</StuffEffectMultiplierInsulation_Heat>
-            <EquipDelay>25</EquipDelay>
+            <MaxHitPoints>210</MaxHitPoints> 
+            <WorkToMake>30000</WorkToMake>
+            <Mass>5</Mass>
+            <StuffEffectMultiplierArmor>0.55</StuffEffectMultiplierArmor>
+<!--             <StuffEffectMultiplierInsulation_Cold>0.6</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0.5</StuffEffectMultiplierInsulation_Heat> -->
+            <EquipDelay>10</EquipDelay>
         </statBases>
         <apparel>
             <bodyPartGroups>
+                <li>Neck</li>
                 <li>Torso</li>
-                <li>Shoulders</li>
                 <li>Arms</li>
-                <li>Legs</li>
+                <li>Shoulders</li>
             </bodyPartGroups>
-            <wornGraphicPath>Apparel/Armor/ChainMailArmor/AssasinsRobe/Assassins_Robe</wornGraphicPath>
-            <useWornGraphicMask>true</useWornGraphicMask>
-            <layers>
-                <li>Shell</li>
-                <li>OnSkin</li>
-                <li>Middle</li>
-            </layers>
+            <wornGraphicPath>Apparel/Armor/MediumArmor/SouthernMailShirt/Southern_Mail_Shirt</wornGraphicPath>
             <tags>
-                <li>SFE_BladeDancer</li>
-                <li>SFE_Assassin</li>
-
-                <li>MedievalMilitaryAdvanced</li>
+                <li>MFS_ChainArmor</li>
             </tags>
+            <layers>
+                <li>Middle</li>
+                <li>Skin</li>
+            </layers>
         </apparel>
+        <colorGenerator Class="ColorGenerator_StandardApparel"/>
     </ThingDef>
+
+
 </Defs>
