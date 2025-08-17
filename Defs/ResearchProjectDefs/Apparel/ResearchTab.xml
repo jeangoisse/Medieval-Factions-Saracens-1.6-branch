@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+	<ResearchTabDef>
+		<defName>MFS_SouthernResearchTab</defName>
+		<label>Southern Medieval</label>
+		<generalTitle>Southern medieval researches</generalTitle>
+    	<generalDescription>Unlock Saracens technologies.</generalDescription>
+	</ResearchTabDef>
+
+</Defs>

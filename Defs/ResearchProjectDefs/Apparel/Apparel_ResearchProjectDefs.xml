@@ -4,7 +4,7 @@
 
 <!-- 
 
-Researches :
+Apparels & Armors :
 
 Southern Tailoring
 Southern Protective Armor
@@ -13,5 +13,81 @@ Southern Heavy Armor
 
 
  -->
+
+	<ResearchProjectDef>
+		<defName>MFS_SouthernTailoring</defName>
+		<label>southern tailoring</label>
+		<description>placeholder</description>
+		<baseCost>150</baseCost>
+		<tab>MFS_SouthernResearchTab</tab>
+		<techLevel>Medieval</techLevel>
+		<researchViewX>0</researchViewX>
+		<researchViewY>0.6</researchViewY>
+<!-- 		<prerequisites>
+			<li>ComplexClothing</li>
+		</prerequisites> -->
+		<generalRules>
+			<rulesStrings>
+				<li>subject->southern tailoring</li>
+			</rulesStrings>
+		</generalRules>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>MFS_SouthernProtectiveArmor</defName>
+		<label>southern protective armor</label>
+		<description>placeholder</description>
+		<baseCost>700</baseCost>
+		<tab>MFS_SouthernResearchTab</tab>
+		<techLevel>Medieval</techLevel>
+		<researchViewX>1</researchViewX>
+		<researchViewY>0.6</researchViewY>
+		<prerequisites>
+			<li>Smithing</li> <!-- temporary until we find out -->
+		</prerequisites>
+		<generalRules>
+			<rulesStrings>
+				<li>subject->southern protective</li>
+			</rulesStrings>
+		</generalRules>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>MFS_SouthernChainArmor</defName>
+		<label>southern chain armor</label>
+		<description>placeholder</description>
+		<baseCost>1100</baseCost>
+		<tab>MFS_SouthernResearchTab</tab>
+		<techLevel>Medieval</techLevel>
+		<researchViewX>2</researchViewX>
+		<researchViewY>0.6</researchViewY>
+		<prerequisites>
+			<li>MFS_SouthernProtectiveArmor</li> <!-- temporary until we find out -->
+		</prerequisites>
+		<generalRules>
+			<rulesStrings>
+				<li>subject->southern chain armor</li>
+			</rulesStrings>
+		</generalRules>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>MFS_SouthernHeavyArmor</defName>
+		<label>southern heavy armor</label>
+		<description>placeholder</description>
+		<baseCost>1500</baseCost>
+		<tab>MFS_SouthernResearchTab</tab>
+		<techLevel>Medieval</techLevel>
+		<researchViewX>3</researchViewX>
+		<researchViewY>0.6</researchViewY>
+		<prerequisites>
+			<li>MFS_SouthernProtectiveArmor</li> <!-- temporary until we find out -->
+		</prerequisites>
+		<generalRules>
+			<rulesStrings>
+				<li>subject->southern heavy armor</li>
+			</rulesStrings>
+		</generalRules>
+	</ResearchProjectDef>
 
 </Defs>
