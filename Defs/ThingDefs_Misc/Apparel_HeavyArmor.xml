@@ -1,161 +1,292 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-    <ThingDef ParentName="ArmorSmithableBase" Name="SFE_HeavyArmorBase" Abstract="true">
+    <ThingDef ParentName="ArmorSmithableBase" Name="MFS_HeavyArmorBase" Abstract="true">
         <recipeMaker>
             <recipeUsers>
-                <li>ElectricSmithy</li>
-                <li>FueledSmithy</li>
+<!--                 <li>ElectricSmithy</li>
+                <li>FueledSmithy</li> -->
                 <li>DankPyon_Anvil</li>
             </recipeUsers>
-            <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
-            <researchPrerequisite>PlateArmor</researchPrerequisite>
+            <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>            
+            <researchPrerequisite>MFS_SouthernHeavyArmor</researchPrerequisite>
         </recipeMaker>
-        <stuffCategories>
-            <li>Metallic</li>
-        </stuffCategories>
         <thingCategories>
-            <li>Apparel</li>
+            <li>Apparel</li> <!-- ApparelArmor -->
         </thingCategories>
         <apparel>
             <defaultOutfitTags>
                 <li>Soldier</li>
             </defaultOutfitTags>
+            <countsAsClothingForNudity>false</countsAsClothingForNudity>
+            <developmentalStageFilter>Child, Adult</developmentalStageFilter>
+            <canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>           
         </apparel>
+        <techLevel>Medieval</techLevel>        
     </ThingDef>
-    <ThingDef ParentName="SFE_HeavyArmorBase">
-        <defName>SFE_Apparel_LamellarVest</defName>
+
+    <!-- Lamellar vest -->
+
+    <ThingDef ParentName="MFS_HeavyArmorBase">
+        <defName>MFS_LamellarVest</defName>
         <label>lamellar vest</label>
-        <description>In the "Golden" army, a lamellar vest is the most popular solution, due to its cheapness, as well as protection and repair. Large plates wrap around the body, holding on to the shoulders, and also provide the main body protection.</description>
+        <description>The common soldiers of sultan’s “Golden Army” are clad with this armor. Cheap to produce, easy to repair, a lamellar vest is made of large metal plates that wrap around the body and providing cover for vital organs.</description>
         <graphicData>
-            <texPath>Apparel/Armor/HeavyArmor/LamellarVest/Lamellar_Vest</texPath>
+            <texPath>Apparel/Armor/HeavyArmor/Lamellar_Vest/Lamellar_Vest</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
-        <costStuffCount>130</costStuffCount>
+        <recipeMaker>
+            <skillRequirements>
+                <Crafting>6</Crafting>
+            </skillRequirements>
+        </recipeMaker>
+        <costStuffCount>110</costStuffCount> 
+        <stuffCategories>
+            <li>Metallic</li>
+        </stuffCategories>
+
+        <statBases>
+            <MaxHitPoints>260</MaxHitPoints> 
+            <WorkToMake>27600</WorkToMake>
+            <Mass>15</Mass>
+            <StuffEffectMultiplierArmor>0.73</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>1</StuffEffectMultiplierInsulation_Cold>
+            <EquipDelay>10</EquipDelay>
+        </statBases>
         <equippedStatOffsets>
-            <MoveSpeed>-0.4</MoveSpeed>
+            <MoveSpeed>-0.6</MoveSpeed>
         </equippedStatOffsets>
+        <apparel>
+            <bodyPartGroups>
+                <li>Neck</li>
+                <li>Torso</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Apparel/Armor/HeavyArmor/Lamellar_Vest/Lamellar_Vest</wornGraphicPath>
+            <tags>
+                <li>MFS_HeavyArmor</li>
+            </tags>
+            <layers>
+                <li>Shell</li>
+            </layers>
+        </apparel>
+        <colorGenerator Class="ColorGenerator_StandardApparel"/>
+    </ThingDef>
+
+    <!-- Plated Mail -->
+
+
+    <ThingDef ParentName="MFS_HeavyArmorBase">
+        <defName>MFS_PlatedMail</defName>
+        <label>plated mail</label>
+        <description>Light southern chainmail armor, when topped with layers of plating around the shoulders, chest, and back, become heavier, but much more protective.</description>
+        <graphicData>
+            <texPath>Apparel/Armor/HeavyArmor/Plated_Mail/Plated_Mail</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+        </graphicData>
         <recipeMaker>
             <skillRequirements>
                 <Crafting>7</Crafting>
             </skillRequirements>
         </recipeMaker>
+        <costStuffCount>40</costStuffCount>      
+        <stuffCategories>
+            <li>Metallic</li>
+        </stuffCategories>
+        <costList>
+            <Steel>80</Steel>
+        </costList>
         <statBases>
-            <Flammability>0</Flammability>
-            <MaxHitPoints>280</MaxHitPoints>
-            <WorkToMake>420</WorkToMake>
-            <Mass>11</Mass>
-            <StuffEffectMultiplierArmor>0.7</StuffEffectMultiplierArmor>
+            <MaxHitPoints>290</MaxHitPoints> 
+            <WorkToMake>42000</WorkToMake>
+            <Mass>13</Mass>
+            <StuffEffectMultiplierArmor>0.65</StuffEffectMultiplierArmor>
             <StuffEffectMultiplierInsulation_Cold>1</StuffEffectMultiplierInsulation_Cold>
-            <EquipDelay>8</EquipDelay>
+            <EquipDelay>12</EquipDelay>
         </statBases>
+        <equippedStatOffsets>
+            <MoveSpeed>-0.8</MoveSpeed>
+        </equippedStatOffsets>
         <apparel>
             <bodyPartGroups>
+                <li>Neck</li>
                 <li>Torso</li>
+                <li>Shoulders</li>
+                <li>Legs</li>
+                <li>Arms</li>
             </bodyPartGroups>
-            <wornGraphicPath>Apparel/Armor/HeavyArmor/LamellarVest/Lamellar_Vest</wornGraphicPath>
+            <wornGraphicPath>Apparel/Armor/HeavyArmor/Plated_Mail/Plated_Mail</wornGraphicPath>
+            <tags>
+                <li>MFS_HeavyArmor</li>
+            </tags>
             <layers>
                 <li>Shell</li>
+                <li>Middle</li>
             </layers>
-            <tags>
-                <li>SFE_Footman</li>
-
-                <li>MedievalMilitaryDecent</li>
-            </tags>
-            <canBeDesiredForIdeo>true</canBeDesiredForIdeo>
         </apparel>
+        <colorGenerator Class="ColorGenerator_StandardApparel"/>
     </ThingDef>
-    <ThingDef ParentName="SFE_HeavyArmorBase">
-        <defName>SFE_Apparel_LamellarHauberk</defName>
-        <label>lamellar hauberk</label>
-        <description>The heavy armor of exceptional desert warriors is made of many plates sewn onto a leather base. Extremely heavy, but provides the same protection as plate armor in the middle lane.</description>
+
+    <!-- Mirror Armor -->
+
+    <ThingDef ParentName="MFS_HeavyArmorBase">
+        <defName>MFS_MirrorArmor</defName>
+        <label>mirror armor</label>
+        <description>Named after its shining nature, mirror armor provides great protection against most forms of danger. A chainmail shirt attached with plates of metal to follow the joints, giving defense without causing discomfort. Still, it is one of the heaviest types of armor used in southern city states and is less suitable for long distance travel.</description>
         <graphicData>
-            <texPath>Apparel/Armor/HeavyArmor/LamellarHauberk/Lamellar_Hauberk</texPath>
+            <texPath>Apparel/Armor/HeavyArmor/Mirror_Armor/Mirror_Armor</texPath>
             <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
         </graphicData>
+        <recipeMaker>
+            <skillRequirements>
+                <Crafting>12</Crafting>
+            </skillRequirements>
+        </recipeMaker>
+        <costStuffCount>65</costStuffCount>      
+        <stuffCategories>
+            <li>Metallic</li>
+        </stuffCategories>
         <costList>
-            <DankPyon_Linen>40</DankPyon_Linen>
+            <Steel>100</Steel>
         </costList>
-        <costStuffCount>190</costStuffCount>
+        <statBases>
+            <MaxHitPoints>310</MaxHitPoints> 
+            <WorkToMake>50000</WorkToMake>
+            <Mass>19</Mass>
+            <StuffEffectMultiplierArmor>0.73</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>1</StuffEffectMultiplierInsulation_Cold>
+            <EquipDelay>22</EquipDelay>
+        </statBases>
         <equippedStatOffsets>
-            <Insulation_Cold>3</Insulation_Cold>
-            <MoveSpeed>-1.8</MoveSpeed>
+            <MoveSpeed>-1.0</MoveSpeed>
         </equippedStatOffsets>
+        <apparel>
+            <bodyPartGroups>
+                <li>Neck</li>
+                <li>Torso</li>
+                <li>Shoulders</li>
+                <li>Legs</li>
+                <li>Arms</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Apparel/Armor/HeavyArmor/Mirror_Armor/Mirror_Armor</wornGraphicPath>
+            <tags>
+                <li>MFS_HeavyArmor</li>
+            </tags>
+            <layers>
+                <li>Shell</li>
+                <li>Middle</li>
+            </layers>
+        </apparel>
+        <colorGenerator Class="ColorGenerator_StandardApparel"/>
+    </ThingDef>
+
+    <!-- Lamellar Harness -->
+
+    <ThingDef ParentName="MFS_HeavyArmorBase">
+        <defName>MFS_LamellarHarness</defName>
+        <label>lamellar harness</label>
+        <description>Chainmail topped with a leather coat and metal lamellar strips. Wealthy thugs often use it because it’s relatively inexpensive and easy to repair.</description>
+        <graphicData>
+            <texPath>Apparel/Armor/HeavyArmor/Lamellar_Harness/Lamellar_Harness</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+        </graphicData>
+        <recipeMaker>
+            <skillRequirements>
+                <Crafting>10</Crafting>
+            </skillRequirements>
+        </recipeMaker>
+        <costStuffCount>50</costStuffCount>      
+        <stuffCategories>
+            <li>Metallic</li>
+        </stuffCategories>
+        <costList>
+            <Steel>100</Steel>
+        </costList>
+        <statBases>
+            <MaxHitPoints>300</MaxHitPoints> 
+            <WorkToMake>45000</WorkToMake>
+            <Mass>15</Mass>
+            <StuffEffectMultiplierArmor>0.67</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>1</StuffEffectMultiplierInsulation_Cold>
+            <EquipDelay>20</EquipDelay>
+        </statBases>
+        <equippedStatOffsets>
+            <MoveSpeed>-1.2</MoveSpeed>
+        </equippedStatOffsets>
+        <apparel>
+            <bodyPartGroups>
+                <li>Neck</li>
+                <li>Torso</li>
+                <li>Shoulders</li>
+                <li>Legs</li>
+                <li>Arms</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Apparel/Armor/HeavyArmor/Lamellar_Harness/Lamellar_Harness</wornGraphicPath>
+            <tags>
+                <li>MFS_HeavyArmor</li>
+            </tags>
+            <layers>
+                <li>Shell</li>
+                <li>Middle</li>
+            </layers>
+        </apparel>
+        <colorGenerator Class="ColorGenerator_StandardApparel"/>
+    </ThingDef>
+
+    <!-- Heavy Lamellar hauberk -->
+
+    <ThingDef ParentName="MFS_HeavyArmorBase">
+        <defName>MFS_HeavyLamellarHauberk</defName>
+        <label>heavy lamellar hauberk</label>
+        <description>Heavy armor of exceptional craftsmanship, preferred by palace guards of the cities and renowned bandit leaders alike. Extremely heavy, but with enough defense to compensate for the lack of mobility, heavy lamellar hauberk is a display of southern smithing at its finest.</description>
+        <graphicData>
+            <texPath>Apparel/Armor/HeavyArmor/Heavy_Lamellar_Armor/Heavy_Lamellar_Armor</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+        </graphicData>
         <recipeMaker>
             <skillRequirements>
                 <Crafting>11</Crafting>
             </skillRequirements>
         </recipeMaker>
-        <statBases>
-            <Flammability>0.25</Flammability>
-            <MaxHitPoints>335</MaxHitPoints>
-            <WorkToMake>845</WorkToMake>
-            <Mass>18</Mass>
-            <StuffEffectMultiplierArmor>0.92</StuffEffectMultiplierArmor>
-            <EquipDelay>20</EquipDelay>
-        </statBases>
-        <apparel>
-            <bodyPartGroups>
-                <li>Arms</li>
-                <li>Shoulders</li>
-                <li>Torso</li>
-                <li>Legs</li>
-            </bodyPartGroups>
-            <wornGraphicPath>Apparel/Armor/HeavyArmor/LamellarHauberk/Lamellar_Hauberk</wornGraphicPath>
-            <layers>
-                <li>Middle</li>
-                <li>Shell</li>
-            </layers>
-            <tags>
-                <li>SFE_Officer</li>
-                <li>SFE_NomadExecutioner</li>
-
-                <li>MedievalMilitaryDecent</li>
-            </tags>
-            <canBeDesiredForIdeo>true</canBeDesiredForIdeo>
-        </apparel>
-    </ThingDef>
-    <ThingDef ParentName="SFE_HeavyArmorBase">
-        <defName>SFE_Apparel_GladiatorArmor</defName>
-        <label>gladiator armor</label>
-        <description>This armor is made of two-layer pieces of leather and bonded together. Such armor allows warriors to put on some other light armor on the body.</description>
-        <graphicData>
-            <texPath>Apparel/Armor/LightArmor/GladiatorArmor/Gladiator_Armor</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
-            <maskPath>Apparel/Armor/LightArmor/GladiatorArmor/Gladiator_Armor_m</maskPath>
-            <shaderType>CutoutComplex</shaderType>
-            <color>(94, 96, 103)</color>
-        </graphicData>
+        <costStuffCount>65</costStuffCount>      
+        <stuffCategories>
+            <li>Metallic</li>
+        </stuffCategories>
         <costList>
-            <Leather_Plain>40</Leather_Plain>
+            <Steel>100</Steel>
         </costList>
-        <costStuffCount>40</costStuffCount>
         <statBases>
-            <Flammability>0.75</Flammability>
-            <MaxHitPoints>160</MaxHitPoints>
-            <WorkToMake>250</WorkToMake>
-            <Mass>5</Mass>
-            <StuffEffectMultiplierArmor>0.18</StuffEffectMultiplierArmor>
-            <EquipDelay>5</EquipDelay>
+            <MaxHitPoints>335</MaxHitPoints> 
+            <WorkToMake>45000</WorkToMake>
+            <Mass>18</Mass>
+            <StuffEffectMultiplierArmor>0.77</StuffEffectMultiplierArmor>
+            <Insulation_Cold>5</Insulation_Cold>
+            <EquipDelay>24</EquipDelay>
         </statBases>
         <equippedStatOffsets>
             <MoveSpeed>-1.5</MoveSpeed>
-            <MeleeDodgeChance>2</MeleeDodgeChance>
         </equippedStatOffsets>
         <apparel>
             <bodyPartGroups>
-                <li>Arms</li>
-                <li>Legs</li>
+                <li>Neck</li>
                 <li>Torso</li>
                 <li>Shoulders</li>
+                <li>Legs</li>
+                <li>Arms</li>
             </bodyPartGroups>
-            <wornGraphicPath>Apparel/Armor/LightArmor/GladiatorArmor/Gladiator_Armor</wornGraphicPath>
-            <useWornGraphicMask>true</useWornGraphicMask>
-            <layers>
-                <li>Middle</li>
-                <li>Shell</li>
-            </layers>
+            <wornGraphicPath>Apparel/Armor/HeavyArmor/Heavy_Lamellar_Armor/Heavy_Lamellar_Armor</wornGraphicPath>
             <tags>
+                <li>MFS_HeavyArmor</li>
             </tags>
+            <layers>
+                <li>Shell</li>
+                <li>Middle</li>
+            </layers>
         </apparel>
+        <colorGenerator Class="ColorGenerator_StandardApparel"/>
     </ThingDef>
+
+
 </Defs>
