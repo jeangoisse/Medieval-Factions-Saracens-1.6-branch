@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+
+    <!-- base -->
+
     <ThingDef ParentName="ArmorSmithableBase" Name="MFS_HeavyArmorBase" Abstract="true">
         <recipeMaker>
             <recipeUsers>
@@ -11,7 +14,7 @@
             <researchPrerequisite>MFS_SouthernHeavyArmor</researchPrerequisite>
         </recipeMaker>
         <thingCategories>
-            <li>Apparel</li> <!-- ApparelArmor -->
+            <li>ApparelArmor</li>
         </thingCategories>
         <apparel>
             <defaultOutfitTags>
@@ -41,7 +44,7 @@
             </researchPrerequisites>
         </recipeMaker>
         <thingCategories>
-            <li>Apparel</li> <!-- ApparelArmor -->
+            <li>ApparelArmor</li>
         </thingCategories>
         <apparel>
             <defaultOutfitTags>

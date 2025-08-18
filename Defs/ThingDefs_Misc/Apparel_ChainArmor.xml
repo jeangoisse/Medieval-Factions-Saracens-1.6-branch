@@ -20,7 +20,7 @@ Notes :
             <researchPrerequisite>MFS_SouthernChainArmor</researchPrerequisite>
         </recipeMaker>
         <thingCategories>
-            <li>Apparel</li> <!-- ApparelArmor -->
+            <li>ApparelArmor</li>
         </thingCategories>
         <apparel>
             <defaultOutfitTags>

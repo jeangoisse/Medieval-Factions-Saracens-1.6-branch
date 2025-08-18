@@ -12,7 +12,7 @@
         <tradeability>Sellable</tradeability>        
         <techLevel>Medieval</techLevel>        
         <thingCategories>
-            <li>Apparel</li>
+            <li>ApparelArmor</li>
         </thingCategories>
         <apparel>
             <defaultOutfitTags>
