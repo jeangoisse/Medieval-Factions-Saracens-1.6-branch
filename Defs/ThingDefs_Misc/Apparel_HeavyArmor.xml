@@ -24,6 +24,37 @@
         <techLevel>Medieval</techLevel>        
     </ThingDef>
 
+
+    <!-- Adorned armor base -->
+
+    <ThingDef ParentName="ArmorSmithableBase" Name="MFS_HeavyArmorAdornedBase" Abstract="true">
+        <recipeMaker>
+            <recipeUsers>
+<!--                 <li>ElectricSmithy</li>
+                <li>FueledSmithy</li> -->
+                <li>DankPyon_Anvil</li>
+            </recipeUsers>
+            <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>            
+            <researchPrerequisites>
+                <li>MFS_SouthernHeavyArmor</li>
+                <li>MFS_SouthernAdornedArmor</li>
+            </researchPrerequisites>
+        </recipeMaker>
+        <thingCategories>
+            <li>Apparel</li> <!-- ApparelArmor -->
+        </thingCategories>
+        <apparel>
+            <defaultOutfitTags>
+                <li>Soldier</li>
+            </defaultOutfitTags>
+            <countsAsClothingForNudity>false</countsAsClothingForNudity>
+            <developmentalStageFilter>Child, Adult</developmentalStageFilter>
+            <canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>           
+        </apparel>
+        <techLevel>Medieval</techLevel>        
+    </ThingDef>
+
+
     <!-- Lamellar vest -->
 
     <ThingDef ParentName="MFS_HeavyArmorBase">
@@ -277,6 +308,62 @@
                 <li>Arms</li>
             </bodyPartGroups>
             <wornGraphicPath>Apparel/Armor/HeavyArmor/Heavy_Lamellar_Armor/Heavy_Lamellar_Armor</wornGraphicPath>
+            <tags>
+                <li>MFS_HeavyArmor</li>
+            </tags>
+            <layers>
+                <li>Shell</li>
+                <li>Middle</li>
+            </layers>
+        </apparel>
+        <colorGenerator Class="ColorGenerator_StandardApparel"/>
+    </ThingDef>
+
+    <!-- Heavy Lamellar hauberk (adorned) -->
+
+    <ThingDef ParentName="MFS_HeavyArmorAdornedBase">
+        <defName>MFS_AdornedLamellarHauberk</defName>
+        <label>heavy lamellar hauberk (adorned)</label>
+        <description>Heavy armor of exceptional craftsmanship, preferred by palace guards of the cities and renowned bandit leaders alike. Extremely heavy, but with enough defense to compensate for the lack of mobility, heavy lamellar hauberk is a display of southern smithing at its finest.</description>
+        <graphicData>
+            <texPath>Apparel/AdornedArmor/Guardian_Lamellar_Armor/Guardian_Lamellar_Armor</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+        </graphicData>
+        <recipeMaker>
+            <skillRequirements>
+                <Crafting>11</Crafting>
+            </skillRequirements>
+        </recipeMaker>
+        <costStuffCount>65</costStuffCount>      
+        <stuffCategories>
+            <li>Metallic</li>
+        </stuffCategories>
+        <costList>
+            <Steel>100</Steel>
+            <Gold>4</Gold>
+        </costList>
+        <statBases>
+            <MaxHitPoints>335</MaxHitPoints> 
+            <WorkToMake>55000</WorkToMake>
+            <Mass>18</Mass>
+            <StuffEffectMultiplierArmor>0.77</StuffEffectMultiplierArmor>
+            <Insulation_Cold>5</Insulation_Cold>
+            <EquipDelay>24</EquipDelay>
+        </statBases>
+        <equippedStatOffsets>
+            <MoveSpeed>-1.5</MoveSpeed>
+            <SocialImpact>0.3</SocialImpact>
+        </equippedStatOffsets>
+        <apparel>
+            <bodyPartGroups>
+                <li>Neck</li>
+                <li>Torso</li>
+                <li>Shoulders</li>
+                <li>Legs</li>
+                <li>Arms</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Apparel/AdornedArmor/Guardian_Lamellar_Armor/Guardian_Lamellar_Armor</wornGraphicPath>
             <tags>
                 <li>MFS_HeavyArmor</li>
             </tags>

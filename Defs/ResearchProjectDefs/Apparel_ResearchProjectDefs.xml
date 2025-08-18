@@ -90,4 +90,23 @@ Southern Heavy Armor
 		</generalRules>
 	</ResearchProjectDef>
 
+	<ResearchProjectDef>
+		<defName>MFS_SouthernAdornedArmor</defName>
+		<label>southern adorned armor</label>
+		<description>placeholder</description>
+		<baseCost>1500</baseCost>
+		<tab>MFS_SouthernResearchTab</tab>
+		<techLevel>Medieval</techLevel>
+		<researchViewX>3</researchViewX>
+		<researchViewY>0.6</researchViewY>
+		<prerequisites>
+			<li>MFS_SouthernHeavyArmor</li> 
+		</prerequisites>
+		<generalRules>
+			<rulesStrings>
+				<li>subject->southern adorned armor</li>
+			</rulesStrings>
+		</generalRules>
+	</ResearchProjectDef>
+
 </Defs>
