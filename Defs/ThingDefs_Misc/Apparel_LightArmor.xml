@@ -2,7 +2,7 @@
 <Defs>
     <ThingDef ParentName="ApparelMakeableBase" Name="MFS_LightArmorBase" Abstract="true">
         <recipeMaker>
-            <!-- <researchPrerequisite>DankPyon_Tailoring</researchPrerequisite> -->
+            <researchPrerequisite>MFS_SouthernProtectiveArmor</researchPrerequisite>
             <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
             <recipeUsers>
                 <li>DankPyon_TailorsBench</li>
@@ -19,9 +19,9 @@
                 <li>Worker</li>
                 <li>Soldier</li>
             </defaultOutfitTags>
-        <canBeDesiredForIdeo>true</canBeDesiredForIdeo>
-        <countsAsClothingForNudity>false</countsAsClothingForNudity>
-        <developmentalStageFilter>Child, Adult</developmentalStageFilter>           
+            <canBeDesiredForIdeo>true</canBeDesiredForIdeo>
+            <countsAsClothingForNudity>false</countsAsClothingForNudity>
+            <developmentalStageFilter>Child, Adult</developmentalStageFilter>           
         </apparel>
     </ThingDef>
 

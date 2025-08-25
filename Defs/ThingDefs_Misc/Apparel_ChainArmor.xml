@@ -29,7 +29,8 @@ Notes :
             <countsAsClothingForNudity>false</countsAsClothingForNudity>
             <developmentalStageFilter>Child, Adult</developmentalStageFilter>              
         </apparel>
-        <techLevel>Medieval</techLevel>        
+        <techLevel>Medieval</techLevel>
+        <tradeability>Sellable</tradeability>                 
     </ThingDef>
 
     <!-- Southern mail shirt -->

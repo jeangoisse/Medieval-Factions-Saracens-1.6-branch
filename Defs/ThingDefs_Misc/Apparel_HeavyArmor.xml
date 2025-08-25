@@ -24,7 +24,8 @@
             <developmentalStageFilter>Child, Adult</developmentalStageFilter>
             <canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>           
         </apparel>
-        <techLevel>Medieval</techLevel>        
+        <techLevel>Medieval</techLevel>
+        <tradeability>Sellable</tradeability>                 
     </ThingDef>
 
 
@@ -77,7 +78,6 @@
         <stuffCategories>
             <li>Metallic</li>
         </stuffCategories>
-
         <statBases>
             <MaxHitPoints>260</MaxHitPoints> 
             <WorkToMake>27600</WorkToMake>

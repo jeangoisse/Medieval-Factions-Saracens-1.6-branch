@@ -39,7 +39,7 @@
             </defaultOutfitTags>
             <countsAsClothingForNudity>false</countsAsClothingForNudity>            
             <canBeDesiredForIdeo>true</canBeDesiredForIdeo>
-            <developmentalStageFilter>Child, Adult</developmentalStageFilter>            
+            <developmentalStageFilter>Child, Adult</developmentalStageFilter>                     
         </apparel>
     </ThingDef>
 

@@ -3,18 +3,16 @@
 
     <ThingDef ParentName="HatMakeableBase" Name="MFS_HeadgearArmorBase" Abstract="true">
         <recipeMaker>
-            <researchPrerequisite>DankPyon_Tailoring</researchPrerequisite>
+            <!-- <researchPrerequisite>DankPyon_Tailoring</researchPrerequisite> -->
             <techLevel>Medieval</techLevel>
             <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
             <recipeUsers>
-                <li>DankPyon_TailorsBench</li>
-                <!-- DankPyon_Anvil -->
-                <!-- vanilla benches -->
+                <li>DankPyon_Anvil</li>
             </recipeUsers>        
         </recipeMaker>
         <tradeability>Sellable</tradeability>        
         <thingCategories>
-            <li>Apparel</li>
+            <li>ApparelArmor</li>
         </thingCategories>
         <apparel>
             <defaultOutfitTags>
@@ -25,13 +23,57 @@
         </apparel>
     </ThingDef>
 
-    <!-- 
-    <ThingDef ParentName="MFS_CivilianBase">
-        <defName>MFS_DesertOutfit</defName>
-        <label>desert outfit</label>
-        <description>A vest, a thick cloth belt and some trousers make up a common outfit not just for the city states but for all inhabitants of the desert. It is ideal for long journeys across the wind battered dunes.</description>
+    <!-- Conical Helm -->
+     
+    <ThingDef ParentName="MFS_HeadgearArmorBase">
+        <defName>MFS_ConicalHelm</defName>
+        <label>conical helm</label>
+        <description>A common type of helmet used in the southern city states. Conical in shape, and with a small nasal guard, this helmet is often paired with a helm wrap to give the wearer some shade.</description>
         <graphicData>
-            <texPath>Apparel/Armor/Civilian/Desert_Outfit/Desert_Outfit</texPath>
+            <texPath>Apparel/Headgear/ConicalHelm/ConicalHelm</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <recipeMaker>
+            <skillRequirements>
+                <Crafting>4</Crafting>
+            </skillRequirements>
+        </recipeMaker>
+        <stuffCategories>
+            <li>Metallic</li>
+        </stuffCategories>
+        <costStuffCount>55</costStuffCount>
+        <statBases>
+            <MaxHitPoints>130</MaxHitPoints>
+            <WorkToMake>10500</WorkToMake>
+            <Mass>2.5</Mass>
+            <StuffEffectMultiplierArmor>0.45</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
+            <!-- <StuffEffectMultiplierInsulation_Heat>0.45</StuffEffectMultiplierInsulation_Heat> -->
+            <EquipDelay>3</EquipDelay>
+        </statBases>
+        <apparel>
+            <bodyPartGroups>
+                <li>UpperHead</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Apparel/Headgear/ConicalHelm/ConicalHelm</wornGraphicPath>
+            <tags>
+                <li>MFS_SoldierHeadgear</li>
+            </tags>
+            <layers>
+                <li>Overhead</li>
+            </layers>
+        </apparel>
+        <colorGenerator Class="ColorGenerator_StandardApparel"/>
+    </ThingDef>
+
+    <!-- Shishak -->
+
+    <ThingDef ParentName="MFS_HeadgearArmorBase">
+        <defName>MFS_Shishak</defName>
+        <label>shishak</label>
+        <description>A hemispherical helmet with added nasal guard and side flaps made of metal to better protect the head. Used often by the common soldiers or mercenaries, as well as some warlike nomadic clans.</description>
+        <graphicData>
+            <texPath>Apparel/Headgear/Shishak/Shishak</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <recipeMaker>
@@ -39,36 +81,132 @@
                 <Crafting>3</Crafting>
             </skillRequirements>
         </recipeMaker>
-        <costStuffCount>40</costStuffCount>
+        <stuffCategories>
+            <li>Metallic</li>
+        </stuffCategories>
+        <costStuffCount>55</costStuffCount>
         <statBases>
-            <MaxHitPoints>125</MaxHitPoints>
-            <WorkToMake>4500</WorkToMake>
-            <Mass>0.8</Mass>
-            <StuffEffectMultiplierArmor>0.15</StuffEffectMultiplierArmor>
-            <StuffEffectMultiplierInsulation_Cold>0.3</StuffEffectMultiplierInsulation_Cold>
-            <StuffEffectMultiplierInsulation_Heat>0.45</StuffEffectMultiplierInsulation_Heat>
-            <EquipDelay>1.5</EquipDelay>
+            <MaxHitPoints>130</MaxHitPoints>
+            <WorkToMake>10500</WorkToMake>
+            <Mass>2.5</Mass>
+            <StuffEffectMultiplierArmor>0.45</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
+            <!-- <StuffEffectMultiplierInsulation_Heat>0.45</StuffEffectMultiplierInsulation_Heat> -->
+            <EquipDelay>3</EquipDelay>
         </statBases>
         <apparel>
             <bodyPartGroups>
-                <li>Torso</li>
-                <li>Shoulders</li>
-                <li>Arms</li>
+                <li>UpperHead</li>
             </bodyPartGroups>
-            <wornGraphicPath>Apparel/Armor/Civilian/Desert_Outfit/Desert_Outfit</wornGraphicPath>
+            <wornGraphicPath>Apparel/Headgear/Shishak/Shishak</wornGraphicPath>
             <tags>
-                <li>MedievalBasic</li>
-                <li>MFS_CivilianBasic</li>
+                <li>MFS_SoldierHeadgear</li>
             </tags>
             <layers>
-                <li>Middle</li>
+                <li>Overhead</li>
             </layers>
         </apparel>
         <colorGenerator Class="ColorGenerator_StandardApparel"/>
     </ThingDef>
 
--->
+    <!-- Chain conical helm -->
 
+    <ThingDef ParentName="MFS_HeadgearArmorBase">
+        <defName>MFS_ChainConicalHelm</defName>
+        <label>chain conical helm</label>
+        <description>The added chain hanging down the sides of a conical helmet provide not just the sun protection of a helm wrap, but also extra protection against slashing attacks often dealt by curved swords of the bandits.</description>
+        <graphicData>
+            <texPath>Apparel/Headgear/ChainConicalHelm/ChainConicalHelm</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+        </graphicData>
+        <recipeMaker>
+            <skillRequirements>
+                <Crafting>6</Crafting>
+            </skillRequirements>
+        </recipeMaker>
+        <stuffCategories>
+            <li>Metallic</li>
+        </stuffCategories>
+        <costStuffCount>55</costStuffCount>
+        <costList>
+            <Steel>10</Steel>
+        </costList>
+        <statBases>
+            <MaxHitPoints>140</MaxHitPoints>
+            <WorkToMake>16000</WorkToMake>
+            <Mass>3</Mass>
+            <StuffEffectMultiplierArmor>0.5</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
+            <!-- <StuffEffectMultiplierInsulation_Heat>0.45</StuffEffectMultiplierInsulation_Heat> -->
+            <EquipDelay>8</EquipDelay>
+        </statBases>
+        <equippedStatOffsets>
+            <ShootingAccuracyPawn>-1</ShootingAccuracyPawn>
+        </equippedStatOffsets>
+        <apparel>
+            <bodyPartGroups>
+                <li>UpperHead</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Apparel/Headgear/ChainConicalHelm/ChainConicalHelm</wornGraphicPath>
+            <tags>
+                <li>MFS_SoldierHeadgear</li>
+            </tags>
+            <layers>
+                <li>Overhead</li>
+            </layers>
+        </apparel>
+        <colorGenerator Class="ColorGenerator_StandardApparel"/>
+    </ThingDef>
 
+    <!-- Chain shishak -->
+
+    <ThingDef ParentName="MFS_HeadgearArmorBase">
+        <defName>MFS_ChainShishak</defName>
+        <label>chain shishak</label>
+        <description>A hemispherical helmet with ear and nose protection, reinforced with chain mail.</description>
+        <graphicData>
+            <texPath>Apparel/Headgear/ChainShishak/ChainShishak</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+        </graphicData>
+        <recipeMaker>
+            <skillRequirements>
+                <Crafting>6</Crafting>
+            </skillRequirements>
+        </recipeMaker>
+        <stuffCategories>
+            <li>Metallic</li>
+        </stuffCategories>
+        <costStuffCount>55</costStuffCount>
+        <costList>
+            <Steel>10</Steel>
+        </costList>
+        <statBases>
+            <MaxHitPoints>140</MaxHitPoints>
+            <WorkToMake>16000</WorkToMake>
+            <Mass>3</Mass>
+            <StuffEffectMultiplierArmor>0.5</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
+            <!-- <StuffEffectMultiplierInsulation_Heat>0.45</StuffEffectMultiplierInsulation_Heat> -->
+            <EquipDelay>8</EquipDelay>
+        </statBases>
+        <equippedStatOffsets>
+            <ShootingAccuracyPawn>-1</ShootingAccuracyPawn>
+        </equippedStatOffsets>
+        <apparel>
+            <bodyPartGroups>
+                <li>UpperHead</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Apparel/Headgear/ChainShishak/ChainShishak</wornGraphicPath>
+            <tags>
+                <li>MFS_SoldierHeadgear</li>
+            </tags>
+            <layers>
+                <li>Overhead</li>
+            </layers>
+        </apparel>
+        <colorGenerator Class="ColorGenerator_StandardApparel"/>
+    </ThingDef>
 
 </Defs>
