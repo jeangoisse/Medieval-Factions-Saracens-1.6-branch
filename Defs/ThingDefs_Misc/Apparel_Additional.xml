@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- Desert Boots -->
+
+    <ThingDef ParentName="MFS_CivilianBase">
+        <defName>MFS_DesertBoots</defName>
+        <label>desert boots</label>
+        <description>Everyone who has a little money wears these shoes. Their height prevents sand from accidentally getting inside, and the raised toe makes it easier to overcome obstacles.</description>
+        <graphicData>
+            <texPath>Apparel/Footwear/DesertBoots</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <recipeMaker>
+            <researchPrerequisite>MFS_SouthernTailoring</researchPrerequisite>            
+<!--             <skillRequirements>
+                <Crafting>3</Crafting>
+            </skillRequirements> -->
+        </recipeMaker>
+		<generateCommonality>0.1</generateCommonality>       
+        <costStuffCount>30</costStuffCount>
+        <statBases>
+            <MaxHitPoints>150</MaxHitPoints>
+            <WorkToMake>4500</WorkToMake>
+            <Mass>0.25</Mass>
+            <StuffEffectMultiplierArmor>0.18</StuffEffectMultiplierArmor>
+<!--             <StuffEffectMultiplierInsulation_Cold>0.3</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0.45</StuffEffectMultiplierInsulation_Heat> -->
+            <EquipDelay>2</EquipDelay>
+        </statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>0.05</MoveSpeed>
+		</equippedStatOffsets>
+		<thingCategories Inherit="False">
+			<li>DankPyon_Footwear</li>
+		</thingCategories>
+        <apparel>
+            <bodyPartGroups>
+                <li>Feet</li>
+            </bodyPartGroups>
+            <!-- <wornGraphicPath>Apparel/Footwear/DesertBoots</wornGraphicPath> -->
+            <tags>
+                <!-- <li>MedievalBasic</li> -->
+                <li>MFS_CivilianBasic</li>
+            </tags>
+            <layers>
+                <li>Middle</li>
+            </layers>
+        </apparel>
+        <colorGenerator Class="ColorGenerator_StandardApparel"/>
+    </ThingDef>
+
+</Defs>
