@@ -37,6 +37,7 @@
             <skillRequirements>
                 <Crafting>4</Crafting>
             </skillRequirements>
+            <researchPrerequisite>MFS_SouthernChainArmor</researchPrerequisite>
         </recipeMaker>
         <stuffCategories>
             <li>Metallic</li>
@@ -80,6 +81,7 @@
             <skillRequirements>
                 <Crafting>3</Crafting>
             </skillRequirements>
+            <researchPrerequisite>MFS_SouthernChainArmor</researchPrerequisite>            
         </recipeMaker>
         <stuffCategories>
             <li>Metallic</li>
@@ -124,6 +126,7 @@
             <skillRequirements>
                 <Crafting>6</Crafting>
             </skillRequirements>
+            <researchPrerequisite>MFS_SouthernChainArmor</researchPrerequisite>            
         </recipeMaker>
         <stuffCategories>
             <li>Metallic</li>
@@ -174,6 +177,7 @@
             <skillRequirements>
                 <Crafting>6</Crafting>
             </skillRequirements>
+            <researchPrerequisite>MFS_SouthernChainArmor</researchPrerequisite>            
         </recipeMaker>
         <stuffCategories>
             <li>Metallic</li>
@@ -201,6 +205,479 @@
             <wornGraphicPath>Apparel/Headgear/ChainShishak/ChainShishak</wornGraphicPath>
             <tags>
                 <li>MFS_SoldierHeadgear</li>
+            </tags>
+            <layers>
+                <li>Overhead</li>
+            </layers>
+        </apparel>
+        <colorGenerator Class="ColorGenerator_StandardApparel"/>
+    </ThingDef>
+
+    <!-- Assassin Mask -->
+
+    <ThingDef ParentName="MFS_HeadgearArmorBase">
+        <defName>MFS_AssassinMask</defName>
+        <label>assassin mask</label>
+        <description>Worn by the higher ranking assassins of the secret order, this variant of assassin’s wrap is made with chain armor underneath, giving the assassin further protection. The mask also makes identifying the wearer harder, making it more difficult for the law enforcement to track the assassins.</description>
+        <graphicData>
+            <texPath>Apparel/Headgear/AssassinMask/AssassinMask</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+        </graphicData>
+        <recipeMaker>
+            <skillRequirements>
+                <Crafting>8</Crafting>
+            </skillRequirements>
+            <researchPrerequisite>MFS_SouthernChainArmor</researchPrerequisite>            
+        </recipeMaker>
+        <stuffCategories>
+            <li>Metallic</li>
+        </stuffCategories>
+        <costStuffCount>55</costStuffCount>
+        <costList>
+            <Cloth>40</Cloth>
+        </costList>
+        <statBases>
+            <MaxHitPoints>140</MaxHitPoints>
+            <WorkToMake>15500</WorkToMake>
+            <Mass>1.5</Mass>
+            <StuffEffectMultiplierArmor>0.9</StuffEffectMultiplierArmor>
+            <Insulation_Cold>5</Insulation_Cold>
+            <Insulation_Heat>9</Insulation_Heat>
+            <EquipDelay>10</EquipDelay>
+        </statBases>
+        <equippedStatOffsets>
+            <ShootingAccuracyPawn>-3</ShootingAccuracyPawn>
+            <PainShockThreshold>0.2</PainShockThreshold>
+            <MeleeHitChance>3</MeleeHitChance>
+            <MeleeDodgeChance>0.33</MeleeDodgeChance>
+            <ToxicEnvironmentResistance>0.35</ToxicEnvironmentResistance>
+        </equippedStatOffsets>
+        <apparel>
+            <bodyPartGroups>
+                <li>FullHead</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Apparel/Headgear/AssassinMask/AssassinMask</wornGraphicPath>
+            <tags>
+                <!-- <li>MFS_SoldierHeadgear</li> -->
+            </tags>
+            <layers>
+                <li>Overhead</li>
+            </layers>
+        </apparel>
+        <colorGenerator Class="ColorGenerator_StandardApparel"/>
+    </ThingDef>
+
+    <!-- Full conical helm -->
+
+    <ThingDef ParentName="MFS_HeadgearArmorBase">
+        <defName>MFS_FullConicalHelm</defName>
+        <label>full conical helm</label>
+        <description>Reinforced not only with a full chain cover all around but with a better visor, ear covers and a thicker nasal guard, a full conical helm is the regular headgear of the rank-and-file soldiers of the Golden Army.</description>
+        <graphicData>
+            <texPath>Apparel/Headgear/FullConicalHelm/FullConicalHelm</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+        </graphicData>
+        <recipeMaker>
+            <skillRequirements>
+                <Crafting>7</Crafting>
+            </skillRequirements>
+            <researchPrerequisite>MFS_SouthernHeavyArmor</researchPrerequisite>
+        </recipeMaker>
+        <stuffCategories>
+            <li>Metallic</li>
+        </stuffCategories>
+        <costStuffCount>55</costStuffCount>
+        <costList>
+            <Steel>15</Steel>
+        </costList>
+        <statBases>
+            <MaxHitPoints>180</MaxHitPoints>
+            <WorkToMake>17000</WorkToMake>
+            <Mass>3</Mass>
+            <StuffEffectMultiplierArmor>0.55</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
+            <!-- <StuffEffectMultiplierInsulation_Heat>0.45</StuffEffectMultiplierInsulation_Heat> -->
+            <EquipDelay>10</EquipDelay>
+        </statBases>
+        <equippedStatOffsets>
+            <ShootingAccuracyPawn>-2</ShootingAccuracyPawn>
+        </equippedStatOffsets>
+        <apparel>
+            <bodyPartGroups>
+                <li>FullHead</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Apparel/Headgear/FullConicalHelm/FullConicalHelm</wornGraphicPath>
+            <tags>
+                <li>MFS_SoldierHeadgear</li>
+            </tags>
+            <layers>
+                <li>Overhead</li>
+            </layers>
+        </apparel>
+        <colorGenerator Class="ColorGenerator_StandardApparel"/>
+    </ThingDef>
+
+    <!-- Chain shishak -->
+
+    <ThingDef ParentName="MFS_HeadgearArmorBase">
+        <defName>MFS_FaceguardShishak</defName>
+        <label>faceguard shishak</label>
+        <description>With its easy to distinguish shape, faceguard shishak are worn by the higher ranking commanders of the Golden Army, adding to their prestige while keeping them safe.</description>
+        <graphicData>
+            <texPath>Apparel/Headgear/FaceguardShishak/FaceguardShishak</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+        </graphicData>
+        <recipeMaker>
+            <skillRequirements>
+                <Crafting>7</Crafting>
+            </skillRequirements>
+            <researchPrerequisite>MFS_SouthernHeavyArmor</researchPrerequisite>            
+        </recipeMaker>
+        <stuffCategories>
+            <li>Metallic</li>
+        </stuffCategories>
+        <costStuffCount>55</costStuffCount>
+        <costList>
+            <Steel>15</Steel>
+        </costList>
+        <statBases>
+            <MaxHitPoints>180</MaxHitPoints>
+            <WorkToMake>17000</WorkToMake>
+            <Mass>3</Mass>
+            <StuffEffectMultiplierArmor>0.55</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
+            <!-- <StuffEffectMultiplierInsulation_Heat>0.45</StuffEffectMultiplierInsulation_Heat> -->
+            <EquipDelay>10</EquipDelay>
+        </statBases>
+        <equippedStatOffsets>
+            <ShootingAccuracyPawn>-2</ShootingAccuracyPawn>
+        </equippedStatOffsets>
+        <apparel>
+            <bodyPartGroups>
+                <li>FullHead</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Apparel/Headgear/FaceguardShishak/FaceguardShishak</wornGraphicPath>
+            <tags>
+                <li>MFS_SoldierHeadgear</li>
+            </tags>
+            <layers>
+                <li>Overhead</li>
+            </layers>
+        </apparel>
+        <colorGenerator Class="ColorGenerator_StandardApparel"/>
+    </ThingDef>
+
+    <!-- Turban helmet -->
+
+    <ThingDef ParentName="MFS_HeadgearArmorBase">
+        <defName>MFS_TurbanHelmet</defName>
+        <label>turban helmet</label>
+        <description>A full helmet resembling the adorned turbans of viziers and the sultan, a turban helm is most commonly used by the highest ranking generals that take to the field, or by honored dignitaries and emissaries of the sultan himself. The conical shape deflects blows to keep the wearer safe.</description>
+        <graphicData>
+            <texPath>Apparel/Headgear/TurbanHelmet/TurbanHelmet</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+        </graphicData>
+        <recipeMaker>
+            <skillRequirements>
+                <Crafting>8</Crafting>
+            </skillRequirements>
+            <researchPrerequisite>MFS_SouthernHeavyArmor</researchPrerequisite>            
+        </recipeMaker>
+        <stuffCategories>
+            <li>Metallic</li>
+        </stuffCategories>
+        <costStuffCount>55</costStuffCount>
+        <costList>
+            <Steel>25</Steel>
+        </costList>
+        <statBases>
+            <MaxHitPoints>210</MaxHitPoints>
+            <WorkToMake>22000</WorkToMake>
+            <Mass>3.3</Mass>
+            <StuffEffectMultiplierArmor>0.65</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
+            <!-- <StuffEffectMultiplierInsulation_Heat>0.45</StuffEffectMultiplierInsulation_Heat> -->
+            <EquipDelay>10</EquipDelay>
+        </statBases>
+        <equippedStatOffsets>
+            <ShootingAccuracyPawn>-3</ShootingAccuracyPawn>
+            <SocialImpact>0.15</SocialImpact>
+            <PainShockThreshold>0.10</PainShockThreshold>
+        </equippedStatOffsets>
+        <apparel>
+            <bodyPartGroups>
+                <li>FullHead</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Apparel/Headgear/TurbanHelmet/TurbanHelmet</wornGraphicPath>
+            <tags>
+                <li>MFS_SoldierHeadgear</li>
+            </tags>
+            <layers>
+                <li>Overhead</li>
+            </layers>
+        </apparel>
+        <colorGenerator Class="ColorGenerator_StandardApparel"/>
+    </ThingDef>
+
+    <!-- Cuman helmet -->
+
+    <ThingDef ParentName="MFS_HeadgearArmorBase">
+        <defName>MFS_CumanHelmet</defName>
+        <label>cuman helmet</label>
+        <description>Added to the arsenal of the southern city states long ago by a rival empire, the cuman helmet is most often worn by the camel riders of the Golden Army, as well as the enforcers of the sultan. The full plate cover offers great protection, but limits the line of sight to some extent.</description>
+        <graphicData>
+            <texPath>Apparel/Headgear/CumanHelmet/CumanHelmet</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+        </graphicData>
+        <recipeMaker>
+            <skillRequirements>
+                <Crafting>8</Crafting>
+            </skillRequirements>
+            <researchPrerequisite>MFS_SouthernHeavyArmor</researchPrerequisite>
+        </recipeMaker>
+        <stuffCategories>
+            <li>Metallic</li>
+        </stuffCategories>
+        <costStuffCount>55</costStuffCount>
+        <costList>
+            <Steel>25</Steel>
+        </costList>
+        <statBases>
+            <MaxHitPoints>210</MaxHitPoints>
+            <WorkToMake>22000</WorkToMake>
+            <Mass>3.5</Mass>
+            <StuffEffectMultiplierArmor>0.65</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
+            <!-- <StuffEffectMultiplierInsulation_Heat>0.45</StuffEffectMultiplierInsulation_Heat> -->
+            <EquipDelay>10</EquipDelay>
+        </statBases>
+        <equippedStatOffsets>
+            <ShootingAccuracyPawn>-3</ShootingAccuracyPawn>
+            <SocialImpact>0.15</SocialImpact>
+            <PainShockThreshold>0.10</PainShockThreshold>
+        </equippedStatOffsets>
+        <apparel>
+            <bodyPartGroups>
+                <li>FullHead</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Apparel/Headgear/CumanHelmet/CumanHelmet</wornGraphicPath>
+            <tags>
+                <li>MFS_SoldierHeadgear</li>
+            </tags>
+            <layers>
+                <li>Overhead</li>
+            </layers>
+        </apparel>
+        <colorGenerator Class="ColorGenerator_StandardApparel"/>
+    </ThingDef>
+
+    <!-- Gladiator helmet -->
+
+    <ThingDef ParentName="MFS_HeadgearArmorBase">
+        <defName>MFS_CumanHelmet</defName>
+        <label>cuman helmet</label>
+        <description>In the arenas of southern city states, a blow to the head can mean a short fight, and the longer the fight, the more interesting the show. Thus this large and fully enclosed helmet is designed to protect the head as much as possible.</description>
+        <graphicData>
+            <texPath>Apparel/Headgear/GladiatorHelmet/Gladiator_Helmet_a</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <!-- <shaderType>CutoutComplex</shaderType> -->
+        </graphicData>
+        <recipeMaker>
+            <skillRequirements>
+                <Crafting>12</Crafting>
+            </skillRequirements>
+            <researchPrerequisite>MFS_SouthernHeavyArmor</researchPrerequisite>
+        </recipeMaker>
+        <stuffCategories>
+            <li>Metallic</li>
+        </stuffCategories>
+        <costStuffCount>95</costStuffCount>
+        <statBases>
+            <MaxHitPoints>300</MaxHitPoints>
+            <WorkToMake>25000</WorkToMake>
+            <Mass>4</Mass>
+            <StuffEffectMultiplierArmor>0.75</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
+            <!-- <StuffEffectMultiplierInsulation_Heat>0.45</StuffEffectMultiplierInsulation_Heat> -->
+            <EquipDelay>7</EquipDelay>
+        </statBases>
+        <equippedStatOffsets>
+            <ShootingAccuracyPawn>-4</ShootingAccuracyPawn>
+            <PainShockThreshold>0.20</PainShockThreshold>
+        </equippedStatOffsets>
+        <apparel>
+            <bodyPartGroups>
+                <li>FullHead</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Apparel/Headgear/GladiatorHelmet/Gladiator_Helmet_a</wornGraphicPath>
+            <tags>
+                <li>MFS_SoldierHeadgear</li>
+            </tags>
+            <layers>
+                <li>Overhead</li>
+            </layers>
+        </apparel>
+        <colorGenerator Class="ColorGenerator_StandardApparel"/>
+    </ThingDef>
+
+    <!-- Gilded turban helmet -->
+
+    <ThingDef ParentName="MFS_HeadgearArmorBase">
+        <defName>MFS_TurbanGilded</defName>
+        <label>turban gilded helmet</label>
+        <description>A full helmet resembling the adorned turbans of viziers and the sultan, gilded with gold, is the helmet used by the sultan’s palace guard. Their faces are fully covered, their patrol routes are always kept a secret and often changed to prevent any observant assassin from finding a gap in the palace security.</description>
+        <graphicData>
+            <texPath>Apparel/Headgear/TurbanGilded/TurbanGilded</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+        </graphicData>
+        <recipeMaker>
+            <skillRequirements>
+                <Crafting>8</Crafting>
+            </skillRequirements>
+            <researchPrerequisite>MFS_SouthernHeavyArmor</researchPrerequisite>
+        </recipeMaker>
+        <stuffCategories>
+            <li>Metallic</li>
+        </stuffCategories>
+        <costStuffCount>55</costStuffCount>
+        <costList>
+            <Steel>25</Steel>
+            <Gold>2</Gold>
+        </costList>
+        <statBases>
+            <MaxHitPoints>210</MaxHitPoints>
+            <WorkToMake>22000</WorkToMake>
+            <Mass>3.3</Mass>
+            <StuffEffectMultiplierArmor>0.65</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
+            <!-- <StuffEffectMultiplierInsulation_Heat>0.45</StuffEffectMultiplierInsulation_Heat> -->
+            <EquipDelay>10</EquipDelay>
+        </statBases>
+        <equippedStatOffsets>
+            <ShootingAccuracyPawn>-3</ShootingAccuracyPawn>
+            <SocialImpact>0.15</SocialImpact>
+            <PainShockThreshold>0.10</PainShockThreshold>
+        </equippedStatOffsets>
+        <apparel>
+            <bodyPartGroups>
+                <li>FullHead</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Apparel/Headgear/TurbanGilded/TurbanGilded</wornGraphicPath>
+            <tags>
+                <!-- <li>MFS_SoldierHeadgear</li> -->
+            </tags>
+            <layers>
+                <li>Overhead</li>
+            </layers>
+        </apparel>
+        <colorGenerator Class="ColorGenerator_StandardApparel"/>
+    </ThingDef>
+
+    <!-- Adorned cuman helmet -->
+
+    <ThingDef ParentName="MFS_HeadgearArmorBase">
+        <defName>MFS_CumanHelmetAdorned</defName>
+        <label>cuman helmet (adorned)</label>
+        <description>The gilded version of the cuman helmet are worn by the most elite of the Golden Army’s cavalry. Their ranks on lamellar adorned camels is often described as resembling glittering dune, ready to bury the enemies of the sultan.</description>
+        <graphicData>
+            <texPath>Apparel/AdornedArmor/Adorned_CumanHelmet/Adorned_CumanHelmet</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+        </graphicData>
+        <recipeMaker>
+            <skillRequirements>
+                <Crafting>8</Crafting>
+            </skillRequirements>
+            <researchPrerequisite>MFS_SouthernAdornedArmor</researchPrerequisite>
+        </recipeMaker>
+        <stuffCategories>
+            <li>Metallic</li>
+        </stuffCategories>
+        <costStuffCount>55</costStuffCount>
+        <costList>
+            <Steel>25</Steel>
+            <Gold>3</Gold>
+            <Cloth>5</Cloth>
+        </costList>
+        <statBases>
+            <MaxHitPoints>210</MaxHitPoints>
+            <WorkToMake>22000</WorkToMake>
+            <Mass>3.5</Mass>
+            <StuffEffectMultiplierArmor>0.65</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
+            <!-- <StuffEffectMultiplierInsulation_Heat>0.45</StuffEffectMultiplierInsulation_Heat> -->
+            <EquipDelay>10</EquipDelay>
+        </statBases>
+        <equippedStatOffsets>
+            <ShootingAccuracyPawn>-3</ShootingAccuracyPawn>
+            <SocialImpact>0.20</SocialImpact>
+            <PainShockThreshold>0.20</PainShockThreshold>
+        </equippedStatOffsets>
+        <apparel>
+            <bodyPartGroups>
+                <li>FullHead</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Apparel/AdornedArmor/Adorned_CumanHelmet/Adorned_CumanHelmet</wornGraphicPath>
+            <tags>
+                <!-- <li>MFS_SoldierHeadgear</li> -->
+            </tags>
+            <layers>
+                <li>Overhead</li>
+            </layers>
+        </apparel>
+        <colorGenerator Class="ColorGenerator_StandardApparel"/>
+    </ThingDef>
+
+    <!-- Champion helmet, UNCRAFTABLE IN DESIGN DOC !!! must find a way -->
+
+    <ThingDef ParentName="MFS_HeadgearArmorBase">
+        <defName>MFS_ChampionHelmet</defName>
+        <label>champion helmet</label>
+        <description>A ceremonial gladiator helmet awarded to each year’s arena winner. It is not only ornate but made with great care to protect the well-beloved figure who puts it atop their head.</description>
+        <graphicData>
+            <texPath>Apparel/AdornedArmor/ChampionHelmet/ChampionHelmet_a</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <!-- <shaderType>CutoutComplex</shaderType> -->
+        </graphicData>
+        <recipeMaker>
+            <skillRequirements>
+                <Crafting>12</Crafting>
+            </skillRequirements>
+        </recipeMaker>
+        <stuffCategories>
+            <li>Metallic</li>
+        </stuffCategories>
+        <costStuffCount>95</costStuffCount>
+        <costList>
+            <Gold>4</Gold>
+        </costList>
+        <statBases>
+            <MaxHitPoints>300</MaxHitPoints>
+            <WorkToMake>25000</WorkToMake>
+            <Mass>4</Mass>
+            <StuffEffectMultiplierArmor>0.75</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
+            <!-- <StuffEffectMultiplierInsulation_Heat>0.45</StuffEffectMultiplierInsulation_Heat> -->
+            <EquipDelay>7</EquipDelay>
+        </statBases>
+        <equippedStatOffsets>
+            <ShootingAccuracyPawn>-4</ShootingAccuracyPawn>
+            <PainShockThreshold>0.30</PainShockThreshold>
+            <SocialImpact>0.25</SocialImpact>
+        </equippedStatOffsets>
+        <apparel>
+            <bodyPartGroups>
+                <li>FullHead</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Apparel/AdornedArmor/ChampionHelmet/ChampionHelmet_a</wornGraphicPath>
+            <tags>
+                <!-- <li>MFS_SoldierHeadgear</li> -->
             </tags>
             <layers>
                 <li>Overhead</li>
